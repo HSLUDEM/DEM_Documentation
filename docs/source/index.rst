@@ -15,6 +15,8 @@ Documentation
 -----------------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Model 123
 
    introduction
    nomenclature
@@ -24,9 +26,6 @@ Documentation
    method_demand
    method_techs
    publications
-   
-   :maxdepth: 2
-   :caption: Model 123
 
    subfolder/subsection_1
    subfolder/subsection_2
