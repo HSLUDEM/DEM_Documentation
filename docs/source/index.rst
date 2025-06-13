@@ -17,8 +17,10 @@ Documentation
 .. toctree::
    :maxdepth: 2
 
-   introduction	
-   model_architecture/index_model_architecture
-   modelling_method/index_modelling_method
+   introduction
+   
+   model_architecture/index
+   modelling_method/index
+   
    publications
    contact
