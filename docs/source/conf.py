@@ -29,7 +29,8 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
+html_theme = 'classic'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
@@ -43,4 +44,4 @@ html_favicon = '_static/favicon.png'
 
 # Inject custom CSS to increase page width
 def setup(app):
-    app.add_css_file('_static/custom.css')
+    app.add_css_file('custom.css')
