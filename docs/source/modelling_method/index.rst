@@ -10,4 +10,5 @@ This section describes the modelling approaches used in DEM.
    gen_conv_techs/index
    storage_techs/index
    scenarios/index
+   optimisation
 
