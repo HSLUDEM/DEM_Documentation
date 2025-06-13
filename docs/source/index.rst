@@ -16,5 +16,5 @@ Modelling Methods
 
 .. toctree::
 
-   usage
    api
+   usage
