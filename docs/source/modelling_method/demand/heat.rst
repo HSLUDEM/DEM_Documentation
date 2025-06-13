@@ -1,19 +1,10 @@
-Modelling Method: Demand
+Heat
 ========================
-
-Electricity
-------------------
-
 
 Space Heating
 --------------------
 
-
 Domestic Hot Water (DHW)
 ------------------------
-
-
-Transport
-----------------
 
 
