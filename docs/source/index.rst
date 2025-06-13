@@ -26,6 +26,5 @@ Documentation
    method_demand
    method_techs
    publications
-
-   subfolder/subsection_1
-   subfolder/subsection_2
+	
+   subfolder/index_sub
