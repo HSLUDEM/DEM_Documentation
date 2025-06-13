@@ -1,9 +1,8 @@
-Welcome to the District Energy Model (DEM) documentation!
+District Energy Model
 =========================================================
 
-Multi-energy system model for mixed-use districts and communities developped in the framwork of the SWEET EDGE project.
+Multi-energy system model for mixed-use districts and communities developped in the framwork of the `SWEET EDGE <https://www.sweet-edge.ch/en/work-packages/wp-1>`_ project.
 
-.. `Link text <https://example.com>`_
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -12,8 +11,8 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-Contents
---------
+Modelling Methods
+-----------------
 
 .. toctree::
 
