@@ -1,17 +1,17 @@
 District Energy Model
 =========================================================
 
-Multi-energy system model for mixed-use districts and communities developped in the framwork of the `SWEET EDGE <https://www.sweet-edge.ch/en/work-packages/wp-1>`_ project.
+Multi-energy system model for mixed-use districts and communities developped at `HSLU CC TES <https://www.hslu.ch/en/lucerne-school-of-engineering-architecture/about-us/organization/competence-centres-and-research-groups/engineering-and-technology/thermal-energy-storage/>`_ in the framework of the `SWEET EDGE <https://www.sweet-edge.ch/en/work-packages/wp-1>`_ project.
 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`introcution` section for further information.
+The District Energy Model has been applied in various publications (see :doc:`publications`).
 
 .. note::
 
    This project is under active development.
 
-Modelling Methods
+Documentation
 -----------------
 
 .. toctree::

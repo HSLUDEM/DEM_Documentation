@@ -33,3 +33,9 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# Add this if not already defined
+html_static_path = ['_static']
+
+# Set the favicon
+html_favicon = '_static/favicon.png'
