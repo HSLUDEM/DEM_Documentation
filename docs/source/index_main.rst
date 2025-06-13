@@ -16,15 +16,9 @@ Documentation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Model 123
 
-   introduction
-   nomenclature
-   code_structure
-   input
-   output
-   method_demand
-   method_techs
+   introduction	
+   model_architecture/index_model_architecture
+   modelling_method/index_modelling_method
    publications
-	
-   subfolder/index_sub
+   contact
