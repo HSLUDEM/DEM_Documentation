@@ -1,5 +1,5 @@
 Welcome to the District Energy Model (DEM) documentation!
-===================================
+=========================================================
 
 Multi-energy system model for mixed-use districts and communities developped in the framwork of the SWEET EDGE project.
 
