@@ -16,11 +16,7 @@ Modelling Methods
 
 .. toctree::
 
-   introduction
-   nomenclature
-   code_structure
-   input
-   output
-   method_demand
-   method_techs
-   publications
+   api
+   usage
+   usage_again
+   Usage No. 2
