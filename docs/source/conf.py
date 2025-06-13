@@ -39,3 +39,8 @@ html_static_path = ['_static']
 
 # Set the favicon
 html_favicon = '_static/favicon.png'
+
+
+# Inject custom CSS to increase page width
+def setup(app):
+    app.add_css_file('custom.css')
