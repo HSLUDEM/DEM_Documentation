@@ -18,4 +18,5 @@ Modelling Methods
 
    api
    usage
+   usage_again
    Usage No. 2
