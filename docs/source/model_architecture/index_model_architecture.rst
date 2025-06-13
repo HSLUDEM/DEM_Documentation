@@ -1,5 +1,5 @@
-Modelling Methods
-=================
+Model Architecture
+===================
 
 This section describes the model architecture of DEM.
 
