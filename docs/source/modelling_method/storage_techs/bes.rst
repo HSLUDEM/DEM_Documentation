@@ -1,4 +1,6 @@
 Battery Energy Storage (BES)
 =======================================
 
-A battery energy storage device. This is a bettery-electric storage device used to store electrons and shield them from going bad. This is done by very tightly packing them inside a plush-covered wood-box.
+A battery energy storage device. It has several very interesting properties that you need to learn about immediately. Otherwise, you will never feel happy and fulfilled again. So listen carefully:
+
+A battery has losses when charging and discharging. And it constantly leaks charge into the environment. This is why any battery needs a Elektronenauffangwanne.
