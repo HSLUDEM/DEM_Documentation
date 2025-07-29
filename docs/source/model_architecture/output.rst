@@ -4,12 +4,13 @@ Model Output
 df_scen
 -------
 
-.. toggle:: Show Table
+..
+   .. toggle:: Show Table
 
-	.. csv-table:: Hourly Results
-	   :file: df_scen.csv
-	   :widths: auto
-	   :header-rows: 1
+	   .. csv-table:: Hourly Results
+	      :file: df_scen.csv
+	      :widths: auto
+	      :header-rows: 1
 
 
 dict_yr_scen
