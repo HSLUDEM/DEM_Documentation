@@ -1,12 +1,12 @@
 Model Output
 ============
 
-df_scen
+df_scen new
 -------
 
 .. csv-table:: Hourly Results
    :file: df_scen.csv
-   :widths: 30, 70
+   :widths: auto
    :header-rows: 1
 
 
