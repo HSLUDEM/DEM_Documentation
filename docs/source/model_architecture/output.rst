@@ -1,13 +1,15 @@
 Model Output
 ============
 
-df_scen new
+df_scen
 -------
 
-.. csv-table:: Hourly Results
-   :file: df_scen.csv
-   :widths: auto
-   :header-rows: 1
+.. toggle:: Show Table
+
+	.. csv-table:: Hourly Results
+	   :file: df_scen.csv
+	   :widths: auto
+	   :header-rows: 1
 
 
 dict_yr_scen
