@@ -21,6 +21,7 @@ df_scen
 dict_yr_scen
 ------------
 
+Any output found in ``df_scen`` with the suffix ``_yr`` represents an annual output.
 
 dict_total_costs
 ----------------
