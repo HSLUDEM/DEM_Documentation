@@ -34,9 +34,9 @@ s_wd,float,kWh,total wood supply
 s_wd_rem,float,kWh,wood supply remaining
 s_wet_bm,float,kWh,total wet biomass supply 
 s_wet_bm_rem,float,kWh,wet biomass supply remaining
-sos_bes,float,-,Battery energy storage: state of charge
-sos_tes,float,-,Thermal Energy storage: state of charge
-sos_tesdc,float,-,Thermal Energy storage (decentralised): state of charge
+sos_bes,float,--,Battery energy storage: state of charge
+sos_tes,float,--,Thermal Energy storage: state of charge
+sos_tesdc,float,--,Thermal Energy storage (decentralised): state of charge
 u_e_aguh,float,kWh,electricity demand anaerobic digestion upgrade hydrogen
 u_e_bes,float,kWh,Battery energy storage added electricity
 u_e_eh,float,kWh,Electric heater electricity input
