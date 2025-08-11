@@ -1,16 +1,6 @@
 Model Input
 ===========
 
-Test title
-----------
-
-Test title 2
-^^^^^^^^^^^^^
-
-Test title 3
-^^^^^^^^^^^^^^
-
-
 Meta Data
 ---------
 Key: meta_data
@@ -21,8 +11,12 @@ Key: meta_data
 	      :header-rows: 1
 		  
 
-Heat Pump
+Technologies
 ---------
+
+
+Heat Pump
+^^^^^^^^^^
 Key: heat_pump
 
 .. csv-table::
@@ -32,7 +26,7 @@ Key: heat_pump
 			
 
 Electric Heater
----------------
+^^^^^^^^^^
 Key: electric_heater
 
 .. csv-table::
@@ -42,7 +36,7 @@ Key: electric_heater
 			
 			
 Oil Boiler
----------
+^^^^^^^^^^
 Key: oil_boiler
 
 .. csv-table::
