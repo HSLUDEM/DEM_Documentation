@@ -46,7 +46,7 @@ Key: oil_boiler
 			
 
 Gas Boiler
----------
+^^^^^^^^^^
 Key: gas_boiler
 
 .. csv-table::
@@ -56,7 +56,7 @@ Key: gas_boiler
 
 
 Wood Boiler
----------
+^^^^^^^^^^
 Key: wood_boiler
 
 .. csv-table::
@@ -66,7 +66,7 @@ Key: wood_boiler
 
 
 District Heating
----------
+^^^^^^^^^^
 Key: district_heating
 
 .. csv-table::
@@ -76,7 +76,7 @@ Key: district_heating
 
 
 Solar Thermal
----------
+^^^^^^^^^^
 Key: solar_thermal
 
 .. csv-table::
@@ -86,7 +86,7 @@ Key: solar_thermal
 
 
 Solar Photovoltaic (PV)
----------
+^^^^^^^^^^
 Key: solar_pv
 
 .. csv-table::
@@ -96,7 +96,7 @@ Key: solar_pv
 
 
 Wind Power
----------
+^^^^^^^^^^
 Key: wind_power
 
 .. csv-table::
@@ -106,7 +106,7 @@ Key: wind_power
 
 
 Hydro Power
----------
+^^^^^^^^^^
 Key: hydro_power
 
 .. csv-table::
@@ -116,7 +116,7 @@ Key: hydro_power
 
 
 Grid Supply
----------
+^^^^^^^^^^
 Key: grid_supply
 
 .. csv-table::
@@ -126,7 +126,7 @@ Key: grid_supply
 
 
 Thermal Energy Storage (TES) - centralised
----------
+^^^^^^^^^^
 Key: tes
 
 .. csv-table::
@@ -136,7 +136,7 @@ Key: tes
 
 
 Thermal Energy Storage (TES) - decentralised
----------
+^^^^^^^^^^
 Key: tes_decentralised
 
 .. csv-table::
@@ -146,7 +146,7 @@ Key: tes_decentralised
 
 
 Battery Energy Storage (BES)
----------
+^^^^^^^^^^
 Key: bes
 
 .. csv-table::
@@ -156,7 +156,7 @@ Key: bes
 
 
 Biomass
----------
+^^^^^^^^^^
 Key: biomass
 
 .. csv-table::
@@ -166,7 +166,7 @@ Key: biomass
 
 
 Hydrothermal Gasification
----------
+^^^^^^^^^^
 Key: hydrothermal_gasification
 
 .. csv-table::
@@ -176,7 +176,7 @@ Key: hydrothermal_gasification
 
 
 Anaerobic Digestion Upgrade
----------
+^^^^^^^^^^
 Key: anaerobic_digestion_upgrade
 
 .. csv-table::
@@ -186,7 +186,7 @@ Key: anaerobic_digestion_upgrade
 
 
 Anaerobic Digestion Upgrade Hydrogen
----------
+^^^^^^^^^^
 Key: anaerobic_digestion_upgrade_hydrogen
 
 .. csv-table::
@@ -196,7 +196,7 @@ Key: anaerobic_digestion_upgrade_hydrogen
 
 
 Anaerobic Digestion Combined Heat and Power (CHP)
----------
+^^^^^^^^^^
 Key: anaerobic_digestion_chp
 
 .. csv-table::
@@ -206,7 +206,7 @@ Key: anaerobic_digestion_chp
 
 
 Wood Gasification Upgrade
----------
+^^^^^^^^^^
 Key: wood_gasification_upgrade
 
 .. csv-table::
@@ -216,7 +216,7 @@ Key: wood_gasification_upgrade
 
 
 Wood Gasification Upgrade Hydrogen
----------
+^^^^^^^^^^
 Key: wood_gasification_upgrade_hydrogen
 
 .. csv-table::
@@ -226,7 +226,7 @@ Key: wood_gasification_upgrade_hydrogen
 
 
 Wood Digestion Combined Heat and Power (CHP)
----------
+^^^^^^^^^^
 Key: wood_digestion_chp
 
 .. csv-table::
@@ -236,7 +236,7 @@ Key: wood_digestion_chp
 
 
 Hydrogen Production
----------
+^^^^^^^^^^
 Key: hydrogen_production
 
 .. csv-table::
@@ -246,7 +246,7 @@ Key: hydrogen_production
 
 
 Gas Turbine Combined Heat and Power (CHP) - small scale
----------
+^^^^^^^^^^
 Key: chp_gt
 
 .. csv-table::
@@ -256,7 +256,7 @@ Key: chp_gt
 
 
 Gas Turbine - centralised plant (cp)
----------
+^^^^^^^^^^
 Key: gas_turbine_cp
 
 .. csv-table::
@@ -266,7 +266,7 @@ Key: gas_turbine_cp
 
 
 Steam Turbine
----------
+^^^^^^^^^^
 Key: steam_turbine
 
 .. csv-table::
@@ -276,7 +276,7 @@ Key: steam_turbine
 
 
 Wood Boiler - centralised plant (cp)
----------
+^^^^^^^^^^
 Key: wood_boiler_cp
 
 .. csv-table::
@@ -286,7 +286,7 @@ Key: wood_boiler_cp
 
 
 Waste-to-Energy Combined Heat and Power
----------
+^^^^^^^^^^
 Key: waste_to_energy
 
 .. csv-table::
@@ -296,7 +296,7 @@ Key: waste_to_energy
 
 
 Heat Pump - centralised plant (cp)
----------
+^^^^^^^^^^
 Key: heat_pump_cp
 
 .. csv-table::
@@ -306,7 +306,7 @@ Key: heat_pump_cp
 
 
 Other
----------
+^^^^^^^^^^
 Key: other
 
 .. csv-table::
