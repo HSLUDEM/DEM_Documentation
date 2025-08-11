@@ -32,7 +32,7 @@ Key: electric_heater
 			:header-rows: 1
 			
 			
-Title
+Oil Boiler
 ---------
 Key: oil_boiler
 
@@ -42,6 +42,8 @@ Key: oil_boiler
 			:header-rows: 1
 			
 
+Gas Boiler
+---------
 Key: gas_boiler
 
 .. csv-table::
@@ -49,6 +51,9 @@ Key: gas_boiler
 			:widths: auto
 			:header-rows: 1
 
+
+Wood Boiler
+---------
 Key: wood_boiler
 
 .. csv-table::
@@ -56,6 +61,9 @@ Key: wood_boiler
 			:widths: auto
 			:header-rows: 1
 
+
+District Heating
+---------
 Key: district_heating
 
 .. csv-table::
@@ -63,6 +71,9 @@ Key: district_heating
 			:widths: auto
 			:header-rows: 1
 
+
+Solar Thermal
+---------
 Key: solar_thermal
 
 .. csv-table::
@@ -70,6 +81,9 @@ Key: solar_thermal
 			:widths: auto
 			:header-rows: 1
 
+
+Solar Photovoltaic (PV)
+---------
 Key: solar_pv
 
 .. csv-table::
@@ -77,6 +91,9 @@ Key: solar_pv
 			:widths: auto
 			:header-rows: 1
 
+
+Wind Power
+---------
 Key: wind_power
 
 .. csv-table::
@@ -84,6 +101,9 @@ Key: wind_power
 			:widths: auto
 			:header-rows: 1
 
+
+Hydro Power
+---------
 Key: hydro_power
 
 .. csv-table::
@@ -91,6 +111,9 @@ Key: hydro_power
 			:widths: auto
 			:header-rows: 1
 
+
+Grid Supply
+---------
 Key: grid_supply
 
 .. csv-table::
@@ -98,6 +121,9 @@ Key: grid_supply
 			:widths: auto
 			:header-rows: 1
 
+
+Thermal Energy Storage (TES) - centralised
+---------
 Key: tes
 
 .. csv-table::
@@ -105,6 +131,9 @@ Key: tes
 			:widths: auto
 			:header-rows: 1
 
+
+Thermal Energy Storage (TES) - decentralised
+---------
 Key: tes_decentralised
 
 .. csv-table::
@@ -112,6 +141,9 @@ Key: tes_decentralised
 			:widths: auto
 			:header-rows: 1
 
+
+Battery Energy Storage (BES)
+---------
 Key: bes
 
 .. csv-table::
@@ -119,6 +151,9 @@ Key: bes
 			:widths: auto
 			:header-rows: 1
 
+
+Biomass
+---------
 Key: biomass
 
 .. csv-table::
@@ -126,6 +161,9 @@ Key: biomass
 			:widths: auto
 			:header-rows: 1
 
+
+Hydrothermal Gasification
+---------
 Key: hydrothermal_gasification
 
 .. csv-table::
@@ -133,6 +171,9 @@ Key: hydrothermal_gasification
 			:widths: auto
 			:header-rows: 1
 
+
+Anaerobic Digestion Upgrade
+---------
 Key: anaerobic_digestion_upgrade
 
 .. csv-table::
@@ -140,6 +181,9 @@ Key: anaerobic_digestion_upgrade
 			:widths: auto
 			:header-rows: 1
 
+
+Anaerobic Digestion Upgrade Hydrogen
+---------
 Key: anaerobic_digestion_upgrade_hydrogen
 
 .. csv-table::
@@ -147,6 +191,9 @@ Key: anaerobic_digestion_upgrade_hydrogen
 			:widths: auto
 			:header-rows: 1
 
+
+Anaerobic Digestion Combined Heat and Power (CHP)
+---------
 Key: anaerobic_digestion_chp
 
 .. csv-table::
@@ -154,6 +201,9 @@ Key: anaerobic_digestion_chp
 			:widths: auto
 			:header-rows: 1
 
+
+Wood Gasification Upgrade
+---------
 Key: wood_gasification_upgrade
 
 .. csv-table::
@@ -161,6 +211,9 @@ Key: wood_gasification_upgrade
 			:widths: auto
 			:header-rows: 1
 
+
+Wood Gasification Upgrade Hydrogen
+---------
 Key: wood_gasification_upgrade_hydrogen
 
 .. csv-table::
@@ -168,6 +221,9 @@ Key: wood_gasification_upgrade_hydrogen
 			:widths: auto
 			:header-rows: 1
 
+
+Wood Digestion Combined Heat and Power (CHP)
+---------
 Key: wood_digestion_chp
 
 .. csv-table::
@@ -175,6 +231,9 @@ Key: wood_digestion_chp
 			:widths: auto
 			:header-rows: 1
 
+
+Hydrogen Production
+---------
 Key: hydrogen_production
 
 .. csv-table::
@@ -182,6 +241,9 @@ Key: hydrogen_production
 			:widths: auto
 			:header-rows: 1
 
+
+Gas Turbine Combined Heat and Power (CHP) - small scale
+---------
 Key: chp_gt
 
 .. csv-table::
@@ -189,6 +251,9 @@ Key: chp_gt
 			:widths: auto
 			:header-rows: 1
 
+
+Gas Turbine - centralised plant (cp)
+---------
 Key: gas_turbine_cp
 
 .. csv-table::
@@ -196,6 +261,9 @@ Key: gas_turbine_cp
 			:widths: auto
 			:header-rows: 1
 
+
+Steam Turbine
+---------
 Key: steam_turbine
 
 .. csv-table::
@@ -203,6 +271,9 @@ Key: steam_turbine
 			:widths: auto
 			:header-rows: 1
 
+
+Wood Boiler - centralised plant (cp)
+---------
 Key: wood_boiler_cp
 
 .. csv-table::
@@ -210,6 +281,9 @@ Key: wood_boiler_cp
 			:widths: auto
 			:header-rows: 1
 
+
+Waste-to-Energy Combined Heat and Power
+---------
 Key: waste_to_energy
 
 .. csv-table::
@@ -217,6 +291,9 @@ Key: waste_to_energy
 			:widths: auto
 			:header-rows: 1
 
+
+Heat Pump - centralised plant (cp)
+---------
 Key: heat_pump_cp
 
 .. csv-table::
@@ -224,6 +301,9 @@ Key: heat_pump_cp
 			:widths: auto
 			:header-rows: 1
 
+
+Other
+---------
 Key: other
 
 .. csv-table::
@@ -231,37 +311,52 @@ Key: other
 			:widths: auto
 			:header-rows: 1
 
+
+Scenarios
+---------
 Key: scenarios
 
 .. csv-table::
-:file: input_csv/scenarios.csv
-:widths: auto
-:header-rows: 1
+			:file: input_csv/scenarios.csv
+			:widths: auto
+			:header-rows: 1
 
+
+Optimisation
+---------
 Key: optimisation
 
 .. csv-table::
-:file: input_csv/optimisation.csv
-:widths: auto
-:header-rows: 1
+			:file: input_csv/optimisation.csv
+			:widths: auto
+			:header-rows: 1
 
+
+Simulation
+---------
 Key: simulation
 
 .. csv-table::
-:file: input_csv/simulation.csv
-:widths: auto
-:header-rows: 1
+			:file: input_csv/simulation.csv
+			:widths: auto
+			:header-rows: 1
 
+
+Demand Side
+---------
 Key: demand_side
 
 .. csv-table::
-:file: input_csv/demand_side.csv
-:widths: auto
-:header-rows: 1
+			:file: input_csv/demand_side.csv
+			:widths: auto
+			:header-rows: 1
 
+
+Supply
+---------
 Key: supply
 
 .. csv-table::
-:file: input_csv/supply.csv
-:widths: auto
-:header-rows: 1
+			:file: input_csv/supply.csv
+			:widths: auto
+			:header-rows: 1
