@@ -27,8 +27,11 @@ Model Input
 	| custom_district: custom_district_name    | -        | str           | Unique name for specified custom district.                                                    |
 	+------------------------------------------+----------+---------------+-----------------------------------------------------------------------------------------------+
 
-meta_data
+Meta Data
 ---------
+
+Key: meta_data
+
 .. csv-table::
 	      :file: input_csv/meta_data.csv
 	      :widths: auto
