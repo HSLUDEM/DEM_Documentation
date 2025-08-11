@@ -1,4 +1,4 @@
-﻿Column,Type,Unit,Description
+Column,Type,Unit,Description
 d_e,float,kWh,Total electricity demand (incl. Heating and household demand)
 d_e_ev,float,kWh,Electricity demand for electric vehicles (subset of d_e)
 d_e_h,float,kWh,"Electricity demand due to heating (e.g. heat pump, electric heater) (subset of d_e)"

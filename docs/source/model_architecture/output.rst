@@ -12,7 +12,7 @@ df_scen
 	      :widths: auto
 	      :header-rows: 1
 		  
-.. csv-table:: Hourly Results
+.. csv-table::
 	      :file: output_csv/df_scen.csv
 	      :widths: auto
 	      :header-rows: 1
