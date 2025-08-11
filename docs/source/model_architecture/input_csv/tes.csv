@@ -1,0 +1,18 @@
+Attribute,Unit,Data type,Description
+deployment,-,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
+eta_chg_dchg,-,float,Charging and discharging efficiency (fixed). Roundtrip-efficiency is calculated as eta_chg_dchg*eta_chg_dchg.
+tes_gamma,1/timestep,float,Loss rate: fraction of heat lost to the environment during one timestep (e.g. 1 hour)
+capacity_kWh,kWh,float,Storage capacity.
+chg_dchg_per_cap_max,1/timestep,float,Max. charge/discharge (kW) per storage cap (kWh) per timestep.
+initial_charge,-,float,Initial charge of battery (fraction of total storage capacity)
+connections,-,dict,Technologies connected to TES can be switched on (True) of off (False).
+connections: district_heating_network,-,bool,"If set to 'true', the district heating network is connected to TES. Technology must be deployed accordingly."
+connections: district_heat_import,-,bool,"If set to 'true', district_heat_import is connected to TES. Technology must be deployed accordingly."
+connections: chp_gt,-,bool,"If set to 'true', the CHP gas turbine is connected to TES. Technology must be deployed accordingly."
+connections: steam_turbine,-,bool,"If set to 'true', the steam turbine is connected to TES. Technology must be deployed accordingly."
+connections: waste_to_energy,-,bool,"If set to 'true', the waset-to-energy plant is connected to TES. Technology must be deployed accordingly."
+connections: heat_pump_cp,-,bool,"If set to 'true', a centralised heat pump is connected to TES. Technology must be deployed accordingly."
+co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
+lifetime,years,int,Expected lifetime of technology before replacement is required.
+capex,CHF/kWp,float,CAPEX cost of technology per unit of capacity.
+interest_rate,-,float,Interest rate for computing levelised costs (if required).

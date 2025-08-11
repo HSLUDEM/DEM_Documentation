@@ -1,0 +1,2 @@
+Attribute,Unit,Data type,Description
+number_of_days,-,int,"Number of days to simulate, starting on 1 Jan. Mainly for testing the model."
