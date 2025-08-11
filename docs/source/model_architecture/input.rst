@@ -41,9 +41,9 @@ heat_pump
 ---------
 
 .. csv-table::
-		  :file: input_csv/heat_pump.csv
-		  :widths: auto
-		  :header-rows: 1
+			:file: input_csv/heat_pump.csv
+			:widths: auto
+			:header-rows: 1
 
 
 
