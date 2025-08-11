@@ -23,7 +23,7 @@ Documentation
 
    introduction
    
-   model_architecture/index
+   how_to_use_the_model/index
    modelling_method/index
    
    publications

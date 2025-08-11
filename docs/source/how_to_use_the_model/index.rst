@@ -1,4 +1,4 @@
-Model Architecture
+How to Use the Model
 ===================
 
 This section describes the model architecture of DEM.
