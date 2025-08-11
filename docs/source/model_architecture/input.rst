@@ -29,7 +29,7 @@ Model Input
 
 meta_data
 ---------
-.. csv-table:: meta_data
+.. csv-table::
 	      :file: input_csv/meta_data.csv
 	      :widths: auto
 	      :header-rows: 1
