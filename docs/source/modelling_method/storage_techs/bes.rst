@@ -67,3 +67,10 @@ not directly at the storage. Therefore, the amount of energy charged into the st
 is smaller than the charging power u_e_bes and the amount energy discharged from the
 storage is larger than v_e_bes, both by  a factor eta_chg_dchg.
 
+Importantly, the value given in q_e_bes is the stored energy at the end of a given time period.
+
+
+
+
+
+
