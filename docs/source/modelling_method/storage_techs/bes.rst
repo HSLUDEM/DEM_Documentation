@@ -41,3 +41,23 @@ It has the following properties, to be defined in the input file
 | maintenance_cost             | 2.0              | Yearly maintenance cost per kWh            |
 +------------------------------+------------------+--------------------------------------------+
 
+The variables of the 
+
++--------------------+-----------+
+| Contained energy   | q_e_bes   |
++====================+===========+
+| Charging power     | u_e_bes   |
++--------------------+-----------+
+| Discharging power  | v_e_bes   |
++--------------------+-----------+
+| Storage losses     | l_q_e_bes |
++--------------------+-----------+
+| Charging losses    | l_u_e_bes |
++--------------------+-----------+
+| Discharging losses | l_v_e_bes |
++--------------------+-----------+
+
+The relationship between q_e_bes(t) and q_e_bes(t+1) is given by
+
+.. math:: \mathtt{q_e_bes}
+
