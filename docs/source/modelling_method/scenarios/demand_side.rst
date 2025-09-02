@@ -23,6 +23,7 @@ In addition, the efficiency of heat pumps is influenced by the year (see descrip
 heat pump tech).
 
 The relevant parameters for the climate adjustment are
+
 +--------------+----------------+------------------------------------------------------------------------------------------------------+
 | Name         | Standard value | Description                                                                                          |
 +==============+================+======================================================================================================+
@@ -33,6 +34,7 @@ The relevant parameters for the climate adjustment are
 +--------------+----------------+------------------------------------------------------------------------------------------------------+
 | ts_type      | 'tas_median'   | temperature type                                                                                     |
 +--------------+----------------+------------------------------------------------------------------------------------------------------+
+
 
 The climate data is based on the CH2018 scenarios.
 
