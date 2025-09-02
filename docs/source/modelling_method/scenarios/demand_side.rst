@@ -69,7 +69,9 @@ implements are rather high renovation rate, this is the recommended scenario.
 If ``use_constant_total_renovation_rate`` is True, a constant
 share of each building is renovated each year (i.e. the buildings 
 are partially totally renovated, with a given probability that then
-defines the overall heat demand).
+defines the overall heat demand). Even then, no total renovations take place during
+the first 35 years of a building's existence.
+
 The parameters for the total renovation are described in the table:
 
 +---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
@@ -87,4 +89,35 @@ The parameters for the total renovation are described in the table:
 +---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 | total_renovation_heat_generator_reassignment_rates_dhw_for_manual_scenarios           | {'v_hw_eh' : 0.1,'v_hw_hp' : 0.7, 'v_hw_dh' : 0.05, 'v_hw_gb' : 0.05,'v_hw_ob' : 0.05,'v_hw_wb' : 0.05,'v_hw_solar' : 0.0,'v_hw_other' : 0.0 }| Reassignment of heat generators for domestic hot water for manual scenarios |
 +---------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+
+
+
+Heat generator replacement is controlled separately by the parameters
+
++-------------------------------+---------------+-----------------------------------------------------------------------------+
+| Name                          | Standard value| Description                                                                 |
++===============================+===============+=============================================================================+
+| heat_generator_renovation     | True          | Is heat generator replacement activated?                                    |
++-------------------------------+---------------+-----------------------------------------------------------------------------+
+| act_on_fossil_heater_retrofit | False         | For manual scenarios:                                                       |
+|                               |               | Does the heat generator replacement replace a fossil heater retrofit?       | 
+|                               |               | If yes, the rate of fossil heater retrofit is increased according to the    |
+|                               |               | heat generator replacement rate                                             |  
++-------------------------------+---------------+-----------------------------------------------------------------------------+
+
+The heat generator renovation is happening according to two different criteria:
+For buildings that were recently built, i.e. the data collection year is smaller equal 
+to the construction year of the buiding plus the lifetime of the heat generator,
+heat generator replacement takes place when the end of the lifetime of the heat generator is
+reached (e.g. after 25 years). For old buildings, a constant rate of 1.0/lifetime of the heat
+generator is applied. This constant rate applies for every year that passes between the year of 
+data collection and the simulation year.
+When heat generators reach the end of their life, they are marked as having reached the end of their life.
+If optimization takes place, keeping this type of heat generator incurs a cost. Furthermore, the COP of 
+heat pumps can be positively affected by replacement. If no optimization takes place (for manual scenarios),
+nothing happens unless ``act_on_fossil_heater_retrofit`` is active. If that parameter is active,
+it is ensured that the fossil_heater_retrofit rates are at least as high as the rate of such
+heat generators that have reached the end of their life. Furthermore, if fossil_heater_retrofit
+is not activated, it is turned on and its rates correspond to the end-of-life rates of the heat
+generators.
 
