@@ -57,7 +57,7 @@ The variables of the
 | Discharging losses | l_v_e_bes |
 +--------------------+-----------+
 
-The relationship between q_e_bes(t) and q_e_bes(t+1) is given by
+The relationship between ``q_e_bes``(t) and ``q_e_bes``(t+1) is given by
 
 .. math:: \mathtt{q_e_bes}
 
