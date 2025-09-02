@@ -59,5 +59,5 @@ The variables of the
 
 The relationship between q_e_bes(t) and q_e_bes(t+1) is given by
 
-.. math:: \mathtt{q_{e, bes}} = 
+.. math:: \mathtt{q\_e\_bes}(t+1) = \mathtt{q\_e\_bes}(t) - 
 
