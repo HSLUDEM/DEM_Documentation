@@ -120,4 +120,3 @@ it is ensured that the fossil_heater_retrofit rates are at least as high as the 
 heat generators that have reached the end of their life. Furthermore, if fossil_heater_retrofit
 is not activated, it is turned on and its rates correspond to the end-of-life rates of the heat
 generators.
-
