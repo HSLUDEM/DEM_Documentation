@@ -9,6 +9,16 @@ these are separately discussed in different subsection.
 
 Electric vehicles and their flexibility
 ---------------------------------------
+tbd
 
+Climate Adjustment
+---------------------------------------
+
+tbd
+
+Renovation and heat generator replacement
+---------------------------------------
+
+tbd
 
 
