@@ -59,5 +59,7 @@ The variables of the
 
 The relationship between q_e_bes(t) and q_e_bes(t+1) is given by
 
-.. math:: \mathtt{q\_e\_bes}(t+1) = \mathtt{q\_e\_bes}(t) - 
+.. math:: \mathtt{q\_e\_bes}(t+1) = \mathtt{q\_e\_bes}(t) - \gamma \mathtt{q\_e\_bes}(t) + \eta \mathtt{u\_e\_bes} - (1/\eta) \mathtt{v\_e\_bes}
+
+where we refer to bes_gamma as :math:`\gamma` and to eta_chg_dchg as :math:`\eta`
 
