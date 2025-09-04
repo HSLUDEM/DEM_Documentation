@@ -17,7 +17,7 @@ and Household Demand.
 Electric Vehicles
 --------------------
 
-The electric load profiles for electric vehicle (EV) charging are added to the total electricity demand. These profiles are based on the study by Herrera and Hug (2025). The hourly data are aggregated spatially to the municipality level. The original dataset assumes 100% electrification of the private transport sector; in the District Energy Model, partial electrification (e.g., 50%) is represented through linear scaling of the original data.
+The electric load profiles for electric vehicle (EV) charging are added to the total electricity demand. These profiles are based on the study by `Herrera and Hug (2025) <https://arxiv.org/abs/2504.03633>`_. The hourly data are aggregated spatially to the municipality level. The original dataset assumes 100% electrification of the private transport sector; in the District Energy Model, partial electrification (e.g., 50%) is represented through linear scaling of the original data.
 
 In the non-optimized simulations, fixed EV load profiles are applied. In the optimization scenarios, however, EV charging flexibility can be activated in the demand side scenario (see :ref:`demand-side-scenario`). This flexibility, as defined by Herrera and Hug (2025), includes lower and upper charging power limits as well as the daily available flexible energy.
 
