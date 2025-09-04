@@ -1,4 +1,4 @@
-Heat
+Heat Demand
 ========================
 
 Space Heating
