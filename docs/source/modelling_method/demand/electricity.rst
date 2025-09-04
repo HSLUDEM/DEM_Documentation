@@ -1,7 +1,7 @@
-Electricity
+Electricity Demand
 ========================
 
-Household Demand for Residential Buildings
+Residential Buildings
 ------------------
 
 The electricity demand from building appliances, excluding heating and transport, is referred to as *Household Demand*. It is modeled using a bottom-up approach for each individual building.
