@@ -1,3 +1,5 @@
+.. _demand-side-scenario:
+
 Demand Side
 =======================================
 
