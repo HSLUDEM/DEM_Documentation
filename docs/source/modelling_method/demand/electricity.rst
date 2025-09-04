@@ -4,30 +4,32 @@ Electricity
 Household Demand for Residential Buildings
 ------------------
 
-The electricity demand from electrical appliances in buildings other than heating and transport is labelled Household Demand. It is modelled
-in a bottom-up approach for each individual building.
-The annual demand for residential buildings is calculated based on number of inhabitants. The number of inhabitants per building
-is estimated based on data on building size taken from the federal register of buildings and dwellings (RBD) (Federal Statistical Office, 2025).
-The annual electricity demand per inhabitant is estimated based on the report from the Swiss federal office of energy (SFOE) about typical
-electricity demands in Swiss households (Nipkow, 2013). The annual electricity demand per building is then fitted to standard hourly load
-profiles (Rinaldi et al., 2022). Different profiles are used for single-family homes and multi-family homes.
+The electricity demand from building appliances, excluding heating and transport, is referred to as *Household Demand*. It is modeled using a bottom-up approach for each individual building.
+For residential buildings, annual demand is estimated based on the number of inhabitants. The number of inhabitants per building is derived from building size data provided in the Federal Register of Buildings and Dwellings (RBD) (Federal Statistical Office, 2025).
+Annual electricity demand per inhabitant is taken from a report by the Swiss Federal Office of Energy (SFOE) on typical household electricity consumption in Switzerland (Nipkow, 2013). This annual demand per building is then distributed according to standard hourly load profiles (Rinaldi et al., 2022), with separate profiles applied for single-family and multi-family homes. Finally, the hourly demand of a district or municipality is obtained by aggregating the individual building demands.
 
 Industry and Services
 ------------------
 The electricity for industry and services is computed in a top-down approach as the difference between total demand in the municipality
 and Household Demand.
 
+.. _electric-vehicles:
 
 Electric Vehicles
 --------------------
 
+The electric load profiles for electric vehicle (EV) charging are added to the total electricity demand. These profiles are based on the study by Herrera and Hug (2025). The hourly data are aggregated spatially to the municipality level. The original dataset assumes 100% electrification of the private transport sector; in the District Energy Model, partial electrification (e.g., 50%) is represented through linear scaling of the original data.
+
+In the non-optimized simulations, fixed EV load profiles are applied. In the optimization scenarios, however, EV charging flexibility is activated. This flexibility, as defined by Herrera and Hug (2025), includes lower and upper charging power limits as well as the daily available flexible energy.
 
 
 References
 ^^^^^^^^^^^
 
-Nipkow, J. (2013). Typischer Haushalt-Stromverbrauch [Schlussbericht]. Zürich/Bern: Bundesamt für Energie (BFE).
+Nipkow, J. (2013). *Typischer Haushalt-Stromverbrauch* [Schlussbericht]. Zürich/Bern: Bundesamt für Energie (BFE).
 
-Arthur Rinaldi, Héctor Ramirez, Benjamin Schroeteler, & Marco Meier. (2022). The role of energy storage technologies in the context of the Swiss energy transition (SwissStore) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6782179
+Arthur Rinaldi, Héctor Ramirez, Benjamin Schroeteler, & Marco Meier. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6782179
 
-Federal Statistical Office (FSO). (2025). Federal register of buildings and dwellings (RBD). https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
+Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
+
+Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
