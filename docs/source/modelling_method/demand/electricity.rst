@@ -13,14 +13,13 @@ Industry and Services
 The electricity for industry and services is computed in a top-down approach as the difference between total demand in the municipality
 and Household Demand.
 
-.. _electric-vehicles:
 
 Electric Vehicles
 --------------------
 
 The electric load profiles for electric vehicle (EV) charging are added to the total electricity demand. These profiles are based on the study by Herrera and Hug (2025). The hourly data are aggregated spatially to the municipality level. The original dataset assumes 100% electrification of the private transport sector; in the District Energy Model, partial electrification (e.g., 50%) is represented through linear scaling of the original data.
 
-In the non-optimized simulations, fixed EV load profiles are applied. In the optimization scenarios, however, EV charging flexibility is activated. This flexibility, as defined by Herrera and Hug (2025), includes lower and upper charging power limits as well as the daily available flexible energy.
+In the non-optimized simulations, fixed EV load profiles are applied. In the optimization scenarios, however, EV charging flexibility can be activated activated in the demand side scenario (see :ref:`demand-side-scenario`). This flexibility, as defined by Herrera and Hug (2025), includes lower and upper charging power limits as well as the daily available flexible energy.
 
 
 References
