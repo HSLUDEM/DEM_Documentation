@@ -92,3 +92,22 @@ model is described further below.
 "location_based" COP mode
 ++++++++++++++++++++++++++++++++++++++++++++
 
+The "location_based" COP mode is the standard COP mode.
+It calculates a COP timeseries based on the properties of the
+individual buildings, the quality_factors specified in the 
+input file, the local weather and internal parameters defined
+in the corresponding code file.
+
+For each building, the algorithm assign probabilities for 
+several properties for space heating
+
+1. Is the heat dissipator radiator- or underfloor-heating-based
+2. Is the heat pump air-source or ground-source.
+3. Does the heat pump already exist or is it a new device to be installed by the optimizer.
+4. Which building period was the building built in (used for heating curve).
+
+and for domestic hot water-heating
+
+1. Is the heat pump air-source or ground-source.
+2. Does the heat pump already exist or is it a new device to be installed by the optimizer.
+
