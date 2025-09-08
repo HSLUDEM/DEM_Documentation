@@ -1,3 +1,5 @@
+.. _demand-side-scenario:
+
 Demand Side
 =======================================
 
@@ -9,7 +11,9 @@ these are separately discussed in different subsection.
 
 Electric vehicles and their flexibility
 ---------------------------------------
-tbd
+
+For electric vehicle (EV) charging demand modelling, see :ref:`electric-vehicles`. Flexibility from EV charging is implemented as defined by Herrera and Hug (2025) and includes lower and upper charging power limits, as well as the daily available flexible energy.
+Flexibility from EV charing is only active in the optimisation scenario.
 
 Climate Adjustment
 ---------------------------------------
@@ -120,3 +124,9 @@ it is ensured that the fossil_heater_retrofit rates are at least as high as the 
 heat generators that have reached the end of their life. Furthermore, if fossil_heater_retrofit
 is not activated, it is turned on and its rates correspond to the end-of-life rates of the heat
 generators.
+
+
+References
+^^^^^^^^^^^
+
+Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
