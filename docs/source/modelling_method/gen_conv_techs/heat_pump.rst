@@ -55,8 +55,8 @@ file.
 |                               |                 | is scaled s.t. a given value for the seasonal performance factor (SPF)      | 
 |                               |                 | is reached                                                                  | 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
-| cop_timeseries_file_path      | ""              | |Path to COP timeseries file for mode "form_file"                          ||
-|                               |                 | | and "from_file_adjusted_to_spf"                                          || 
+| cop_timeseries_file_path      | ""              |Path to COP timeseries file for mode "form_file"                             |
+|                               |                 |and "from_file_adjusted_to_spf"                                              | 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
 | cop_constant_value            | 3.0             | Constant COP value for COP mode "constant"                                  |
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
@@ -74,5 +74,21 @@ file.
 
 COP modes
 -----------------------------------------------------------
+There are several ways to set the COP of the heat pumps.
 
+In the mode "constant", a constant, user-defined COP is used.
+
+In the mode "from_file", a timeseries provided by the user as
+file is used.
+
+In the mode "from_file_adjusted_to_spf", a timeseries provided by
+the user is used but using the demand profile, it is scaled
+such that the SPF reaches a user-defined value.
+
+In the mode "location_based", a COP model taking into account
+many properties of the building stock and location is used. This
+model is described further below.
+
+"location_based" COP mode
+++++++++++++++++++++++++++++++++++++++++++++
 
