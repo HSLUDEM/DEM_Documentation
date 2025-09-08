@@ -55,8 +55,8 @@ file.
 |                               |                 | is scaled s.t. a given value for the seasonal performance factor (SPF)      | 
 |                               |                 | is reached                                                                  | 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
-| cop_timeseries_file_path      | ""              | Path to COP timeseries file for mode "form_file"                            |
-|                               |                 | and "from_file_adjusted_to_spf"                                             | 
+| cop_timeseries_file_path      | ""              | |Path to COP timeseries file for mode "form_file"                          ||
+|                               |                 | | and "from_file_adjusted_to_spf"                                          || 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
 | cop_constant_value            | 3.0             | Constant COP value for COP mode "constant"                                  |
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
