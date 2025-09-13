@@ -1,6 +1,8 @@
 Publications
 ============
 
+U. Schilt, S. Vijayananda, S. Schneeberger, M. Meyer, S. Iyyakkunnel, P. M. Vecsei, and P. Schuetz, *How can a geothermal storage system be optimally integrated into a local district? A case study*, arXiv preprint arXiv:2509.08568, 2025. `doi:10.48550/arXiv.2509.08568 <https://doi.org/10.48550/arXiv.2509.08568>`_
+
 U. Schilt, M. Meyer, S. Schneeberger, and P. Schuetz, *Impact Analysis of Solar PV Integration and Heating System Retrofit: a District-Level Energy System Model*, in *Proceedings of Solar World Congress 2023*, New Delhi, India: International Solar Energy Society, 2023, pp. 1–8. `doi:10.18086/swc.2023.08.06 <https://doi.org/10.18086/swc.2023.08.06>`_
 
 S. Schneeberger, E. Lucas, C. Meister, and P. Schuetz, *Wärmebedarfsschätzung für Wohngebäude*, presented at the 18. Symposium Energieinnovation, TU Graz, Austria, Feb. 2024. [Online]. Available: https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
