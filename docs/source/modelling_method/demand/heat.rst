@@ -4,7 +4,7 @@ Heat Demand
 Space Heating
 --------------------
 
-Annual space-heating demand is calculated using the heat loss coefficient method according to [schneeberger2025]_.
+Annual space-heating demand is calculated using the heat loss coefficient method according to [1]_.
 
 Domestic Hot Water (DHW)
 ------------------------
@@ -14,7 +14,7 @@ Domestic Hot Water (DHW)
 References
 ^^^^^^^^^^^
 
-.. [schneeberger2025] Schneeberger, S., Meister, C., & Schuetz, P. (2025). 
+.. [1] Schneeberger, S., Meister, C., & Schuetz, P. (2025). 
    Estimating the heating energy demand of residential buildings in Switzerland 
    using only public data. *Energy and Buildings*, 116371. 
    https://doi.org/10.1016/j.enbuild.2025.116371
