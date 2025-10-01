@@ -1,6 +1,24 @@
 Introduction
 ============
 
+The District Energy Model (DEM) is a Python-based linear multi-energy system model designed to simulate energy flows at the district scale with hourly resolution. A “district” in this context can refer to anything from a small group of buildings to an entire municipality or city.
+
+DEM combines building-level heat and electricity demand with aggregated energy generation, conversion, and storage technologies at the district level. Unlike many other tools, it does not rely on manual parameterization. Instead, the model automatically configures itself using publicly available data on buildings, energy resources, and existing energy systems. This allows simulations to be performed for any Swiss municipality without requiring additional local data.
+
+The typical workflow consists of:
+
+Automatic collection of climate, building, and technology data for the selected district or buildings.
+
+User specification of the technology scope (e.g., generation, conversion, storage) and adjustment of key parameters such as efficiency or capacity.
+
+Scenario definition.
+
+Simulation of energy balances.
+
+Generation of outputs for analysis.
+
+In addition to simulation, DEM also supports optimization of design and operation.
+
 
 .. image:: images/dem_schematic_part_1.png
 
