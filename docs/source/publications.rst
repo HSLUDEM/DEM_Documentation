@@ -10,12 +10,19 @@ Schilt, U., Meyer, M., Schneeberger, S., & Schuetz, P. (2023). Impact analysis o
 
 Schilt, U., Meyer, M., Schneeberger, S., & Schuetz, P. (2023). Why simply ramping up solar PV is insufficient. ResearchGate. https://doi.org/10.13140/RG.2.2.25421.41449/1
 
-Schilt, U., Vijayananda, S., Schneeberger, S., Meyer, M., Iyyakkunnel, S., Vecsei, P. M., & Schuetz, P. (2025). How can a geothermal storage system be optimally integrated into a local district? A case study. arXiv preprint arXiv:2509.08568. https://doi.org/10.48550/arXiv.2509.08568
+Schilt, U., Vijayananda, S., Schneeberger, S., Meyer, M., Iyyakkunnel, S., Vecsei, P. M., & Schuetz, P. (2025). How can a geothermal storage system be optimally integrated into a local district? A case study. arXiv preprint arXiv:2509.08568. <https://doi.org/10.48550/arXiv.2509.08568>
 
 Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024, February). Wärmebedarfsschätzung für Wohngebäude. In Proceedings of the 18th Symposium Energieinnovation. TU Graz, Austria. https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
 
 Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. *Energy and Buildings*, 116371. https://doi.org/10.1016/j.enbuild.2025.116371
 
+
+
+
+
+
+
+.. superseded:
 
 .. U. Schilt, S. Vijayananda, S. Schneeberger, M. Meyer, S. Iyyakkunnel, P. M. Vecsei, and P. Schuetz, *How can a geothermal storage system be optimally integrated into a local district? A case study*, arXiv preprint arXiv:2509.08568, 2025. `doi:10.48550/arXiv.2509.08568 <https://doi.org/10.48550/arXiv.2509.08568>`_
 
