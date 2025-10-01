@@ -7,17 +7,17 @@ DEM combines building-level heat and electricity demand with aggregated energy g
 
 The typical workflow consists of:
 
-Automatic collection of climate, building, and technology data for the selected district or buildings.
+(1) Automatic collection of climate, building, and technology data for the selected district or buildings.
 
-User specification of the technology scope (e.g., generation, conversion, storage) and adjustment of key parameters such as efficiency or capacity.
+(2) User specification of the technology scope (e.g., generation, conversion, storage) and adjustment of key parameters such as efficiency or capacity.
 
-Scenario definition.
+(3) Scenario definition.
 
-Simulation of energy balances.
+(4) Simlation of energy balances.
 
-Generation of outputs for analysis.
+(5) Generation of outputs for analysis.
 
-In addition to simulation, DEM also supports optimization of design and operation.
+In addition to simulation, DEM also supports MILP optimization of design and operation.
 
 
 .. image:: images/dem_schematic_part_1.png
