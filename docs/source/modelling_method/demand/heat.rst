@@ -16,6 +16,7 @@ References
 
 Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. *Energy and Buildings*, 116371. https://doi.org/10.1016/j.enbuild.2025.116371
 
-S. Schneeberger, E. Lucas, C. Meister, and P. Schuetz, *Wärmebedarfsschätzung für Wohngebäude*, presented at the 18. Symposium Energieinnovation, TU Graz, Austria, Feb. 2024. [Online]. Available: https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
+.. S. Schneeberger, E. Lucas, C. Meister, and P. Schuetz, *Wärmebedarfsschätzung für Wohngebäude*, presented at the 18. Symposium Energieinnovation, TU Graz, Austria, Feb. 2024. [Online]. Available: https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
 
+Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024). Wärmebedarfsschätzung für Wohngebäude. *Proceedings of the 18th Symposium Energieinnovation, TU Graz, Austria*. https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
 
