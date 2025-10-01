@@ -9,7 +9,7 @@ Annual space-heating demand is calculated using the heat loss coefficient method
 
 Industry and Services
 --------------------
-The space heating demand for industry and services is computed with the standard factor method (Schneeberger et al., 2025), which is based on the framework of the Sonnendach.ch project (Swiss Federal Office of Energy, 2023). The calculation uses using space heating energy performance indicator by building archetype, building attributes from the RBD (Federal Statistical Office, 2025), and mean annual ambient temperature from the Meteostat Python library. As with residential buildings, a regional correction factor is applied only where measured data are available, annual demand is downscaled to hourly values using normalized HDH profiles (Schneeberger et al., 2025), and the hourly building demands are aggregated to district- or municipality-level totals.
+The space heating demand for industry and services is computed with the standard factor method (Schneeberger et al., 2025), which is based on the framework of the Sonnendach.ch project (Swiss Federal Office of Energy, 2023). The calculation uses space heating energy performance indicator by building archetype, building attributes from the RBD (Federal Statistical Office, 2025), and mean annual ambient temperature from the Meteostat Python library. As with residential buildings, a regional correction factor is applied only where measured data are available. Annual demand is downscaled to hourly values using normalized HDH profiles (Schneeberger et al., 2025), and the hourly building demands are aggregated to district- or municipality-level totals.
 
 
 Domestic Hot Water (DHW)
@@ -27,7 +27,7 @@ Arpagaus, C., Vetsch, B., & Bertsch, S. (2016, November 14). *Domestic hot water
 
 Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
 
-Pongelli, A., Priore, Y. D., Bacher, J. P., & Jusselme, T. (2023). Definition of building archetypes based on the Swiss energy performance certificates database. *Buildings, 13*(1), 40. `https://doi.org/10.3390/buildings13010040 <https://doi.org/10.3390/buildings13010040>`_
+Pongelli, A., Priore, Y. D., Bacher, J. P., & Jusselme, T. (2023). Definition of building archetypes based on the Swiss energy performance certificates database. *Buildings, 13* (1), 40. `https://doi.org/10.3390/buildings13010040 <https://doi.org/10.3390/buildings13010040>`_
 
 Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. *Energy and Buildings*, 116371. https://doi.org/10.1016/j.enbuild.2025.116371
 
