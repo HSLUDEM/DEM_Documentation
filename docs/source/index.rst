@@ -12,9 +12,11 @@ Check out the :doc:`introduction` section for further information.
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
 
 A public platform for municipal energy planning in Switzerland based on the DEM has also been developed and can be accessed here:
+
 `RECOMMENDER TOOL <https://prototype.recommendertool.ch/>`_
 
 .. image:: images/geo_plot_renewable_s0.svg
+   :scale: 120
 
 
 Documentation
