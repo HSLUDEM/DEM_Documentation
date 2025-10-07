@@ -16,7 +16,7 @@ A public platform for municipal energy planning in Switzerland based on the DEM 
 `RECOMMENDER TOOL <https://prototype.recommendertool.ch/>`_
 
 .. image:: images/geo_plot_renewable_s0.svg
-   :scale: 120
+   :scale: 100
 
 
 Documentation
