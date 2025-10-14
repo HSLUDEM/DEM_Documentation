@@ -10,5 +10,6 @@ This section describes the model architecture of DEM.
    directory_structure
    installation
    run_model
-   input
+   input_files
+   input_parameters
    output

@@ -1,0 +1,7 @@
+File name,df_master_sim
+Format,.feather
+Directory,data/master_data/simulation_data
+File description,Master file containing information about each individual building. Information about the whole district is extractred from this file by means of aggregation. The file can contain information about multiple district. In a simulation, only the information about buildings for the specified district will be extracted. Each building has a unique identification number (column 0, EGID) and belongs to a municipality identified by a number (column 4, GGDENR). Custom district can also be analysed by specifying (via EGID) which buildings belong to the district. For Switzerland, data in columns 0 to 15 is extracted from the Federal Register of Buildings and Dwellings (RBD) [REF]. The naming convention of these columns has been adopted accordingly.
+Index,Numberic (integer), 0 to X, where X is the number buildings contained in the file.
+Number of rows,According to number of buildings.
+Number of columns,49

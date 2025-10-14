@@ -1,5 +1,5 @@
-Model Input
-===========
+Model Input Parameters
+======================
 
 Meta Data
 ---------
