@@ -16,8 +16,15 @@ Master file containing information about each individual building. Information a
 	      :widths: auto
 	      :header-rows: 1
 
+Meta File
+-----------
+
+abc
+
+Profiles File
+-------------
 
 References
-^^^^^^^^^^^
+----------
 
 Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
