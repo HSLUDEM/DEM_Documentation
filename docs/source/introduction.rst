@@ -13,7 +13,7 @@ The typical workflow consists of:
 
 (3) Scenario definition.
 
-(4) Simlation of energy balances.
+(4) Simulation of energy balances.
 
 (5) Generation of outputs for analysis.
 

@@ -8,14 +8,14 @@ District Energy Model (DEM)
 Multi-energy system model for mixed-use districts and communities developped at `HSLU CC TES <https://www.hslu.ch/cctes>`_ in the framework of the `SWEET EDGE <https://www.sweet-edge.ch/en/work-packages/wp-1>`_ project.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: images/geo_plot_renewable_s0.svg
+
 Check out the :doc:`introduction` section for further information.
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
 
 A public platform for municipal energy planning in Switzerland based on the DEM has also been developed and can be accessed here:
 
 `RECOMMENDER TOOL <https://prototype.recommendertool.ch/>`_
-
-.. image:: images/geo_plot_renewable_s0.svg
 
 
 Documentation
