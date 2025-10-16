@@ -1,0 +1,6 @@
+"File name","[com_nr], e.g. ""2762"" for municipality of Allschwil"
+"Format",".feather"
+"Directory","./data/weather_data"
+"Index","datetime format; "
+"Number of rows","8760"
+"Number of columns","according to number of captured years"
