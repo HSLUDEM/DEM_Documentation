@@ -189,8 +189,7 @@ EV demand profiles
 *in progress*
 
 
-References
-^^^^^^^^^^^
+.. rubric:: References
 
 Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. https://arrow.apache.org/docs/python/feather.html
 
