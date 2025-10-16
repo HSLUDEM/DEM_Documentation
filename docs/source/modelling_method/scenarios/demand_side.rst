@@ -42,7 +42,7 @@ The relevant parameters for the climate adjustment are
 +--------------+----------------+------------------------------------------------------------------------------------------------------+
 
 
-The climate data is based on the CH2018 scenarios.
+The climate data is based on the CH2018 scenarios (CH2018 Project Team, 2018).
 
 Renovation and heat generator replacement
 ---------------------------------------
@@ -130,5 +130,7 @@ generators.
 
 References
 ^^^^^^^^^^^
+
+CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. doi: https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0
 
 Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.

@@ -95,7 +95,7 @@ File containing hourly profiles across one year (i.e., 8760 hours) for various g
 
 Temperatures
 ------------
-File containing hourly temperature profiles across one year (i.e., 8760 hours) for different years. One file must be provided per district, where the temperatures are spatial averages across the district. Past years contain historic data from monitoring stations, whereas future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
+File containing hourly temperature data across one year (i.e., 8760 hours) for different years. One file must be provided per district, where the temperatures are spatial averages across the district. Past years contain historic data from monitoring stations, whereas future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
 
 .. csv-table::
 	      :file: input_files_csv/temperature_file_info.csv
