@@ -2,6 +2,53 @@ Model Input Files
 ================
 
 Timeseries data, as well as information about buildings and districts is provided to DEM via input files. Most of the files are in feather format (Apache Software Foudnation, 2025). This section describes the required files, it's content, and required formats. Even though the files are required for the simulation to run, its entries can be set to 0 if the information is not relevant to a specific case (e.g. wind power file if no wind power is considered in the simulation).
+All the input files must be placed in the ``data`` directory using the provided directory structure (see below).
+
+.. code-block:: text
+
+    District_Energy_Model/
+    ├── config/
+    │   ├── ...
+    │   └── ...
+    ├── data/
+    │   ├── community_data/
+    │   │   └── ...
+    │   ├── electricity_demand/
+    │   │   └── ...
+    │   ├── electricity_mix_national/
+    │   │   └── electricity_mix.feather
+    │   ├── heat_demand/
+    │   │   └── DHW_Profile.feather
+    │   ├── master_data/
+    │   │   ├── HDD_and_HDH_profiles/
+    │   │   │   ├── HDD_Municipality_2023.feather
+    │   │   │   ├── HDD_Municipality_2030.feather
+    │   │   │   ├── HDD_Municipality_2040.feather
+    │   │   │   ├── HDD_Municipality_2050.feather
+    │   │   │   └── ...
+    │   │   └── simulation_data/
+    │   │       ├── df_master_sim.feather
+    │   │       ├── meat_file_2.feather
+    │   │       ├── simulation_profiles_file.feather
+    │   │       └── ...
+    │   ├── tech_wind_power/
+    │   │   ├── profiles/
+    │   │   │   └── ...
+    │   │   └── p_installed_kW_wind_power.feather
+    │   └── weather_data/
+    │       └── com_files/
+    │           └── ...
+    ├── doc/
+    │   ├── ...
+    │   └── ...
+    ├── src/
+    │   ├── ...
+    │   └── ...
+    ├── LICENSE.txt
+    └── README.md
+
+
+
 
 Master file
 -----------
@@ -33,7 +80,8 @@ File containing information about districts (one row per district). Some of the 
 	      :header-rows: 1
 
 Simulation profiles
--------------
+-------------------
+File containing hourly profiles across one year (i.e., 8760 hours) for various generation and demand metrics on national and regional level.
 
 .. csv-table::
 	      :file: input_files_csv/simulation_profiles_file_info.csv
@@ -47,6 +95,7 @@ Simulation profiles
 
 Temperatures
 ------------
+File containing hourly temperature profiles across one year (i.e., 8760 hours) for different years. One file must be provided per district, where the temperatures are spatial averages across the district. Past years contain historic data from monitoring stations, whereas future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
 
 .. csv-table::
 	      :file: input_files_csv/temperature_file_info.csv
