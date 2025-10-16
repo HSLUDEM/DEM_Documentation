@@ -1,8 +1,12 @@
 Model Input Files
-================
+=================
 
-Timeseries data, as well as information about buildings and districts is provided to DEM via input files. Most of the files are in feather format (Apache Software Foudnation, 2025). This section describes the required files, it's content, and required formats. Even though the files are required for the simulation to run, its entries can be set to 0 if the information is not relevant to a specific case (e.g. wind power file if no wind power is considered in the simulation).
-All the input files must be placed in the ``data`` directory using the provided directory structure (see below).
+Time series data, as well as information about buildings and districts, are provided to the District Energy Model (DEM) through input files. Most of these files are stored in Feather format (Apache Software Foundation, 2025).  
+
+This section describes the required input files, their contents, and the expected data formats. Although all files must be present for the simulation to run, their entries can be set to zero if a dataset is not relevant to a specific case (for example, the wind power file if wind generation is excluded from the scenario).  
+
+All input files must be located within the ``data`` directory following the predefined directory structure (see below).
+
 
 .. code-block:: text
 
@@ -48,12 +52,15 @@ All the input files must be placed in the ``data`` directory using the provided 
     └── README.md
 
 
-
-
-Master file
+Master File
 -----------
 
-File containing information about each individual building (one row per building). Information about the whole district is extractred from this file by means of aggregation. The file can contain information about multiple district. In a simulation, only the information about buildings for the specified district will be extracted. Each building has a unique identification number (column 0: EGID) and belongs to a municipality identified by a number (column 4: GGDENR). Custom district can also be analysed by specifying (via EGID) which buildings belong to the districts. For Switzerland, data in columns 0 to 15 is extracted from the Federal Register of Buildings and Dwellings (RBD) (Federal Statistical Office, 2025). The naming convention of these columns has been adopted accordingly.
+This file contains information about each individual building, with one row per building. District-level information is derived from this file through aggregation. The file may include data for multiple districts; during a simulation, only the buildings belonging to the specified district are selected.  
+
+Each building is identified by a unique identification number (column 0: ``EGID``) and assigned to a municipality represented by a numerical code (column 4: ``GGDENR``). Custom districts can also be analyzed by specifying the buildings included in the district via their ``EGID`` values.  
+
+For Switzerland, data in columns 0 to 15 is sourced from the *Federal Register of Buildings and Dwellings (RBD)* (Federal Statistical Office, 2025), and the corresponding column naming conventions have been adopted accordingly.
+
 
 .. csv-table::
 	      :file: input_files_csv/master_file_info.csv
@@ -67,7 +74,10 @@ File containing information about each individual building (one row per building
 
 Meta file
 -----------
-File containing information about districts (one row per district). Some of the data can be taken as an aggregate from the Master File or vice verca. The number of the district (column 1: GGDENR) must match with the respective buildings in the Master File.
+This file contains information about each district, with one row per district. Some of the data can be derived as an aggregate from the *Master File*.  
+
+The district identification number (column 1: ``GGDENR``) must match the corresponding municipality code of the buildings listed in the *Master File*.
+
 
 .. csv-table::
 	      :file: input_files_csv/meta_file_2_info.csv
@@ -81,7 +91,8 @@ File containing information about districts (one row per district). Some of the 
 
 Simulation profiles
 -------------------
-File containing hourly profiles across one year (i.e., 8760 hours) for various generation and demand metrics on national and regional level.
+This file contains hourly profiles for an entire year (i.e., 8760 hours) representing various generation and demand metrics at national and regional levels.  
+
 
 .. csv-table::
 	      :file: input_files_csv/simulation_profiles_file_info.csv
@@ -95,7 +106,10 @@ File containing hourly profiles across one year (i.e., 8760 hours) for various g
 
 Temperatures
 ------------
-File containing hourly temperature data across one year (i.e., 8760 hours) for different years. One file must be provided per district, where the temperatures are spatial averages across the district. Past years contain historic data from monitoring stations, whereas future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
+This file contains hourly temperature data for an entire year (i.e., 8760 hours) across multiple years (i.e., one column per year). One file must be provided per district, where the temperature values represent spatial averages over the district area.
+
+Past years include historical measurements from monitoring stations, while future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
+
 
 .. csv-table::
 	      :file: input_files_csv/temperature_file_info.csv
