@@ -84,6 +84,36 @@ Wind power capacity
 	      :widths: auto
 	      :header-rows: 1
 
+Wind power profiles
+-------------------
+
+*in progress*
+
+National electricity mix
+------------------------
+
+.. csv-table::
+	      :file: input_files_csv/electricity_mix_file_info.csv
+	      :widths: auto
+	      :header-rows: 0
+		  
+.. csv-table::
+	      :file: input_files_csv/electricity_mix_file_columns.csv
+	      :widths: auto
+	      :header-rows: 1
+
+HDD profiles
+------------
+
+.. csv-table::
+	      :file: input_files_csv/hdd_file_info.csv
+	      :widths: auto
+	      :header-rows: 0
+		  
+.. csv-table::
+	      :file: input_files_csv/hdd_file_columns.csv
+	      :widths: auto
+	      :header-rows: 1
 
 References
 ----------
