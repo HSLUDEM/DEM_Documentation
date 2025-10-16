@@ -106,7 +106,7 @@ This file contains hourly profiles for an entire year (i.e., 8760 hours) represe
 
 Temperatures
 ------------
-This file contains hourly temperature data for an entire year (i.e., 8760 hours) across multiple years (i.e., one column per year). One file must be provided per district, where the temperature values represent spatial averages over the district area.
+These files contains hourly temperature data for an entire year (i.e., 8760 hours) across multiple years (i.e., one column per year). One file must be provided per district, where the temperature values represent spatial averages over the district area.
 
 Past years include historical measurements from monitoring stations, while future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
 
@@ -123,6 +123,7 @@ Past years include historical measurements from monitoring stations, while futur
 
 DWH profile
 -----------
+This file contains an hourly domestic hot water (DHW) demand profile for an entire year (i.e., 8760 hours). The profile is normalised to 1 and can be scaled according to the annual DHW demand of the district or building.
 
 .. csv-table::
 	      :file: input_files_csv/dhw_profile_file_info.csv
@@ -136,6 +137,7 @@ DWH profile
 
 Wind power capacity
 -------------------
+This file contains the currently installed wind power capacity (in kW) for each municipality.
 
 .. csv-table::
 	      :file: input_files_csv/wind_power_cap_file_info.csv
@@ -149,11 +151,14 @@ Wind power capacity
 
 Wind power profiles
 -------------------
+These files contain normalised hourly wind power generation profiles aggregated at the municipal level. For each municipality, two files are provided: one representing profiles optimised for maximum annual generation, and another optimised for maximum winter generation.
 
 *in progress*
 
 National electricity mix
 ------------------------
+This file contains hourly profiles of the national electricity mix. The data include the hourly contribution of each generation technology and are used to create normalised profiles of national electricity generation technologies.
+
 
 .. csv-table::
 	      :file: input_files_csv/electricity_mix_file_info.csv
@@ -165,8 +170,9 @@ National electricity mix
 	      :widths: auto
 	      :header-rows: 1
 
-HDD profiles
+HDD Profiles
 ------------
+These files contain the number of heating degree days (HDD) per year for each municipality, calculated for base temperatures of 12 °C and 15 °C. Each file corresponds to one simulation year, and each row represents a single municipality.
 
 .. csv-table::
 	      :file: input_files_csv/hdd_file_info.csv
@@ -182,8 +188,9 @@ EV demand profiles
 ------------------
 *in progress*
 
+
 References
-----------
+^^^^^^^^^^^
 
 Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. https://arrow.apache.org/docs/python/feather.html
 
