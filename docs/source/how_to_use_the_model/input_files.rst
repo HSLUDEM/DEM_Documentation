@@ -121,7 +121,7 @@ Past years include historical measurements from monitoring stations, while futur
 	      :widths: auto
 	      :header-rows: 1
 
-DWH profile
+DHW profile
 -----------
 This file contains an hourly domestic hot water (DHW) demand profile for an entire year (i.e., 8760 hours). The profile is normalised to 1 and can be scaled according to the annual DHW demand of the district or building.
 
