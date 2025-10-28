@@ -1,6 +1,8 @@
 Directory Structure
 ====================
 
+.. code-block:: text
+
     District_Energy_Model/
     ├── config/
     │   ├── ...
