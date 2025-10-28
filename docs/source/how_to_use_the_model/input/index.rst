@@ -1,4 +1,4 @@
-How to Use the Model
+Model Input
 ===================
 
 This section describes the model architecture of DEM and how to run a simulation.
@@ -6,9 +6,5 @@ This section describes the model architecture of DEM and how to run a simulation
 .. toctree::
    :maxdepth: 1
 
-   nomenclature
-   directory_structure
-   installation
-   run_model
-   input/index
-   output
+   input_files
+   input_parameters
