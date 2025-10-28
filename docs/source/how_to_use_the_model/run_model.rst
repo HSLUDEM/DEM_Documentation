@@ -36,7 +36,8 @@ Place all the required data files in the respective directories as described her
 
 .. note::
 
-   A complete data package containing data files for Switzerland for simulation with DEM is in preparation and will be published soon. This way, the modeller will not have to create their own data sets. In the interim, reach out to us (:doc:`../contact`) for a data exchange.
+   A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:ref:`contact`) to request access to the data.
+
 
 
 **Step 3: Configuation files**
