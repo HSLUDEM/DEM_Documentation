@@ -394,3 +394,9 @@ Top key: other
 			:file: input_csv/other.csv
 			:widths: auto
 			:header-rows: 1
+
+
+References
+-----------
+
+Ben-Kiki, Oren, Clark, Clark Evans, and Ingy döt Net. *YAML Ain’t Markup Language (YAML™) Version 1.2 (3rd Edition)*. 2009.
