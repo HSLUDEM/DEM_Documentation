@@ -1,7 +1,7 @@
 Model Input - Configuration Files
 =================================
 
-Configuration files are provided to the model in YAML format and must be located in the ``data/config/input_files`` directory. Only parameters that deviate from the default values need to be specified. If no configuration files are provided, the model will run entirely using its built-in standard values.
+Configuration files are provided to the model in YAML format and must be located in the ``config/input_files`` directory. Only parameters that deviate from the default values need to be specified. If no configuration files are provided, the model will run entirely using its built-in standard values.
 
 Supported configuration files:
 
