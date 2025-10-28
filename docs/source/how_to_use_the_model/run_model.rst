@@ -27,7 +27,7 @@ The :doc:`directory_structure` should be kept as cloned from GitHub.
 
 **Step 2: Conda environment**
 
-You will find a YAML file in the ``config`` directory named ``dem_conda_environment_X.yml`` or similar. Using this file, create a new Conda environment. Instructions on how to create a Conda environment from file can be found `here <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_. If you're not familier with Conda, take a look at this `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
+You will find a YAML file in the ``config`` directory named ``dem_conda_environment_X.yml`` or similar. Using this file, create a new Conda environment. Instructions on how to create a Conda environment from file can be found `here <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_. If you're not familiar with Conda, take a look at this `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
 
 
 **Step 3: Data files**
@@ -36,7 +36,7 @@ Place all the required data files in the respective directories as described her
 
 .. note::
 
-   A complete data package containing data files for Switzerland for simulation with DEM is in preparation and will be published soon. This way, the modeller will not have to create their own data sets.
+   A complete data package containing data files for Switzerland for simulation with DEM is in preparation and will be published soon. This way, the modeller will not have to create their own data sets. In the interim, reach out to us (:doc:`../contact`) for a data exchange.
 
 
 **Step 3: Configuation files**
