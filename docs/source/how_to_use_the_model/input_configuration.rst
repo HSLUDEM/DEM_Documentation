@@ -29,7 +29,7 @@ Below are example excerpts from two configuration files:
 ----
 
 .. image:: images/technologies_yaml.png
-   :scale: 45%
+   :scale: 50%
 
 
 Meta Data
