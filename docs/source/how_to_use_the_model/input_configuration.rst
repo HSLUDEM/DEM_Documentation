@@ -26,8 +26,9 @@ Below are example excerpts from two configuration files:
 .. image:: images/scenarios_yaml.png
    :scale: 50%
 
+
 .. image:: images/technologies_yaml.png
-   :scale: 40%
+   :scale: 45%
 
 
 Meta Data
