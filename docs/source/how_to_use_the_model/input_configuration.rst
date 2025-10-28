@@ -24,13 +24,15 @@ All files define parameter names as top-level keys. The exception is technologie
 Below are example excerpts from two configuration files:
 
 .. image:: images/scenarios_yaml.png
+   :scale: 50%
 
 .. image:: images/technologies_yaml.png
+   :scale: 40%
 
 
 Meta Data
 ---------
-Configuration file: meta_data.yaml
+Configuration file: ``meta_data.yaml``
 
 .. csv-table::
 	      :file: input_csv/meta_data.csv
@@ -39,7 +41,7 @@ Configuration file: meta_data.yaml
 
 Scenarios
 ---------
-Configuration file: scenarios.yaml
+Configuration file: ``scenarios.yaml``
 
 .. csv-table::
 			:file: input_csv/scenarios.csv
@@ -49,7 +51,7 @@ Configuration file: scenarios.yaml
 
 Optimisation
 ---------
-Configuration file: optimisation.yaml
+Configuration file: ``optimisation.yaml``
 
 .. csv-table::
 			:file: input_csv/optimisation.csv
@@ -59,7 +61,7 @@ Configuration file: optimisation.yaml
 
 Simulation
 ---------
-Configuration file: simulation.yaml
+Configuration file: ``simulation.yaml``
 
 .. csv-table::
 			:file: input_csv/simulation.csv
@@ -69,7 +71,7 @@ Configuration file: simulation.yaml
 
 Demand Side
 ---------
-Configuration file: demand_side.yaml
+Configuration file: ``demand_side.yaml``
 
 .. csv-table::
 			:file: input_csv/demand_side.csv
@@ -79,7 +81,7 @@ Configuration file: demand_side.yaml
 
 Supply
 ---------
-Configuration file: supply.yaml
+Configuration file: ``supply.yaml``
 
 .. csv-table::
 			:file: input_csv/supply.csv
@@ -90,7 +92,7 @@ Configuration file: supply.yaml
 Technologies
 ---------
 
-Configuration file: technologies.yaml
+Configuration file: ``technologies.yaml``
 
 Heat Pump
 ^^^^^^^^^^
