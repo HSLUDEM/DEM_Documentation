@@ -1,5 +1,7 @@
-Model Input Parameters
-======================
+Model Input - Configuration Files
+=================================
+
+Configuration files are passed to the model as YAML files. Files are only required for parameters that will be changed from the standard values. If no configuration files are passed to the model, the simulation will run with the standard parameter values.
 
 Meta Data
 ---------

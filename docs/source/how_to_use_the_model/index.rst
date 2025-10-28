@@ -10,5 +10,6 @@ This section describes the model architecture of DEM and how to run a simulation
    directory_structure
    installation
    run_model
-   input/index
+   input_configuration
+   input_data
    output
