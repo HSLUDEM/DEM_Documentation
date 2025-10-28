@@ -7,7 +7,7 @@ This section describes the required files, their contents, and the expected data
 
 .. note::
 
-   A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:ref:`contact`) to request access to the data.
+   A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
 
 All input files must be located within the ``data`` directory following the predefined directory structure (see below).
 
