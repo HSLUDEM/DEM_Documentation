@@ -32,7 +32,7 @@ Directory Structure
     │   │   │   └── ...
     │   │   └── simulation_data/
     │   │       ├── df_master_sim.feather
-    │   │       ├── meat_file_2.feather
+    │   │       ├── meta_file_2.feather
     │   │       ├── simulation_profiles_file.feather
     │   │       └── ...
     │   ├── tech_wind_power/
