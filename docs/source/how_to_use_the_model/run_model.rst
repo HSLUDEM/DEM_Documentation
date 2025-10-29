@@ -28,8 +28,7 @@ Keep the directory structure exactly as cloned. See :doc:`directory_structure` f
 **Step 2: Create the Conda Environment**
 
 In the config directory, locate the file named ``dem_conda_environment.yml`` (or similar).
-Create a new Conda environment from this file. Refer to the `Conda documentation <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_ Conda for instructions.
-If you are unfamiliar with Conda, consult the `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
+Create a new Conda environment from this file. Refer to the `Conda documentation <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_ for instructions. If you are unfamiliar with Conda, consult the `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
 
 
 **Step 3: Prepare Data Files**
@@ -44,7 +43,7 @@ Place the required input data in the directories described in :doc:`input_data`.
 
 **Step 3: Configuation Files**
 
-The model can run without configuration files, in which case default settings and parameter values are applied. The default scenario performs a basic simulation without optimisation or additional scenarios.
+The model can run without configuration files, in which case default settings and parameter values are applied. The default scenario performs a basic simulation without optimisation or additional measures.
 To modify model parameters, create configuration files as described in :doc:`input_configuration` and place them in the ``config/input_files`` directory.
 
 
