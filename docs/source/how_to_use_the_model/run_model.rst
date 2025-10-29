@@ -5,51 +5,59 @@ Running a Simulation
 Run from command-line tool
 -----------
 
-*in progress*
+*Work in progress*
 
 
 Run from source code
 --------------------
 
-The model can be run directly from the Python source code found on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. For this purpose, you must install Python along with the respective packages. You can follow these steps:
+You can run the District Energy Model directly from the Python source code available on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. Python and the required packages must be installed beforehand.
 
 
-**Step 1: Clone repository**
+**Step 1: Clone the Repository**
 
-Clone the District_Energy_Model GitHub repository to a local directory:
+Clone the GitHub repository to a local directory:
 
 .. code-block:: shell
 
     git clone https://github.com/HSLUDEM/District_Energy_Model.git
 
-The :doc:`directory_structure` should be kept as cloned from GitHub.
+Keep the directory structure exactly as cloned. See :doc:`directory_structure` for details.
 
 
-**Step 2: Conda environment**
+**Step 2: Create the Conda Environment**
 
-You will find a YAML file in the ``config`` directory named ``dem_conda_environment_X.yml`` or similar. Using this file, create a new Conda environment. Instructions on how to create a Conda environment from file can be found `here <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_. If you're not familiar with Conda, take a look at this `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
+In the config directory, locate the file named ``dem_conda_environment.yml`` (or similar).
+Create a new Conda environment from this file. Refer to the `Conda documentation <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file>`_ Conda for instructions.
+If you are unfamiliar with Conda, consult the `user guide <https://docs.conda.io/projects/conda/en/latest/user-guide/index.html>`_.
 
 
-**Step 3: Data files**
+**Step 3: Prepare Data Files**
 
-Place all the required data files in the respective directories as described here: :doc:`input_data`.
+Place the required input data in the directories described in :doc:`input_data`.
 
 .. note::
 
-   A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
+   A complete Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
 
 
 
-**Step 3: Configuation files**
+**Step 3: Configuation Files**
 
-The model doesn't need any configuration files to run a simulation. In this case, standard values will be used. The standard scenario carries out a simulation without optimisation and without any additional scenario. To change parameters in the model, configuration files must be created as described here: :doc:`input_configuration`. These files must be placed in the ``config/input_files`` directory.
+The model can run without configuration files, in which case default settings and parameter values are applied. The default scenario performs a basic simulation without optimisation or additional scenarios.
+To modify model parameters, create configuration files as described in :doc:`input_configuration` and place them in the ``config/input_files`` directory.
 
-**Step 4: Run simulation**
 
-To start a simulation, the Python script ``src/run_dem.py`` must be executed. This can be done via an IDE (e.d., Spyder, Visual Studio, etc...) or from the terminal.
+**Step 4: Run the Simulation**
 
-**Step 5: Save results**
+Execute the Python script ``src/run_dem.py`` either:
 
-The results (various files) will be save automatically to the specified directory. More information about the model output can be found here: :doc:`output`.
+- from an IDE (e.g., Spyder, Visual Studio Code), or
 
+- from a terminal window.
+
+
+**Step 5: Retrieve Results**
+
+Simulation results are saved automatically to the specified output directory. See :doc:`output` for details on output files and structure.
 
