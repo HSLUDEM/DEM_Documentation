@@ -3,15 +3,18 @@ Model Input - Configuration Files
 
 Configuration files are provided to the model in YAML format and must be located in the ``config/input_files`` directory. The only file required is ``simluation.yaml``. For the other files, only parameters that deviate from the default values need to be specified. If no configuration files are provided other than ``simluation.yaml``, the model will run entirely using its built-in standard values.
 
-Supported configuration files:
+Required configuration file:
+
+- ``simulation.yaml``
+
+
+Optional configuration files:
 
 - ``meta_data.yaml``
 
 - ``scenarios.yaml``
 
 - ``optimisation.yaml``
-
-- ``simulation.yaml`` (required!)
 
 - ``demand_side.yaml``
 

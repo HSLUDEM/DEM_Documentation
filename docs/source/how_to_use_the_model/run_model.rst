@@ -58,5 +58,5 @@ Execute the Python script ``src/run_dem.py`` either:
 
 **Step 5: Retrieve Results**
 
-Simulation results are saved automatically to the specified output directory. See :doc:`output` for details on output files and structure.
+Simulation results are saved automatically to the output directory specified in the ``simulation.yaml`` configuration file (:doc:`input_configuration`). See :doc:`output` for details on output files and structure.
 
