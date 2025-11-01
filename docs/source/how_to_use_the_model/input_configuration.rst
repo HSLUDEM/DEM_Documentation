@@ -35,6 +35,16 @@ Below are example excerpts from two configuration files:
    :scale: 50%
 
 
+Simulation
+---------
+Configuration file: ``simulation.yaml``
+
+.. csv-table::
+			:file: input_csv/simulation.csv
+			:widths: auto
+			:header-rows: 1
+
+
 Meta Data
 ---------
 Configuration file: ``meta_data.yaml``
@@ -60,16 +70,6 @@ Configuration file: ``optimisation.yaml``
 
 .. csv-table::
 			:file: input_csv/optimisation.csv
-			:widths: auto
-			:header-rows: 1
-
-
-Simulation
----------
-Configuration file: ``simulation.yaml``
-
-.. csv-table::
-			:file: input_csv/simulation.csv
 			:widths: auto
 			:header-rows: 1
 
