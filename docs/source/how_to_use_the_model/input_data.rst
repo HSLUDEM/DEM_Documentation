@@ -36,7 +36,7 @@ All input files must be located within the ``data`` directory following the pred
     │   │   │   └── ...
     │   │   └── simulation_data/
     │   │       ├── df_master_sim.feather
-    │   │       ├── meat_file_2.feather
+    │   │       ├── meta_file_2.feather
     │   │       ├── simulation_profiles_file.feather
     │   │       └── ...
     │   ├── tech_wind_power/
@@ -157,6 +157,8 @@ Wind power profiles
 -------------------
 These files contain normalised hourly wind power generation profiles aggregated at the municipal level. For each municipality, two files are provided: one representing profiles optimised for maximum annual generation, and another optimised for maximum winter generation.
 
+For Switzerland, the Wind-Topo dataset is used (Dujardin and Lehning, 2022a and 2022b).
+
 *in progress*
 
 National electricity mix
@@ -190,6 +192,8 @@ These files contain the number of heating degree days (HDD) per year for each mu
 
 EV demand profiles
 ------------------
+For Switzerland, the dataset by Herrera and Hug (2025a; 2025b) is used to model hourly EV charging demand and daily flexibility.
+
 *in progress*
 
 
@@ -197,5 +201,13 @@ References
 -----------
 
 Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. https://arrow.apache.org/docs/python/feather.html
+
+Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. https://www.doi.org/10.16904/envidat.301.
+
+Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. https://doi.org/10.1002/qj.4265
+
+Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16597426
+
+Herrera, M. P., & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv preprint arXiv:2504.03633. https://doi.org/10.48550/arXiv.2504.03633
 
 Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
