@@ -130,6 +130,16 @@ For the definition of the heating curve construction period, we rely on the
 information sheet "Heizkurve richtig einstellen" by the Swiss Federal Office of Energy 
 (SwissEnergy, 2022).
 
+For air-source heat pumps, the outdoor temperature is used as source temperature.
+For ground-source heat pumps, a simple harmonic function is used as source temperature, 
+with a mean value of 5°C and an amplitude of 3°C, where the lowest point is reached at
+the end of February.
+
+For the domestic hot water, a constant temperature of 55°C is assumed.
+
+The COP is then calculated based on the Carnot efficiency of a perfect 
+heat pump, capping the efficiency at 20. This value is then corrected
+by the quality_factor provided by the user.
 
 
 References
