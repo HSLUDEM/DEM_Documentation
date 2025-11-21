@@ -147,6 +147,13 @@ by the quality_factor provided by the user.
 where temperatures are in kelvin and refer to the condenser (output) and
 evaporator (source) sides of the heat pump.
 
+This efficiency is then different for newly installed HPs than for the 
+existing ones. Usually the existing HPs profit from being in more modern
+buildings, which yields lower heating water temperatures and thereby
+higher efficiencies, but their efficiency is reduced by the age of the 
+existing heat pumps, which have lower device-level efficiencies, and by 
+the fact that new buildings have a higher share of DHW, which is hotter than
+heating water.
 
 References
 ^^^^^^^^^^^
