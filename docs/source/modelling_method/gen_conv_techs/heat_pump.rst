@@ -141,6 +141,12 @@ The COP is then calculated based on the Carnot efficiency of a perfect
 heat pump, capping the efficiency at 20. This value is then corrected
 by the quality_factor provided by the user.
 
+.. math::
+   COP_{Carnot} = \\frac{T_{cond}}{T_{cond} - T_{evap}}
+
+where temperatures are in kelvin and refer to the condenser (output) and
+evaporator (source) sides of the heat pump.
+
 
 References
 ^^^^^^^^^^^
