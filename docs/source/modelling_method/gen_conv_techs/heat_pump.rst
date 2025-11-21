@@ -44,16 +44,16 @@ file.
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
 | only_allow_existing           | False           | If True, only existing heat pumps are allowed to continue to operate.       |
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
-| | cop_mode                     | "location_based"| Method for estimating the COP timeseries.                                   |
-| |                              |                 | Options are: "from_file", "constant",                                       | 
-| |                              |                 | "from_file_adjusted_to_spf", "location_based".                              | 
-| |                              |                 | "location_based" is an intricate algorithm taking into account building     | 
-| |                              |                 | and heat pump properties as well as the local weather (detailed description | 
-| |                              |                 | below). "constant" means that a constant COP is used. "from_file" means     | 
-| |                              |                 | means that a timeseries loaded from a given file is used.                   | 
-| |                              |                 | "from_file_adjusted_to_spf" means that a timeseries loaded form a file is   | 
-| |                              |                 | is scaled s.t. a given value for the seasonal performance factor (SPF)      | 
-| |                              |                 | is reached                                                                  | 
+| | cop_mode                     | "location_based"| |Method for estimating the COP timeseries.                                   |
+| |                              |                 | |Options are: "from_file", "constant",                                       | 
+| |                              |                 | |"from_file_adjusted_to_spf", "location_based".                              | 
+| |                              |                 | |"location_based" is an intricate algorithm taking into account building     | 
+| |                              |                 | |and heat pump properties as well as the local weather (detailed description | 
+| |                              |                 | |below). "constant" means that a constant COP is used. "from_file" means     | 
+| |                              |                 | |means that a timeseries loaded from a given file is used.                   | 
+| |                              |                 | |"from_file_adjusted_to_spf" means that a timeseries loaded form a file is   | 
+| |                              |                 | |is scaled s.t. a given value for the seasonal performance factor (SPF)      | 
+| |                              |                 | |is reached                                                                  | 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+
 | cop_timeseries_file_path      | ""              |Path to COP timeseries file for mode "form_file"                             |
 |                               |                 |and "from_file_adjusted_to_spf"                                              | 
