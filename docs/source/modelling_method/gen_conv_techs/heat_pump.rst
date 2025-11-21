@@ -120,15 +120,25 @@ until reaching 100\% in 2030. The year here is the construction year of the buil
 
 The share of ASHPs is assumed to be 66\% for existing installations (34\% GSHP), 
 while for new installations, 72\% ASHPs and 28\% GSHPs is assumed. These percentages
-are based on the statistics for sold heat pumps by the FWS [source: FWS].
+are based on the statistics for sold heat pumps by the FWS (FWS, 2025).
 For existing installations, this is only used if the heat source is not specified
 in the RBD.
 
-Whether the heat pump already exists is based on the RBD-information.
+Whether the heat pump already exists is based on the RBD-information (FSO, 2025).
 
 For the definition of the heating curve construction period, we rely on the 
-information sheet "BFE-jg"
+information sheet "Heizkurve richtig einstellen" by the Swiss Federal Office of Energy 
+(SwissEnergy, 2022).
 
 
 
+References
+^^^^^^^^^^^
 
+.. alphabetized by first author surname
+
+SwissEnergy (2022, August 29). *Set the heating curve correctly* Federal Office of Energy. https://pubdb.bfe.admin.ch/en/publication/download/9982
+
+FWS (2025). *Jahres-Statistiken & Marktzahlen* FWS Fachvereinigung Wärmepumpen Schweiz. https://www.fws.ch/statistiken/
+
+Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
