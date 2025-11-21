@@ -104,10 +104,31 @@ several properties for space heating
 1. Is the heat dissipator radiator- or underfloor-heating-based
 2. Is the heat pump air-source or ground-source.
 3. Does the heat pump already exist or is it a new device to be installed by the optimizer.
-4. Which building period was the building built in (used for heating curve).
+4. Which heating curve construction period is used.
 
 and for domestic hot water-heating
 
 1. Is the heat pump air-source or ground-source.
 2. Does the heat pump already exist or is it a new device to be installed by the optimizer.
+
+For each building, we assign a construction year. This year is the GBAUJ from the RBD if
+it is defined. Otherwise, the construction period (GBAUP) is used and the central year
+of the construction period is assigned as construction year.
+
+The share of radiators is assumed to be 100\% until 1970. From then on, it rises by 1.66\% per year
+until reaching 100\% in 2030. The year here is the construction year of the building.
+
+The share of ASHPs is assumed to be 66\% for existing installations (34\% GSHP), 
+while for new installations, 72\% ASHPs and 28\% GSHPs is assumed. These percentages
+are based on the statistics for sold heat pumps by the FWS [source: FWS].
+For existing installations, this is only used if the heat source is not specified
+in the RBD.
+
+Whether the heat pump already exists is based on the RBD-information.
+
+For the definition of the heating curve construction period, we rely on the 
+information sheet "BFE-jg"
+
+
+
 
