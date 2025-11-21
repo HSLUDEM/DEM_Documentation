@@ -15,6 +15,8 @@ Electric vehicles and their flexibility
 For electric vehicle (EV) charging demand modelling, see :ref:`electric-vehicles`. Flexibility from EV charging is implemented as defined by Herrera and Hug (2025) and includes lower and upper charging power limits, as well as the daily available flexible energy.
 Flexibility from EV charing is only active in the optimisation scenario.
 
+.. _climate-adjustment:
+
 Climate Adjustment
 ---------------------------------------
 
@@ -40,7 +42,7 @@ The relevant parameters for the climate adjustment are
 +--------------+----------------+------------------------------------------------------------------------------------------------------+
 
 
-The climate data is based on the CH2018 scenarios.
+The climate data is based on the CH2018 scenarios (CH2018 Project Team, 2018).
 
 Renovation and heat generator replacement
 ---------------------------------------
@@ -128,5 +130,7 @@ generators.
 
 References
 ^^^^^^^^^^^
+
+CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. doi: https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0
 
 Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
