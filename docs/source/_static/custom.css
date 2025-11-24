@@ -13,3 +13,19 @@
     word-break: break-word;
     hyphens: auto;
 }
+.wrap-text td:nth-child(1),
+.wrap-text th:nth-child(1) {
+    width: 12em;
+}
+.wrap-text td:nth-child(2),
+.wrap-text th:nth-child(2) {
+    width: 8em;
+}
+.wrap-text td:nth-child(3),
+.wrap-text th:nth-child(3) {
+    width: 8em;
+}
+.wrap-text td:nth-child(4),
+.wrap-text th:nth-child(4) {
+    width: 30em;
+}
