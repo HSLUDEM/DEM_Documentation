@@ -6,7 +6,6 @@ Generation and Conversion Technologies
    :maxdepth: 2
    
    biomass_technologies/index
-   biomass_technologies/biomass
    district_heating
    electric_heater
    gas_boiler
