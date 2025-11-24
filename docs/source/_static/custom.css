@@ -1,4 +1,34 @@
 /* Make the content area wider */
-.wy-nav-content {
+/* .wy-nav-content {
     max-width: 1200px;  /* Increase as desired */
+/*} */
+
+.wrap-text {
+    table-layout: fixed;
+}
+
+.wrap-text td,
+.wrap-text th {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+.wrap-text td:nth-child(1),
+.wrap-text th:nth-child(1) {
+    font-family:'Times New Roman', Times, serif;
+    width: 12em;
+}
+.wrap-text td:nth-child(2),
+.wrap-text th:nth-child(2) {
+    font-family:'Times New Roman', Times, serif;
+    width: 8em;
+}
+.wrap-text td:nth-child(3),
+.wrap-text th:nth-child(3) {
+    width: 8em;
+}
+.wrap-text td:nth-child(4),
+.wrap-text th:nth-child(4) {
+    width: 30em;
 }

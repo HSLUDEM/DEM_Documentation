@@ -6,15 +6,18 @@ Generation and Conversion Technologies
    :maxdepth: 2
    
    biomass_technologies/index
+   
    DHN_technologies/index
-   district_heating
-   electric_heater
+
    gas_boiler
-   grid_supply
-   heat_pump
-   hydro_power
    oil_boiler
-   solar_pv
-   solar_thermal
-   wind_power
    wood_boiler
+   heat_pump
+   electric_heater
+   solar_thermal
+
+   grid_supply
+   hydro_power
+   solar_pv
+   wind_power
+   
