@@ -1,7 +1,8 @@
 /* Make the content area wider */
-.wy-nav-content {
+/* .wy-nav-content {
     max-width: 1200px;  /* Increase as desired */
-}
+/*} */
+
 .wrap-text {
     table-layout: fixed;
 }
