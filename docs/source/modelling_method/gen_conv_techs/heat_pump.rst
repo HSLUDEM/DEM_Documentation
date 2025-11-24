@@ -15,7 +15,7 @@ of the building and the heat pumps. For this, there are plenty of parameters in 
 file.
 
 .. csv-table::
-	      :file: ../how_to_use_the_model/input_csv/heat_pump.csv
+	      :file: ../../how_to_use_the_model/input_csv/heat_pump.csv
 	      :widths: auto
 	      :header-rows: 0
 
