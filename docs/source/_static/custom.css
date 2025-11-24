@@ -2,3 +2,14 @@
 .wy-nav-content {
     max-width: 1200px;  /* Increase as desired */
 }
+.wrap-text {
+    table-layout: fixed;
+}
+
+.wrap-text td,
+.wrap-text th {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
