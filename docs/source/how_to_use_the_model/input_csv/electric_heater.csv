@@ -4,4 +4,9 @@ kW_max,kW,float,Maximum thermal capacity (i.e. heat output).
 co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
 lifetime,years,int,Expected lifetime of technology before replacement is required.
 interest_rate,--,float,Interest rate for computing levelised costs (if required).
+replacement_factor,--,float,share of electric heaters replaced in fossil_heater_retrofit scenario
 capex,CHF/kWp,float,CAPEX cost of technology per unit of capacity.
+capex_one_to_one_replacement,CHF/kWp,float,CAPEX cost of technology per unit of capacity (when device has reached the end of life)
+maintenance_cost,CHF/kWp/year,float,OPEX cost of technology.
+fixed_demand_share,--,bool,
+fixed_demand_share_val,--,float,

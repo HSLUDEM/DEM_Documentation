@@ -10,4 +10,7 @@ gas_price_CHFpkWh,CHF/kWh,float,Price of gas.
 co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
 lifetime,years,int,Expected lifetime of technology before replacement is required.
 capital_cost,CHF/kWp,float,CAPEX cost of technology per unit of capacity.
+maintenance_cost,CHF/kWp/year,float,OPEX cost of technology per unit of capacity.
 interest_rate,--,float,Interest rate for computing levelised costs (if required).
+allow_heat_export,--,bool,Is it allowed to export heat?
+heat_export_subsidy,CHF/kWh,float,Export subsidy for heat. Can be needed when optimizing in the LP-mode.
