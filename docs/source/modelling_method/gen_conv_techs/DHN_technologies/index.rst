@@ -1,4 +1,4 @@
-Central Geneation Technologies
+Central Generation Technologies
 =======================================
 
 
