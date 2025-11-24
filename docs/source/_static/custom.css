@@ -15,6 +15,7 @@
 }
 .wrap-text td:nth-child(1),
 .wrap-text th:nth-child(1) {
+    font-family:'Times New Roman', Times, serif;
     width: 12em;
 }
 .wrap-text td:nth-child(2),
