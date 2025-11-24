@@ -1,10 +1,12 @@
-Central Generation Technologies
+District Heating
 =======================================
 
 
 .. toctree::
    :maxdepth: 1
    
+   district_heating
+
    gas_boiler_cp
    oil_boiler_cp
    wood_boiler_cp
