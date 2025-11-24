@@ -8,3 +8,8 @@ buildings and therefore contributes a constant share
 to the overal heat production. It has a constant
 efficiency and constant carbon emissions per kWh
 of energy converted.
+
+.. csv-table::
+	      :file: ../../how_to_use_the_model/input_csv/oil_boiler.csv
+	      :widths: auto
+	      :header-rows: 0
