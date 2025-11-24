@@ -11,15 +11,5 @@ of energy converted.
 
 .. csv-table::
 	      :file: ../../how_to_use_the_model/input_csv/oil_boiler.csv
-	      :widths: 20 10 10 60
+	      :widths: auto
 	      :header-rows: 0
-		  :class: longtable
-
-.. tabularcolumns:: |p{1cm}|p{4cm}|p{10cm}|
-
-
-
-.. csv-table:: My Table
-   :file: ../../how_to_use_the_model/input_csv/oil_boiler.csv
-   :widths: auto
-   :class: longtable
