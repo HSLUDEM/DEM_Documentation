@@ -5,6 +5,7 @@ Generation and Conversion Technologies
 .. toctree::
    :maxdepth: 1
    
+   biomass_technologies/index
    district_heating
    electric_heater
    gas_boiler
