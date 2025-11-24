@@ -5,6 +5,7 @@ Biomass Technologies
 .. toctree::
    :maxdepth: 1
    
+   biomass
    hydrothermal_gasification
    anaerobic_digestion_upgrade
    anaerobic_digestion_upgrade_hydrogen
