@@ -6,18 +6,17 @@ Hulla hopp ist ein guter Sport.
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
 
 
-
-.. |br| raw:: html
-
-   <br>
-
 +------------------------------+--------------+-----------+------------------------------------------+
 | Attribute                    | Unit         | Data type | Description                              |
 +==============================+==============+===========+==========================================+
-| deployment                   | —            | bool      | If set to 'true', the technology will be |br| |
-|                              |              |           | considered in the energy system model|br|    |
-|                              |              |           | (this does not necessarily mean it will|br|  |
-|                              |              |           | be used). Only relevant for |br|             |
+| deployment                   | —            | bool      | If set to 'true', the technology will be |
+
+|                              |              |           | considered in the energy system model    |
+
+|                              |              |           | (this does not necessarily mean it will  |
+
+|                              |              |           | be used). Only relevant for              |
+
 |                              |              |           | optimisation.                            |
 +------------------------------+--------------+-----------+------------------------------------------+
 | kW_th_max                    | kW           | float     | Maximum thermal capacity (i.e. heat      |
