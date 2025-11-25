@@ -92,7 +92,7 @@ def main():
             print("=============", fn, "=============")
             if fn.endswith(".csv"):
                 fn_new = fn.split(".csv")[0]+".rst"
-                with open(containing_folder + "/" + x + "_as_rst" + "/" + fn_new, "w") as f:
+                with open(containing_folder + "/" + x + "_as_rst" + "/" + fn_new, "w", encoding="utf-8") as f:
                     rows = read_csv(Path(containing_folder + "/" + x + "/" + fn))
                     multiline_rows = split_multiline_cells(rows)
                     f.write(get_grid_table(multiline_rows))

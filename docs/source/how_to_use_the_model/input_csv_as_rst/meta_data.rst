@@ -1,11 +1,11 @@
 +=======================================+======+===========+============================================================================================+
 | Attribute                             | Unit | Data type | Description                                                                                |
 +=======================================+======+===========+============================================================================================+
-| custom_district                       | —    | dict      | Properties for a district with custom boundaries.                                          |
+| custom_district                       | â€”    | dict      | Properties for a district with custom boundaries.                                          |
 +---------------------------------------+------+-----------+--------------------------------------------------------------------------------------------+
-| custom_district: implemented          | —    | bool      | If set to 'true', the simulation will be carried out for a district of selected buildings. |
+| custom_district: implemented          | â€”    | bool      | If set to 'true', the simulation will be carried out for a district of selected buildings. |
 +---------------------------------------+------+-----------+--------------------------------------------------------------------------------------------+
-| custom_district: EGID_List            | —    | list / df | List of EGIDs of buildings contained in custom district.                                   |
+| custom_district: EGID_List            | â€”    | list / df | List of EGIDs of buildings contained in custom district.                                   |
 +---------------------------------------+------+-----------+--------------------------------------------------------------------------------------------+
-| custom_district: custom_district_name | —    | str       | unique name for specified custom district                                                  |
+| custom_district: custom_district_name | â€”    | str       | unique name for specified custom district                                                  |
 +---------------------------------------+------+-----------+--------------------------------------------------------------------------------------------+
