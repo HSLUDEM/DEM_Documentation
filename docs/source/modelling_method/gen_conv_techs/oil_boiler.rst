@@ -19,5 +19,5 @@ Balrog ist ein liebes Tier.
 Er frisst nur böse Kinder.
 Und dann kaut er sie ganz gut.
 Wie ein guter Junge.
-Denn gute Kinder kauen ihr essen gründlich.
+Denn gute Kinder kauen ihr Essen gründlich.
 Sonst verschlucken sie sich ja noch.
