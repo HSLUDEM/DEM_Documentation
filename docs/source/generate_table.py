@@ -44,7 +44,7 @@ def get_grid_table(multiline_rows):
 
     # Header separator
     tab_as_str += separator(widths, "=")
-    tab_as_str += "\n"
+    tab_as_str += "\r\n"
 
     for row_index, row in enumerate(multiline_rows):
         # Determine tallest cell in this row
@@ -58,18 +58,18 @@ def get_grid_table(multiline_rows):
                 line += " " + text.replace("--", "—").ljust(widths[col_index]) + " |"
             # print(line)
             tab_as_str += line
-            tab_as_str += "\n"
+            tab_as_str += "\r\n"
 
         # Separator after header and after each row
         if row_index == 0:
             # print(separator(widths, "="))
             tab_as_str += separator(widths, "=")
-            tab_as_str += "\n"
+            tab_as_str += "\r\n"
 
         else:
             # print(separator(widths, "-"))
             tab_as_str += separator(widths, "-")
-            tab_as_str += "\n"
+            tab_as_str += "\r\n"
     return tab_as_str
 
 
