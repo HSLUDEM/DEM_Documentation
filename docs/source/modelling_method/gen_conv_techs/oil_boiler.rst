@@ -1,6 +1,7 @@
 Oil Boiler
 =======================================
 
+Hulla hopp ist ein guter Sport.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
 
