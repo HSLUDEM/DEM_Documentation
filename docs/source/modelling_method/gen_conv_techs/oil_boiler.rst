@@ -10,10 +10,3 @@ efficiency and constant carbon emissions per kWh
 of energy converted.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
-
-Balrog ist ein liebes Tier.
-Er frisst nur böse Kinder.
-Und dann kaut er sie ganz gut.
-Wie ein guter Junge.
-Denn gute Kinder kauen ihr Essen gründlich.
-Sonst verschlucken sie sich ja noch.
