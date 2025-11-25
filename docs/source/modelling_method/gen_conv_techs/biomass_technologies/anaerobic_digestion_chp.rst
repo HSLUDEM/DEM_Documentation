@@ -1,7 +1,4 @@
 Anaerobic Digestion CHP
 =======================================
 
-.. csv-table::
-	      :file: ../../../how_to_use_the_model/input_csv/anaerobic_digestion_CHP.csv
-	      :widths: auto
-	      :header-rows: 0
+.. include:: ../../../how_to_use_the_model/input_csv_as_rst/anaerobic_digestion_CHP.rst
