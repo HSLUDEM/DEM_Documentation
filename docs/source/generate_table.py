@@ -43,7 +43,7 @@ def get_grid_table(multiline_rows):
     widths = compute_column_widths(multiline_rows)
 
     # Header separator
-    tab_as_str += separator(widths, "=")
+    tab_as_str += separator(widths, "-")
     tab_as_str += "\n"
 
     for row_index, row in enumerate(multiline_rows):
