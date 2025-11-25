@@ -6,6 +6,7 @@
 | Directory         | ``./data/tech_wind_power/profiles/``     |
 +-------------------+------------------------------------------+
 | Index             | Numeric (integer), 0 to 8759, hour of    |
+|                   |                                          |
 |                   | the year                                 |
 +-------------------+------------------------------------------+
 | Number of rows    | 8760                                     |

@@ -92,6 +92,7 @@
 | 44     | LocalHydroPotential_Speicherkraftwerk    | float64   |             |
 +--------+------------------------------------------+-----------+-------------+
 | 45     | LocalHydroPotential_Pumpspeicherkraftwer | float64   |             |
+|        |                                          |           |             |
 |        | k                                        |           |             |
 +--------+------------------------------------------+-----------+-------------+
 | 46     | avg_dh_connection_distance               | float64   |             |

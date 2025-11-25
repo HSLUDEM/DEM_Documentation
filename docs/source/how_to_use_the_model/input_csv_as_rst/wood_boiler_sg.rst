@@ -2,16 +2,23 @@
 | Attribute           | Unit        | Data type | Description                              |
 +=====================+=============+===========+==========================================+
 | deployment          | —           | bool      | If set to 'true', the technology will be |
+|                     |             |           |                                          |
 |                     |             |           | considered in the energy system model    |
+|                     |             |           |                                          |
 |                     |             |           | (this does not necessarily mean it will  |
+|                     |             |           |                                          |
 |                     |             |           | be used). Only relevant for              |
+|                     |             |           |                                          |
 |                     |             |           | optimisation.                            |
 +---------------------+-------------+-----------+------------------------------------------+
 | kW_h_max            | kW          | str       | Maximum power output in the form of      |
+|                     |             |           |                                          |
 |                     |             |           | steam                                    |
 +---------------------+-------------+-----------+------------------------------------------+
 | force_cap_max       | —           | bool      | Force implementation of maximum capacity |
+|                     |             |           |                                          |
 |                     |             |           | specified in kW_h_max. Only relevant for |
+|                     |             |           |                                          |
 |                     |             |           | optimisation.                            |
 +---------------------+-------------+-----------+------------------------------------------+
 | wood_input_cap_type |             | str       |                                          |
@@ -27,17 +34,22 @@
 | wood_price_CHFpkg   | CHF/kg      | float     | Wood price (annual fixed value).         |
 +---------------------+-------------+-----------+------------------------------------------+
 | co2_intensity       | kg CO2/kWh  | float     | Carbon-dioxide intensity of technology   |
+|                     |             |           |                                          |
 |                     |             |           | output (annual average value).           |
 +---------------------+-------------+-----------+------------------------------------------+
 | lifetime            | years       | int       | Expected lifetime of technology before   |
+|                     |             |           |                                          |
 |                     |             |           | replacement is required.                 |
 +---------------------+-------------+-----------+------------------------------------------+
 | capital_cost        | CHF/kW      | int       | CAPEX cost of technology per unit of     |
+|                     |             |           |                                          |
 |                     |             |           | capacity.                                |
 +---------------------+-------------+-----------+------------------------------------------+
 | maintenance_cost    | CHF/kW/year | int       | OPEX cost of technology per unit of      |
+|                     |             |           |                                          |
 |                     |             |           | capacity                                 |
 +---------------------+-------------+-----------+------------------------------------------+
 | interest_rate       | —           | float     | Interest rate for computing levelised    |
+|                     |             |           |                                          |
 |                     |             |           | costs (if required).                     |
 +---------------------+-------------+-----------+------------------------------------------+

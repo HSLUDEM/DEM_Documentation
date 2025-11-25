@@ -14,8 +14,10 @@
 | wood_price_CHFpkg | [CHF/kg]  | float     | Wood price (annual fixed value).       |
 +-------------------+-----------+-----------+----------------------------------------+
 | hv_msw_MJpkg      | [MJ/kg]   | float     | Lower heating value of municipal solid |
+|                   |           |           |                                        |
 |                   |           |           | waste (MSW).                           |
 +-------------------+-----------+-----------+----------------------------------------+
 | msw_price_CHFpkg  | [CHF/kg]  | float     | Price of municipal solid waste. Will   |
+|                   |           |           |                                        |
 |                   |           |           | usually be negative (i.e. revenue).    |
 +-------------------+-----------+-----------+----------------------------------------+

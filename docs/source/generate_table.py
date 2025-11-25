@@ -84,6 +84,17 @@ def get_grid_table(multiline_rows):
             tab_as_str += line
             tab_as_str += "\n"
 
+            if line_index < height-1:
+                line = "|"
+                for col_index, cell_lines in enumerate(row):
+                    text = ""
+                    line += " " + text.replace("--", "—").ljust(widths[col_index]) + " |"
+                # print(line)
+                tab_as_str += line
+                tab_as_str += "\n"
+
+
+
         # Separator after header and after each row
         if row_index == 0:
             # print(separator(widths, "="))

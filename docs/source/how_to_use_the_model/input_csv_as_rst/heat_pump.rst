@@ -2,28 +2,39 @@
 | Attribute                    | Unit         | Data type | Description                              |
 +==============================+==============+===========+==========================================+
 | deployment                   | —            | bool      | If set to 'true', the technology will be |
+|                              |              |           |                                          |
 |                              |              |           | considered in the energy system model    |
+|                              |              |           |                                          |
 |                              |              |           | (this does not necessarily mean it will  |
+|                              |              |           |                                          |
 |                              |              |           | be used). Only relevant for              |
+|                              |              |           |                                          |
 |                              |              |           | optimisation.                            |
 +------------------------------+--------------+-----------+------------------------------------------+
 | kW_th_max                    | kW           | str       | Maximum thermal capacity (i.e. heat      |
+|                              |              |           |                                          |
 |                              |              |           | output).                                 |
 +------------------------------+--------------+-----------+------------------------------------------+
 | co2_intensity                | kg CO2/kWh   | float     | Carbon-dioxide intensity of technology   |
+|                              |              |           |                                          |
 |                              |              |           | output (annual average value).           |
 +------------------------------+--------------+-----------+------------------------------------------+
 | lifetime                     | years        | int       | Expected lifetime of technology before   |
+|                              |              |           |                                          |
 |                              |              |           | replacement is required.                 |
 +------------------------------+--------------+-----------+------------------------------------------+
 | interest_rate                | —            | float     | Interest rate for computing levelised    |
+|                              |              |           |                                          |
 |                              |              |           | costs (if required).                     |
 +------------------------------+--------------+-----------+------------------------------------------+
 | capex                        | CHF/kWp      | float     | CAPEX cost of technology per unit of     |
+|                              |              |           |                                          |
 |                              |              |           | capacity (new installations).            |
 +------------------------------+--------------+-----------+------------------------------------------+
 | capex_one_to_one_replacement | CHF/kWp      | float     | CAPEX cost of technology per unit of     |
+|                              |              |           |                                          |
 |                              |              |           | capacity (when device has reached the    |
+|                              |              |           |                                          |
 |                              |              |           | end of life).                            |
 +------------------------------+--------------+-----------+------------------------------------------+
 | maintenance_cost             | CHF/kWp/year | float     | OPEX cost of technology.                 |
@@ -33,45 +44,70 @@
 | fixed_demand_share_val       |              | float     |                                          |
 +------------------------------+--------------+-----------+------------------------------------------+
 | only_allow_existing          | —            | bool      | If True, only existing heat pumps are    |
+|                              |              |           |                                          |
 |                              |              |           | allowed to continue to operate.          |
 +------------------------------+--------------+-----------+------------------------------------------+
 | cop_mode                     | —            | str       | Method for estimating the COP            |
+|                              |              |           |                                          |
 |                              |              |           | timeseries. Options are: “from_file”,    |
+|                              |              |           |                                          |
 |                              |              |           | “constant”, “from_file_adjusted_to_spf”, |
+|                              |              |           |                                          |
 |                              |              |           | “location_based”. “location_based” is an |
+|                              |              |           |                                          |
 |                              |              |           | intricate algorithm taking into account  |
+|                              |              |           |                                          |
 |                              |              |           | building and heat pump properties as     |
+|                              |              |           |                                          |
 |                              |              |           | well as the local weather (detailed      |
+|                              |              |           |                                          |
 |                              |              |           | description below). “constant” means     |
+|                              |              |           |                                          |
 |                              |              |           | that a constant COP is used. “from_file” |
+|                              |              |           |                                          |
 |                              |              |           | means means that a timeseries loaded     |
+|                              |              |           |                                          |
 |                              |              |           | from a given file is used.               |
+|                              |              |           |                                          |
 |                              |              |           | “from_file_adjusted_to_spf” means that a |
+|                              |              |           |                                          |
 |                              |              |           | timeseries loaded form a file is is      |
+|                              |              |           |                                          |
 |                              |              |           | scaled s.t. a given value for the        |
+|                              |              |           |                                          |
 |                              |              |           | seasonal performance factor (SPF) is     |
+|                              |              |           |                                          |
 |                              |              |           | reached                                  |
 +------------------------------+--------------+-----------+------------------------------------------+
 | cop_timeseries_file_path     | <path>       | str       | Path to COP timeseries file for mode     |
+|                              |              |           |                                          |
 |                              |              |           | “form_file” and                          |
+|                              |              |           |                                          |
 |                              |              |           | “from_file_adjusted_to_spf”              |
 +------------------------------+--------------+-----------+------------------------------------------+
 | cop_constant_value           | —            | float     | Constant COP value to use if             |
+|                              |              |           |                                          |
 |                              |              |           | cop_mode=constant                        |
 +------------------------------+--------------+-----------+------------------------------------------+
 | spf_to_target                | —            | float     | Seasonal performance factor (SPF) to     |
+|                              |              |           |                                          |
 |                              |              |           | which the COP is adjusted in the mode    |
+|                              |              |           |                                          |
 |                              |              |           | from_file_adjusted_spf                   |
 +------------------------------+--------------+-----------+------------------------------------------+
 | quality_factor_ashp_new      | —            | float     | Quality factor for new ASHPs for mode    |
+|                              |              |           |                                          |
 |                              |              |           | “location_based”.                        |
 +------------------------------+--------------+-----------+------------------------------------------+
 | quality_factor_ashp_old      | —            | float     | Quality factor for old ASHPs for mode    |
+|                              |              |           |                                          |
 |                              |              |           | “location_based”.                        |
 +------------------------------+--------------+-----------+------------------------------------------+
 | quality_factor_gshp_new      | —            | float     | Quality factor for new GSHPs for mode    |
+|                              |              |           |                                          |
 |                              |              |           | “location_based”.                        |
 +------------------------------+--------------+-----------+------------------------------------------+
 | quality_factor_gshp_old      | —            | float     | Quality factor for old GSHPs for mode    |
+|                              |              |           |                                          |
 |                              |              |           | “location_based”.                        |
 +------------------------------+--------------+-----------+------------------------------------------+

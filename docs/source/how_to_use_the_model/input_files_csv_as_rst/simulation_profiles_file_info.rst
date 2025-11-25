@@ -6,6 +6,7 @@
 | Directory         | ``./data/master_data/simulation_data/`` |
 +-------------------+-----------------------------------------+
 | Index             | Numeric (integer), 0 to 8759, hour of   |
+|                   |                                         |
 |                   | the year                                |
 +-------------------+-----------------------------------------+
 | Number of rows    | 8760                                    |

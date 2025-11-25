@@ -4,10 +4,13 @@
 | Format            | ``.feather``                             |
 +-------------------+------------------------------------------+
 | Directory         | ``./data/master_data/HDD_and_HDH_profile |
+|                   |                                          |
 |                   | s/``                                     |
 +-------------------+------------------------------------------+
 | Index             | Numeric (integer), 0 to X, where X is    |
+|                   |                                          |
 |                   | the number districts contained in the    |
+|                   |                                          |
 |                   | file.                                    |
 +-------------------+------------------------------------------+
 | Number of rows    | According to number of districts.        |

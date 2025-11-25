@@ -2,9 +2,13 @@
 | Attribute                                | Unit         | Data type | Description                              |
 +==========================================+==============+===========+==========================================+
 | deployment                               | —            | bool      | If set to 'true', the technology will be |
+|                                          |              |           |                                          |
 |                                          |              |           | considered in the energy system model    |
+|                                          |              |           |                                          |
 |                                          |              |           | (this does not necessarily mean it will  |
+|                                          |              |           |                                          |
 |                                          |              |           | be used). Only relevant for              |
+|                                          |              |           |                                          |
 |                                          |              |           | optimisation.                            |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | kW_th_max                                | kW           | str       | Maximum thermal power output             |
@@ -14,18 +18,23 @@
 | cap_min_use                              | kW           | float     |                                          |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | co2_intensity                            | kg CO2/kWh   | int       | Carbon-dioxide intensity of technology   |
+|                                          |              |           |                                          |
 |                                          |              |           | output (annual average value).           |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | lifetime                                 | years        | int       | Expected lifetime of technology before   |
+|                                          |              |           |                                          |
 |                                          |              |           | replacement is required.                 |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | capital_cost                             | CHF/kWp      | float     | CAPEX cost of technology per unit of     |
+|                                          |              |           |                                          |
 |                                          |              |           | capacity.                                |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | maintenance_cost                         | CHF/kWp/year | int       | OPEX cost of technology per unit of      |
+|                                          |              |           |                                          |
 |                                          |              |           | capacity.                                |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | interest_rate                            | —            | float     | Interest rate for computing levelised    |
+|                                          |              |           |                                          |
 |                                          |              |           | costs (if required).                     |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | cop_mode                                 | —            | str       |                                          |
@@ -43,6 +52,7 @@
 | cop_hot_temperature                      | —            | str       |                                          |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | cop_hot_temperature_constant_temperature | °C           | int       |                                          |
+|                                          |              |           |                                          |
 | _value                                   |              |           |                                          |
 +------------------------------------------+--------------+-----------+------------------------------------------+
 | quality_factor                           | —            | float     |                                          |

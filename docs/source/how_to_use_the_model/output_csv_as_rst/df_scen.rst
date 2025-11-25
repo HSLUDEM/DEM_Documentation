@@ -2,24 +2,31 @@
 | Column                   | Type  | Unit   | Description                              |
 +==========================+=======+========+==========================================+
 | d_e                      | float | kWh    | Total electricity demand (incl. Heating  |
+|                          |       |        |                                          |
 |                          |       |        | and household demand)                    |
 +--------------------------+-------+--------+------------------------------------------+
 | d_e_ev                   | float | kWh    | Electricity demand for electric vehicles |
+|                          |       |        |                                          |
 |                          |       |        | (subset of d_e)                          |
 +--------------------------+-------+--------+------------------------------------------+
 | d_e_h                    | float | kWh    | Electricity demand due to heating (e.g.  |
+|                          |       |        |                                          |
 |                          |       |        | heat pump, electric heater) (subset of   |
+|                          |       |        |                                          |
 |                          |       |        | d_e)                                     |
 +--------------------------+-------+--------+------------------------------------------+
 | d_e_hh                   | float | kWh    | Electricity demand other than heating    |
+|                          |       |        |                                          |
 |                          |       |        | (i.e. "household") (subset of d_e)       |
 +--------------------------+-------+--------+------------------------------------------+
 | d_h                      | float | kWh    | Total heating demand                     |
 +--------------------------+-------+--------+------------------------------------------+
 | d_h_hw                   | float | kWh    | Heat demand for hot water (subset of     |
+|                          |       |        |                                          |
 |                          |       |        | d_h)                                     |
 +--------------------------+-------+--------+------------------------------------------+
 | d_h_s                    | float | kWh    | Heat demand for space heating (subset of |
+|                          |       |        |                                          |
 |                          |       |        | d_h)                                     |
 +--------------------------+-------+--------+------------------------------------------+
 | l_q_e_bes                | float | kWh    | Battery energy storage: storage losses   |
@@ -27,6 +34,7 @@
 | l_q_h_tes                | float | kWh    | Thermal energy storage: storage losses   |
 +--------------------------+-------+--------+------------------------------------------+
 | l_q_h_tesdc              | float | kWh    | Thermal energy storage (decentralised):  |
+|                          |       |        |                                          |
 |                          |       |        | storage losses                           |
 +--------------------------+-------+--------+------------------------------------------+
 | l_u_e_bes                | float | kWh    | Battery energy storage: charging losses  |
@@ -34,44 +42,61 @@
 | l_u_h_tes                | float | kWh    | Thermal energy storage: charging losses  |
 +--------------------------+-------+--------+------------------------------------------+
 | l_u_h_tesdc              | float | kWh    | Thermal energy storage (decentralised):  |
+|                          |       |        |                                          |
 |                          |       |        | charging losses                          |
 +--------------------------+-------+--------+------------------------------------------+
 | l_v_e_bes                | float | kWh    | Battery energy storage: discharging      |
+|                          |       |        |                                          |
 |                          |       |        | losses                                   |
 +--------------------------+-------+--------+------------------------------------------+
 | l_v_h_tes                | float | kWh    | Thermal energy storage: discharging      |
+|                          |       |        |                                          |
 |                          |       |        | losses                                   |
 +--------------------------+-------+--------+------------------------------------------+
 | l_v_h_tesdc              | float | kWh    | Thermal energy storage (decentralised):  |
+|                          |       |        |                                          |
 |                          |       |        | discharging losses                       |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e                      | float | kWh    | Total electricity import to community    |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_cbimport             | float | kWh    | Electricity import from cross-border,    |
+|                          |       |        |                                          |
 |                          |       |        | i.e. from other countries (subset of     |
+|                          |       |        |                                          |
 |                          |       |        | m_e)                                     |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch                   | float | kWh    | Electricity import from within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland (subset of m_e)              |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch_conventional_chp  | float | kWh    | Electricity import form within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland coming from conventional chp |
+|                          |       |        |                                          |
 |                          |       |        | plants (subset of m_e_ch)                |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch_hydro             | float | kWh    | Electricity import form within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland coming from hydro power      |
+|                          |       |        |                                          |
 |                          |       |        | (subset of m_e_ch)                       |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch_nuclear           | float | kWh    | Electricity import form within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland coming from nuclear power    |
+|                          |       |        |                                          |
 |                          |       |        | (subset of m_e_ch)                       |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch_renewable_chp     | float | kWh    | Electricity import form within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland coming from renewable chp    |
+|                          |       |        |                                          |
 |                          |       |        | plants (subset of m_e_ch)                |
 +--------------------------+-------+--------+------------------------------------------+
 | m_e_ch_renewable_other   | float | kWh    | Electricity import form within           |
+|                          |       |        |                                          |
 |                          |       |        | Switzerland coming from other renewable  |
+|                          |       |        |                                          |
 |                          |       |        | sources (subset of m_e_ch)               |
 +--------------------------+-------+--------+------------------------------------------+
 | m_h                      | float | kWh    | Heat import (via district heating)       |
@@ -83,11 +108,13 @@
 | m_wd                     | float | kWh    | Wood import                              |
 +--------------------------+-------+--------+------------------------------------------+
 | q_e_bes                  | float | kWh    | Battery energy storage stored            |
+|                          |       |        |                                          |
 |                          |       |        | electricity                              |
 +--------------------------+-------+--------+------------------------------------------+
 | q_h_tes                  | float | kWh    | Thermal energy storage stored heat       |
 +--------------------------+-------+--------+------------------------------------------+
 | q_h_tesdc                | float | kWh    | Thermal energy storage (decentralised)   |
+|                          |       |        |                                          |
 |                          |       |        | stored heat                              |
 +--------------------------+-------+--------+------------------------------------------+
 | s_wd                     | float | kWh    | total wood supply                        |
@@ -103,9 +130,11 @@
 | sos_tes                  | float | —      | Thermal Energy storage: state of charge  |
 +--------------------------+-------+--------+------------------------------------------+
 | sos_tesdc                | float | —      | Thermal Energy storage (decentralised):  |
+|                          |       |        |                                          |
 |                          |       |        | state of charge                          |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_aguh                 | float | kWh    | electricity demand anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | upgrade hydrogen                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_bes                  | float | kWh    | Battery energy storage added electricity |
@@ -115,20 +144,25 @@
 | u_e_hp                   | float | kWh    | Heat pump electricity input              |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_hpcp                 | float | kWh    | Heat pump (centralised plant)            |
+|                          |       |        |                                          |
 |                          |       |        | electricity input                        |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_hydp                 | float | kWh    | electricity demand hydrogen production   |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_wgu                  | float | kWh    | electricity demand wood gasification     |
+|                          |       |        |                                          |
 |                          |       |        | upgrade                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_wguh                 | float | kWh    | electricity demand wood gasification     |
+|                          |       |        |                                          |
 |                          |       |        | upgrade hydrogen                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_gas_chpgt              | float | kWh    | Gas turbine combined heat and power: gas |
+|                          |       |        |                                          |
 |                          |       |        | input                                    |
 +--------------------------+-------+--------+------------------------------------------+
 | u_gas_chpgt_kg           | float | kg     | Gas turbine combined heat and power: gas |
+|                          |       |        |                                          |
 |                          |       |        | input                                    |
 +--------------------------+-------+--------+------------------------------------------+
 | u_gas_gb                 | float | kWh    | Gas boiler gas input                     |
@@ -142,12 +176,15 @@
 | u_h_tes                  | float | kWh    | Thermal energy storage added heat        |
 +--------------------------+-------+--------+------------------------------------------+
 | u_h_tesdc                | float | kWh    | Thermal energy storage (decentralised)   |
+|                          |       |        |                                          |
 |                          |       |        | added heat                               |
 +--------------------------+-------+--------+------------------------------------------+
 | u_hyd_aguh               | float | kWh    | hydrogen demand anaerobic digestion      |
+|                          |       |        |                                          |
 |                          |       |        | upgrade hydrogen                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_hyd_wguh               | float | kWh    | hydrogen demand wood gasification        |
+|                          |       |        |                                          |
 |                          |       |        | upgrade hydrogen                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_oil_ob                 | float | kWh    | Oil boiler oil input                     |
@@ -159,18 +196,23 @@
 | u_wd_wguc                | float | kWh    | wood demand wood gasification CHP        |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wd_wguh                | float | kWh    | wood demand wood gasification upgrade    |
+|                          |       |        |                                          |
 |                          |       |        | hydrogen                                 |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wet_bm_agu             | float | kWh    | wet biomass demand anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | upgrade                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wet_bm_aguc            | float | kWh    | wet biomass demand anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | CHP                                      |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wet_bm_aguh            | float | kWh    | wet biomass demand anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | upgrade hydrogen                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wet_bm_hg              | float | kWh    | wet biomass demand hydrothermal          |
+|                          |       |        |                                          |
 |                          |       |        | gasification                             |
 +--------------------------+-------+--------+------------------------------------------+
 | u_wood_wb                | float | kWh    | Wood boiler wood input                   |
@@ -180,122 +222,163 @@
 | v_co2_bm                 | float | kg     | Biomass: CO2 emissions                   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_co2_chpgt              | float | kg     | Gas turbine combined heat and power: CO2 |
+|                          |       |        |                                          |
 |                          |       |        | emissions                                |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_aguc                 | float | kWh    | electricity output anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | CHP                                      |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_aguc_exp             | float | kWh    | electricity output anaerobic digestion   |
+|                          |       |        |                                          |
 |                          |       |        | CHP export                               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_bes                  | float | kWh    | Battery energy storage extracted         |
+|                          |       |        |                                          |
 |                          |       |        | electricity                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_bm                   | float | kWh    | Biomass electricity output               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_bm_cons              | float | kWh    | Biomass electricity output consumed      |
+|                          |       |        |                                          |
 |                          |       |        | locally                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_bm_exp               | float | kWh    | Biomass electricity output exported to   |
+|                          |       |        |                                          |
 |                          |       |        | the grid (i.e. excess)                   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_chpgt                | float | kWh    | Gas turbine combined heat and power:     |
+|                          |       |        |                                          |
 |                          |       |        | electricity output                       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_hydro                | float | kWh    | Local hydro power electricity output     |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_hydro_cons           | float | kWh    | Local hydro power electricity output     |
+|                          |       |        |                                          |
 |                          |       |        | consumed locally                         |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_hydro_exp            | float | kWh    | Local hydro power electricity output     |
+|                          |       |        |                                          |
 |                          |       |        | exported to the grid (i.e. excess)       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_hydro_pot            | float | kWh    | Total local hydro power potential        |
+|                          |       |        |                                          |
 |                          |       |        | (installed + additional potential)       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_hydro_pot_remain     | float | kWh    | Remaining additional local hydro power   |
+|                          |       |        |                                          |
 |                          |       |        | potential (excl. installed capacity)     |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_pv                   | float | kWh    | Solar PV electricity output              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_pv_cons              | float | kWh    | Solar PV electricity output consumed     |
+|                          |       |        |                                          |
 |                          |       |        | locally                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_pv_exp               | float | kWh    | Solar PV electricity output exported to  |
+|                          |       |        |                                          |
 |                          |       |        | the grid (i.e. excess)                   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_pv_pot               | float | kWh    | Total solar PV potential (installed +    |
+|                          |       |        |                                          |
 |                          |       |        | additional potential)                    |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_pv_pot_remain        | float | kWh    | Remaining additional solar PV potential  |
+|                          |       |        |                                          |
 |                          |       |        | (excl. installed capacity)               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wguc                 | float | kWh    | electricity output wood gasification CHP |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wguc_exp             | float | kWh    | electricity output wood gasification CHP |
+|                          |       |        |                                          |
 |                          |       |        | export                                   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp                   | float | kWh    | Wind power electricity output for        |
+|                          |       |        |                                          |
 |                          |       |        | generation counting towards local        |
+|                          |       |        |                                          |
 |                          |       |        | production                               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_ch                | float | kwh    | Wind power electricity output for        |
+|                          |       |        |                                          |
 |                          |       |        | generation counting towards national     |
+|                          |       |        |                                          |
 |                          |       |        | production                               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_cons              | float | kWh    | Wind power electricity output consumed   |
+|                          |       |        |                                          |
 |                          |       |        | locally                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_exp               | float | kWh    | Wind power electricity output exported   |
+|                          |       |        |                                          |
 |                          |       |        | to the grid (i.e. excess)                |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot               | float | kWh    | Total wind power potential (installed +  |
+|                          |       |        |                                          |
 |                          |       |        | additional potential); will be either    |
+|                          |       |        |                                          |
 |                          |       |        | profile type 'annual' or 'winter'.       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot_annual        | float | kWh    | Total wind power potential (installed +  |
+|                          |       |        |                                          |
 |                          |       |        | additional potential) using 'annual'     |
+|                          |       |        |                                          |
 |                          |       |        | profile (balanced across the year)       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot_annual_kWhpkW | float | kWh/kW | Wind power potential (installed +        |
+|                          |       |        |                                          |
 |                          |       |        | additional potential) per capacity using |
+|                          |       |        |                                          |
 |                          |       |        | 'annual' profile (balanced across the    |
+|                          |       |        |                                          |
 |                          |       |        | year)                                    |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot_remain        | float | kWh    | Remaining additional wind power          |
+|                          |       |        |                                          |
 |                          |       |        | potential (excl. installed capacity)     |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot_winter        | float | kWh    | Total wind power potential (installed +  |
+|                          |       |        |                                          |
 |                          |       |        | additional potential) using 'winter'     |
+|                          |       |        |                                          |
 |                          |       |        | profile (geared towards winter           |
+|                          |       |        |                                          |
 |                          |       |        | production)                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wp_pot_winter_kWhpkW | float | kWh/kW | Wind power potential (installed +        |
+|                          |       |        |                                          |
 |                          |       |        | additional potential) per capacity using |
+|                          |       |        |                                          |
 |                          |       |        | 'winter' profile (geared towards winter  |
+|                          |       |        |                                          |
 |                          |       |        | production)                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_gas_agu                | float | kWh    | gas output anaerobic digestion upgrade   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_gas_aguh               | float | kWh    | gas output anaerobic digestion upgrade   |
+|                          |       |        |                                          |
 |                          |       |        | hydrogen                                 |
 +--------------------------+-------+--------+------------------------------------------+
 | v_gas_hg                 | float | kWh    | gas output anaerobic hydrothermal        |
+|                          |       |        |                                          |
 |                          |       |        | gasification                             |
 +--------------------------+-------+--------+------------------------------------------+
 | v_gas_wgu                | float | kWh    | gas output wood gasification upgrade     |
 +--------------------------+-------+--------+------------------------------------------+
 | v_gas_wguh               | float | kWh    | gas output wood gasification upgrade     |
+|                          |       |        |                                          |
 |                          |       |        | hydrogen                                 |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_aguc                 | float | kWh    | heat output anaerobic digestion CHP      |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_aguh                 | float | kWh    | heat output anaerobic digestion upgrade  |
+|                          |       |        |                                          |
 |                          |       |        | hydrogen                                 |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_bm                   | float | kWh    | Biomass heat ouput                       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_chpgt                | float | kWh    | Gas turbine combined heat and power:     |
+|                          |       |        |                                          |
 |                          |       |        | heat output                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_dh                   | float | kWh    | District heating heat output             |
@@ -307,6 +390,7 @@
 | v_h_hp                   | float | kWh    | Heat pump heat output                    |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_hpcp                 | float | kWh    | Heat pump (centralised plant) heat       |
+|                          |       |        |                                          |
 |                          |       |        | output                                   |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_ob                   | float | kWh    | Oil boiler heat output                   |
@@ -318,6 +402,7 @@
 | v_h_tes                  | float | kWh    | Thermal energy storage extracted heat    |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_tesdc                | float | kWh    | Thermal energy storage (decentralised)   |
+|                          |       |        |                                          |
 |                          |       |        | extracted heat                           |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_wb                   | float | kWh    | Wood boiler heat output                  |
@@ -327,6 +412,7 @@
 | v_h_wguc                 | float | kWh    | heat output  wood gasification CHP       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_wguh                 | float | kWh    | heat output  wood gasification upgrade   |
+|                          |       |        |                                          |
 |                          |       |        | hydrogen                                 |
 +--------------------------+-------+--------+------------------------------------------+
 | v_hyd_hydp               | float | kWh    | hydrogen output hydrogen production      |
@@ -336,6 +422,7 @@
 | u_gas_gtcp_kg            | float | kg     | Gas turbine central plant input          |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_gtcp                 | float | kWh    | Gas turbine central plant output:        |
+|                          |       |        |                                          |
 |                          |       |        | electricity                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_steam_gtcp             | float | kWh    | Gas turbine central plant output: steam  |
@@ -347,21 +434,29 @@
 | v_e_st                   | float | kWh    | Steam turbine output: electricity        |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_st_gtcp              | float | kWh    | Steam turbine output: electricity        |
+|                          |       |        |                                          |
 |                          |       |        | stemming from centralised gas turbine    |
+|                          |       |        |                                          |
 |                          |       |        | (subset of v_e_st)                       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_st_wbcp              | float | kWh    | Steam turbine output: electricity        |
+|                          |       |        |                                          |
 |                          |       |        | stemming from centralised wood boiler    |
+|                          |       |        |                                          |
 |                          |       |        | (subset of v_e_st)                       |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_st                   | float | kWh    | Steam turbine output: heat               |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_st_gtcp              | float | kWh    | Steam turbine output: heat stemming from |
+|                          |       |        |                                          |
 |                          |       |        | centralised gas turbine (subset of       |
+|                          |       |        |                                          |
 |                          |       |        | v_h_st)                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_st_wbcp              | float | kWh    | Steam turbine output: heat stemming from |
+|                          |       |        |                                          |
 |                          |       |        | centralised wood boiler (subset of       |
+|                          |       |        |                                          |
 |                          |       |        | v_h_st)                                  |
 +--------------------------+-------+--------+------------------------------------------+
 | v_co2_st                 | float | kg     | Steam turbine: CO2 emissions             |
@@ -375,12 +470,15 @@
 | v_co2_wbcp               | float | kg     | Wood boiler central plant: CO2 emissions |
 +--------------------------+-------+--------+------------------------------------------+
 | u_msw_wte                | float | kWh    | Waste-to-energy plant input: municipal   |
+|                          |       |        |                                          |
 |                          |       |        | solid waste                              |
 +--------------------------+-------+--------+------------------------------------------+
 | u_msw_wte_kg             | float | kg     | Waste-to-energy plant input: municipal   |
+|                          |       |        |                                          |
 |                          |       |        | solid waste                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_e_wte                  | float | kWh    | Waste-to-energy plant output:            |
+|                          |       |        |                                          |
 |                          |       |        | electricity                              |
 +--------------------------+-------+--------+------------------------------------------+
 | v_h_wte                  | float | kWh    | Waste-to-energy plant output: heat       |
@@ -388,5 +486,6 @@
 | v_co2_wte                | float | kg     | Waste-to-energy plant: CO2 emissions     |
 +--------------------------+-------+--------+------------------------------------------+
 | v_co2_tot                | float | kg     | Total CO2 emissions (generation +        |
+|                          |       |        |                                          |
 |                          |       |        | import)                                  |
 +--------------------------+-------+--------+------------------------------------------+

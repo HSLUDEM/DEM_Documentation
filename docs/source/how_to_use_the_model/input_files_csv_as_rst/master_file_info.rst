@@ -6,7 +6,9 @@
 | Directory         | ``./data/master_data/simulation_data/`` |
 +-------------------+-----------------------------------------+
 | Index             | Numeric (integer), 0 to X, where X is   |
+|                   |                                         |
 |                   | the number buildings contained in the   |
+|                   |                                         |
 |                   | file.                                   |
 +-------------------+-----------------------------------------+
 | Number of rows    | According to number of buildings.       |

@@ -6,7 +6,9 @@
 | Directory         | ``./data/tech_wind_power/``           |
 +-------------------+---------------------------------------+
 | Index             | Numeric (integer), 0 to X, where X is |
+|                   |                                       |
 |                   | the number districts contained in the |
+|                   |                                       |
 |                   | file.                                 |
 +-------------------+---------------------------------------+
 | Number of rows    | According to number of districts.     |
