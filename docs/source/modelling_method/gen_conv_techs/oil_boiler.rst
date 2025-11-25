@@ -3,6 +3,13 @@ Oil Boiler
 
 .. program-output:: python generate_table.py how_to_use_the_model/input_csv/oil_boiler_cp.csv
 
+.. program-output:: python generate_table.py how_to_use_the_model/input_csv/oil_boiler_cp.csv
+	:strip:
+
+.. program-output:: python generate_table.py how_to_use_the_model/input_csv/oil_boiler_cp.csv
+    :strip:
+    :no-wrap:
+
 The oil boiler represent a device that burns 
 heating oil to produce heat for space heating
 and domestic hot water. It is situated in individual 
