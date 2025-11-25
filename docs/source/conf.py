@@ -18,6 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_togglebutton',
+    'sphinxcontrib.programoutput'
 ]
 
 intersphinx_mapping = {
