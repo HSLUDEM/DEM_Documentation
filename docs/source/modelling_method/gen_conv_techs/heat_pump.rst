@@ -14,10 +14,8 @@ Our model contains a module for the detailed modeling of the COP based on proper
 of the building and the heat pumps. For this, there are plenty of parameters in the input 
 file.
 
-.. csv-table::
-	      :file: ../../how_to_use_the_model/input_csv/heat_pump.csv
-	      :widths: auto
-	      :header-rows: 0
+.. include:: ../../how_to_use_the_model/input_csv_as_rst/heat_pump.rst
+
 
 
 +-------------------------------+-----------------+-----------------------------------------------------------------------------+

@@ -9,7 +9,5 @@ to the overal heat production. It has a constant
 efficiency and constant carbon emissions per kWh
 of energy converted.
 
-.. csv-table::
-	      :file: ../../how_to_use_the_model/input_csv/gas_boiler.csv
-	      :widths: auto
-	      :header-rows: 0
+.. include:: ../../how_to_use_the_model/input_csv_as_rst/gas_boiler.rst
+
