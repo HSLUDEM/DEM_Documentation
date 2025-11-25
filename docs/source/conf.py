@@ -22,7 +22,8 @@ if rtd_version:
     release = rtd_version
     # Take a short version up to first dash, or similar logic.
     # For 'v0.1.0-alpha0' this would give 'v0.1.0'
-    version = rtd_version.split('-')[0]
+    # version = rtd_version.split('-')[0]
+    version = rtd_version
 else:
     # Local default when not on RTD
     release = '0.1.0-alpha0'
