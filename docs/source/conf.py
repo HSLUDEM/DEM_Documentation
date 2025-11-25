@@ -2,6 +2,9 @@
 
 # -- Project information
 
+import os
+from importlib.metadata import version as pkg_version, PackageNotFoundError
+
 project = 'District Energy Model'
 copyright = '2025, HSLU CC TES'
 author = 'HSLU CC TES'
