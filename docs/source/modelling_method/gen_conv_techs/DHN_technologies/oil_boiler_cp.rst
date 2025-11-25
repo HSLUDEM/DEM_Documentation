@@ -12,4 +12,3 @@ Testtext
 	      :header-rows: 0
 
 
-Hier steht ein Essay über die Einsamkeit des Seins. Alle Wasser fliessen ans uns vorbei wie elende Ströme, umfliessen uns, und lassen uns unverändert, ohne haftende Reste, zurück.
