@@ -1,14 +1,12 @@
 import csv
 import sys
+import os
 from pathlib import Path
-
-
-argv = sys.argv
-CSV_FILE = Path(argv[1])
 
 def read_csv(path):
     """Read CSV and preserve embedded newlines in quoted fields."""
-    with path.open(newline='') as f:
+
+    with path.open(newline='', encoding="utf-8") as f:
         reader = csv.reader(f)
         return [row for row in reader]
 
@@ -38,12 +36,15 @@ def separator(widths, char="-"):
     return "+" + "+".join(char * (w + 2) for w in widths) + "+"
 
 
-def print_grid_table(multiline_rows):
-    """Print the final grid table to stdout."""
+def get_grid_table(multiline_rows):
+
+    tab_as_str = ""
+
     widths = compute_column_widths(multiline_rows)
 
     # Header separator
-    print(separator(widths, "="))
+    tab_as_str += separator(widths, "=")
+    tab_as_str += "\n"
 
     for row_index, row in enumerate(multiline_rows):
         # Determine tallest cell in this row
@@ -55,27 +56,46 @@ def print_grid_table(multiline_rows):
             for col_index, cell_lines in enumerate(row):
                 text = cell_lines[line_index] if line_index < len(cell_lines) else ""
                 line += " " + text.ljust(widths[col_index]) + " |"
-            print(line)
+            # print(line)
+            tab_as_str += line
+            tab_as_str += "\n"
 
         # Separator after header and after each row
         if row_index == 0:
-            print(separator(widths, "="))
+            # print(separator(widths, "="))
+            tab_as_str += separator(widths, "=")
+            tab_as_str += "\n"
+
         else:
-            print(separator(widths, "-"))
+            # print(separator(widths, "-"))
+            tab_as_str += separator(widths, "-")
+            tab_as_str += "\n"
+    return tab_as_str
 
 
 # --------------------------------------------------------------------
 # Main script
 # --------------------------------------------------------------------
 def main():
-    if not CSV_FILE.exists():
-        print(f"Error: CSV file not found: {CSV_FILE}", file=sys.stderr)
-        sys.exit(1)
+    folders_to_treat = ["input_csv", "input_files_csv", "output_csv"]
+    containing_folder = "docs/source/how_to_use_the_model"
 
-    rows = read_csv(CSV_FILE)
-    multiline_rows = split_multiline_cells(rows)
-    print_grid_table(multiline_rows)
+    existing_elements = os.listdir(containing_folder)
 
+    for x in folders_to_treat:
+        newname = x + "_as_rst"
+        if newname not in existing_elements:
+            os.mkdir(containing_folder+"/"+newname)
+
+        files_to_convert = os.listdir(containing_folder + "/" + x)
+        for fn in files_to_convert:
+            print("=============", fn, "=============")
+            if fn.endswith(".csv"):
+                fn_new = fn.split(".csv")[0]+".rst"
+                with open(containing_folder + "/" + x + "_as_rst" + "/" + fn_new, "w") as f:
+                    rows = read_csv(Path(containing_folder + "/" + x + "/" + fn))
+                    multiline_rows = split_multiline_cells(rows)
+                    f.write(get_grid_table(multiline_rows))
 
 if __name__ == "__main__":
     main()
