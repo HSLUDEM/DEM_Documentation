@@ -5,6 +5,8 @@ This technology represent a battery electric energy storage device.
 It charges and discharges electric energy.
 It has the following properties, to be defined in the input file
 
+.. include:: ../../how_to_use_the_model/input_csv_as_rst/bes.rst
+
 .. csv-table::
 	      :file: ../../how_to_use_the_model/input_csv/bes.csv
 	      :widths: auto
