@@ -1,7 +1,5 @@
 Waste Heat
 =======================================
 
-.. csv-table::
-	      :file: ../../../how_to_use_the_model/input_csv/waste_heat.csv
-	      :widths: auto
-	      :header-rows: 0
+.. include:: ../../../how_to_use_the_model/input_csv_as_rst/waste_heat.rst
+
