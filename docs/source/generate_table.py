@@ -1,6 +1,7 @@
 import csv
 import sys
 import os
+import textwrap
 from pathlib import Path
 
 def read_csv(path):
@@ -18,6 +19,28 @@ def split_multiline_cells(rows):
     """
     return [[cell.split("\n") for cell in row] for row in rows]
 
+def split_too_long_cells(multiline_rows, maxlen = 40):
+    res = []
+    for i in range(len(multiline_rows)):
+        
+        newline = []
+
+        mr = multiline_rows[i]
+        
+        for c in mr:
+            lh = []
+            for ele in c:
+                wrapped = textwrap.wrap(ele, width = maxlen)
+                if len(wrapped) > 0:
+                    for wrappedele in wrapped:
+                        lh.append(wrappedele)
+                else:
+                    lh.append("")
+
+            newline.append(lh)
+        res.append(newline)
+    # print(res)
+    return res
 
 def compute_column_widths(multiline_rows):
     """Compute maximum width of each column (longest line in each cell)."""
@@ -25,9 +48,10 @@ def compute_column_widths(multiline_rows):
     widths = [0] * num_cols
 
     for row in multiline_rows:
-        for i, cell_lines in enumerate(row):
-            max_len = max(len(line) for line in cell_lines)
-            widths[i] = max(widths[i], max_len)
+        for i in range(len(row)):
+            valmax = max([len(x) for x in row[i]])
+            if valmax > widths[i]:
+                widths[i] = valmax
     return widths
 
 
@@ -95,7 +119,8 @@ def main():
                 with open(containing_folder + "/" + x + "_as_rst" + "/" + fn_new, "w", encoding="utf-8") as f:
                     rows = read_csv(Path(containing_folder + "/" + x + "/" + fn))
                     multiline_rows = split_multiline_cells(rows)
-                    f.write(get_grid_table(multiline_rows))
+                    max_length_cells = split_too_long_cells(multiline_rows, maxlen = 40)
+                    f.write(get_grid_table(max_length_cells))
 
 if __name__ == "__main__":
     main()
