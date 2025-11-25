@@ -30,6 +30,16 @@ Oil Boiler
 | only_use_installed           |              | bool      |           |
 +------------------------------+--------------+-----------+-----------+
 
++=====+====+
+| A   | B  |
++=====+====+
+| C   | D  |
+| F   | K  |
++-----+----+
+| Z   | A  |
++=====+====+
+
+
 Oily boiler be so kind, bring me warmth.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
