@@ -7,7 +7,7 @@ copyright = '2025, HSLU CC TES'
 author = 'HSLU CC TES'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.1.0-alpha0'
 
 # -- General configuration
 
