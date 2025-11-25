@@ -4,7 +4,7 @@ Modelling Methods
 This section describes the modelling approaches used in DEM.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    demand/index
    gen_conv_techs/index
