@@ -55,7 +55,7 @@ def get_grid_table(multiline_rows):
             line = "|"
             for col_index, cell_lines in enumerate(row):
                 text = cell_lines[line_index] if line_index < len(cell_lines) else ""
-                line += " " + text.ljust(widths[col_index]) + " |"
+                line += " " + text.replace("--", "—").ljust(widths[col_index]) + " |"
             # print(line)
             tab_as_str += line
             tab_as_str += "\n"
