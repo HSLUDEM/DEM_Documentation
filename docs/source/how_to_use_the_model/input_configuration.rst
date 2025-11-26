@@ -108,7 +108,7 @@ Top key: heat_pump
 			:widths: auto
 			:header-rows: 1
 			
-.. include:: ../../how_to_use_the_model/input_csv_as_rst/heat_pump.rst
+.. include:: ../how_to_use_the_model/input_csv_as_rst/heat_pump.rst
 
 Electric Heater
 ^^^^^^^^^^
