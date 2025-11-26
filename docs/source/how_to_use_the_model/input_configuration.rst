@@ -102,292 +102,203 @@ Configuration file: ``technologies.yaml``
 Heat Pump
 ^^^^^^^^^^
 Top key: heat_pump
-
-.. csv-table::
-			:file: input_csv/heat_pump.csv
-			:widths: auto
-			:header-rows: 1
 			
 .. include:: ../how_to_use_the_model/input_csv_as_rst/heat_pump.rst
 
 Electric Heater
 ^^^^^^^^^^
 Top key: electric_heater
-
-.. csv-table::
-			:file: input_csv/electric_heater.csv
-			:widths: auto
-			:header-rows: 1
 			
+.. include:: ../how_to_use_the_model/input_csv_as_rst/electric_heater.rst
+
 			
 Oil Boiler
 ^^^^^^^^^^
 Top key: oil_boiler
 
-.. csv-table::
-			:file: input_csv/oil_boiler.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
 			
 
 Gas Boiler
 ^^^^^^^^^^
 Top key: gas_boiler
 
-.. csv-table::
-			:file: input_csv/gas_boiler.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/gas_boiler.rst
 
 
 Wood Boiler
 ^^^^^^^^^^
 Top key: wood_boiler
 
-.. csv-table::
-			:file: input_csv/wood_boiler.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_boiler.rst
 
 
 District Heating
 ^^^^^^^^^^
 Top key: district_heating
 
-.. csv-table::
-			:file: input_csv/district_heating.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/district_heating.rst
 
 
 Solar Thermal
 ^^^^^^^^^^
 Top key: solar_thermal
 
-.. csv-table::
-			:file: input_csv/solar_thermal.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/solar_thermal.rst
 
 
 Solar Photovoltaic (PV)
 ^^^^^^^^^^
 Top key: solar_pv
 
-.. csv-table::
-			:file: input_csv/solar_pv.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/solar_pv.rst
 
 
 Wind Power
 ^^^^^^^^^^
 Top key: wind_power
 
-.. csv-table::
-			:file: input_csv/wind_power.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wind_power.rst
 
 
 Hydro Power
 ^^^^^^^^^^
 Top key: hydro_power
 
-.. csv-table::
-			:file: input_csv/hydro_power.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/hydro_power.rst
 
 
 Grid Supply
 ^^^^^^^^^^
 Top key: grid_supply
 
-.. csv-table::
-			:file: input_csv/grid_supply.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/grid_supply.rst
 
 
 Thermal Energy Storage (TES) - centralised
 ^^^^^^^^^^
 Top key: tes
 
-.. csv-table::
-			:file: input_csv/tes.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/tes.rst
 
 
 Thermal Energy Storage (TES) - decentralised
 ^^^^^^^^^^
 Top key: tes_decentralised
 
-.. csv-table::
-			:file: input_csv/tes_decentralised.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/tes_decentralised.rst
 
 
 Battery Energy Storage (BES)
 ^^^^^^^^^^
 Top key: bes
 
-.. csv-table::
-			:file: input_csv/bes.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/bes.rst
 
 
 Biomass
 ^^^^^^^^^^
 Top key: biomass
 
-.. csv-table::
-			:file: input_csv/biomass.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/biomass.rst
 
 
 Hydrothermal Gasification
 ^^^^^^^^^^
 Top key: hydrothermal_gasification
 
-.. csv-table::
-			:file: input_csv/hydrothermal_gasification.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/hydrothermal_gasification.rst
 
 
 Anaerobic Digestion Upgrade
 ^^^^^^^^^^
 Top key: anaerobic_digestion_upgrade
 
-.. csv-table::
-			:file: input_csv/anaerobic_digestion_upgrade.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/anaerobic_digestion_upgrade.rst
 
 
 Anaerobic Digestion Upgrade Hydrogen
 ^^^^^^^^^^
 Top key: anaerobic_digestion_upgrade_hydrogen
 
-.. csv-table::
-			:file: input_csv/anaerobic_digestion_upgrade_hydrogen.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/anaerobic_digestion_upgrade_hydrogen.rst
 
 
 Anaerobic Digestion Combined Heat and Power (CHP)
 ^^^^^^^^^^
 Top key: anaerobic_digestion_chp
 
-.. csv-table::
-			:file: input_csv/anaerobic_digestion_chp.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/anaerobic_digestion_chp.rst
 
 
 Wood Gasification Upgrade
 ^^^^^^^^^^
 Top key: wood_gasification_upgrade
 
-.. csv-table::
-			:file: input_csv/wood_gasification_upgrade.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_gasification_upgrade.rst
 
 
 Wood Gasification Upgrade Hydrogen
 ^^^^^^^^^^
 Top key: wood_gasification_upgrade_hydrogen
 
-.. csv-table::
-			:file: input_csv/wood_gasification_upgrade_hydrogen.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_gasification_upgrade_hydrogen.rst
 
 
 Wood Digestion Combined Heat and Power (CHP)
 ^^^^^^^^^^
 Top key: wood_digestion_chp
 
-.. csv-table::
-			:file: input_csv/wood_digestion_chp.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_digestion_chp.rst
 
 
 Hydrogen Production
 ^^^^^^^^^^
 Top key: hydrogen_production
 
-.. csv-table::
-			:file: input_csv/hydrogen_production.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/hydrogen_production.rst
 
 
 Gas Turbine Combined Heat and Power (CHP) - small scale
 ^^^^^^^^^^
 Top key: chp_gt
 
-.. csv-table::
-			:file: input_csv/chp_gt.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/chp_gt.rst
 
 
 Gas Turbine - centralised plant (cp)
 ^^^^^^^^^^
 Top key: gas_turbine_cp
 
-.. csv-table::
-			:file: input_csv/gas_turbine_cp.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/gas_turbine_cp.rst
 
 
 Steam Turbine
 ^^^^^^^^^^
 Top key: steam_turbine
 
-.. csv-table::
-			:file: input_csv/steam_turbine.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/steam_turbine.rst
 
 
 Wood Boiler - centralised plant (cp)
 ^^^^^^^^^^
 Top key: wood_boiler_cp
 
-.. csv-table::
-			:file: input_csv/wood_boiler_cp.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_boiler_cp.rst
 
 
 Waste-to-Energy Combined Heat and Power
 ^^^^^^^^^^
 Top key: waste_to_energy
 
-.. csv-table::
-			:file: input_csv/waste_to_energy.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/waste_to_energy.rst
 
 
 Heat Pump - centralised plant (cp)
 ^^^^^^^^^^
 Top key: heat_pump_cp
 
-.. csv-table::
-			:file: input_csv/heat_pump_cp.csv
-			:widths: auto
-			:header-rows: 1
+.. include:: ../how_to_use_the_model/input_csv_as_rst/heat_pump_cp.rst
 
 
 Other
