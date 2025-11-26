@@ -18,3 +18,7 @@ how much it costs to replace it with a new boiler, without
 redoing any of the ancillary installations.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
+
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_ob} = \mathtt{eta} \cdot \mathtt{u\_oil\_ob}

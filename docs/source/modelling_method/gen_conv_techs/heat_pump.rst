@@ -24,6 +24,10 @@ redoing any of the ancillary installations.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/heat_pump.rst
 
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_hp} = \mathtt{COP} \cdot \mathtt{u\_e\_hp} 
+
 COP modes
 -----------------------------------------------------------
 There are several ways to set the COP of the heat pumps.

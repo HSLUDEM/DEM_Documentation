@@ -15,3 +15,7 @@ is not allowed.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/electric_heater.rst
 
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_eh} = \mathtt{u\_e\_eh}
+
