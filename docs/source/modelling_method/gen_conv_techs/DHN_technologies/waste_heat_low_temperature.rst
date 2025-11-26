@@ -13,3 +13,7 @@ a datacentre or other cooling equipment.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/waste_heat_low_temperature.rst
 
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_hlt\_whlt} \leq \mathtt{v\_hlt\_resource\_whlt}
+

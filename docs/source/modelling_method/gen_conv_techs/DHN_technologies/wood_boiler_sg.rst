@@ -9,3 +9,6 @@ co-produce heat and electricity.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/wood_boiler_sg.rst
 
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_steam\_wbsg} = \mathtt{eta} \cdot \mathtt{u\_wd\_wbsg}

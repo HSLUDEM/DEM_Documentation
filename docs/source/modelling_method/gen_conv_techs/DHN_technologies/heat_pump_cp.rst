@@ -11,3 +11,6 @@ defined by the user.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/heat_pump_cp.rst
 
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_hpcp} = \mathtt{COP} \cdot \mathtt{u\_e\_hpcp} 
