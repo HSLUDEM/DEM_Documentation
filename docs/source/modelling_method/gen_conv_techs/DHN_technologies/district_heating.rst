@@ -32,7 +32,9 @@ a measure for the cost of grid expansion, and a heat demand
 per group is determiend. The cost of expansion
 and of maintaining the DHN is then calculated
 based on the parameters ``investment_dh_grid_per_m`` and
-``maintenance_cost_dh_grid_per_m``.
+``maintenance_cost_dh_grid_per_m``. In the distance based expansion mode,
+some buildings cannot be connected to the DHN as they are too far 
+away from other nearby buildings.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/district_heating.rst
 
