@@ -280,11 +280,54 @@ Top key: steam_turbine
 .. include:: ../how_to_use_the_model/input_csv_as_rst/steam_turbine.rst
 
 
+Wood Boiler - steam generator (cp)
+^^^^^^^^^^
+Top key: wood_boiler_sg
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/wood_boiler_sg.rst
+
+
 Wood Boiler - centralised plant (cp)
 ^^^^^^^^^^
 Top key: wood_boiler_cp
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/wood_boiler_cp.rst
+
+
+Gas Boiler - centralised plant (cp)
+^^^^^^^^^^
+Top key: gas_boiler_cp
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/gas_boiler_cp.rst
+
+
+Oil Boiler - centralised plant (cp)
+^^^^^^^^^^
+Top key: oil_boiler_cp
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/oil_boiler_cp.rst
+
+
+Electric heater - centralised plant (cp)
+^^^^^^^^^^
+Top key: electric_heater_cp
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/electric_heater_cp.rst
+
+
+Waste Heat
+^^^^^^^^^^
+Top key: waste_heat
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/waste_heat.rst
+
+
+Waste Heat (Low Temperature)
+^^^^^^^^^^
+Top key: waste_heat_low_temperature
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/waste_heat_low_temperature.rst
+
 
 
 Waste-to-Energy Combined Heat and Power
@@ -299,6 +342,13 @@ Heat Pump - centralised plant (cp)
 Top key: heat_pump_cp
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/heat_pump_cp.rst
+
+
+Heat Pump - centralised plant (cp) (from low temperature waste heat)
+^^^^^^^^^^
+Top key: heat_pump_cp_lt
+
+.. include:: ../how_to_use_the_model/input_csv_as_rst/heat_pump_cp_lt.rst
 
 
 Other
