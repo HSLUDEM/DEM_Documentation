@@ -30,8 +30,10 @@ equal. Alternatively, a fixed initial state of charge can be defined.
 The variables of the 
 
 +--------------------+-----------+
+| Quantity           | Symbol    |
++====================+===========
 | Contained energy   | q_e_bes   |
-+====================+===========+
++--------------------+-----------+
 | Charging power     | u_e_bes   |
 +--------------------+-----------+
 | Discharging power  | v_e_bes   |
