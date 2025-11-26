@@ -11,4 +11,5 @@ It converts electricity into useful heat.
 
 .. math:: \mathtt{v\_h\_ehcp} = \mathtt{eta}  \mathtt{u\_e\_ehcp}
 
+.. math:: \mathtt{v\_h\_ehcp} = \mathtt{eta} \cdot \mathtt{u\_e\_ehcp}
 
