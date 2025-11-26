@@ -13,7 +13,7 @@ The imported district heat has a constant CO2 intensity and
 cost that do not depend on time.
 Alternatively, heat generators, which are connected in the 
 *heat_sources* section, can be connected to the DHN. These
-*heat_sources* are only used when running the :model: *with
+*heat_sources* are only used when running the model *with
 optimization*.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/district_heating.rst
