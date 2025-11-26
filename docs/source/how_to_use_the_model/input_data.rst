@@ -67,17 +67,9 @@ For Switzerland, data in columns 0 to 15 is sourced from the *Federal Register o
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/master_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/master_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Meta file
 -----------
@@ -87,17 +79,9 @@ The district identification number (column 1: ``GGDENR``) must match the corresp
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/meta_file_2_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/meta_file_2_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Simulation profiles
 -------------------
@@ -105,17 +89,9 @@ This file contains hourly profiles for an entire year (i.e., 8760 hours) represe
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/simulation_profiles_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/simulation_profiles_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/simulation_profiles_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/simulation_profiles_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Temperatures
 ------------
@@ -125,17 +101,9 @@ Past years include historical measurements from monitoring stations, while futur
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/temperature_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/temperature_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/temperature_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/temperature_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 DHW profile
 -----------
@@ -143,17 +111,9 @@ This file contains an hourly domestic hot water (DHW) demand profile for an enti
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/dhw_profile_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/dhw_profile_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/dhw_profile_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/dhw_profile_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Wind power capacity
 -------------------
@@ -161,17 +121,9 @@ This file contains the currently installed wind power capacity (in kW) for each 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_cap_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/wind_power_cap_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_cap_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/wind_power_cap_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Wind power profiles
 -------------------
@@ -187,17 +139,9 @@ This file contains hourly profiles of the national electricity mix. The data inc
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/electricity_mix_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/electricity_mix_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 HDD Profiles
 ------------
@@ -205,17 +149,9 @@ These files contain the number of heating degree days (HDD) per year for each mu
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/hdd_file_info.rst
 
-.. csv-table::
-	      :file: input_files_csv/hdd_file_info.csv
-	      :widths: auto
-	      :header-rows: 0
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/hdd_file_columns.rst
 
-.. csv-table::
-	      :file: input_files_csv/hdd_file_columns.csv
-	      :widths: auto
-	      :header-rows: 1
 
 EV demand profiles
 ------------------
