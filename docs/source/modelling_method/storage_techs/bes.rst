@@ -1,53 +1,31 @@
 Battery Energy Storage (BES)
 =======================================
 
-This technology represent a battery electric energy storage device.
-It charges and discharges electric energy.
-It has the following properties, to be defined in the input file
+The BES technology represents a battery electric storage system
+connected to the electric grid. 
+It can be either a small scale battery, a swarm of small scale
+batteries or grid scale batteries. The definition of the technology
+is not defining this, but only maintenance and capital cost.
+
+It can be charged by all 
+the technologies that are defined via the connections parameters in
+the input file. The battery has a given maximum capacity that can be set
+by the optimizer if optimization is activated. When charging and
+discharging, a fixed loss rate is applied. Furthermore, the storage
+loses energy at a constant rate. The electric energy stored in batteries
+can be discharged to any consumers in the local district.
+
+Using the parameter force_asynchronous_prod_con, the optimizer can be 
+forced to never charge and discharge the storage at the same time.
+This can be useful to prevent the energy system from disposing of 
+electric energy using the charging and discharging losses of the 
+storage.
+
+The initial charge of the storage is usually set to be optimized. Then,
+the constraint is that the initial and final storage level have to be 
+equal. Alternatively, a fixed initial state of charge can be defined.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/bes.rst
-
-.. csv-table::
-	      :file: ../../how_to_use_the_model/input_csv/bes.csv
-	      :widths: auto
-	      :header-rows: 0
-
-
-+------------------------------+------------------+--------------------------------------------+
-| Name                         | Standard Value   | Description                                |
-+==============================+==================+============================================+
-| deployment                   | True             | Defines whether this technology is deployed|
-+------------------------------+------------------+--------------------------------------------+
-|| force_asynchronous_prod_con || global variable || If True, charging and discharging         |
-||                             ||                 || at the same time is not possible          |
-+------------------------------+------------------+--------------------------------------------+
-| eta_chg_dchg                 | 0.95             | Efficiency of charging and discharging     |
-+------------------------------+------------------+--------------------------------------------+
-| bes_gamma                    | 0.001            | Storage losses                             |
-+------------------------------+------------------+--------------------------------------------+
-|| capacity_kWh                || 'inf'           ||                                           |
-||                             ||                 ||                                           |
-+------------------------------+------------------+--------------------------------------------+
-|| chg_dchg_per_cap_max        || 0.1             || Maximum charge or discharge               |
-||                             ||                 || flow per time unit (per hour)             |
-+------------------------------+------------------+--------------------------------------------+
-| initial_charge               | global variable  | initial charge of the battery at t=0       |
-+------------------------------+------------------+--------------------------------------------+
-|| optimized_initial_charge    || True            || If True, initial_charge is                |
-||                             ||                 || determined within the optimization        |
-||                             ||                 || s.t. the initial charge                   |
-||                             ||                 || and the final charge are the same         |
-+------------------------------+------------------+--------------------------------------------+
-| co2_intensity                | 0                | CO_2 intensity                             |
-+------------------------------+------------------+--------------------------------------------+
-| lifetime                     | 10               | Lifetime of the battery, in years          |
-+------------------------------+------------------+--------------------------------------------+
-| interest_rate                | global variable  | interest rate for LCC calculation          |
-+------------------------------+------------------+--------------------------------------------+
-| capex                        | 500              | Capital expenditure per kWh                |
-+------------------------------+------------------+--------------------------------------------+
-| maintenance_cost             | 2.0              | Yearly maintenance cost per kWh            |
-+------------------------------+------------------+--------------------------------------------+
 
 The variables of the 
 
