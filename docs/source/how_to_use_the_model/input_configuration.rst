@@ -41,22 +41,11 @@ Configuration file: ``simulation.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/simulation.rst
 
-.. csv-table::
-			:file: input_csv/simulation.csv
-			:widths: auto
-			:header-rows: 1
-
-
 Meta Data
 ---------
 Configuration file: ``meta_data.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/meta_data.rst
-
-.. csv-table::
-	      :file: input_csv/meta_data.csv
-	      :widths: auto
-	      :header-rows: 1
 
 Scenarios
 ---------
@@ -64,23 +53,11 @@ Configuration file: ``scenarios.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/scenarios.rst
 
-.. csv-table::
-			:file: input_csv/scenarios.csv
-			:widths: auto
-			:header-rows: 1
-
-
 Optimisation
 ---------
 Configuration file: ``optimisation.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/optimisation.rst
-
-.. csv-table::
-			:file: input_csv/optimisation.csv
-			:widths: auto
-			:header-rows: 1
-
 
 Demand Side
 ---------
@@ -88,22 +65,12 @@ Configuration file: ``demand_side.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/demand_side.rst
 
-.. csv-table::
-			:file: input_csv/demand_side.csv
-			:widths: auto
-			:header-rows: 1
-
 
 Supply
 ---------
 Configuration file: ``supply.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/supply.rst
-
-.. csv-table::
-			:file: input_csv/supply.csv
-			:widths: auto
-			:header-rows: 1
 		  
 
 Technologies
