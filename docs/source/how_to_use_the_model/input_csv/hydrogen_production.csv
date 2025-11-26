@@ -1,7 +1,7 @@
 Attribute,Unit,Data type,Description
 deployment,--,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
 color,hex,str,Color for plot
-efficiancy,--,float,Conversion efficiency
+efficiency,--,float,Conversion efficiency
 capacity_kWh,kWh (kW?),float,maximum output
 co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
 lifetime,years,int,Expected lifetime of technology before replacement is required.

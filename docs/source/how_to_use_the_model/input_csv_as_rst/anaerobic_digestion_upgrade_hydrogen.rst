@@ -17,9 +17,9 @@
 +----------------------+--------------+-----------+------------------------------------------+
 | methane percentage   |              | float     | methane produced per input               |
 +----------------------+--------------+-----------+------------------------------------------+
-| efficiancy_primary   | —            | float     | Conversion efficiency                    |
+| efficiency_primary   | —            | float     | Conversion efficiency                    |
 +----------------------+--------------+-----------+------------------------------------------+
-| efficiancy_secondary |              | float     | Conversion efficiency                    |
+| efficiency_secondary |              | float     | Conversion efficiency                    |
 +----------------------+--------------+-----------+------------------------------------------+
 | capacity_kWh         | kWh          | float     | maximum output                           |
 +----------------------+--------------+-----------+------------------------------------------+
