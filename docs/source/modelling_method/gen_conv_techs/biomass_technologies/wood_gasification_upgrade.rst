@@ -1,6 +1,10 @@
 Wood Gasification Upgrade
 =======================================
 
+The wood gasification upgrade converts
+wood into biogas. The gas can be used by any
+gas-consuming entities in the district.
+
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/wood_gasification_upgrade.rst
 
 The relationship between the in- and outflows is given by
