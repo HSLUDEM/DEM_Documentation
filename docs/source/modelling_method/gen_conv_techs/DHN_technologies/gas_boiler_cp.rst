@@ -1,7 +1,12 @@
 Gas Boiler Central Plant
 =======================================
 
-.. csv-table::
-	      :file: ../../../how_to_use_the_model/input_csv/gas_boiler_cp.csv
-	      :widths: auto
-	      :header-rows: 0
+The gas boiler central plant is a large-Scale
+gas boiler attached to the district heating network.
+It converts gas into useful heat.
+
+.. include:: ../../../how_to_use_the_model/input_csv_as_rst/gas_boiler_cp.rst
+
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_gbcp} = \mathtt{eta} \cdot \mathtt{u\_gas\_gbcp}

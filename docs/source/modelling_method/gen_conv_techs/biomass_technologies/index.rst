@@ -12,5 +12,5 @@ Biomass Technologies
    anaerobic_digestion_chp
    wood_gasification_upgrade
    wood_gasification_upgrade_hydrogen
-   wood_digestion_chp
+   wood_gasification_chp
 

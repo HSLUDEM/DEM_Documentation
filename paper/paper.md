@@ -10,7 +10,7 @@ authors:
   - name: Ueli Schilt
     orcid: 0000-0002-6104-1389
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Pascal Marc Vecsei
+  - name: Pascal M. Vecsei
     orcid: 0000-0003-1058-8808
     affiliation: 1
   - name: Somesh Vijayananda

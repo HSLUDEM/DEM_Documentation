@@ -1,7 +1,14 @@
 Electric Heater Central Plant
 =======================================
 
-.. csv-table::
-	      :file: ../../../how_to_use_the_model/input_csv/electric_heater_cp.csv
-	      :widths: auto
-	      :header-rows: 0
+The electric heater central plant (ehcp) 
+represents a large scale electric heater
+connected to the district heating network.
+It converts electricity into useful heat.
+
+.. include:: ../../../how_to_use_the_model/input_csv_as_rst/electric_heater_cp.rst
+
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_ehcp} = \mathtt{eta} \cdot \mathtt{u\_e\_ehcp}
+

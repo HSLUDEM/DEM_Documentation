@@ -2,22 +2,23 @@ Oil Boiler
 =======================================
 
 The oil boiler represent a device that burns 
-heating oil to produce heat for space heating
+oil to produce heat for space heating
 and domestic hot water. It is situated in individual 
 buildings and therefore contributes a constant share
 to the overal heat production. It has a constant
 efficiency and constant carbon emissions per kWh
 of energy converted.
 
-.. csv-table::
-	      :file: ../../how_to_use_the_model/input_csv/oil_boiler.csv
-	      :widths: auto
-	      :header-rows: 0
+For Swiss municipalities, the oil boiler is usually
+already deployed in some buildings, since it is an often
+encountered technology. Therefore, an additional 
+replacement capex can be defined. If oil boilers reach
+the end of their life, this replacement capex defines
+how much it costs to replace it with a new boiler, without
+redoing any of the ancillary installations.
 
+.. include:: ../../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
 
-Balrog ist ein liebes Tier.
-Er frisst nur böse Kinder.
-Und dann kaut er sie ganz gut.
-Wie ein guter Junge.
-Denn gute Kinder kauen ihr Essen gründlich.
-Sonst verschlucken sie sich ja noch.
+The relationship between the in- and outflows is given by
+
+.. math:: \mathtt{v\_h\_ob} = \mathtt{eta} \cdot \mathtt{u\_oil\_ob}
