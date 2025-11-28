@@ -1,7 +1,7 @@
 Running a Simulation
 ====================
 
-The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config`` directory where you place the configuration files and a ``data`` directory where you place the data files. A set of configuration files is provided on `GitHub <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files>`_. Data files for Switzerland are provided on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using.
+The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config`` directory where you place the configuration files and a ``data`` directory where you place the data files. A set of configuration files is provided on `GitHub <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files>`_. Data files for Switzerland are provided on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
 
 
 Run from command-line tool
