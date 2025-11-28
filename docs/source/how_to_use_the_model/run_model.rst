@@ -5,7 +5,7 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 
 .. code-block:: text
 
-    District_Energy_Model/
+    project_dir/
     ├── config/
     │   ├── config_files/
     │   │   ├── demand_side.yaml
