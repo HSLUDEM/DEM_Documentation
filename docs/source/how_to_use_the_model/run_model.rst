@@ -58,7 +58,12 @@ Open the command-line tool and activate the DEM Conda environment:
 
     conda activate dem_X_Y_Z
 
-**Step 2: Run a Simulation**
+**Step 2: Configure the Simulation**
+
+Adapt the configuration files as described in :doc:`input_configuration` and place them in the ``config/config_files`` directory.
+
+
+**Step 3: Run the Simulation**
 
 .. code-block:: shell
 
