@@ -24,7 +24,12 @@ Optional configuration files:
 
 All files define parameter names as top-level keys. The exception is technologies.yaml, where technologies appear as the top-level keys and their respective parameters are listed as sub-keys.
 
-Below are example excerpts from two configuration files:
+Below are example excerpts from some configuration files:
+
+.. image:: images/simulation_yaml.png
+   :scale: 50%
+
+----
 
 .. image:: images/scenarios_yaml.png
    :scale: 50%
