@@ -11,7 +11,9 @@
 |                 |                                          |                |      |           |        |
 |                 | is the BFS number and can be found       |                |      |           |        |
 |                 |                                          |                |      |           |        |
-|                 | online.                                  |                |      |           |        |
+|                 | online (www.bfs.admin.ch/bfs/de/home/gru |                |      |           |        |
+|                 |                                          |                |      |           |        |
+|                 | ndlagen/agvch.html).                     |                |      |           |        |
 +-----------------+------------------------------------------+----------------+------+-----------+--------+
 | generate_plots  | The generation of plots can be switched  |                | —    | bool      |        |
 |                 |                                          |                |      |           |        |

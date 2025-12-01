@@ -23,6 +23,6 @@ After activating the environment, install DEM with ``pip``:
     pip install district_energy_model
 
 
-Now you can run the model (:doc:`run_model`).
+Now you can run the model (see :doc:`run_model`).
 
 
