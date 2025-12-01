@@ -5,11 +5,15 @@ Time series data, as well as information about buildings and districts, are prov
 
 This section describes the required files, their contents, and the expected data formats. Although all files must be present for the simulation to run, their entries can be set to zero if a dataset is not relevant to a specific case (for example, the wind power file if wind generation is excluded from the scenario).
 
-.. note::
+..
+  .. note::
 
-   A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
+     A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
 
 All input files must be located within the ``data`` directory following the predefined directory structure (see below).
+
+.. note::
+  For Switzerland, a complete dataset package is available on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. After downloading and unzipping the archive, place its contents in the ``data`` directory of your project. The required directory structure is already included.
 
 
 .. code-block:: text
