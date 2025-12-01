@@ -113,7 +113,8 @@ def get_grid_table(multiline_rows):
 # --------------------------------------------------------------------
 def main():
     folders_to_treat = ["input_csv", "input_files_csv", "output_csv"]
-    containing_folder = "docs/source/how_to_use_the_model"
+    # containing_folder = "docs/source/how_to_use_the_model"
+    containing_folder = "how_to_use_the_model"
 
     existing_elements = os.listdir(containing_folder)
 

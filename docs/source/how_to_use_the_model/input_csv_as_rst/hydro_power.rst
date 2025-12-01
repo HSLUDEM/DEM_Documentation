@@ -1,47 +1,47 @@
-+------------------------+--------------+-----------+------------------------------------------+
-| Attribute              | Unit         | Data type | Description                              |
-+========================+==============+===========+==========================================+
-| deployment             | —            | bool      | If set to 'true', the technology will be |
-|                        |              |           |                                          |
-|                        |              |           | considered in the energy system model    |
-|                        |              |           |                                          |
-|                        |              |           | (this does not necessarily mean it will  |
-|                        |              |           |                                          |
-|                        |              |           | be used). Only relevant for              |
-|                        |              |           |                                          |
-|                        |              |           | optimisation.                            |
-+------------------------+--------------+-----------+------------------------------------------+
-| kWp_max                | kW           | float     | Kilowatt Peak: Maximum power output of   |
-|                        |              |           |                                          |
-|                        |              |           | hydro power plants.                      |
-+------------------------+--------------+-----------+------------------------------------------+
-| existing_decentralised |              | bool      |                                          |
-+------------------------+--------------+-----------+------------------------------------------+
-| co2_intensity          | kg CO2/kWh   | float     | Carbon-dioxide intensity of technology   |
-|                        |              |           |                                          |
-|                        |              |           | output (annual average value).           |
-+------------------------+--------------+-----------+------------------------------------------+
-| lifetime               | years        | int       | Expected lifetime of technology before   |
-|                        |              |           |                                          |
-|                        |              |           | replacement is required.                 |
-+------------------------+--------------+-----------+------------------------------------------+
-| capex                  | CHF/kWp      | float     | CAPEX cost of technology per unit of     |
-|                        |              |           |                                          |
-|                        |              |           | capacity.                                |
-+------------------------+--------------+-----------+------------------------------------------+
-| maintenance_cost       | CHF/kWp/year | float     | OPEX cost of technology.                 |
-+------------------------+--------------+-----------+------------------------------------------+
-| interest_rate          | —            | float     | Interest rate for computing levelised    |
-|                        |              |           |                                          |
-|                        |              |           | costs (if required).                     |
-+------------------------+--------------+-----------+------------------------------------------+
-| virtual_export_tariff  | CHF/kWh      | float     | virtual export tarriff to prefer         |
-|                        |              |           |                                          |
-|                        |              |           | internal usage of the electricity        |
-+------------------------+--------------+-----------+------------------------------------------+
-| export_subsidy         | CHF/kWh      | float     | subsidy to make export more likely (and  |
-|                        |              |           |                                          |
-|                        |              |           | prevent cycling of storages to curtail   |
-|                        |              |           |                                          |
-|                        |              |           | energy)                                  |
-+------------------------+--------------+-----------+------------------------------------------+
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| Attribute              | Description                              | Standard value | Unit         | Data type | Source |
++========================+==========================================+================+==============+===========+========+
+| deployment             | If set to 'true', the technology will be | True           | —            | bool      |        |
+|                        |                                          |                |              |           |        |
+|                        | considered in the energy system model    |                |              |           |        |
+|                        |                                          |                |              |           |        |
+|                        | (this does not necessarily mean it will  |                |              |           |        |
+|                        |                                          |                |              |           |        |
+|                        | be used). Only relevant for              |                |              |           |        |
+|                        |                                          |                |              |           |        |
+|                        | optimisation.                            |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| kWp_max                | Kilowatt Peak: Maximum power output of   | inf            | kW           | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | hydro power plants.                      |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| existing_decentralised |                                          | True           |              | bool      |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| co2_intensity          | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh   | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | output (annual average value).           |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| lifetime               | Expected lifetime of technology before   | 25             | years        | int       |        |
+|                        |                                          |                |              |           |        |
+|                        | replacement is required.                 |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| capex                  | CAPEX cost of technology per unit of     | 0              | CHF/kWp      | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | capacity.                                |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| maintenance_cost       | OPEX cost of technology.                 | 130            | CHF/kWp/year | float     |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| interest_rate          | Interest rate for computing levelised    |                | —            | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | costs (if required).                     |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| virtual_export_tariff  | virtual export tarriff to prefer         | 0              | CHF/kWh      | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | internal usage of the electricity        |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+
+| export_subsidy         | subsidy to make export more likely (and  | 0              | CHF/kWh      | float     |        |
+|                        |                                          |                |              |           |        |
+|                        | prevent cycling of storages to curtail   |                |              |           |        |
+|                        |                                          |                |              |           |        |
+|                        | energy)                                  |                |              |           |        |
++------------------------+------------------------------------------+----------------+--------------+-----------+--------+

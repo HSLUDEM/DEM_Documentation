@@ -1,43 +1,43 @@
-+------------------+-------------+-----------+------------------------------------------+
-| Attribute        | Unit        | Data type | Description                              |
-+==================+=============+===========+==========================================+
-| deployment       | —           | bool      | If set to 'true', the technology will be |
-|                  |             |           |                                          |
-|                  |             |           | considered in the energy system model    |
-|                  |             |           |                                          |
-|                  |             |           | (this does not necessarily mean it will  |
-|                  |             |           |                                          |
-|                  |             |           | be used). Only relevant for              |
-|                  |             |           |                                          |
-|                  |             |           | optimisation.                            |
-+------------------+-------------+-----------+------------------------------------------+
-| kW_th_max        | kW          | str       | Maximum thermal power output             |
-+------------------+-------------+-----------+------------------------------------------+
-| hv_oil_MJpkg     | MJ/kg       | float     | heating value of heating oil             |
-+------------------+-------------+-----------+------------------------------------------+
-| eta              | —           | float     | Efficiency of the oil boiler in          |
-|                  |             |           |                                          |
-|                  |             |           | converting oil to heat                   |
-+------------------+-------------+-----------+------------------------------------------+
-| oil_price_CHFpl  | CHF/l       | float     | Oil price                                |
-+------------------+-------------+-----------+------------------------------------------+
-| co2_intensity    | kg CO2/kWh  | float     | Carbon-dioxide intensity of technology   |
-|                  |             |           |                                          |
-|                  |             |           | output (annual average value).           |
-+------------------+-------------+-----------+------------------------------------------+
-| lifetime         | years       | int       | Expected lifetime of technology before   |
-|                  |             |           |                                          |
-|                  |             |           | replacement is required.                 |
-+------------------+-------------+-----------+------------------------------------------+
-| interest_rate    | —           | float     | Interest rate for computing levelised    |
-|                  |             |           |                                          |
-|                  |             |           | costs (if required).                     |
-+------------------+-------------+-----------+------------------------------------------+
-| capex            | CHF/kW      | float     | CAPEX cost of technology per unit of     |
-|                  |             |           |                                          |
-|                  |             |           | capacity.                                |
-+------------------+-------------+-----------+------------------------------------------+
-| maintenance_cost | CHF/kW/year | float     | OPEX cost of technology per unit of      |
-|                  |             |           |                                          |
-|                  |             |           | capacity.                                |
-+------------------+-------------+-----------+------------------------------------------+
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| Attribute        | Description                              | Standard value | Unit        | Data type | Source |
++==================+==========================================+================+=============+===========+========+
+| deployment       | If set to 'true', the technology will be | True           | —           | bool      |        |
+|                  |                                          |                |             |           |        |
+|                  | considered in the energy system model    |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | (this does not necessarily mean it will  |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | be used). Only relevant for              |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | optimisation.                            |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| kW_th_max        | Maximum thermal power output             | inf            | kW          | str       |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| hv_oil_MJpkg     | heating value of heating oil             | 42.9           | MJ/kg       | float     |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| eta              | Efficiency of the oil boiler in          | 0.85           | —           | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | converting oil to heat                   |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| oil_price_CHFpl  | Oil price                                | 1              | CHF/l       | float     |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| co2_intensity    | Carbon-dioxide intensity of technology   | 0.301          | kg CO2/kWh  | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | output (annual average value).           |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| lifetime         | Expected lifetime of technology before   | 25             | years       | int       |        |
+|                  |                                          |                |             |           |        |
+|                  | replacement is required.                 |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| interest_rate    | Interest rate for computing levelised    | 0.025          | —           | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | costs (if required).                     |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| capex            | CAPEX cost of technology per unit of     | 2000           | CHF/kW      | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | capacity.                                |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| maintenance_cost | OPEX cost of technology per unit of      | 1.26           | CHF/kW/year | float     | Source |
+|                  |                                          |                |             |           |        |
+|                  | capacity.                                |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+

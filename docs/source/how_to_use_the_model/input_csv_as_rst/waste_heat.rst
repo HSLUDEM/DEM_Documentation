@@ -1,39 +1,39 @@
-+----------------------+-------------+-----------+------------------------------------------+
-| Attribute            | Unit        | Data type | Description                              |
-+======================+=============+===========+==========================================+
-| deployment           | —           | bool      | If set to 'true', the technology will be |
-|                      |             |           |                                          |
-|                      |             |           | considered in the energy system model    |
-|                      |             |           |                                          |
-|                      |             |           | (this does not necessarily mean it will  |
-|                      |             |           |                                          |
-|                      |             |           | be used). Only relevant for              |
-|                      |             |           |                                          |
-|                      |             |           | optimisation.                            |
-+----------------------+-------------+-----------+------------------------------------------+
-| capex                | CHF/kW      | float     | CAPEX cost of technology per unit of     |
-|                      |             |           |                                          |
-|                      |             |           | capacity.                                |
-+----------------------+-------------+-----------+------------------------------------------+
-| maintenance_cost     | CHF/kW/year | float     | OPEX cost of technology per unit of      |
-|                      |             |           |                                          |
-|                      |             |           | capacity.                                |
-+----------------------+-------------+-----------+------------------------------------------+
-| lifetime             | years       | int       | Expected lifetime of technology before   |
-|                      |             |           |                                          |
-|                      |             |           | replacement is required.                 |
-+----------------------+-------------+-----------+------------------------------------------+
-| timeseries_file_path | —           | str       | Path to file with waste heat timeseries  |
-|                      |             |           |                                          |
-|                      |             |           | (in kWh/h)                               |
-+----------------------+-------------+-----------+------------------------------------------+
-| co2_intensity        | kg CO2/kWh  | float     | Carbon-dioxide intensity of technology   |
-|                      |             |           |                                          |
-|                      |             |           | output (annual average value).           |
-+----------------------+-------------+-----------+------------------------------------------+
-| tariff_CHFpkWh       | CHF/kWh     | float     | Cost of waste heat                       |
-+----------------------+-------------+-----------+------------------------------------------+
-| interest_rate        | —           | float     | Interest rate for computing levelised    |
-|                      |             |           |                                          |
-|                      |             |           | costs (if required).                     |
-+----------------------+-------------+-----------+------------------------------------------+
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| Attribute            | Description                              | Standard value | Unit        | Data type | Source |
++======================+==========================================+================+=============+===========+========+
+| deployment           | If set to 'true', the technology will be | False          | —           | bool      |        |
+|                      |                                          |                |             |           |        |
+|                      | considered in the energy system model    |                |             |           |        |
+|                      |                                          |                |             |           |        |
+|                      | (this does not necessarily mean it will  |                |             |           |        |
+|                      |                                          |                |             |           |        |
+|                      | be used). Only relevant for              |                |             |           |        |
+|                      |                                          |                |             |           |        |
+|                      | optimisation.                            |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| capex                | CAPEX cost of technology per unit of     | 0              | CHF/kW      | float     |        |
+|                      |                                          |                |             |           |        |
+|                      | capacity.                                |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| maintenance_cost     | OPEX cost of technology per unit of      | 0              | CHF/kW/year | float     |        |
+|                      |                                          |                |             |           |        |
+|                      | capacity.                                |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| lifetime             | Expected lifetime of technology before   | 25             | years       | int       |        |
+|                      |                                          |                |             |           |        |
+|                      | replacement is required.                 |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| timeseries_file_path | Path to file with waste heat timeseries  | ''             | —           | str       |        |
+|                      |                                          |                |             |           |        |
+|                      | (in kWh/h)                               |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| co2_intensity        | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh  | float     |        |
+|                      |                                          |                |             |           |        |
+|                      | output (annual average value).           |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| tariff_CHFpkWh       | Cost of waste heat                       | 0.01           | CHF/kWh     | float     |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| interest_rate        | Interest rate for computing levelised    | 0.025          | —           | float     | Source |
+|                      |                                          |                |             |           |        |
+|                      | costs (if required).                     |                |             |           |        |
++----------------------+------------------------------------------+----------------+-------------+-----------+--------+

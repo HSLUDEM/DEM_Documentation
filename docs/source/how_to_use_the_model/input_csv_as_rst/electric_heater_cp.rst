@@ -1,37 +1,37 @@
-+------------------+-------------+-----------+------------------------------------------+
-| Attribute        | Unit        | Data type | Description                              |
-+==================+=============+===========+==========================================+
-| deployment       | —           | bool      | If set to 'true', the technology will be |
-|                  |             |           |                                          |
-|                  |             |           | considered in the energy system model    |
-|                  |             |           |                                          |
-|                  |             |           | (this does not necessarily mean it will  |
-|                  |             |           |                                          |
-|                  |             |           | be used). Only relevant for              |
-|                  |             |           |                                          |
-|                  |             |           | optimisation.                            |
-+------------------+-------------+-----------+------------------------------------------+
-| kW_th_max        | kW          | str       | Maximum thermal power output             |
-+------------------+-------------+-----------+------------------------------------------+
-| eta              | —           | float     | Efficiency                               |
-+------------------+-------------+-----------+------------------------------------------+
-| co2_intensity    | kg CO2/kWh  | float     | Carbon-dioxide intensity of technology   |
-|                  |             |           |                                          |
-|                  |             |           | output (annual average value).           |
-+------------------+-------------+-----------+------------------------------------------+
-| lifetime         | years       | int       | Expected lifetime of technology before   |
-|                  |             |           |                                          |
-|                  |             |           | replacement is required.                 |
-+------------------+-------------+-----------+------------------------------------------+
-| interest_rate    | —           | float     | Interest rate for computing levelised    |
-|                  |             |           |                                          |
-|                  |             |           | costs (if required).                     |
-+------------------+-------------+-----------+------------------------------------------+
-| capex            | CHF/kW      | float     | CAPEX cost of technology per unit of     |
-|                  |             |           |                                          |
-|                  |             |           | capacity.                                |
-+------------------+-------------+-----------+------------------------------------------+
-| maintenance_cost | CHF/kW/year | float     | OPEX cost of technology per unit of      |
-|                  |             |           |                                          |
-|                  |             |           | capacity.                                |
-+------------------+-------------+-----------+------------------------------------------+
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| Attribute        | Description                              | Standard value | Unit        | Data type | Source |
++==================+==========================================+================+=============+===========+========+
+| deployment       | If set to 'true', the technology will be | True           | —           | bool      |        |
+|                  |                                          |                |             |           |        |
+|                  | considered in the energy system model    |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | (this does not necessarily mean it will  |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | be used). Only relevant for              |                |             |           |        |
+|                  |                                          |                |             |           |        |
+|                  | optimisation.                            |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| kW_th_max        | Maximum thermal power output             | inf            | kW          | str       |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| eta              | Efficiency                               | 0.98           | —           | float     |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| co2_intensity    | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh  | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | output (annual average value).           |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| lifetime         | Expected lifetime of technology before   | 30             | years       | int       |        |
+|                  |                                          |                |             |           |        |
+|                  | replacement is required.                 |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| interest_rate    | Interest rate for computing levelised    | 0.025          | —           | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | costs (if required).                     |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| capex            | CAPEX cost of technology per unit of     | 100            | CHF/kW      | float     |        |
+|                  |                                          |                |             |           |        |
+|                  | capacity.                                |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
+| maintenance_cost | OPEX cost of technology per unit of      | 0.5            | CHF/kW/year | float     | Source |
+|                  |                                          |                |             |           |        |
+|                  | capacity.                                |                |             |           |        |
++------------------+------------------------------------------+----------------+-------------+-----------+--------+
