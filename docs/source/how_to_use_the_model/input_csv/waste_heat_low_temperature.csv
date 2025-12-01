@@ -1,9 +1,9 @@
-Attribute,Unit,Data type,Description
-deployment,--,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
-capex,CHF/kW,float,CAPEX cost of technology per unit of capacity.
-maintenance_cost,CHF/kW/year,float,OPEX cost of technology per unit of capacity.
-lifetime,years,int,Expected lifetime of technology before replacement is required.
-timeseries_file_path,--,str,Path to file with waste heat timeseries (in kWh/h)
-co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
-tariff_CHFpkWh,CHF/kWh,float,Cost of waste heat
-interest_rate,--,float,Interest rate for computing levelised costs (if required).
+Attribute,Description,Standard value,Unit,Data type,Source
+deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+capex,CAPEX cost of technology per unit of capacity.,0,CHF/kW,float,
+maintenance_cost,OPEX cost of technology per unit of capacity.,0,CHF/kW/year,float,
+lifetime,Expected lifetime of technology before replacement is required.,25,years,int,
+timeseries_file_path,Path to file with waste heat timeseries (in kWh/h),'',--,str,
+co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
+tariff_CHFpkWh,Cost of waste heat,0.01,CHF/kWh,float,
+interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,Source

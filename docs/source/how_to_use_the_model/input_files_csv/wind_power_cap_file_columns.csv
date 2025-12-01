@@ -1,3 +1,3 @@
-"Number","Column","Data type","Description"
-"0","Municipality","object",""
-"1","p_kW","float64",""
+"Number","Column","Data type","Description","Source for Swiss dataset"
+"0","Municipality","object","",""
+"1","p_kW","float64","",""

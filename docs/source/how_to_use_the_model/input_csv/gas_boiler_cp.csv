@@ -1,11 +1,11 @@
-Attribute,Unit,Data type,Description
-deployment,--,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
-kW_th_max,Maximum thermal capacity,str,Maximum thermal power output
-hv_gas_MJpkg,MJ/kg,float,heating value of gas in MJ per kg
-eta,--,float,Conversion efficiency from gas to heat
-gas_price_CHFpkWh,CHF/kWh,float,
-co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
-lifetime,years,int,Expected lifetime of technology before replacement is required.
-interest_rate,--,float,Interest rate for computing levelised costs (if required).
-capex,CHF/kW,int,CAPEX cost of technology per unit of capacity.
-maintenance_cost,CHF/kW/year,float,OPEX cost of technology per unit of capacity.
+Attribute,Description,Standard value,Unit,Data type,Source
+deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+kW_th_max,Maximum thermal power output,inf,Maximum thermal capacity,str,
+hv_gas_MJpkg,heating value of gas in MJ per kg,46,MJ/kg,float,
+eta,Conversion efficiency from gas to heat,0.9,--,float,
+gas_price_CHFpkWh,,0.13,CHF/kWh,float,
+co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0.228,kg CO2/kWh,float,
+lifetime,Expected lifetime of technology before replacement is required.,25,years,int,
+interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,
+capex,CAPEX cost of technology per unit of capacity.,2000,CHF/kW,int,
+maintenance_cost,OPEX cost of technology per unit of capacity.,1.26,CHF/kW/year,float,Source

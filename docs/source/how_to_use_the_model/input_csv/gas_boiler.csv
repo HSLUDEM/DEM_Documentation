@@ -1,16 +1,16 @@
-Attribute,Unit,Data type,Description
-deployment,--,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
-kW_th_max,kW,float,Maximum thermal capacity (i.e. heat output).
-hv_gas_MJpkg,MJ/kg,float,Lower heating value of gas.
-eta,--,float,Conversion efficiency from fuel to heat.
-gas_price_CHFpkWh,CHF/kWh,float,Gas price (annual fixed value).
-co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
-lifetime,years,int,Expected lifetime of technology before replacement is required.
-interest_rate,--,float,Interest rate for computing levelised costs (if required).
-replacement_factor,--,float,Used for scenario 'fossil_heater_retrofit'. Fraction of heating capacity to be replaced by heat pumps.
-capex,CHF/kWp,float,CAPEX cost of technology per unit of capacity.
-capex_one_to_one_replacement,CHF/kWp,float,CAPEX cost of technology per unit of capacity (when device has reached the end of life)
-maintenance_cost,CHF/kWp/year,float,OPEX cost of technology.
-fixed_demand_share,,bool,
-fixed_demand_share_val,,float,
-only_allow_existing,,bool,
+Attribute,Description,Standard value,Unit,Data type,Source
+deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+kW_th_max,Maximum thermal capacity (i.e. heat output).,inf,kW,float,
+hv_gas_MJpkg,Lower heating value of gas.,46,MJ/kg,float,
+eta,Conversion efficiency from fuel to heat.,0.9,--,float,
+gas_price_CHFpkWh,Gas price (annual fixed value).,0.13,CHF/kWh,float,
+co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0.228,kg CO2/kWh,float,
+lifetime,Expected lifetime of technology before replacement is required.,25,years,int,
+interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,
+replacement_factor,Used for scenario 'fossil_heater_retrofit'. Fraction of heating capacity to be replaced by heat pumps.,1,--,float,
+capex,CAPEX cost of technology per unit of capacity.,2500,CHF/kWp,float,
+capex_one_to_one_replacement,CAPEX cost of technology per unit of capacity (when device has reached the end of life),1000,CHF/kWp,float,
+maintenance_cost,OPEX cost of technology.,25,CHF/kWp/year,float,
+fixed_demand_share,,False,,bool,
+fixed_demand_share_val,,0,,float,
+only_allow_existing,,False,,bool,

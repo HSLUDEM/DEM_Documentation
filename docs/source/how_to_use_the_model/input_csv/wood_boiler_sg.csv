@@ -1,15 +1,15 @@
-Attribute,Unit,Data type,Description
-deployment,--,bool,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation."
-kW_h_max,kW,str,Maximum power output in the form of steam
-force_cap_max,--,bool,Force implementation of maximum capacity specified in kW_h_max. Only relevant for optimisation.
-wood_input_cap_type,,str,
-wood_input_cap_kg,,float,
-cap_min_use,kW,float,
-hv_wood_MJpkg,MJ/kg,float,Lower heating value of wood.
-eta,--,float,Conversion efficiency from wood to heat.
-wood_price_CHFpkg,CHF/kg,float,Wood price (annual fixed value).
-co2_intensity,kg CO2/kWh,float,Carbon-dioxide intensity of technology output (annual average value).
-lifetime,years,int,Expected lifetime of technology before replacement is required.
-capital_cost,CHF/kW,int,CAPEX cost of technology per unit of capacity.
-maintenance_cost,CHF/kW/year,int,OPEX cost of technology per unit of capacity
-interest_rate,--,float,Interest rate for computing levelised costs (if required).
+Attribute,Description,Standard value,Unit,Data type,Source
+deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
+kW_h_max,Maximum power output in the form of steam,inf,kW,str,
+force_cap_max,Force implementation of maximum capacity specified in kW_h_max. Only relevant for optimisation.,False,--,bool,
+wood_input_cap_type,,free,,str,
+wood_input_cap_kg,,112000000,,float,
+cap_min_use,,0,kW,float,
+hv_wood_MJpkg,Lower heating value of wood.,15,MJ/kg,float,
+eta,Conversion efficiency from wood to heat.,0.8,--,float,
+wood_price_CHFpkg,Wood price (annual fixed value).,0.5,CHF/kg,float,
+co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0.027,kg CO2/kWh,float,
+lifetime,Expected lifetime of technology before replacement is required.,25,years,int,
+capital_cost,CAPEX cost of technology per unit of capacity.,4500,CHF/kW,int,
+maintenance_cost,OPEX cost of technology per unit of capacity,5,CHF/kW/year,int,
+interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,Source
