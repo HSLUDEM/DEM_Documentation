@@ -1,8 +1,8 @@
 Contact
 ============
 
-`Ueli Schilt <https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=5406>`_ (ueli.schilt@hslu.ch)
+`Ueli Schilt <https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=5406>`_
 
-`Pascal Vecsei <https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=6390>`_ (pascalmarc.vecsei@hslu.ch)
+`Pascal Vecsei <https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=6390>`_
 
 
