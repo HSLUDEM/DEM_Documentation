@@ -119,8 +119,11 @@ Heat generator replacement is controlled separately by the parameters
 | heat_generator_renovation     | True          | Is heat generator replacement activated?                                    |
 +-------------------------------+---------------+-----------------------------------------------------------------------------+
 | act_on_fossil_heater_retrofit | False         | For manual scenarios:                                                       |
+|                               |               |                                                                             |
 |                               |               | Does the heat generator replacement replace a fossil heater retrofit?       | 
+|                               |               |                                                                             |
 |                               |               | If yes, the rate of fossil heater retrofit is increased according to the    |
+|                               |               |                                                                             |
 |                               |               | heat generator replacement rate                                             |  
 +-------------------------------+---------------+-----------------------------------------------------------------------------+
 
