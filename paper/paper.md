@@ -1,5 +1,5 @@
 ---
-title: 'District Energy Model (DEM): An open-source model for local energy system optimisation.'
+title: 'District Energy Model (DEM): An open-source model for local energy system simulation and optimisation.'
 tags:
   - Python
   - Optimisation
@@ -33,11 +33,12 @@ bibliography: paper.bib
 
 # Summary
 
-The transition from centralised to decentralised energy systems for achieving net-zero emission targets requires the evaluation of potential future scenarios on various spatial scales [ref]. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate energy flows from neighbourhood to regional scale with a focus on the integration of decentralized renewable energy technologies (e.g., solar, wind, biomass). DEM runs simulation and optimisation studies in hourly resolution using a "snapshot-year" approach [ref Marchal]. For selected regions (e.g., Switzerland), compiled input data from public sources is provided to run studies without the need of collecting and compiling such data. 
+The transition from centralised to decentralised energy systems for achieving net-zero emission targets requires the evaluation of potential future scenarios on various spatial scales [ref]. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate energy flows from neighbourhood to regional scale with a focus on the integration of decentralized renewable energy technologies (e.g., solar, wind, biomass). DEM runs simulation and optimisation studies in hourly resolution using a "snapshot-year" approach [ref Marechal]. For selected regions (e.g., Switzerland), pre-compiled input data from public sources is provided to run studies without the need of collecting and compiling such data. 
 
 # Statement of need
 
-Similar open-source modelling frameworks exist, such as e.g., SESMG [ref], EHTOS.FINE [ref], REHO [ref], (..find more). However, while all of these models provide valuable frameworks for evaluating multi-energy systems on various spatial and temporal scales, they all require the user to provide input data such as demand profiles, cost information, or technology specifications. DEM already provides this type of data for selected regions. It has been collected from various public sources and processed for use in simulation studies. Therefore, simulation and optimisation studies can be run in DEM with only minimal configuration requirements (e.g., which buildings to consider), while still maintaining maximum flexibility of substituting any of the pre-configured data with custom data and model configurations.
+Many open-source energy system modelling frameworks exist, such as e.g., SESMG [ref], EHTOS.FINE [ref], REHO [ref], (..find more). Each model has strengths and weaknesses and specific scopes of application. While these models provide valuable frameworks for evaluating multi-energy systems on various spatial and temporal scales, they require the user to provide input data such as demand profiles, cost information, or technology specifications. A large portion of the work when creating simulation studies using a modelling framework goes into the collection and generation of such data. DEM eliminates the need for this work as it already provides this type of data for selected regions and therefore greatly reduces the workload for the modeller. The provided data has been collected from various public sources and pre-processed for use in simulation studies. Therefore, simulation and optimisation studies can be run in DEM with only minimal configuration requirements (e.g., which buildings to consider), while still maintaining maximum flexibility of substituting any of the pre-configured data with custom data and configurations if the need arises.
+
 While an optimisation study is very useful to determine optimal technology design and operation, many energy provision scenarios can be simulated without applying optimisation. Therefore, DEM can also be run as a simulation without optimisation for various scenarios. This allows for short computation times and fast result generation.
 
 -	What stands out from a research perspective? Flexibility considerations; local boundaries, while also considering national electricity provision (as an interface model between local, regional, and national energy planning)
