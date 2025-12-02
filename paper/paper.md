@@ -33,18 +33,27 @@ bibliography: paper.bib
 
 # Summary
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit es
+The transition from centralised to decentralised energy systems for achieving net-zero emission targets requires the evaluation of potential future scenarios on various spatial scales [ref]. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate energy flows from neighbourhood to regional scale with a focus on the integration of decentralized renewable energy technologies (e.g., solar, wind, biomass). DEM runs simulation and optimisation studies in hourly resolution using a "snapshot-year" approach [ref Marchal]. For selected regions (e.g., Switzerland), compiled input data from public sources is provided to run studies without the need of collecting and compiling such data. 
 
 # Statement of need
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit es
+Similar open-source modelling frameworks exist, such as e.g., SESMG [ref], EHTOS.FINE [ref], REHO [ref], (..find more). However, while all of these models provide valuable frameworks for evaluating multi-energy systems on various spatial and temporal scales, they all require the user to provide input data such as demand profiles, cost information, or technology specifications. DEM already provides this type of data for selected regions. It has been collected from various public sources and processed for use in simulation studies. Therefore, simulation and optimisation studies can be run in DEM with only minimal configuration requirements (e.g., which buildings to consider), while still maintaining maximum flexibility of substituting any of the pre-configured data with custom data and model configurations.
+While an optimisation study is very useful to determine optimal technology design and operation, many energy provision scenarios can be simulated without applying optimisation. Therefore, DEM can also be run as a simulation without optimisation for various scenarios. This allows for short computation times and fast result generation.
+
+-	What stands out from a research perspective? Flexibility considerations; local boundaries, while also considering national electricity provision (as an interface model between local, regional, and national energy planning)
+-	Availability of open-source data: pulling it together in one model
+-	Bottom-up demand consideration of individual buildings
+-	Focus on integration of local, decentralized energy sources and technologies
+-	Energy-planning on neighbourhood-scale
+-	No extensive modelling required, yet flexible in scenario creation.
+-	Pre-configured with standard values for the Swiss energy system
+-	Automated parametrisation: Provided for Switzerland; Other countries to be added  can also be added by users, as the required data structure is provided
+-	Selection of custom district
+-	Optimisation optional
+
 
 # Acknowledgements
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+The research published in this publication was carried out with the support of the Swiss Federal Office of Energy as part of the SWEET consortium EDGE. The authors bear sole responsibility for the conclusions and the results presented in this publication.
 
 # References
