@@ -21,4 +21,4 @@ The input parameters of the wind power technology are
 
 The symbols and names of the flows are
 
-.. include:: ../../../how_to_use_the_model/flows_tables/wp.rst
+.. include:: ../../how_to_use_the_model/flows_tables/wp.rst

@@ -13,4 +13,4 @@ reduce the load on heat pumps.(?) TODOTODO
 
 The symbols and names of the flows are
 
-.. include:: ../../../how_to_use_the_model/flows_tables/solar.rst
+.. include:: ../../how_to_use_the_model/flows_tables/solar.rst

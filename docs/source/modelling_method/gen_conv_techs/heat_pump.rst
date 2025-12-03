@@ -30,7 +30,7 @@ The relationship between the in- and outflows is given by
 
 The symbols and names of the flows are
 
-.. include:: ../../../how_to_use_the_model/flows_tables/hp.rst
+.. include:: ../../how_to_use_the_model/flows_tables/hp.rst
 
 
 COP modes
