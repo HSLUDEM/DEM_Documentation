@@ -8,3 +8,7 @@ a standard PV profile obtained from a standard panel with an
 inclination of 30 degrees facing south.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/solar_pv.rst
+
+The symbols and names of the flows are
+
+.. include:: ../../how_to_use_the_model/flows_tables/pv.rst

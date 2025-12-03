@@ -10,3 +10,7 @@ reduce the load on heat pumps.(?) TODOTODO
 
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/solar_thermal.rst
+
+The symbols and names of the flows are
+
+.. include:: ../../how_to_use_the_model/flows_tables/solar.rst

@@ -6,3 +6,7 @@ By not deploying this technology, all the other advanced biomass technologies ar
 This switch does not affect :ref:`wood_boiler`, :ref:`../wood_boiler`, wood_boiler_cp and wood_boiler_sg
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/biomass.rst
+
+The symbols and names of the amalgamated flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/bm.rst

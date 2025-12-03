@@ -13,3 +13,7 @@ The relationship between the in- and outflows is given by
 .. math:: \mathtt{v\_e\_gtcp} = \mathtt{eta\_el} \cdot \mathtt{u\_gas\_gtcp}
 
 .. math:: \mathtt{v\_steam\_gtcp} = \mathtt{htp\_ratio} \cdot \mathtt{eta\_el} \cdot \mathtt{u\_gas\_gtcp}
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/gtcp.rst

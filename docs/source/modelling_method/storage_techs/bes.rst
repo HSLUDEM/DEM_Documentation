@@ -57,6 +57,9 @@ storage is larger than v_e_bes, both by  a factor eta_chg_dchg.
 
 Importantly, the value given in q_e_bes is the stored energy at the end of a given time period.
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/bes.rst
 
 
 

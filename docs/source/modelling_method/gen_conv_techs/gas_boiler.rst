@@ -22,3 +22,7 @@ redoing any of the ancillary installations.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_gb} = \mathtt{eta} \cdot \mathtt{u\_gas\_gb}
+
+The symbols and names of the flows are
+
+.. include:: ../../how_to_use_the_model/flows_tables/gb.rst

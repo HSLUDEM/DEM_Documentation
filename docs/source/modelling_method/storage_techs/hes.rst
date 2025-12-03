@@ -25,3 +25,6 @@ equal. Alternatively, a fixed initial state of charge can be defined.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/hes.rst
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/hes.rst

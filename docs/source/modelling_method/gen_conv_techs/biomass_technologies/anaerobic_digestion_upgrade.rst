@@ -11,3 +11,7 @@ gas-consuming entities in the district.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_gas\_agu} = \mathtt{efficiency} \cdot \mathtt{u\_wet\_bm\_agu} 
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/agu.rst
