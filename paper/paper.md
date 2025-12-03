@@ -63,7 +63,7 @@ Any list of buildings can be passed to DEM for simulation of a district energy s
 -	Pyomo
 -	Calliope
 
-![Example of a district energy system with resources, generateion, conversion, and storage technologies, and various energy demands. The full list of available resources and technologies can be found on the documentation website. \label{fig:dem_layout}]( dem_example_layout.png) { width=100% }
+![Example of a district energy system with resources, generateion, conversion, and storage technologies, and various energy demands. The full list of available resources and technologies can be found on the documentation website. \label{fig:dem_layout}]( dem_example_layout.png){ width=100% }
 
 
 # Acknowledgements
