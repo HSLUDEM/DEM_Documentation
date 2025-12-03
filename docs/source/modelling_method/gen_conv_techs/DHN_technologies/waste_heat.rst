@@ -14,3 +14,6 @@ The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_wh} \leq \mathtt{v\_h\_resource\_wh}
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/wh.rst

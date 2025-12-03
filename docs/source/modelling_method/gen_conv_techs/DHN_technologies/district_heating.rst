@@ -38,3 +38,6 @@ away from other nearby buildings.
 
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/district_heating.rst
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/dhn.rst

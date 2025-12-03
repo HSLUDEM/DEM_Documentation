@@ -12,3 +12,7 @@ It converts oil into useful heat.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_obcp} = \mathtt{eta} \cdot \mathtt{u\_oil\_obcp}
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/obcp.rst

@@ -13,3 +13,7 @@ The relationship between the in- and outflows is given by
 .. math:: \mathtt{v\_e\_st} = \mathtt{eta\_el} \cdot \mathtt{u\_steam\_st} 
 
 .. math:: \mathtt{v\_h\_st} = \mathtt{htp\_ratio} \cdot \mathtt{eta\_el} \cdot \mathtt{u\_steam\_st} 
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/st.rst

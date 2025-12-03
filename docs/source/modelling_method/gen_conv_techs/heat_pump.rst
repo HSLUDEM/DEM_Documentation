@@ -28,6 +28,11 @@ The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_hp} = \mathtt{COP} \cdot \mathtt{u\_e\_hp} 
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/hp.rst
+
+
 COP modes
 -----------------------------------------------------------
 There are several ways to set the COP of the heat pumps.

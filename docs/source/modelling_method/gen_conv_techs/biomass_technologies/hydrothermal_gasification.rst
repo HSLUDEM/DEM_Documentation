@@ -12,3 +12,7 @@ Therefore its capex is even higher.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_gas\_hg} = \mathtt{efficiency} \cdot \mathtt{u\_wet\_bm\_hg} 
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/hg.rst

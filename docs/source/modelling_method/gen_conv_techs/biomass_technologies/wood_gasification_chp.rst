@@ -13,3 +13,6 @@ The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_wguc} = \mathtt{efficiency_heat} \cdot \mathtt{u\_wd\_wguc} 
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/wguc.rst

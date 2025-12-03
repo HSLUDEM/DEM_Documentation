@@ -19,3 +19,6 @@ The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_eh} = \mathtt{u\_e\_eh}
 
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/eh.rst

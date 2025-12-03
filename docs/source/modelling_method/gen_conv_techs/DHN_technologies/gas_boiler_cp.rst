@@ -10,3 +10,7 @@ It converts gas into useful heat.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_gbcp} = \mathtt{eta} \cdot \mathtt{u\_gas\_gbcp}
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/gbcp.rst

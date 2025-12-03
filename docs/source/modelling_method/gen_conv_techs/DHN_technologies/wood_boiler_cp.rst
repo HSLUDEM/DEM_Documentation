@@ -10,3 +10,7 @@ It converts wood into useful heat.
 The relationship between the in- and outflows is given by
 
 .. math:: \mathtt{v\_h\_wbcp} = \mathtt{eta} \cdot \mathtt{u\_wd\_wbcp}
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/wbcp.rst

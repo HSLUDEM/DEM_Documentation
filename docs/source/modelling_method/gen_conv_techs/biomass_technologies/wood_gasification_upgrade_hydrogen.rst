@@ -6,3 +6,7 @@ Wood Gasification Upgrade Hydrogen
 .. include:: ../../../how_to_use_the_model/input_csv_as_rst/wood_gasification_upgrade_hydrogen.rst
 
 TODOTODO hier Formel hinschreiben
+
+The symbols and names of the flows are
+
+.. include:: ../../../how_to_use_the_model/flows_tables/wguh.rst
