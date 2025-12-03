@@ -60,7 +60,7 @@ While an optimisation study is very useful to determine optimal technology desig
 DEM simulates the energy flows in a district, combining bottom-up with top-down modelling. A district in this context can refer to anything from a small group of buildings to an entire municipality or city. Several characteristics are obtained for each individual building (e.g., building type, location, size, age, heat and electricity demand, heating system, solar energy resources), while other data is assessed on district-level (e.g., wind power resources, biomass resources, ambient conditions, mobility demand). The basis for any simulation are a set of resources (e.g., wind, solar, biomass, hydro), a set of generation, conversion, and storage technologies, and a set of demand profiles for heat, electricity, and mobility. An exemplary energy system layout is shown in Fig. \autoref{fig:dem_layout}.
 Any list of buildings can be passed to DEM for simulation of a district energy system.
 
-![Example of a district energy system with resources, generateion, conversion, and storage technologies, and various energy demands. The full list of available resources and technologies can be found on the documentation website. \label{fig:dem_layout}](dem_example_layout.svg)
+![Example of a district energy system with resources, generateion, conversion, and storage technologies, and various energy demands. The full list of available resources and technologies can be found on the documentation website. \label{fig:dem_layout}](dem_example_layout.png){ width=100% }
 
 # Acknowledgements
 
