@@ -60,7 +60,7 @@ def separator(widths, char="-"):
     return "+" + "+".join(char * (w + 2) for w in widths) + "+"
 
 
-def get_grid_table(multiline_rows):
+def get_grid_table(multiline_rows, notitleline = False):
 
     tab_as_str = ""
 
@@ -96,7 +96,7 @@ def get_grid_table(multiline_rows):
 
 
         # Separator after header and after each row
-        if row_index == 0:
+        if row_index == 0 and not notitleline:
             # print(separator(widths, "="))
             tab_as_str += separator(widths, "=")
             tab_as_str += "\n"
@@ -112,27 +112,30 @@ def get_grid_table(multiline_rows):
 # Main script
 # --------------------------------------------------------------------
 def main():
-    folders_to_treat = ["input_csv", "input_files_csv", "output_csv"]
-    # containing_folder = "docs/source/how_to_use_the_model"
-    containing_folder = "how_to_use_the_model"
+    for notitleline in [True, False]:
+        folders_to_treat = ["input_csv", "input_files_csv", "output_csv"]
+        # containing_folder = "docs/source/how_to_use_the_model"
+        containing_folder = "how_to_use_the_model"
 
-    existing_elements = os.listdir(containing_folder)
+        existing_elements = os.listdir(containing_folder)
 
-    for x in folders_to_treat:
-        newname = x + "_as_rst"
-        if newname not in existing_elements:
-            os.mkdir(containing_folder+"/"+newname)
+        
 
-        files_to_convert = os.listdir(containing_folder + "/" + x)
-        for fn in files_to_convert:
-            print("=============", fn, "=============")
-            if fn.endswith(".csv"):
-                fn_new = fn.split(".csv")[0]+".rst"
-                with open(containing_folder + "/" + x + "_as_rst" + "/" + fn_new, "w", encoding="utf-8") as f:
-                    rows = read_csv(Path(containing_folder + "/" + x + "/" + fn))
-                    multiline_rows = split_multiline_cells(rows)
-                    max_length_cells = split_too_long_cells(multiline_rows, maxlen = 40)
-                    f.write(get_grid_table(max_length_cells))
+        for x in folders_to_treat:
+            newname = x + "_as_rst"
+            if newname not in existing_elements:
+                os.mkdir(containing_folder+"/"+newname)
+
+            files_to_convert = os.listdir(containing_folder + "/" + x)
+            for fn in files_to_convert:
+                print("=============", fn, "=============")
+                if fn.endswith(".csv"):
+                    fn_new = fn.split(".csv")[0]+("_notitleline" if notitleline else "")+".rst"
+                    with open(containing_folder + "/" + x + "_as_rst" +"/" + fn_new, "w", encoding="utf-8") as f:
+                        rows = read_csv(Path(containing_folder + "/" + x + "/" + fn))
+                        multiline_rows = split_multiline_cells(rows)
+                        max_length_cells = split_too_long_cells(multiline_rows, maxlen = 40)
+                        f.write(get_grid_table(max_length_cells, notitleline = notitleline))
 
 if __name__ == "__main__":
     main()
