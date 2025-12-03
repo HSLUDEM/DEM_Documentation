@@ -73,6 +73,13 @@ Specifying a project directory using --project is optional. If not provided, DEM
 Simulation results will be stored inside the selected project directory. DEM will automatically create a directory named ``dem_output`` containing output files.
 
 
+.. _run_in_Python:
+
+Run programmatically in Python
+------------------------------
+
+*in progress*
+
 
 .. _run_model_from_source:
 
