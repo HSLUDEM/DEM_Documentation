@@ -69,7 +69,7 @@ Each building is identified by a unique identification number (column 0: ``EGID`
 
 For Switzerland, data in columns 0 to 15 is sourced from the *Federal Register of Buildings and Dwellings (RBD)* (Federal Statistical Office, 2025), and the corresponding column naming conventions have been adopted accordingly.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_columns.rst
@@ -81,7 +81,7 @@ This file contains information about each district, with one row per district. S
 
 The district identification number (column 1: ``GGDENR``) must match the corresponding municipality code of the buildings listed in the *Master File*.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_columns.rst
@@ -91,7 +91,7 @@ Simulation profiles
 -------------------
 This file contains hourly profiles for an entire year (i.e., 8760 hours) representing various generation and demand metrics at national and regional levels.  
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/simulation_profiles_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/simulation_profiles_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/simulation_profiles_file_columns.rst
@@ -103,7 +103,7 @@ These files contains hourly temperature data for an entire year (i.e., 8760 hour
 
 Past years include historical measurements from monitoring stations, while future years contain projected values based on climate scenarios (see also :ref:`climate-adjustment`).
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/temperature_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/temperature_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/temperature_file_columns.rst
@@ -113,7 +113,7 @@ DHW profile
 -----------
 This file contains an hourly domestic hot water (DHW) demand profile for an entire year (i.e., 8760 hours). The profile is normalised to 1 and can be scaled according to the annual DHW demand of the district or building.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/dhw_profile_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/dhw_profile_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/dhw_profile_file_columns.rst
@@ -123,7 +123,7 @@ Wind power capacity
 -------------------
 This file contains the currently installed wind power capacity (in kW) for each municipality.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_cap_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_cap_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_cap_file_columns.rst
@@ -141,7 +141,7 @@ National electricity mix
 ------------------------
 This file contains hourly profiles of the national electricity mix. The data include the hourly contribution of each generation technology and are used to create normalised profiles of national electricity generation technologies.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_columns.rst
@@ -151,7 +151,7 @@ HDD Profiles
 ------------
 These files contain the number of heating degree days (HDD) per year for each municipality, calculated for base temperatures of 12 °C and 15 °C. Each file corresponds to one simulation year, and each row represents a single municipality.
 
-.. include:: ../how_to_use_the_model/input_files_csv_as_rst/hdd_file_info.rst
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/hdd_file_info_notitleline.rst
 
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/hdd_file_columns.rst
