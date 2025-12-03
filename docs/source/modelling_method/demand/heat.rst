@@ -16,6 +16,12 @@ Domestic Hot Water (DHW)
 ------------------------
 At the municipality level, the population is distributed across the residential floor area to estimate the number of residents per building. Hot-water demand is then calculated by multiplying a standard value of 850 kWh per person per year by the number of residents per building. The 850 kWh corresponds to an average hot-water use of 40 L per person per day (Arpagaus et al., 2016; Schweizerischer Ingenieur- und Architektenverein, 2025) and an outlet temperature of 60°C.
 
+Flows
+----
+
+The symbols and names of the flows are
+
+.. include:: ../../how_to_use_the_model/flows_tables/d_h.rst
 
 References
 ^^^^^^^^^^^

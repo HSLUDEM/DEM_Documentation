@@ -23,6 +23,14 @@ The electric load profiles for electric vehicle (EV) charging are added to the t
 
 In the non-optimized simulations, fixed EV load profiles are applied. In the optimization scenarios, however, EV charging flexibility can be activated in the demand side scenario (see :ref:`demand-side-scenario`). This flexibility, as defined by Herrera and Hug (2025), includes lower and upper charging power limits as well as the daily available flexible energy.
 
+Flows
+-----
+
+The symbols and names of the flows are
+
+.. include:: ../../how_to_use_the_model/flows_tables/d_e.rst
+
+
 
 References
 ^^^^^^^^^^^
