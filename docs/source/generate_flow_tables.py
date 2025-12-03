@@ -258,7 +258,13 @@ def main():
     for k in dict_for_tables.keys():
         ...
         with open(containing_folder + "/" + "flows_tables" +"/" + k + ".rst", "w", encoding="utf-8") as f:
-            multiline_rows = split_multiline_cells(dict_for_tables[k])
+
+            table = dict_for_tables[k]
+
+            for i in range(len(table)):
+                table[i][0] = '``'+table[i][0]+'``'
+
+            multiline_rows = split_multiline_cells(table)
             max_length_cells = split_too_long_cells(multiline_rows, maxlen = 40)
             f.write(get_grid_table(max_length_cells, notitleline = True))
 
