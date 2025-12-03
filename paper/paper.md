@@ -33,7 +33,10 @@ bibliography: paper.bib
 
 # Summary
 
-The transition from centralised to decentralised energy systems for achieving net-zero emission targets requires the evaluation of potential future scenarios on various spatial scales [ref]. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate energy flows from neighbourhood to regional scale with a focus on the integration of decentralized renewable energy technologies (e.g., solar, wind, biomass). DEM runs simulation and optimisation studies in hourly resolution using a "snapshot-year" approach [ref Marechal]. For selected regions (e.g., Switzerland), pre-compiled input data from public sources is provided to run studies without the need of collecting and compiling such data. 
+The transition from centralised to decentralised energy systems for achieving net-zero emission targets requires the evaluation of potential future scenarios on various spatial scales [ref]. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate scenarios from neighbourhood to regional scale with a focus on the integration of decentralized renewable energy technologies (e.g., solar, wind, biomass). DEM runs simulation and optimisation studies in hourly resolution using a "snapshot-year" approach [ref Marechal]. DEM is deployed as an open-source Python library, available as a PyPi package. Once installed, it can be run with command-line interface, not requiring any Python programming knowledge. Alternatively, a Python API is also provided so that it can be used programmatically. Two types of input files are required to run simulations: *configuration files* and *data files*. *Configuration files* specify the simulation metrics (e.g., buildings to consider, simulation timeframe, output to generate) and define the energy system configuration (e.g., scenarios, technologies, selected year). These are provided in YAML format [ref]. When running DEM programmatically in Python, configuration input can be passed directly to DEM without the need of configuration files. *Data files* provide information about energy demand, generation potential, and ambient conditions. These are provided to DEM in FEATHER format [ref]. For selected regions (e.g., Switzerland), data files have been compiled from public data sources and made available to be used with DEM. This lets users run simulation studies without the need of collecting and compiling such data.
+
+The DEM comes with a detailed [documentation](https://dem-documentation.readthedocs.io/en/latest/) providing step-by-step instructions, explaining the modelling approaches and methods, and listing information about publications and research related to DEM.
+ 
 
 # Statement of need
 
@@ -52,6 +55,12 @@ While an optimisation study is very useful to determine optimal technology desig
 -	Selection of custom district
 -	Optimisation optional
 
+# Modelling Approach
+
+DEM simulates the energy flows in a district, combining bottom-up with top-down modelling. A district in this context can refer to anything from a small group of buildings to an entire municipality or city. Several characteristics are obtained for each individual building (e.g., building type, location, size, age, heat and electricity demand, heating system, solar energy resources), while other data is assessed on district-level (e.g., wind power resources, biomass resources, ambient conditions, mobility demand). The basis for any simulation are a set of resources (e.g., wind, solar, biomass, hydro), a set of generation, conversion, and storage technologies, and a set of demand profiles for heat, electricity, and mobility. An exemplary energy system layout is shown in Fig. \autoref{fig:dem_layout}.
+Any list of buildings can be passed to DEM for simulation of a district energy system.
+
+![Example of a district energy system with resources, generateion, conversion, and storage technologies, and various energy demands. The full list of available resources and technologies can be found on the documentation website. \label{fig:dem_layout}](dem_example_layout.svg)
 
 # Acknowledgements
 
