@@ -1,6 +1,8 @@
 Publications
 ============
 
+.. sorted by year and alphabetically
+
 2025:
 
 Gökgöl, E. K., Linder, E., & Schuetz, P. (2025). A community-based decision support map for building retrofit towards a more sustainable future. Energy and Buildings, 335, 115554. https://doi.org/10.1016/j.enbuild.2025.115554
