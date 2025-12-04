@@ -48,6 +48,8 @@ Existing multi-energy system models have been applied extensively in case studie
 
 Optimisation is optional in DEM. Many scenario questions, such as assessing the impact of a specific technology, do not necessarily require optimisation. In such cases, DEM runs simulations without invoking the optimisation module. This yields short computation times and rapid generation of results.
 
+Initially developed within the framework of a research project, DEM is designed for a diverse target audience extending from academia and research projects to decision-makers in municipalities, energy utilities, and industrial sectors.
+
 # Modelling approach
 
 DEM simulates energy flows within a defined district using a hybrid bottom-up and top-down modelling approach. A “district” can represent any spatial aggregation from a small group of buildings to an entire municipality or city. Building-level attributes are modelled individually (e.g., type, location, size, age, heat and electricity demand, heating system, and on-site solar potential). Other parameters are defined at district scale, including wind and biomass resources, ambient conditions, and mobility demand. Each simulation is constructed from three elements: a set of available resources (e.g., wind, solar, biomass, hydro), a set of technologies for generation, conversion, and storage, and a set of demand profiles for heat, electricity, and mobility. These elements interact through defined flows of resources and energy carriers such as electricity and heat. An example system layout is shown in \autoref{fig:dem_layout}. DEM imposes no fixed limit on the number of buildings included, allowing customised definitions of district boundaries and building selections.
