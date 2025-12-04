@@ -34,7 +34,7 @@ bibliography: paper.bib
 # Summary
 
 The transition to local, decentralised, renewable energy technologies is a promising pathway toward net-zero emission targets in a decarbonised energy system. This transition requires systematic evaluation of potential future scenarios across multiple spatial scales [ref_1]. Computational energy-system models are used for this purpose. The *District Energy Model (DEM)* is a Python-based multi-energy system model designed to simulate scenarios from neighbourhood to regional scale, with a focus on the integration of decentralised renewable energy technologies such as solar, wind, and biomass. DEM executes simulation and optimisation studies at hourly resolution using a snapshot-year methodology [ref_2]. It is released as an open-source Python library on PyPi. The model can be launched via a command-line interface, not requiring any Python programming knowledge. Alternatively, it can be accessed programmatically through a Python API.
-DEM requires two classes of input: *configuration files* and *data files*. *Configuration files* specify the simulation settings (e.g., included buildings, temporal scope, output variables) and define the energy system configuration (e.g., scenarios, technologies, selected year). They are provided in YAML format [ref_yaml]. Configuration parameters may also be passed directly through the API. *Data files* contain model data such as energy demand profiles, generation potential, and ambient conditions. They are provided in Apache Feather format [ref_feather]. For selected regions, these data files have been pre-compiled from public datasets and made available in a public repository, providing a fully parameterised model without requiring users to source or preprocess data. For example, data for a full parametrisation of DEM is available for all municipalities in Switzerland.
+DEM requires two classes of input: *configuration files* and *data files*. *Configuration files* specify the simulation settings (e.g., included buildings, temporal scope, output variables) and define the energy system configuration (e.g., scenarios, technologies, selected year). They are provided in YAML format [@benkiki2009yaml]. Configuration parameters may also be passed directly through the API. *Data files* contain model data such as energy demand profiles, generation potential, and ambient conditions. They are provided in Apache Feather format [@apache2025feather]. For selected regions, these data files have been pre-compiled from public datasets and made available in a public repository, providing a fully parameterised model without requiring users to source or preprocess data. For example, data for a full parametrisation of DEM is available for all municipalities in Switzerland.
 
 DEM comes with a detailed [documentation](https://dem-documentation.readthedocs.io/en/latest/) with step-by-step instructions, descriptions of modelling approaches and methods, and links to related publications and research.
 
@@ -43,7 +43,6 @@ DEM comes with a detailed [documentation](https://dem-documentation.readthedocs.
 Several countries have defined national net-zero emission targets. Switzerland, for example, aims to reach net-zero by 2050. Achieving such targets generally requires a structural shift from large, centralised generation to decentralised renewable resources, including solar, wind, and biomass.  To support energy-system planning and policy design, scenario evaluation must be carried out at local scales such as districts, municipalities, cities, or similarly sized regions. This includes analysing system-integrated deployment of renewable-energy generation, conversion, and storage technologies; assessing alternative demand trajectories; and identifying solutions optimised for specific objectives such as cost, emissions, or security of supply.
 
 DEM provides these functions with a specific focus on the use of local renewable-energy resources and the integration of decentralised technologies within local system boundaries. Multiple energy-system and demand scenarios can be defined, simulated, and compared. Increased penetration of variable, distributed resources raises the relevance of supply- and demand-side flexibility [ref]. DEM models several flexibility options, including flexible electric-vehicle charging, thermal and electrical storage, hydrogen storage, and photovoltaic curtailment. 
-
 
 Existing multi-energy system models have been applied extensively in case studies of local energy scenarios [refs], but they typically target a single location. Each new application demands re-parametrisation and new data collection, including demand profiles, cost estimates, and technology characteristics. Data acquisition and preparation dominate the modelling workload in such studies. DEM removes this burden for selected regions by providing pre-compiled and pre-processed datasets assembled from public sources. Simulation and optimisation studies can therefore be executed with minimal configuration (e.g., selecting the buildings to include) while maintaining full flexibility to replace any pre-configured dataset with user-defined data when required. For regions not included in the provided dataset, users can construct the necessary data using the specifications provided in the documentation. DEM’s input data architecture allows datasets to be provided at a large regional scale (e.g., an entire country) and then used to run simulations on any spatial subset of that data, such as individual municipalities or districts.
 
@@ -55,17 +54,11 @@ DEM simulates energy flows within a defined district using a hybrid bottom-up an
 
 The workflow consists of: (1) input-data collection; (2) model parametrisation and configuration; (3) scenario generation; (4a) simulation; (4b) optimisation (optional); (6) output generation.
 
-The optimisation module in DEM is implemented using the Calliope framework [ref], which is based on the Pyomo optimisation programming environment [@benkiki2009yaml].
+The optimisation module in DEM is implemented using the Calliope framework [@pfenningerCalliope2018a], which is based on the Pyomo optimisation programming environment [@hart2011pyomo].
 
-![ Exemplary schematic of a district energy system showing resources, generation, conversion, and storage technologies, and associated heat, electricity, and mobility demands. DEM supports many more technologies and scenarios than those illustrated here, as detailed in the documentation. \label{fig:dem_layout}]( dem_example_layout.png){ width=100% }
-
+![ Exemplary schematic of a district energy system showing resources, generation, conversion, and storage technologies, and associated heat, electricity, and mobility demands. DEM supports many more technologies and scenarios than those illustrated here, as detailed in the [documentation](https://dem-documentation.readthedocs.io/en/latest/). \label{fig:dem_layout}]( dem_example_layout.png){ width=100% }
 
 # Acknowledgements
 The research published in this publication was carried out with the support of the Swiss Federal Office of Energy as part of the SWEET consortium EDGE. The authors bear sole responsibility for the conclusions and the results presented in this publication.
 
-
 # References
--	Calliope
--	Pyomo
--	FEATHER
--	YAML
