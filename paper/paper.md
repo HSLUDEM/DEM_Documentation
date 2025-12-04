@@ -1,5 +1,5 @@
 ---
-title: 'District Energy Model (DEM): An open-source model for local energy system simulation and optimisation.'
+title: 'District Energy Model (DEM): A Python framework for modelling renewable energy integration and flexibility at local scale.'
 tags:
   - Python
   - Optimisation
