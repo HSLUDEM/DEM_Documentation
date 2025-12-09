@@ -10,7 +10,7 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 	│   └── config_files/
 	│       └── ...
 	└── data/
-		└── ...
+	    └── ...
 
 ..
 	.. code-block:: text
@@ -55,6 +55,10 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 				└── com_files/
 					└── ...
 
+DEM can be run three different ways:
+- Using the command-line interface: for running simulations without writing any Python code.
+- Interactively in a Python environment: by importing the district_energy_model package in a script or notebook.
+- Directly from the source code: by executing the provided Python modules within the project repository.
 
 
 Run from command-line tool
@@ -75,7 +79,7 @@ Adapt the configuration files as described in :doc:`input_configuration` and pla
 
 **Step 3: Run the Simulation**
 
-In the command-line tool run DEM as follows:
+Run the DEM from the command line with the following command:
 
 .. code-block:: shell
 
@@ -90,7 +94,24 @@ Simulation results will be stored inside the selected project directory. DEM wil
 Run programmatically in Python
 ------------------------------
 
-*in progress*
+DEM can be launched from within a Python script, which allows the model to be integrated into other Python projects. A minimally required code to launch DEM in a Python environment looks as follows:
+
+.. code-block:: python
+
+    import district_energy_model as dem
+
+    my_model = dem.model.launch()
+
+In above code, the ``district_energy_model`` module is imported first. The second line creates and runs a model instance. In above example, the model configuration is read from the configuration files. Results can be retrieved from the created model instance (``my_model``):
+
+.. code-block:: python
+
+    res_hourly = my_model.hourly_results()
+    res_annual = my_model.annual_results()
+    res_cost = my_model.total_cost()
+
+
+
 
 
 .. _run_model_from_source:
