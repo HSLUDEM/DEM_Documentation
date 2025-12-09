@@ -56,6 +56,7 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 					└── ...
 
 DEM can be run three different ways:
+
 - Using the command-line interface: for running simulations without writing any Python code.
 - Interactively in a Python environment: by importing the district_energy_model package in a script or notebook.
 - Directly from the source code: by executing the provided Python modules within the project repository.
@@ -110,7 +111,7 @@ In above code, the ``district_energy_model`` module is imported first. The secon
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
-The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results()`` returns a ``dict`` containing annual values of the same data. ``total_cost()`` contains resulting cost data, including monetary cost and emissions (currently only available for optimisations).
+The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results()`` returns a ``dict`` containing annual values of the same data. ``total_cost()`` returns a ``dict`` containing cost data, including monetary cost and emissions (currently only available for optimisations).
 
 Instead of using YAML configuration files, input can also be passed directly to the ``launch()`` method within Python. This can for example be useful when technology or simulation parameters are taken from a preceding Python routine. Here is an example of how to run DEM when passing configuration info to the model directly in Python:
 
