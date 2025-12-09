@@ -110,43 +110,46 @@ In above code, the ``district_energy_model`` module is imported first. The secon
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
-The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results`` returns a ``dict`` containing annual values of the same data. ``res_cost`` contains resulting cost data, including monetary cost and emissions (currently only available for optimisations).
+The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results()`` returns a ``dict`` containing annual values of the same data. ``total_cost()`` contains resulting cost data, including monetary cost and emissions (currently only available for optimisations).
 
-Instead of using YAML configuration files, input can also be passed directly to the ``launch()`` method in Python. This can for example be useful when technology or simulation parameters are taken from a preceding Python routine. Here is an example of how to run DEM when passing configuration info to the model directly in Python:
+Instead of using YAML configuration files, input can also be passed directly to the ``launch()`` method within Python. This can for example be useful when technology or simulation parameters are taken from a preceding Python routine. Here is an example of how to run DEM when passing configuration info to the model directly in Python:
 
-.. code_block:: python
+.. code-block:: python
 
-    import district_energy_model as dem
+	import district_energy_model as dem
 
-    config_dict = {
-        'simulation':{
-            'number_of_days':365,
-            'district_number':2762,
-            },
-        'scenarios':{
-            'demand_side':True,
-            'pv_integration':True,
-            },
-        'heat_pump':{
-            'deployment':True,
-            },
-        'district_heating':{
-            'deployment':True,
-            },
-        'solar_pv':{
-            'potential_integration_factor':0.7,
-            },        
-        }
+	# Adjust input configuration:
+	config_dict = {
+		'simulation':{
+			'number_of_days':365,
+			'district_number':2762,
+			},
+		'scenarios':{
+			'demand_side':True,
+			'pv_integration':True,
+			},
+		'heat_pump':{
+			'deployment':True,
+			},
+		'district_heating':{
+			'deployment':True,
+			},
+		'solar_pv':{
+			'potential_integration_factor':0.7,
+			},        
+		}
 
-    my_model = dem.model.launch(
-        root_dir = './',
-        config_files=False,
-        config_dict = config_dict
-        )
+	# Create and run model:
+	my_model = dem.model.launch(
+		root_dir = './',
+		config_files=False,
+		config_dict = config_dict
+		)
 
-    res_hourly = my_model.hourly_results()
-    res_annual = my_model.annual_results()
-    res_cost = my_model.total_cost()
+	# Retrieve results:
+	res_hourly = my_model.hourly_results()
+	res_annual = my_model.annual_results()
+	res_cost = my_model.total_cost()
 
 In above code, the configuration input is directly passed to the ``launch()`` method via the ``config_dict`` argument. Values contained in the ``config_dict`` dictionary replace the standard input values. Except for technology configurations, all data in ``config_dict`` is specified the same way as it would be specified in the YAML configuration files (see :doc:`input_configuration`) with the name of the respective file being used as a top-level key in the dictionary. For technologies, the name of the technologies are used directly as top-level keys.
 
