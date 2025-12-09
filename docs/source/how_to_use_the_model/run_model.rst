@@ -142,7 +142,7 @@ Instead of using YAML configuration files, input can also be passed directly to 
     # Create and run model:
     my_model = dem.model.launch(
     	root_dir = './',
-    	config_files=False,
+    	config_files = False,
     	config_dict = config_dict
     	)
     
