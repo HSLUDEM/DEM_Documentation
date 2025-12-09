@@ -151,7 +151,7 @@ Instead of using YAML configuration files, input can also be passed directly to 
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
-In above code, the configuration input is directly passed to the ``launch()`` method via the ``config_dict`` argument. Values contained in the ``config_dict`` dictionary replace the standard input values. Except for technology configurations, all data in ``config_dict`` is specified the same way as it would be specified in the YAML configuration files (see :doc:`input_configuration`) with the name of the respective file being used as a top-level key in the dictionary. For technologies, the name of the technologies are used directly as top-level keys.
+In above code, the configuration input is directly passed to the ``launch()`` method via the ``config_dict`` argument. Values contained in the ``config_dict`` dictionary replace the standard input values. Except for technology configurations, all data in ``config_dict`` is specified the same way as it would be specified in the YAML configuration files (see :doc:`input_configuration`) with the name of the respective file being used as a top-level key in the dictionary. For technologies, the name of the technologies are used directly as top-level keys. When directly passing configuration input in the ``launch()`` method, the ``config_files`` argument must be set to ``False`` (default is ``True``).
 
 .. _run_model_from_source:
 
