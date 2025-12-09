@@ -1,7 +1,7 @@
 Running a Simulation
 ====================
 
-The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of configuration files is provided on `GitHub <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files>`_. Data files for Switzerland are provided on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
+The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of YAML configuration files is provided on `GitHub <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files>`_. Data files for Switzerland are provided on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
 
 .. code-block:: text
 
@@ -102,7 +102,7 @@ DEM can be launched from within a Python script, which allows the model to be in
 
     my_model = dem.model.launch()
 
-In above code, the ``district_energy_model`` module is imported first. The second line creates and runs a model instance. In above example, the model configuration is read from the configuration files. Results can be retrieved from the created model instance (``my_model``):
+In above code, the ``district_energy_model`` module is imported first. The second line creates and runs a model instance. The ``data`` and ``config`` directories are assumed to be in the same root directory as the Python script from which DEM is launched. Alternatively, another directory can be specified with the ``root_dir=...`` argument in the ``launch()`` method. In above example, the model configuration is read from the configuration files. Results can be retrieved from the created model instance (``my_model``):
 
 .. code-block:: python
 
@@ -110,11 +110,45 @@ In above code, the ``district_energy_model`` module is imported first. The secon
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
+The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results`` returns a ``dict`` containing annual values of the same data. ``res_cost`` contains resulting cost data, including monetary cost and emissions (currently only available for optimisations).
 
+Instead of using YAML configuration files, input can also be passed directly to the ``launch()`` method in Python. This can for example be useful when technology or simulation parameters are taken from a preceding Python routine. Here is an example of how to run DEM when passing configuration info to the model directly in Python:
 
+.. code_block:: python
 
+    import district_energy_model as dem
 
+    config_dict = {
+        'simulation':{
+            'number_of_days':365,
+            'district_number':2762,
+            },
+        'scenarios':{
+            'demand_side':True,
+            'pv_integration':True,
+            },
+        'heat_pump':{
+            'deployment':True,
+            },
+        'district_heating':{
+            'deployment':True,
+            },
+        'solar_pv':{
+            'potential_integration_factor':0.7,
+            },        
+        }
 
+    my_model = dem.model.launch(
+        root_dir = './',
+        config_files=False,
+        config_dict = config_dict
+        )
+
+    res_hourly = my_model.hourly_results()
+    res_annual = my_model.annual_results()
+    res_cost = my_model.total_cost()
+
+In above code, the configuration input is directly passed to the ``launch()`` method via the ``config_dict`` argument. Values contained in the ``config_dict`` dictionary replace the standard input values. Except for technology configurations, all data in ``config_dict`` is specified the same way as it would be specified in the YAML configuration files (see :doc:`input_configuration`) with the name of the respective file being used as a top-level key in the dictionary. For technologies, the name of the technologies are used directly as top-level keys.
 
 .. _run_model_from_source:
 
