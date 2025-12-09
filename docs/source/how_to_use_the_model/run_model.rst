@@ -5,45 +5,55 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 
 .. code-block:: text
 
-    project_dir/
-    ├── config/
-    │   ├── config_files/
-    │   │   ├── demand_side.yaml
-    │   │   ├── meta_data.yaml
-    │   │   ├── optimisation.yaml
-    │   │   ├── scenarios.yaml
-    │   │   ├── simulation.yaml
-    │   │   ├── supply.yaml
-    │   │   └── technologies.yaml
-    │   └── dem_conda_environment.yml
-    └── data/
-        ├── community_data/
-        │   └── ...
-        ├── electricity_demand/
-        │   └── ...
-        ├── electricity_mix_national/
-        │   └── electricity_mix.feather
-        ├── heat_demand/
-        │   └── DHW_Profile.feather
-        ├── master_data/
-        │   ├── HDD_and_HDH_profiles/
-        │   │   ├── HDD_Municipality_2023.feather
-        │   │   ├── HDD_Municipality_2030.feather
-        │   │   ├── HDD_Municipality_2040.feather
-        │   │   ├── HDD_Municipality_2050.feather
-        │   │   └── ...
-        │   └── simulation_data/
-        │       ├── df_master_sim.feather
-        │       ├── meta_file_2.feather
-        │       ├── simulation_profiles_file.feather
-        │       └── ...
-        ├── tech_wind_power/
-        │   ├── profiles/
-        │   │   └── ...
-        │   └── p_installed_kW_wind_power.feather
-        └── weather_data/
-            └── com_files/
-                └── ...
+	project_dir/
+	├── config/
+	│   └── config_files/
+	│       └── ...
+	└── data/
+		└── ...
+
+..
+	.. code-block:: text
+
+		project_dir/
+		├── config/
+		│   ├── config_files/
+		│   │   ├── demand_side.yaml
+		│   │   ├── meta_data.yaml
+		│   │   ├── optimisation.yaml
+		│   │   ├── scenarios.yaml
+		│   │   ├── simulation.yaml
+		│   │   ├── supply.yaml
+		│   │   └── technologies.yaml
+		│   └── dem_conda_environment.yml
+		└── data/
+			├── community_data/
+			│   └── ...
+			├── electricity_demand/
+			│   └── ...
+			├── electricity_mix_national/
+			│   └── electricity_mix.feather
+			├── heat_demand/
+			│   └── DHW_Profile.feather
+			├── master_data/
+			│   ├── HDD_and_HDH_profiles/
+			│   │   ├── HDD_Municipality_2023.feather
+			│   │   ├── HDD_Municipality_2030.feather
+			│   │   ├── HDD_Municipality_2040.feather
+			│   │   ├── HDD_Municipality_2050.feather
+			│   │   └── ...
+			│   └── simulation_data/
+			│       ├── df_master_sim.feather
+			│       ├── meta_file_2.feather
+			│       ├── simulation_profiles_file.feather
+			│       └── ...
+			├── tech_wind_power/
+			│   ├── profiles/
+			│   │   └── ...
+			│   └── p_installed_kW_wind_power.feather
+			└── weather_data/
+				└── com_files/
+					└── ...
 
 
 
@@ -71,7 +81,7 @@ In the command-line tool run DEM as follows:
 
     district_energy_model --project_dir=/path/to/project
 
-Specifying a project directory using "--project_dir" is optional. If not provided, DEM uses the current working directory. The ``project_dir`` should contain both ``data/`` and ``config/config_files`` directories.  
+Specifying a project directory using ``--project_dir`` is optional. If not provided, DEM uses the current working directory. The ``project_dir`` should contain both ``data/`` and ``config/config_files`` directories.  
 Simulation results will be stored inside the selected project directory. DEM will automatically create a directory named ``dem_output`` containing output files.
 
 
