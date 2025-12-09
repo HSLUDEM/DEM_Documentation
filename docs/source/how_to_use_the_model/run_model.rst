@@ -65,11 +65,13 @@ Adapt the configuration files as described in :doc:`input_configuration` and pla
 
 **Step 3: Run the Simulation**
 
+In the command-line tool run DEM as follows:
+
 .. code-block:: shell
 
     district_energy_model --project_dir=/path/to/project
 
-Specifying a project directory using --project is optional. If not provided, DEM uses the current working directory. The ``project_dir`` should contain both ``data/`` and ``config/config_files`` directories.  
+Specifying a project directory using "--project_dir" is optional. If not provided, DEM uses the current working directory. The ``project_dir`` should contain both ``data/`` and ``config/config_files`` directories.  
 Simulation results will be stored inside the selected project directory. DEM will automatically create a directory named ``dem_output`` containing output files.
 
 
