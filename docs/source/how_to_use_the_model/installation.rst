@@ -1,9 +1,17 @@
+Requirements
+====================
+It is recommended to install DEM in a dedicated ``Conda`` environment to ensure that all dependencies have the correct version (see steps below).
+To run optimisation studies, it is required to install a solver prior to installing DEM. However, DEM can also be run as simulations only, without the need for a solver. Optimisation in DEM is implemented using the `Calliope <https://calliope.readthedocs.io/en/stable/index.html>`_ framework. Accordingly, a solver listed on the `documentation page <https://calliope.readthedocs.io/en/stable/user/installation.html>`_ can be selected.
+
+Note
+
+
 Installation
 ====================
 
 **Step 1: Create the Conda Environment**
 
-It is recommended to install DEM in a dedicated ``Conda`` environment to ensure that all dependencies have the correct version. If not already done, download and install `Conda <https://www.anaconda.com/docs/getting-started/miniconda/main>`_ on your operating system. DEM is tested with the ``Conda`` environment provided in a file on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the ``config`` directory. Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
+If not already done, download and install `Conda <https://www.anaconda.com/docs/getting-started/miniconda/main>`_ on your operating system. DEM is tested with the ``Conda`` environment provided in a file on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the ``config`` directory. Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
 Create a new Conda environment from this file:
 
 .. code-block:: shell
