@@ -1,7 +1,7 @@
 Model Output
 ============
 
-df_scen
+Hourly Results
 -------
 
 .. commented-out
@@ -18,12 +18,13 @@ df_scen
 	      :header-rows: 1
 
 
-dict_yr_scen
+Annual Results
 ------------
 
-Any output found in ``df_scen`` with the suffix ``_yr`` represents an annual output.
+*in progress*
 
-dict_total_costs
+
+Total Cost
 ----------------
-
+*in progress*
 

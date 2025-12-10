@@ -89,6 +89,7 @@ Directory Structure
     │       │       ├── dem_tech_wood_boiler_cp.py
     │       │       └── dem_tech_wood_boiler_sg.py
     │       ├── __init__.py
+    │       ├── cli.py	
     │       ├── dem.py
     │       ├── dem_calliope.py
     │       ├── dem_calliope_cc.py
@@ -107,8 +108,9 @@ Directory Structure
     │       ├── dem_supply.py
     │       ├── dem_techs.py
     │       ├── paths.py
-    │       └── run_dem.py
+    │       └── model.py
     ├── LICENSE.txt
+    ├── pyproject.toml	
     └── README.md
 
 
