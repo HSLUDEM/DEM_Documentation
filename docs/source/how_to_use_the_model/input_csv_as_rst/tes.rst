@@ -49,67 +49,67 @@
 |                                       |                                          |                |              |           |        |
 |                                       | switched on (True) of off (False).       |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: district_heating_network | If set to 'true', the district heating   |                | —            | bool      |        |
+| connections: district_heating_network | If set to 'true', the district heating   | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | network is connected to TES. Technology  |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: district_heat_import     | If set to 'true', district_heat_import   |                | —            | bool      |        |
+| connections: district_heat_import     | If set to 'true', district_heat_import   | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | is connected to TES. Technology must be  |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | deployed accordingly.                    |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: chp_gt                   | If set to 'true', the CHP gas turbine is |                | —            | bool      |        |
+| connections: chp_gt                   | If set to 'true', the CHP gas turbine is | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | connected to TES. Technology must be     |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | deployed accordingly.                    |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: steam_turbine            | If set to 'true', the steam turbine is   |                | —            | bool      |        |
+| connections: steam_turbine            | If set to 'true', the steam turbine is   | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | connected to TES. Technology must be     |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | deployed accordingly.                    |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: waste_to_energy          | If set to 'true', the waset-to-energy    |                | —            | bool      |        |
+| connections: waste_to_energy          | If set to 'true', the waset-to-energy    | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | plant is connected to TES. Technology    |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: oil_boiler_cp            | If set to 'true', a centralised oil      |                | —            | bool      |        |
+| connections: oil_boiler_cp            | If set to 'true', a centralised oil      | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | boiler is connected to TES. Technology   |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: electric_heater_cp       | If set to 'true', a centralised electric |                | —            | bool      |        |
+| connections: electric_heater_cp       | If set to 'true', a centralised electric | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | heater is connected to TES. Technology   |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: wood_boiler_cp           | If set to 'true', a centralised wood     |                | —            | bool      |        |
+| connections: wood_boiler_cp           | If set to 'true', a centralised wood     | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | boiler is connected to TES. Technology   |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: gas_boiler_cp            | If set to 'true', a centralised gas      |                | —            | bool      |        |
+| connections: gas_boiler_cp            | If set to 'true', a centralised gas      | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | boiler is connected to TES. Technology   |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: heat_pump_cp             | If set to 'true', a centralised heat     |                | —            | bool      |        |
+| connections: heat_pump_cp             | If set to 'true', a centralised heat     | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | pump is connected to TES. Technology     |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | must be deployed accordingly.            |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: heat_pump_cp_lt          | If set to 'true', a centralised heat     |                | —            | bool      |        |
+| connections: heat_pump_cp_lt          | If set to 'true', a centralised heat     | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | pump converting low-temperature waste    |                |              |           |        |
 |                                       |                                          |                |              |           |        |
@@ -119,13 +119,13 @@
 |                                       |                                          |                |              |           |        |
 |                                       | deployed accordingly.                    |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: waste_heat               | If set to 'true', a waste heat source is |                | —            | bool      |        |
+| connections: waste_heat               | If set to 'true', a waste heat source is | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | connected to TES. Technology must be     |                |              |           |        |
 |                                       |                                          |                |              |           |        |
 |                                       | deployed accordingly.                    |                |              |           |        |
 +---------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: biomass                  | If set to 'true', a biomass technologies |                | —            | bool      |        |
+| connections: biomass                  | If set to 'true', a biomass technologies | True           | —            | bool      |        |
 |                                       |                                          |                |              |           |        |
 |                                       | are connected to TES. Technology must be |                |              |           |        |
 |                                       |                                          |                |              |           |        |

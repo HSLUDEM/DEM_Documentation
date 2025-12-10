@@ -6,4 +6,4 @@ co2_intensity,Carbon-dioxide intensity of technology output (annual average valu
 lifetime,Expected lifetime of technology before replacement is required.,30,years,int,
 interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,
 capex,CAPEX cost of technology per unit of capacity.,100,CHF/kW,float,
-maintenance_cost,OPEX cost of technology per unit of capacity.,0.5,CHF/kW/year,float,Source
+maintenance_cost,OPEX cost of technology per unit of capacity.,0.5,CHF/kW/year,float,

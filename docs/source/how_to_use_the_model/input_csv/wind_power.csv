@@ -1,6 +1,6 @@
 Attribute,Description,Standard value,Unit,Data type,Source
 deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
-kWp_max,Kilowatt Peak: Maximum power output of wind power system.,1e+32,kW,float,
+kWp_max,Kilowatt Peak: Maximum power output of wind power system.,100000000000000005366162204393472,kW,float,
 kWp_max_systemwide,,'inf',,float,
 co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
 lifetime,Expected lifetime of technology before replacement is required.,25,years,int,
