@@ -108,7 +108,7 @@ Directory Structure
     │       ├── dem_supply.py
     │       ├── dem_techs.py
     │       ├── paths.py
-    │       └── run_dem.py
+    │       └── model.py
     ├── LICENSE.txt
     ├── pyproject.toml	
     └── README.md

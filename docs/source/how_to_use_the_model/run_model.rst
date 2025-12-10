@@ -58,7 +58,7 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 DEM can be run three different ways:
 
 - Using the command-line interface: for running simulations without writing any Python code.
-- Interactively in a Python environment: by importing the district_energy_model package in a script or notebook.
+- Interactively in a Python environment: by importing the ``district_energy_model`` package in a script or notebook.
 - Directly from the source code: by executing the provided Python modules within the project repository.
 
 
@@ -95,7 +95,7 @@ Simulation results will be stored inside the selected project directory. DEM wil
 Run programmatically in Python
 ------------------------------
 
-DEM can be launched from within a Python script, which allows the model to be integrated into other Python projects. A minimally required code to launch DEM in a Python environment looks as follows:
+DEM can also be launched directly from a Python script, which allows the model to be integrated into larger Python workflows or other projects. A minimal example looks as follows:
 
 .. code-block:: python
 
@@ -103,7 +103,9 @@ DEM can be launched from within a Python script, which allows the model to be in
 
     my_model = dem.model.launch()
 
-In above code, the ``district_energy_model`` module is imported first. The second line creates and runs a model instance. The ``data`` and ``config`` directories are assumed to be in the same root directory as the Python script from which DEM is launched. Alternatively, another directory can be specified with the ``root_dir=...`` argument in the ``launch()`` method. In above example, the model configuration is read from the configuration files. Results can be retrieved from the created model instance (``my_model``):
+In this example, the ``district_energy_model`` module is first imported. The second line creates and runs a model instance using the default configuration. By default, the ``data`` and ``config`` directories are expected to reside in the same root directory as the Python script. If they are stored elsewhere, the directory can be specified via the ``root_dir=...`` argument in the ``launch()`` method. The model configuration is read from the YAML configuration files unless otherwise specified.
+
+Once launched, results can be retrieved from the model instance (``my_model``):
 
 .. code-block:: python
 
@@ -111,9 +113,15 @@ In above code, the ``district_energy_model`` module is imported first. The secon
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
-The content of the output is described under :doc:`output`. ``hourly_results()`` returns a dataframe containing hourly timeseries of the resulting energy and resource flows. ``annual_results()`` returns a ``dict`` containing annual values of the same data. ``total_cost()`` returns a ``dict`` containing cost data, including monetary cost and emissions (currently only available for optimisations).
+The content of the output is described under :doc:`output`.
 
-Instead of using YAML configuration files, input can also be passed directly to the ``launch()`` method within Python. This can for example be useful when technology or simulation parameters are taken from a preceding Python routine. Here is an example of how to run DEM when passing configuration info to the model directly in Python:
+- ``hourly_results()`` returns a ``DataFrame`` with hourly time series of energy and resource flows.
+- ``annual_results()`` returns a ``dict`` containing annual aggregated values.
+- ``total_cost()`` returns a ``dict`` containing cost information (currently only available for optimisation runs), including monetary costs and emissions.
+
+Instead of using YAML configuration files, input can also be supplied directly to the ``launch()`` method via a Python dictionary. This is useful when configuration values depend on preceding computations or when parameter studies are generated programmatically.
+
+The following example shows how to run DEM with configuration input passed directly in Python:
 
 .. code-block:: python
     
@@ -152,7 +160,9 @@ Instead of using YAML configuration files, input can also be passed directly to 
     res_annual = my_model.annual_results()
     res_cost = my_model.total_cost()
 
-In above code, the configuration input is directly passed to the ``launch()`` method via the ``config_dict`` argument. Values contained in the ``config_dict`` dictionary replace the standard input values. Except for technology configurations, all data in ``config_dict`` is specified the same way as it would be specified in the YAML configuration files (see :doc:`input_configuration`) with the name of the respective file being used as a top-level key in the dictionary. For technologies, the name of the technologies are used directly as top-level keys. When directly passing configuration input in the ``launch()`` method, the ``config_files`` argument must be set to ``False`` (default is ``True``).
+Here, configuration input is passed directly to ``launch()`` via ``config_dict``. All values provided in ``config_dict`` override the corresponding default configuration. With the exception of technology parameters, the structure of ``config_dict`` matches the structure of the YAML configuration files (see :doc:`input_configuration`). The name of the respective configuration file serves as the top-level dictionary key. For technologies, the technology names themselves are used as top-level keys.
+
+When configuration is supplied programmatically, the argument ``config_files`` must be set to ``False`` (the default is ``True``). The ``root_dir`` argument specifies the directory containing the ``data`` folder with all required input files (see :doc:`input_data`).
 
 .. _run_model_from_source:
 
