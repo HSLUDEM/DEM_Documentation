@@ -10,6 +10,12 @@ optimizer accessed via the energy system optimization
 framework calliope. Via calliope, a solver, such as Gurobi,
 is accessed.
 
+The optimisation happens using the methods built into the optimizer.
+The more technologies are present in the energy system,
+the longer the optimisation takes.
+Activating integer variables (i.e. the asynchronous storage)
+leads to significantly longer optimisation times.
+
 In addition to the conventional optimisation mode, a 
 pareto front mode is also available. In this mode, a 
 monetary-co2 pareto front is constructed.
