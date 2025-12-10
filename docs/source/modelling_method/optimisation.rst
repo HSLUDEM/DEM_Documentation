@@ -16,4 +16,4 @@ monetary-co2 pareto front is constructed.
 
 The parameters of the optimisation are
 
-.. include:: ../../how_to_use_the_model/input_csv_as_rst/optimisation.rst
+.. include:: ../how_to_use_the_model/input_csv_as_rst/optimisation.rst
