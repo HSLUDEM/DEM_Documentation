@@ -3,11 +3,13 @@ Installation
 
 **Requirements**
 
-It is recommended to install DEM in a dedicated ``Conda`` environment to ensure that all dependencies have the correct version (see steps below).
-To run optimisation studies, it is required to install a solver prior to installing DEM. However, DEM can also be run as simulations only, without the need for a solver. Optimisation in DEM is implemented using the `Calliope <https://calliope.readthedocs.io/en/stable/index.html>`_ framework. Accordingly, a solver listed on the `documentation page <https://calliope.readthedocs.io/en/stable/user/installation.html>`_ can be selected.
+It is recommended to install DEM in a dedicated ``Conda`` environment to ensure that all dependencies are available in compatible versions (see the steps below).
+
+To run optimisation studies, a solver must be installed before installing DEM. If only simulations are required, no solver installation is necessary. Optimisation in DEM is implemented using the `Calliope <https://calliope.readthedocs.io/en/stable/index.html>`_ framework, and any solver listed on the `Calliope documentation page <https://calliope.readthedocs.io/en/stable/user/installation.html>`_ can be used.
 
 .. note::
-  DEM has been tested with `Calliope v0.6.8 <https://calliope.readthedocs.io/en/v0.6.8/index.html>`_ running with the `Gurobi <https://www.gurobi.com/>`_ solver.
+  DEM has been tested with `Calliope v0.6.8 <https://calliope.readthedocs.io/en/v0.6.8/index.html>`_ in combination with the `Gurobi <https://www.gurobi.com/>`_ solver.
+
 
 **Step 1: Create the Conda Environment**
 
