@@ -31,7 +31,7 @@
 |                  |                                          |                |             |           |        |
 |                  | capacity.                                |                |             |           |        |
 +------------------+------------------------------------------+----------------+-------------+-----------+--------+
-| maintenance_cost | OPEX cost of technology per unit of      | 0.5            | CHF/kW/year | float     | Source |
+| maintenance_cost | OPEX cost of technology per unit of      | 0.5            | CHF/kW/year | float     |        |
 |                  |                                          |                |             |           |        |
 |                  | capacity.                                |                |             |           |        |
 +------------------+------------------------------------------+----------------+-------------+-----------+--------+

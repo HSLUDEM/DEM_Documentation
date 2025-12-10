@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",,--,bool,
+deployment,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
 demand_share_type,,free,,str,
 demand_share_val,,0.5,,float,
 import_kW_th_max,Maximum thermal capacity of heat import (from outside the municipality).,'inf',kW,float,

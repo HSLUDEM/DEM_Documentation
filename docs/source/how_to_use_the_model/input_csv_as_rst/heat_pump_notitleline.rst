@@ -79,7 +79,7 @@
 |                              |                                          |                |              |           |                                          |
 |                              | reached                                  |                |              |           |                                          |
 +------------------------------+------------------------------------------+----------------+--------------+-----------+------------------------------------------+
-| cop_timeseries_file_path     | Path to COP timeseries file for mode     |                | <path>       | str       |                                          |
+| cop_timeseries_file_path     | Path to COP timeseries file for mode     | <path>         | <path>       | str       |                                          |
 |                              |                                          |                |              |           |                                          |
 |                              | “form_file” and                          |                |              |           |                                          |
 |                              |                                          |                |              |           |                                          |

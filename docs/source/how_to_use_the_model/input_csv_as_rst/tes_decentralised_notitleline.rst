@@ -47,13 +47,13 @@
 |                             |                                          |                |              |           |        |
 |                             | switched on (True) of off (False).       |                |              |           |        |
 +-----------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: heat_pump      | If set to 'true', decentralised heat     |                | —            | bool      |        |
+| connections: heat_pump      | If set to 'true', decentralised heat     | True           | —            | bool      |        |
 |                             |                                          |                |              |           |        |
 |                             | pumps are connected to TES. Technology   |                |              |           |        |
 |                             |                                          |                |              |           |        |
 |                             | must be deployed accordingly.            |                |              |           |        |
 +-----------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| connections: solar_thermal  | If set to 'true', decentralised heat     |                | —            | bool      |        |
+| connections: solar_thermal  | If set to 'true', decentralised heat     | True           | —            | bool      |        |
 |                             |                                          |                |              |           |        |
 |                             | pumps are connected to TES. Technology   |                |              |           |        |
 |                             |                                          |                |              |           |        |

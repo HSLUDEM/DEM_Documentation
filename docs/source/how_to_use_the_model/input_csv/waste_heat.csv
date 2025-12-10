@@ -6,4 +6,4 @@ lifetime,Expected lifetime of technology before replacement is required.,25,year
 timeseries_file_path,Path to file with waste heat timeseries (in kWh/h),'',--,str,
 co2_intensity,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
 tariff_CHFpkWh,Cost of waste heat,0.01,CHF/kWh,float,
-interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,Source
+interest_rate,Interest rate for computing levelised costs (if required).,0.025,--,float,
