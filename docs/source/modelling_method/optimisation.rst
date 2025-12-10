@@ -7,7 +7,7 @@ or carbon cost or a combination of the two quantities.
 
 The optimisation relies on using a LP or MILP
 optimizer accessed via the energy system optimization
-framework calliope. Via calliope, a solver, such as Gurobi,
+framework Calliope (Pfenninger & Pickering, 2018). Via Calliope, a solver, such as Gurobi,
 is accessed.
 
 The optimisation happens using the methods built into the optimizer.
@@ -23,3 +23,9 @@ monetary-co2 pareto front is constructed.
 The parameters of the optimisation are
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/optimisation.rst
+
+
+References
+-----------
+
+Pfenninger, S., & Pickering, B. (2018). *Calliope: a multi-scale energy systems modelling framework.* Journal of Open Source Software, 3(29), 825.
