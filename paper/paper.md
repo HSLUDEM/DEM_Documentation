@@ -58,7 +58,7 @@ The workflow consists of: (1) input-data collection; (2) model parameterisation 
 
 The optimisation module in DEM is implemented using the Calliope framework [@pfenningerCalliope2018a], which is based on the Pyomo optimisation programming environment [@hart2011pyomo].
 
-![Schematic of an exemplary district energy system showing resources, generation, conversion, and storage technologies, and associated heat, electricity, and mobility demands. DEM supports many more technologies and scenarios than those illustrated here, as detailed in the [documentation](https://dem-documentation.readthedocs.io/en/latest/). \label{fig:dem_layout}]( dem_example_layout_v2a.png){ width=100% }
+![Schematic of an exemplary district energy system showing resources, generation, conversion, and storage technologies, and associated heat, electricity, and mobility demands. DEM supports many more technologies and scenarios than those illustrated here, as detailed in the [documentation](https://dem-documentation.readthedocs.io/en/latest/). \label{fig:dem_layout}]( dem_example_layout_v2.png){ width=100% }
 
 # Acknowledgements
 The development of DEM was carried out within the *Competence Centre Thermal Energy Storage* (CC TES) at *Lucerne University of Applied Sciences and Arts* (HSLU). The research published in this publication was carried out with the support of the Swiss Federal Office of Energy as part of the SWEET consortium EDGE. The authors bear sole responsibility for the conclusions and the results presented in this publication.
