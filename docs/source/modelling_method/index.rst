@@ -11,4 +11,4 @@ This section describes the modelling approaches used in DEM.
    storage_techs/index
    scenarios/index
    optimisation
-
+   carbon_emissions
