@@ -1,7 +1,7 @@
 Carbon Emissions
 =================
 
-From version XYZ onwards, carbon emissions are generally
+From version 0.2.0 onwards, carbon emissions are generally
 accounted for at the point of import. This means that 
 individual conversion technologies, such as 
 oil boilers or CHP plants do *not* have individual
