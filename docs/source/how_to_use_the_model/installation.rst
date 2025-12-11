@@ -13,8 +13,14 @@ To run optimisation studies, a solver must be installed before installing DEM. I
 
 **Step 1: Create the Conda Environment**
 
-If not already done, download and install `Conda <https://www.anaconda.com/docs/getting-started/miniconda/main>`_ on your operating system. DEM is tested with the ``Conda`` environment provided in a file on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the ``config`` directory. Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
+If not already done, download and install `Conda <https://www.anaconda.com/docs/getting-started/miniconda/main>`_ on your operating system. DEM is tested with the ``Conda`` environment provided in a file on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the ``config`` directory (`link <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config>`_) and download it (see screenshot below). Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
 Create a new Conda environment from this file:
+
+You can |location_link|.
+
+.. |location_link| raw:: html
+
+   <a href="http://geoiptool.com" target="_blank">check your location here</a>
 
 .. code-block:: shell
 
