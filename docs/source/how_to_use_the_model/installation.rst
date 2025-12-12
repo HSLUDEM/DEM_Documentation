@@ -49,11 +49,11 @@ Now you can run the model (see :doc:`run_model`).
 
 .. |Calliope_version_link| raw:: html
 
-   <a href="https://www.gurobi.com/" target="_blank">Calliope v0.6.8</a>
+   <a href="https://calliope.readthedocs.io/en/v0.6.8/index.html" target="_blank">Calliope v0.6.8</a>
 
 .. |Gurobi_link| raw:: html
 
-   <a href="https://calliope.readthedocs.io/en/v0.6.8/index.html" target="_blank">Gurobi</a>
+   <a href="https://www.gurobi.com/" target="_blank">Gurobi</a>
 
 .. |Conda_link| raw:: html
 
