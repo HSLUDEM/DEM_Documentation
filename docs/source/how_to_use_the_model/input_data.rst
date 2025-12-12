@@ -5,15 +5,14 @@ Time series data, as well as information about buildings and districts, are prov
 
 This section describes the required files, their contents, and the expected data formats. Although all files must be present for the simulation to run, their entries can be set to zero if a dataset is not relevant to a specific case (for example, the wind power file if wind generation is excluded from the scenario).
 
-..
-  .. note::
-
-     A full Switzerland-wide data package for DEM simulations is currently in preparation and will be made available soon. This will eliminate the need for users to assemble their own datasets. In the meantime, please reach out to us (:doc:`../contact`) to request access to the data.
-
 All input files must be located within the ``data`` directory following the predefined directory structure (see below).
 
 .. note::
-  For Switzerland, a complete dataset package is available on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. After downloading and unzipping the archive, place its contents in the ``data`` directory of your project. The required directory structure is already included.
+  For Switzerland, a complete dataset package is available on |Zenodo_link|. After downloading and unzipping the archive, place its contents in the ``data`` directory of your project. The required directory structure is already provided.
+
+.. |Zenodo_link| raw:: html
+
+   <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Zenodo</a>
 
 
 .. code-block:: text
@@ -167,14 +166,43 @@ For Switzerland, the dataset by Herrera and Hug (2025a; 2025b) is used to model 
 References
 -----------
 
-Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. https://arrow.apache.org/docs/python/feather.html
+Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. |Apache_link|
 
-Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. https://www.doi.org/10.16904/envidat.301.
+.. |Apache_link| raw:: html
 
-Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. https://doi.org/10.1002/qj.4265
+   <a href="https://arrow.apache.org/docs/python/feather.html" target="_blank">https://arrow.apache.org/docs/python/feather.html</a>
 
-Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16597426
+Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. |Dujardin2022a_link|
 
-Herrera, M. P., & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv preprint arXiv:2504.03633. https://doi.org/10.48550/arXiv.2504.03633
+.. |Dujardin2022a_link| raw:: html
 
-Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
+   <a href="https://www.doi.org/10.16904/envidat.301" target="_blank">https://www.doi.org/10.16904/envidat.301</a>
+
+Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. |Dujardin2022b_link|
+
+.. |Dujardin2022b_link| raw:: html
+
+   <a href="https://doi.org/10.1002/qj.4265" target="_blank">https://doi.org/10.1002/qj.4265</a>
+
+Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. |Herrera2025a_link|
+
+.. |Herrera2025a_link| raw:: html
+
+   <a href="https://doi.org/10.5281/zenodo.16597426" target="_blank">https://doi.org/10.5281/zenodo.16597426</a>
+
+Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
+
+.. |Herrera2025b_link| raw:: html
+
+   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">https://doi.org/10.1109/PowerTech59965.2025.11180551</a>
+
+Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. |FSO2025_link|
+
+.. |FSO2025_link| raw:: html
+
+   <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html" target="_blank">https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html</a>
+
+
+
+
+

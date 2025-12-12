@@ -1,7 +1,7 @@
 Running a Simulation
 ====================
 
-The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of YAML configuration files is provided on `GitHub <https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files>`_. Data files for Switzerland are provided on `Zenodo  <https://doi.org/10.5281/zenodo.17603138>`_. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
+The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of YAML configuration files is provided on |GitHub_configfiles_link|. Data files for Switzerland are provided on |Zenodo_link|. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
 
 .. code-block:: text
 
@@ -11,49 +11,6 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 	│       └── ...
 	└── data/
 	    └── ...
-
-..
-	.. code-block:: text
-
-		project_dir/
-		├── config/
-		│   ├── config_files/
-		│   │   ├── demand_side.yaml
-		│   │   ├── meta_data.yaml
-		│   │   ├── optimisation.yaml
-		│   │   ├── scenarios.yaml
-		│   │   ├── simulation.yaml
-		│   │   ├── supply.yaml
-		│   │   └── technologies.yaml
-		│   └── dem_conda_environment.yml
-		└── data/
-			├── community_data/
-			│   └── ...
-			├── electricity_demand/
-			│   └── ...
-			├── electricity_mix_national/
-			│   └── electricity_mix.feather
-			├── heat_demand/
-			│   └── DHW_Profile.feather
-			├── master_data/
-			│   ├── HDD_and_HDH_profiles/
-			│   │   ├── HDD_Municipality_2023.feather
-			│   │   ├── HDD_Municipality_2030.feather
-			│   │   ├── HDD_Municipality_2040.feather
-			│   │   ├── HDD_Municipality_2050.feather
-			│   │   └── ...
-			│   └── simulation_data/
-			│       ├── df_master_sim.feather
-			│       ├── meta_file_2.feather
-			│       ├── simulation_profiles_file.feather
-			│       └── ...
-			├── tech_wind_power/
-			│   ├── profiles/
-			│   │   └── ...
-			│   └── p_installed_kW_wind_power.feather
-			└── weather_data/
-				└── com_files/
-					└── ...
 
 DEM can be run three different ways:
 
@@ -210,4 +167,15 @@ Execute the Python script ``src/run_dem_local.py`` either:
 **Step 5: Retrieve Results**
 
 Simulation results are saved automatically to the root directory. DEM will automatically create a directory named ``dem_output`` containing output files. See :doc:`output` for details on output files and structure.
+
+
+.. Links:
+
+.. |Zenodo_link| raw:: html
+
+   <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Zenodo</a>
+
+.. |GitHub_configfiles_link| raw:: html
+
+   <a href="https://github.com/HSLUDEM/District_Energy_Model/tree/main/config/config_files" target="_blank">GitHub</a>
 
