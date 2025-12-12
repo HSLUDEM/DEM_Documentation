@@ -17,7 +17,7 @@ The source code is published on |GitHub_link| and can be used under the |License
 
 A public platform for municipal energy planning in Switzerland based on the DEM has also been developed and can be accessed here:
 
-`RECOMMENDER TOOL <https://prototype.recommendertool.ch/>`_
+|Recommender_Tool_link|
 
 
 Documentation
@@ -52,6 +52,10 @@ Documentation
 .. |License_link| raw:: html
 
    <a href="https://github.com/HSLUDEM/District_Energy_Model?tab=Apache-2.0-1-ov-file" target="_blank">Apache-2.0 license</a>
+
+.. |Recommender_Tool_link| raw:: html
+
+   <a href="https://prototype.recommendertool.ch/" target="_blank">RECOMMENDER TOOL</a>
 
 
 
