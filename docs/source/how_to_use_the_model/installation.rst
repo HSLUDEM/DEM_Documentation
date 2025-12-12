@@ -13,7 +13,7 @@ To run optimisation studies, a solver must be installed before installing DEM. I
 
 **Step 1: Create the Conda Environment**
 
-If not already done, download and install |Conda_link| on your operating system. DEM is tested with the ``Conda`` environment provided in a file on |GitHub_link|. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the ``config`` directory (|GitHub_config_link|) and download it (see screenshot below). Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
+If not already done, download and install |Conda_link| on your operating system. DEM is tested with the ``Conda`` environment provided in a file on GitHub. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the |GitHub_config_link| and download it (see screenshot below). Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``).
 Create a new Conda environment from this file:
 
 
@@ -65,7 +65,7 @@ Now you can run the model (see :doc:`run_model`).
 
 .. |GitHub_config_link| raw:: html
 
-   <a href="https://github.com/HSLUDEM/District_Energy_Model/tree/main/config" target="_blank">link</a>
+   <a href="https://github.com/HSLUDEM/District_Energy_Model/tree/main/config" target="_blank">config directory</a>
 
 .. |Conda_doc_link| raw:: html
 
