@@ -18,9 +18,6 @@ Create a new Conda environment from this file:
 
 You can |location_link|.
 
-.. |location_link| raw:: html
-
-   <a href="http://geoiptool.com" target="_blank">check your location here</a>
 
 .. code-block:: shell
 
@@ -41,4 +38,6 @@ After activating the environment, install DEM with ``pip``:
 
 Now you can run the model (see :doc:`run_model`).
 
+.. |location_link| raw:: html
 
+   <a href="http://geoiptool.com" target="_blank">check your location here</a>
