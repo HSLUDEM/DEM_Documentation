@@ -12,7 +12,7 @@ The model requires *configuration files* (:doc:`input_configuration`) and *data 
 	└── data/
 	    └── ...
 
-Place the *configuratio files* in the ``config/config_files`` directory. A set of *configuration files* is provided on |GitHub_configfiles_link|, from where they can be downloaded.
+Place the *configuration files* in the ``config/config_files`` directory. A set of *configuration files* is provided on |GitHub_configfiles_link|, from where they can be downloaded.
 
 Place the *data files* in the ``data`` directory. *Data files* for Switzerland are provided on |Zenodo_link|. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
 

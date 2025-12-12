@@ -13,7 +13,7 @@ To run optimisation studies, a solver must be installed before installing DEM. I
 
 **Step 1: Create the Conda Environment**
 
-If not already done, download and install |Conda_link| on your operating system. DEM is tested with the ``Conda`` environment provided in a file on GitHub. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the |GitHub_config_link|. Click on the file (see screenshot 1) and download it (see arrow on screenshot 2). Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``). In the file you can also see the name of the environment that will be created (see red rectangle in screenshot 2).
+If not already done, download and install |Conda_link| on your operating system. Next, create the dedicated ``Conda`` environment. DEM is tested with the ``Conda`` environment provided in a file on GitHub. Locate the file named ``dem_conda_environment_vX_Y_Z.yml`` (or similar) in the |GitHub_config_link|. Click on the file (see screenshot 1) and download it (see arrow on screenshot 2). Make sure to use the correct version (e.g. ``dem_conda_environment_v0_1_0.yml`` for version ``0.1.0``). In the file you can also see the name of the environment that will be created (see red rectangle in screenshot 2).
 
 *Screenshot 1:*
 
@@ -26,11 +26,16 @@ If not already done, download and install |Conda_link| on your operating system.
    :width: 100%
 
 
-Open the terminal window and navigate to the directory where the .yml file is located. Create a new Conda environment from this file:
+Open the terminal window and navigate to the directory where the .yml file is located. Create a new ``Conda`` environment from this file:
 
 .. code-block:: shell
 
     conda env create -f dem_conda_environment_vX_Y_Z.yml
+	
+Activate the environment:
+	
+.. code-block:: shell
+
     conda activate dem_X_Y_Z
 
 Refer to the |Conda_doc_link| for instructions. If you are unfamiliar with Conda, consult the |Conda_userguide_link|.
