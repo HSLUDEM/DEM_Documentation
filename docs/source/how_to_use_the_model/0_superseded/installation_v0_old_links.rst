@@ -5,7 +5,7 @@ Installation
 
 It is recommended to install DEM in a dedicated ``Conda`` environment to ensure that all dependencies are available in compatible versions (see the steps below).
 
-To run optimisation studies, a solver must be installed before installing DEM. If only simulations are required, no solver installation is necessary. Optimisation in DEM is implemented using the |Calliope_link| framework, and any solver listed on the `Calliope documentation page <https://calliope.readthedocs.io/en/stable/user/installation.html>`_ can be used.
+To run optimisation studies, a solver must be installed before installing DEM. If only simulations are required, no solver installation is necessary. Optimisation in DEM is implemented using the `Calliope <https://calliope.readthedocs.io/en/stable/index.html>`_ framework, and any solver listed on the `Calliope documentation page <https://calliope.readthedocs.io/en/stable/user/installation.html>`_ can be used.
 
 .. note::
   DEM has been tested on Windows with `Calliope v0.6.8 <https://calliope.readthedocs.io/en/v0.6.8/index.html>`_ in combination with the `Gurobi <https://www.gurobi.com/>`_ solver.
@@ -38,20 +38,6 @@ After activating the environment, install DEM with ``pip``:
 
 Now you can run the model (see :doc:`run_model`).
 
-
-.. Links:
-
-.. |Calliope_link| raw:: html
-
-   <a href="https://calliope.readthedocs.io/en/stable/index.html" target="_blank">Calliope</a>
-
 .. |location_link| raw:: html
 
    <a href="http://geoiptool.com" target="_blank">check your location here</a>
-
-
-
-
-
-
-
