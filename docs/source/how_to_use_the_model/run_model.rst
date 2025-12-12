@@ -1,7 +1,7 @@
 Running a Simulation
 ====================
 
-The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of YAML configuration files is provided on |GitHub_configfiles_link|. Data files for Switzerland are provided on |Zenodo_link|. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
+The model requires *configuration files* (:doc:`input_configuration`) and *data files* (:doc:`input_data`) to run. In a dedicated project directory (e.g., ``project_dir``), create the following folder structure:
 
 .. code-block:: text
 
@@ -11,6 +11,28 @@ The model requires configuration files (:doc:`input_configuration`) and data fil
 	│       └── ...
 	└── data/
 	    └── ...
+
+Place the *configuratio files* in the ``config/config_files`` directory. A set of *configuration files* is provided on |GitHub_configfiles_link|, from where they can be downloaded.
+
+Place the *data files* in the ``data`` directory. *Data files* for Switzerland are provided on |Zenodo_link|. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+ 
+..
+	The model requires configuration files (:doc:`input_configuration`) and data files (:doc:`input_data`) to run. In a dedicated project directory, create a ``config/config_files`` directory where you place the configuration files and a ``data`` directory where you place the data files (see structure below). A set of YAML configuration files is provided on |GitHub_configfiles_link|. Data files for Switzerland are provided on |Zenodo_link|. The data package already has the correct directory structure and can be placed in the ``data`` directory (unzipping required). Make sure that the version of the Zenodo data package matches the DEM version you are using. For regions other than Switzerland, data must be created according to the format described in :doc:`input_data`.
+
+	.. code-block:: text
+
+		project_dir/
+		├── config/
+		│   └── config_files/
+		│       └── ...
+		└── data/
+			└── ...
 
 DEM can be run three different ways:
 

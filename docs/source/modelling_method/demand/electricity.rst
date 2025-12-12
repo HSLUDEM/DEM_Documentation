@@ -53,7 +53,7 @@ geoimpact AG, Energiereporter, 2025. [Online]. Available: |geoimpact_link|.
 
    <a href="https://energiereporter.energyapps.ch/methodology" target="_blank">https://energiereporter.energyapps.ch/methodology</a>
 
-Nipkow, J. (2013). *Typischer Haushalt-Stromverbrauch* [Schlussbericht]. Zürich/Bern: Bundesamt für Energie (BFE).
+Nipkow, J. (2013). *Typischer Haushalt-Stromverbrauch* [Schlussbericht]. Zürich/Bern: Bundesamt für Energie (BFE). |Nipkow_link|
 
 .. |Nipkow_link| raw:: html
 
