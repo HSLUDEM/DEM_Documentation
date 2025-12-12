@@ -8,7 +8,10 @@
 Multi-energy system model for mixed-use districts and communities developped at |CCTES_link| in the framework of the |EDGE_link| project.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: images/geo_plot_renewable_s0.svg
+..
+   .. image:: images/geo_plot_renewable_s0.svg
+
+.. image:: images/bar_chart.png
 
 Check out the :doc:`introduction` section for further information.
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
