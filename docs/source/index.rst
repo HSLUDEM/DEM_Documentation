@@ -1,4 +1,4 @@
-District Energy Model (DEM)
+**District Energy Model (DEM)**
 =========================================================
 
 .. note::
