@@ -5,7 +5,7 @@ District Energy Model (DEM)
 
    This documentation is newly launched and remains under active development. Many sections are still incomplete. If you cannot find the information you are looking for, please refer to the :doc:`publications` page or reach out via the :doc:`contact` page.
 
-Multi-energy system model for mixed-use districts and communities developped at `HSLU CC TES <https://www.hslu.ch/cctes>`_ in the framework of the `SWEET EDGE <https://www.sweet-edge.ch/en/work-packages/wp-1>`_ project.
+Multi-energy system model for mixed-use districts and communities developped at |CCTES_link| in the framework of the |EDGE_link| project.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: images/geo_plot_renewable_s0.svg
@@ -13,7 +13,7 @@ Multi-energy system model for mixed-use districts and communities developped at 
 Check out the :doc:`introduction` section for further information.
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
 
-The source code is published on `GitHub <https://github.com/HSLUDEM/District_Energy_Model>`_ and can be used under the `Apache-2.0 license <https://github.com/HSLUDEM/District_Energy_Model?tab=Apache-2.0-1-ov-file>`_.
+The source code is published on |GitHub_link| and can be used under the |License_link|.
 
 A public platform for municipal energy planning in Switzerland based on the DEM has also been developed and can be accessed here:
 
@@ -33,3 +33,26 @@ Documentation
    
    publications
    contact
+
+
+.. Links:
+
+.. |CCTES_link| raw:: html
+
+   <a href="https://www.hslu.ch/cctes" target="_blank">HSLU CC TES</a>
+
+.. |EDGE_link| raw:: html
+
+   <a href="https://www.sweet-edge.ch/en" target="_blank">SWEET EDGE</a>
+
+.. |GitHub_link| raw:: html
+
+   <a href="https://github.com/HSLUDEM/District_Energy_Model" target="_blank">GitHub</a>
+
+.. |License_link| raw:: html
+
+   <a href="https://github.com/HSLUDEM/District_Energy_Model?tab=Apache-2.0-1-ov-file" target="_blank">Apache-2.0 license</a>
+
+
+
+
