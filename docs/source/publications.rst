@@ -5,7 +5,11 @@ Publications
 
 2025:
 
-Gökgöl, E. K., Linder, E., & Schuetz, P. (2025). A community-based decision support map for building retrofit towards a more sustainable future. Energy and Buildings, 335, 115554. https://doi.org/10.1016/j.enbuild.2025.115554
+Gökgöl, E. K., Linder, E., & Schuetz, P. (2025). A community-based decision support map for building retrofit towards a more sustainable future. Energy and Buildings, 335, 115554. |Gökgöl_DOI_link|
+
+.. |Gökgöl_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enbuild.2025.115554" target="_blank">https://doi.org/10.1016/j.enbuild.2025.115554</a>
 
 Iyyakkunnel, S., Meyer, M., Vecsei, P. M., Schilt, U., Vijayananda, S., Schneeberger, S., ... & Schuetz, P. (2025, November). Energy planning in Sirnach: a case study of a Swiss-wide support tool. In Journal of Physics: Conference Series (Vol. 3140, No. 4, p. 042015). IOP Publishing. https://doi.org/10.1088/1742-6596/3140/4/042015
 
