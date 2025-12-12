@@ -35,15 +35,35 @@ The symbols and names of the flows are
 References
 ^^^^^^^^^^^
 
-Arthur Rinaldi, Héctor Ramirez, Benjamin Schroeteler, & Marco Meier. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6782179
+Arthur Rinaldi, Héctor Ramirez, Benjamin Schroeteler, & Marco Meier. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. |Rinaldi2022_link|
 
-Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
+.. |Rinaldi2022_link| raw:: html
 
-geoimpact AG, Energiereporter, 2025. [Online]. Available: https://energiereporter.energyapps.ch/methodology.
+   <a href="https://doi.org/10.5281/zenodo.6782179" target="_blank">https://doi.org/10.5281/zenodo.6782179</a>
+
+Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. |FSO2025_link|
+
+.. |FSO2025_link| raw:: html
+
+   <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html" target="_blank">https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html</a>
+
+geoimpact AG, Energiereporter, 2025. [Online]. Available: |geoimpact_link|.
+
+.. |geoimpact_link| raw:: html
+
+   <a href="https://energiereporter.energyapps.ch/methodology" target="_blank">https://energiereporter.energyapps.ch/methodology</a>
 
 Nipkow, J. (2013). *Typischer Haushalt-Stromverbrauch* [Schlussbericht]. Zürich/Bern: Bundesamt für Energie (BFE).
 
-Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
+Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
 
-Swissgrid Ltd, Grid data, production and consumption, 2025. [Online]. Available: https://www.swissgrid.ch/en/
+.. |Herrera2025b_link| raw:: html
+
+   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">https://doi.org/10.1109/PowerTech59965.2025.11180551</a>
+
+Swissgrid Ltd, Grid data, production and consumption, 2025. [Online]. Available: |Swissgrid_link|
 home/operation/grid-data/generation.html.
+
+.. |Swissgrid_link| raw:: html
+
+   <a href="https://www.swissgrid.ch/en/" target="_blank">https://www.swissgrid.ch/en/</a>

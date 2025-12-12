@@ -52,3 +52,6 @@ Schilt, U., Meyer, M., Schneeberger, S., & Schuetz, P. (2023). Impact analysis o
    <a href="https://doi.org/10.18086/swc.2023.08.06" target="_blank">https://doi.org/10.18086/swc.2023.08.06</a>
 
 
+.. |TEMPLATE_link| raw:: html
+
+   <a href="" target="_blank"></a>
