@@ -143,6 +143,8 @@ heat generators that have reached the end of their life. Furthermore, if fossil_
 is not activated, it is turned on and its rates correspond to the end-of-life rates of the heat
 generators.
 
+`CCTES <https://www.hslu.ch/de-ch/technik-architektur/ueber-uns/organisation-und-themen/organisation/kompetenzzentren-und-forschungsgruppen/technik/thermische-energiespeicher/>`_
+
 
 References
 ^^^^^^^^^^^
