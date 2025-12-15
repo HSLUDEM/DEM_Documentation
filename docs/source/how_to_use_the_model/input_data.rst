@@ -66,7 +66,12 @@ This file contains information about each individual building, with one row per 
 
 Each building is identified by a unique identification number (column 0: ``EGID``) and assigned to a municipality represented by a numerical code (column 4: ``GGDENR``). Custom districts can also be analyzed by specifying the buildings included in the district via their ``EGID`` values.  
 
-For Switzerland, data in columns 0 to 15 is sourced from the *Federal Register of Buildings and Dwellings (RBD)* (Federal Statistical Office, 2025), and the corresponding column naming conventions have been adopted accordingly.
+For Switzerland, data in columns 0 to 15 (except for columns 1 and 5) is sourced from the *Federal Register of Buildings and Dwellings (RBD)* (Federal Statistical Office, 2025), and the corresponding column naming conventions have been adopted accordingly (see |rbd_attributes_link|).
+
+.. |rbd_attributes_link| raw:: html
+
+   <a href="https://www.regbl.admin.ch/catalog" target="_blank">RBD Catalogue of Attributes</a>
+
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/master_file_info_notitleline.rst
 
@@ -202,7 +207,7 @@ Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwe
 
    <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html" target="_blank">https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html</a>
 
-Federal Office of Topography swisstopo. (2024). *Official directory of building addresses*. |swisstopo2024_link|
+Federal Office of Topography Swisstopo. (2024). *Official directory of building addresses*. |swisstopo2024_link|
 
 .. |swisstopo2024_link| raw:: html
 

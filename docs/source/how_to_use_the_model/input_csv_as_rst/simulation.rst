@@ -5,11 +5,15 @@
 |                 |                                          |                |      |           |        |
 |                 | 1 Jan. Mainly for testing the model.     |                |      |           |        |
 +-----------------+------------------------------------------+----------------+------+-----------+--------+
-| district_number | Identification number assigned to the    |                | —    | int       |        |
+| district_number | Unique identification number assigned to |                | —    | int       |        |
 |                 |                                          |                |      |           |        |
-|                 | district. For Swiss municipalities, this |                |      |           |        |
+|                 | the district. It is the identifier       |                |      |           |        |
 |                 |                                          |                |      |           |        |
-|                 | is the BFS number and can be found       |                |      |           |        |
+|                 | labelled "GGDENR" in the Master File and |                |      |           |        |
+|                 |                                          |                |      |           |        |
+|                 | Meta File. For Swiss municipalities,     |                |      |           |        |
+|                 |                                          |                |      |           |        |
+|                 | this is the BFS number and can be found  |                |      |           |        |
 |                 |                                          |                |      |           |        |
 |                 | online (www.bfs.admin.ch/bfs/de/home/gru |                |      |           |        |
 |                 |                                          |                |      |           |        |

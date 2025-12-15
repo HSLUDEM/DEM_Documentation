@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
 number_of_days,"Number of days to simulate, starting on 1 Jan. Mainly for testing the model.",,--,int,
-district_number,"Identification number assigned to the district. For Swiss municipalities, this is the BFS number and can be found online (www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html).",,--,int,
+district_number,"Unique identification number assigned to the district. It is the identifier labelled ""GGDENR"" in the Master File and Meta File. For Swiss municipalities, this is the BFS number and can be found online (www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html).",,--,int,
 generate_plots,The generation of plots can be switched on (true) or off (false).,,--,bool,
 save_results,"If set to true, results will be saved in files.",,--,bool,
