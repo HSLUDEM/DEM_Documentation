@@ -1,6 +1,6 @@
 "Number","Column","Data type","Description","Source for Swiss dataset"
-"0","Municipality","object","",""
-"1","GGDENR","int64","",""
+"0","Municipality","object","Name of the district or municipality according to ""GGDENAME"" in Master File. For municipalities in Switzerland, it is taken from the Official directory fo building addresses (Swisstopo, 2024).",""
+"1","GGDENR","int64","According to ""GGDENR"" in Master File.",""
 "2","Canton","object","",""
 "3","Coord_lat_median","float64","",""
 "4","Coord_long_median","float64","",""

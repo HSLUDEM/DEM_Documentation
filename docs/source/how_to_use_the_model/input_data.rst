@@ -219,3 +219,28 @@ Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Sol
 
    <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html</a>
 
+Swiss Federal Office of Energy (SFOE). (2022). *Dokumentation «minimales Geodatenmodell»: Elektrizitätsproduktionsanlagen* (Version 1.0rev, Geobasisdatensatz Nr. 221.1). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation. |e_prod_plants_link|
+
+.. |e_prod_plants_link| raw:: html
+
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html</a>
+
+Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. |Streicher2021_DOI_link|
+
+.. |Streicher2021_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">https://doi.org/10.1016/j.enpol.2021.112220</a>
+   
+Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. Energy and Buildings, 116371. |Schneeberger2025_DOI_link|
+
+.. |Schneeberger2025_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
+
+
+
+
+
+
+
+

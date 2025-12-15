@@ -1,6 +1,8 @@
 Heat Demand
 ========================
 
+.. _space_heating_demand_modelling:
+
 Space Heating
 --------------------
 
@@ -11,6 +13,7 @@ Industry and Services
 --------------------
 The space heating demand for industry and services is computed with the standard factor method (Schneeberger et al., 2025), which is based on the framework of the Sonnendach.ch project (Swiss Federal Office of Energy, 2023). The calculation uses space heating energy performance indicator by building archetype, building attributes from the RBD (Federal Statistical Office, 2025), and mean annual ambient temperature from the Meteostat Python library. As with residential buildings, a regional correction factor is applied only where measured data are available. Annual demand is downscaled to hourly values using normalized HDH profiles (Schneeberger et al., 2025), and the hourly building demands are aggregated to district- or municipality-level totals.
 
+.. _dhw_demand_modelling:
 
 Domestic Hot Water (DHW)
 ------------------------
