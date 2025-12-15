@@ -28,4 +28,8 @@ The parameters of the optimisation are
 References
 -----------
 
-Pfenninger, S., & Pickering, B. (2018). *Calliope: a multi-scale energy systems modelling framework.* Journal of Open Source Software, 3(29), 825.
+Pfenninger, S., & Pickering, B. (2018). *Calliope: a multi-scale energy systems modelling framework.* Journal of Open Source Software, 3(29), 825. |Pfenninger2018_DOI_link|
+
+.. |Pfenninger2018_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.21105/joss.00825" target="_blank">https://doi.org/10.21105/joss.00825</a>

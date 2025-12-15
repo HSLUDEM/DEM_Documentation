@@ -28,18 +28,40 @@ References
 
 .. alphabetized by first author surname
 
-Arpagaus, C., Vetsch, B., & Bertsch, S. (2016, November 14). *Domestic hot water heat pumps: Task 1 market overview, country report Switzerland (HPT Annex 46).* Interstaatliche Hochschule für Technik Buchs, Institut für Energiesysteme (IES), for the Swiss Federal Office of Energy (SFOE). https://www.fws.ch/wp-content/uploads/2018/10/Market_Overview_Country_Report_Switzerland_Annex_46_DHWHP_Task1.pdf
+Arpagaus, C., Vetsch, B., & Bertsch, S. (2016, November 14). *Domestic hot water heat pumps: Task 1 market overview, country report Switzerland (HPT Annex 46).* Interstaatliche Hochschule für Technik Buchs, Institut für Energiesysteme (IES), for the Swiss Federal Office of Energy (SFOE). |Arpagaus2016_link|
 
-Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html
+.. |Arpagaus2016_link| raw:: html
 
-Pongelli, A., Priore, Y. D., Bacher, J. P., & Jusselme, T. (2023). Definition of building archetypes based on the Swiss energy performance certificates database. *Buildings, 13* (1), 40. `https://doi.org/10.3390/buildings13010040 <https://doi.org/10.3390/buildings13010040>`_
+   <a href="https://www.fws.ch/wp-content/uploads/2018/10/Market_Overview_Country_Report_Switzerland_Annex_46_DHWHP_Task1.pdf" target="_blank">https://www.fws.ch/wp-content/uploads/2018/10/Market_Overview_Country_Report_Switzerland_Annex_46_DHWHP_Task1.pdf</a>
 
-Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. *Energy and Buildings*, 116371. https://doi.org/10.1016/j.enbuild.2025.116371
+Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. |FSO2025_link|
 
-Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024). Wärmebedarfsschätzung für Wohngebäude. *Proceedings of the 18th Symposium Energieinnovation, TU Graz, Austria*. https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf
+.. |FSO2025_link| raw:: html
+
+   <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html" target="_blank">https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html</a>
+
+Pongelli, A., Priore, Y. D., Bacher, J. P., & Jusselme, T. (2023). *Definition of building archetypes based on the Swiss energy performance certificates database*. Buildings, 13 (1), 40. |Pongelli2023_link|
+
+.. |Pongelli2023_link| raw:: html
+
+   <a href="https://doi.org/10.3390/buildings13010040" target="_blank">https://doi.org/10.3390/buildings13010040</a>
+
+Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. Energy and Buildings, 116371. |Schneeberger2025_DOI_link|
+
+.. |Schneeberger2025_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
+
+Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024, February). Wärmebedarfsschätzung für Wohngebäude. In Proceedings of the 18th Symposium Energieinnovation. TU Graz, Austria. |Schneeberger2024_link|
+
+.. |Schneeberger2024_link| raw:: html
+
+   <a href="https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf" target="_blank">https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf</a>
 
 Schweizerischer Ingenieur- und Architektenverein (SIA). (2025). *SIA 385/2:2025, Anlagen für Trinkwarmwasser in Gebäuden – Warmwasserbedarf, Gesamtanforderungen und Auslegung.* Zürich: Schweizerischer Ingenieur- und Architektenverein.
 
-Swiss Federal Office of Energy (SFOE). (2023, January). *Dokumentation Geodatenmodell – Solarenergie: Eignung Dächer (Sonnendach.ch); Solarenergie: Eignung Fassaden (Sonnenfassade.ch).* Bern: Swiss Federal Office of Energy. `https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solarenergy/suitability-of-roofs-for-use-of-solar-energy.html <https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solarenergy/suitability-of-roofs-for-use-of-solar-energy.html>`_
+Swiss Federal Office of Energy (SFOE). (2023, January). *Dokumentation Geodatenmodell – Solarenergie: Eignung Dächer (Sonnendach.ch); Solarenergie: Eignung Fassaden (Sonnenfassade.ch).* Bern: Swiss Federal Office of Energy. |SFOE2023_link|
 
+.. |SFOE2023_link| raw:: html
 
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html</a>

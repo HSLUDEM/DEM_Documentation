@@ -8,7 +8,7 @@ objective_co2,Weight of emissions objective for objective function in optimisati
 objective_ess,Not yet implemented.,0,--,float,
 objective_tss,Not yet implemented.,0,--,float,
 bigM_value,Default: 1e9; cost of unmet demand; large value makes model convergence slow; https://calliope.readthedocs.io/en/stable/user/building.html#allowing-for-unmet-demand,100000,CHF/kWh,float,
-solver,"Solver for optimisation, e.g. 'cbc', 'gutobi', etc. Must be compatible with Calliope.",'gurobi',--,string,
+solver,"Solver for optimisation, e.g. 'cbc', 'gurobi', etc. Must be compatible with Calliope.",'gurobi',--,string,
 solver_option_NumericFocus,Default: 0; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#parameternumericfocus,1,--,int,
 solver_option_TimeLimit,Default: 'Infinity'; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#timelimit,36000,s,int,
 solver_option_Presolve,Default: -1; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#presolve,-1,--,int,
