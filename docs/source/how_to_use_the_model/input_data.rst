@@ -212,6 +212,10 @@ Federal Office of Topography Swisstopo. (2024). *Official directory of building 
 .. |swisstopo2024_link| raw:: html
 
    <a href="https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses" target="_blank">https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses</a>
+   
+Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Solarenergie: Solarenergie – Eignung Dächer (Sonnendach.ch) und Solarenergie – Eignung Fassaden (Sonnenfassade.ch)* (Version 1.5). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation (UVEK). |sonnendach2023_link|
 
+.. |sonnendach2023_link| raw:: html
 
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html</a>
 
