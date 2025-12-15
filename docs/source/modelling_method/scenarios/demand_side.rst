@@ -144,7 +144,6 @@ is not activated, it is turned on and its rates correspond to the end-of-life ra
 generators.
 
 Testtext hier.
-`CCTES <https://www.hslu.ch/de-ch/technik-architektur/ueber-uns/organisation-und-themen/organisation/kompetenzzentren-und-forschungsgruppen/technik/thermische-energiespeicher/>`_
 
 
 References
