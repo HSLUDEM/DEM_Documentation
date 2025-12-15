@@ -202,7 +202,11 @@ Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwe
 
    <a href="https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html" target="_blank">https://www.bfs.admin.ch/bfs/en/home/registers/federal-register-buildings-dwellings.html</a>
 
+Federal Office of Topography swisstopo. (2024). *Official directory of building addresses*. |swisstopo2024_link|
 
+.. |swisstopo2024_link| raw:: html
+
+   <a href="https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses" target="_blank">https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses</a>
 
 
 
