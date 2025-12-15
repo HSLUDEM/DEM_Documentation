@@ -3,6 +3,11 @@
     max-width: 1200px;  /* Increase as desired */
 /*} */
 
+.wy-nav-content {
+    max-width: none;
+}
+
+
 .wrap-text {
     table-layout: fixed;
 }

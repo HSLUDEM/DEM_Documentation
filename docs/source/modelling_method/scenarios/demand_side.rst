@@ -148,7 +148,7 @@ generators.
 References
 ^^^^^^^^^^^
 
-CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. doi: 
+CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. DOI: |CH2018_link|
 
 .. |CH2018_link| raw:: html
 
