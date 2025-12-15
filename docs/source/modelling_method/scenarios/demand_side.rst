@@ -143,10 +143,6 @@ heat generators that have reached the end of their life. Furthermore, if fossil_
 is not activated, it is turned on and its rates correspond to the end-of-life rates of the heat
 generators.
 
-Testtext hier.
-
-See the `official documentation`_ for details.
-
 References
 ^^^^^^^^^^^
 
@@ -154,5 +150,3 @@ CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. Nati
 
 Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
 
-
-.. _official documentation: https://example.com
