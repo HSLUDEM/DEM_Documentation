@@ -59,7 +59,7 @@ All input files must be located within the ``data`` directory following the pred
     └── README.md
 
 
-Master File
+Master file
 -----------
 
 This file contains information about each individual building, with one row per building. District-level information is derived from this file through aggregation. The file may include data for multiple districts; during a simulation, only the buildings belonging to the specified district are selected.  
@@ -176,6 +176,12 @@ Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. |Apach
 .. |Apache_link| raw:: html
 
    <a href="https://arrow.apache.org/docs/python/feather.html" target="_blank">https://arrow.apache.org/docs/python/feather.html</a>
+   
+Burg, V., Bowman, G., Erni, M., Lemm, R., & Thees, O. (2018). *Analyzing the potential of domestic biomass resources for the energy transition in Switzerland*. Biomass and bioenergy, 111, 60-69. |Burg2018_link|
+
+.. |Burg2018_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.biombioe.2018.02.007" target="_blank">https://doi.org/10.1016/j.biombioe.2018.02.007</a>
 
 Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. |Dujardin2022a_link|
 
@@ -237,6 +243,15 @@ Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating ener
 
    <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
    
+Thees, O., Burg, V., Erni, M., Bowman, G., & Lemm, R. (2017). *Biomassenpotenziale der Schweiz für die energetische Nutzung*. Eidg. Forschungsanstalt für Wald, Schnee und Landschaft WSL. |Thees2017_link|
+
+.. |Thees2017_link| raw:: html
+
+   <a href="https://www.wsl.ch/de/publikationen/biomassepotenziale-der-schweiz-fuer-die-energetische-nutzung-ergebnisse-des-schweizerischen-energiekompetenzzentrums-sccer-biosweet/" target="_blank">https://www.wsl.ch/de/publikationen/biomassepotenziale-der-schweiz-fuer-die-energetische-nutzung-ergebnisse-des-schweizerischen-energiekompetenzzentrums-sccer-biosweet/</a>
+
+
+
+
 
 
 .. other Links:

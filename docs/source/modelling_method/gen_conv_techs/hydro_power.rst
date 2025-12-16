@@ -6,7 +6,7 @@ Hydro Power
 
 Hydro power represents local small scale hydro power
 plants that contribute mostly to the local electricity mix.
-A definition by Wild et al. (2024) is used
+An approach by Wild et al. (2024) is used
 to define which hydro power plants are regarded as being
 local hydro power plants and which ones are assumed to contribute
 directly to the national grid.
