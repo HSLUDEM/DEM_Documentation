@@ -339,7 +339,7 @@
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 41     | s_wd_bm                                  | float64   | Share of total woody biomass potential   | Value of total woody biomass potential   |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | in kWh allocated to individdual          | obtained from Data provided by the Swiss |
+|        |                                          |           | in kWh allocated to individual           | obtained from Data provided by the Swiss |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | building.                                | Federal Institute for Forest, Snow and   |
 |        |                                          |           |                                          |                                          |
@@ -361,7 +361,7 @@
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 42     | s_wet_bm                                 | float64   | Share of total wet biomass potential in  | Data provided by the Swiss Federal       |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | kWh allocated to individdual building.   | Institute for Forest, Snow and Landscape |
+|        |                                          |           | kWh allocated to individual building.    | Institute for Forest, Snow and Landscape |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | Research (WSL) based on Burg et al.      |
 |        |                                          |           |                                          |                                          |
@@ -379,19 +379,19 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | power potential in kWh allocated to      |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | individdual building.                    |                                          |
+|        |                                          |           | individual building.                     |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 44     | LocalHydroPotential_Speicherkraftwerk    | float64   | Share of local annual storage hydro      | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | power potential in kWh allocated to      |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | individdual building.                    |                                          |
+|        |                                          |           | individual building.                     |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 45     | LocalHydroPotential_Pumpspeicherkraftwer | float64   | Share of local annual pumped storage     | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        | k                                        |           | hydro power potential in kWh allocated   |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | to individdual building.                 |                                          |
+|        |                                          |           | to individual building.                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 46     | avg_dh_connection_distance               | float64   |                                          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
