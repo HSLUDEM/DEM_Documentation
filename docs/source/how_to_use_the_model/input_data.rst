@@ -236,6 +236,16 @@ Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating ener
 .. |Schneeberger2025_DOI_link| raw:: html
 
    <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
+   
+
+
+.. other Links:
+
+.. |Swiss_data_Zenodo_link|
+
+   <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Swiss dataset</a>
+
+
 
 
 
