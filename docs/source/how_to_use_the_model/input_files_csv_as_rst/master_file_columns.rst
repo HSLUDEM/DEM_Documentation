@@ -1,7 +1,7 @@
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | Number | Column                                   | Data type | Description                              | Source for Swiss dataset                 |
 +========+==========================================+===========+==========================================+==========================================+
-| 0      | EGID                                     | int64     | Unique identifier assigned to each       | Federal Statistical Office, 2025         |
+| 0      | ``EGID``                                 | int64     | Unique identifier assigned to each       | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | building. For Switzerland, these are     |                                          |
 |        |                                          |           |                                          |                                          |
@@ -17,7 +17,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | those already existing.                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 1      | GDEKT                                    | object    | Canton, in which the building is         | Swisstopo, 2024                          |
+| 1      | ``GDEKT``                                | object    | Canton, in which the building is         | Swisstopo, 2024                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | located. For regions outside of          |                                          |
 |        |                                          |           |                                          |                                          |
@@ -27,9 +27,11 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | regional entities such as e.g.           |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | provinces.                               |                                          |
+|        |                                          |           | provinces. For Switzerland, the short    |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | form is used (e.g., ZH, FR, … ).         |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 2      | GKAT                                     | float64   | Building category, adopted according to  | Federal Statistical Office, 2025         |
+| 2      | ``GKAT``                                 | float64   | Building category, adopted according to  | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Federal Statistical Office (2025). The   |                                          |
 |        |                                          |           |                                          |                                          |
@@ -51,7 +53,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | energy demand.                           |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 3      | GKLAS                                    | float64   | Building class, adopted according to     | Federal Statistical Office, 2025         |
+| 3      | ``GKLAS``                                | float64   | Building class, adopted according to     | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Federal Statistical Office (2025). The   |                                          |
 |        |                                          |           |                                          |                                          |
@@ -75,7 +77,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand.                                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 4      | GGDENR                                   | int64     | Unique identifier assigned to each       | Federal Statistical Office, 2025         |
+| 4      | ``GGDENR``                               | int64     | Unique identifier assigned to each       | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district. For Switzerland, it is the     |                                          |
 |        |                                          |           |                                          |                                          |
@@ -95,7 +97,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | with existing numbers.                   |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 5      | GGDENAME                                 | object    | Name of the district. For municipalities | Swisstopo, 2024                          |
+| 5      | ``GGDENAME``                             | object    | Name of the district. For municipalities | Swisstopo, 2024                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | in Switzerland, it is taken from the     |                                          |
 |        |                                          |           |                                          |                                          |
@@ -103,7 +105,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (Swisstopo, 2024).                       |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 6      | GKODE                                    | float64   | E coordinate of the building (for        | Federal Statistical Office, 2025         |
+| 6      | ``GKODE``                                | float64   | E coordinate of the building (for        | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Switzerland in LV95 standard). Not       |                                          |
 |        |                                          |           |                                          |                                          |
@@ -111,7 +113,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Switzerland.                             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 7      | GKODN                                    | float64   | N coordinate of the building (for        | Federal Statistical Office, 2025         |
+| 7      | ``GKODN``                                | float64   | N coordinate of the building (for        | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Switzerland in LV95 standard). Not       |                                          |
 |        |                                          |           |                                          |                                          |
@@ -119,19 +121,19 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Switzerland.                             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 8      | GBAUJ                                    | float64   | Year of construction of the building     | Federal Statistical Office, 2025         |
+| 8      | ``GBAUJ``                                | float64   | Year of construction of the building     | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | according to Federal Statistical Office, |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | 2025. See www.regbl.admin.ch/catalog.    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 9      | GBAUP                                    | float64   | Period of construction according to      | Federal Statistical Office, 2025         |
+| 9      | ``GBAUP``                                | float64   | Period of construction according to      | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Federal Statistical Office, 2025. See    |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | www.regbl.admin.ch/catalog.              |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 10     | GAREA                                    | float64   | Surface area of building (floor area) in | Federal Statistical Office, 2025         |
+| 10     | ``GAREA``                                | float64   | Surface area of building (floor area) in | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | square meters according to Federal       |                                          |
 |        |                                          |           |                                          |                                          |
@@ -139,7 +141,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | www.regbl.admin.ch/catalog.              |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 11     | GASTW                                    | float64   | Number of floors and basements,          | Federal Statistical Office, 2025         |
+| 11     | ``GASTW``                                | float64   | Number of floors and basements,          | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | including ground floor. According to     |                                          |
 |        |                                          |           |                                          |                                          |
@@ -147,7 +149,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | www.regbl.admin.ch/catalog.              |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 12     | GENH1                                    | float64   | Energy source / heat source 1 described  | Federal Statistical Office, 2025         |
+| 12     | ``GENH1``                                | float64   | Energy source / heat source 1 described  | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | as numeric code of 4 digits according to |                                          |
 |        |                                          |           |                                          |                                          |
@@ -157,13 +159,13 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | code "7520" refers to "Gas".             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 13     | GENH2                                    | float64   | Energy source / heat source 2 (if        | Federal Statistical Office, 2025         |
+| 13     | ``GENH2``                                | float64   | Energy source / heat source 2 (if        | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | applicable). Described as numeric code   |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | of 4 digits in the same way as GENH1.    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 14     | GENW1                                    | float64   | Energy / heat source for hot water 1     | Federal Statistical Office, 2025         |
+| 14     | ``GENW1``                                | float64   | Energy / heat source for hot water 1     | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | described as numeric code of 4 digits    |                                          |
 |        |                                          |           |                                          |                                          |
@@ -175,39 +177,39 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | "Gas".                                   |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 15     | GENW2                                    | float64   | Energy / heat source for hot water 2 (if | Federal Statistical Office, 2025         |
+| 15     | ``GENW2``                                | float64   | Energy / heat source for hot water 2 (if | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | applicable). Described as numeric code   |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | of 4 digits in the same way as GENW1.    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 16     | Coord_lat                                | float64   | Latitude coordinate of the building in   | Converted from 'GKODN'.                  |
+| 16     | ``Coord_lat``                            | float64   | Latitude coordinate of the building in   | Converted from 'GKODN'.                  |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | decimal format (e.g., 47.269056)         |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 17     | Coord_long                               | float64   | Longitude coordinate the building in     | Converted from 'GKODE'.                  |
+| 17     | ``Coord_long``                           | float64   | Longitude coordinate the building in     | Converted from 'GKODE'.                  |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | decimal format (e.g., 8.449859)          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 18     | PV_Pot                                   | float64   | Annual rooftop solar photovoltaic        | Swiss Federal Office of Energy, 2023     |
+| 18     | ``PV_Pot``                               | float64   | Annual rooftop solar photovoltaic        | Swiss Federal Office of Energy, 2023     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | generation potential of the building (in |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh).                                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 19     | PV_Pot_reco                              | float64   | Recommended annual rooftop solar         | Subset calculated from PV_tot.           |
+| 19     | ``PV_Pot_reco``                          | float64   | Recommended annual rooftop solar         | Subset calculated from PV_tot.           |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | photovoltaic generation potential based  |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | on roof suitability. Subset of PV_Pot.   |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 20     | FPV_Pot                                  | float64   | Annual fassade solar photovoltaic        | Swiss Federal Office of Energy, 2023     |
+| 20     | ``FPV_Pot``                              | float64   | Annual fassade solar photovoltaic        | Swiss Federal Office of Energy, 2023     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | generation potential of the building (in |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh).                                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 21     | FPV_Pot_reco                             | float64   | Recommended annual fassade solar         | Subset calculated from FPV_tot.          |
+| 21     | ``FPV_Pot_reco``                         | float64   | Recommended annual fassade solar         | Subset calculated from FPV_tot.          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | photovoltaic generation potential based  |                                          |
 |        |                                          |           |                                          |                                          |
@@ -215,11 +217,11 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | FPV_Pot.                                 |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 22     | BeginningOfOperation                     | object    | Commissioning date of the installed      | Swiss Federal Office of Energy, 2022     |
+| 22     | ``BeginningOfOperation``                 | object    | Commissioning date of the installed      | Swiss Federal Office of Energy, 2022     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | solar photovoltaic system.               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 23     | InitialPower                             | float64   | Initial commissioning capacity of the    | Swiss Federal Office of Energy, 2022     |
+| 23     | ``InitialPower``                         | float64   | Initial commissioning capacity of the    | Swiss Federal Office of Energy, 2022     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | installed solar photovoltaic system in   |                                          |
 |        |                                          |           |                                          |                                          |
@@ -231,13 +233,13 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | capacity.                                |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 24     | TotalPower                               | float64   | Total installed solar PV capacity        | Swiss Federal Office of Energy, 2022     |
+| 24     | ``TotalPower``                           | float64   | Total installed solar PV capacity        | Swiss Federal Office of Energy, 2022     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (including any possible expansions) in   |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kW.                                      |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 25     | PlantCategory                            | object    | OPTIONAL. Solar PV plant type according  | Swiss Federal Office of Energy, 2022     |
+| 25     | ``PlantCategory``                        | object    | OPTIONAL. Solar PV plant type according  | Swiss Federal Office of Energy, 2022     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | to Swiss Federal Office of Energy        |                                          |
 |        |                                          |           |                                          |                                          |
@@ -245,21 +247,21 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | attached; "plantcat_9" = integrated).    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 26     | TotalEnergy                              | float64   | Total annual generated energy in kWh     | Calculated based on 'TotalPower' using   |
+| 26     | ``TotalEnergy``                          | float64   | Total annual generated energy in kWh     | Calculated based on 'TotalPower' using   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | from solar PV installation.              | an assumed value of full load hours      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | (e.g., 1000 kWh/kWp).                    |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 27     | altitude                                 | int32     | Elevation above sea level of the         | Obtained through Open-Elevation API      |
+| 27     | ``altitude``                             | int32     | Elevation above sea level of the         | Obtained through Open-Elevation API      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | building.                                | (www.open-elevation.com)                 |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 28     | Temperature_mean                         | float64   | Mean annual ambient temperature at       | Calculated as mean from hourly           |
+| 28     | ``Temperature_mean``                     | float64   | Mean annual ambient temperature at       | Calculated as mean from hourly           |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | building location.                       | temperature profile.                     |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 29     | renovation_base                          | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
+| 29     | ``renovation_base``                      | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | scenario with renovation. Year of        | scenario based on Streicher at al.       |
 |        |                                          |           |                                          |                                          |
@@ -269,7 +271,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (e.g., 2045).                            |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 30     | renovation_low                           | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
+| 30     | ``renovation_low``                       | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | scenario with renovation. Year of        | scenario based on Streicher at al.       |
 |        |                                          |           |                                          |                                          |
@@ -279,7 +281,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (e.g., 2045).                            |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 31     | renovation_high                          | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
+| 31     | ``renovation_high``                      | float64   | Only required for ``demand_side``        | Calculated using renovation rates        |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | scenario with renovation. Year of        | scenario based on Streicher at al.       |
 |        |                                          |           |                                          |                                          |
@@ -289,31 +291,31 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (e.g., 2045).                            |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 32     | heat_energy_demand_estimate_kWh_combined | float64   | Annual space heating demand in kWh.      | Computed according to Schneeberger et    |
+| 32     | ``heat_energy_demand_estimate_kWh_combin | float64   | Annual space heating demand in kWh.      | Computed according to Schneeberger et    |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           |                                          | al. (2025). See also                     |
+|        | ed``                                     |           |                                          | al. (2025). See also                     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | :ref:`space_heating_demand_modelling`    |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 33     | dhw_estimation_kWh_combined              | float64   | Annual domestic hot water (DHW) demand   | See :ref:`dhw_demand_modelling`          |
+| 33     | ``dhw_estimation_kWh_combined``          | float64   | Annual domestic hot water (DHW) demand   | See :ref:`dhw_demand_modelling`          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | in kWh.                                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 34     | cluster_number                           | int64     | *currently not used*                     | *n/a*                                    |
+| 34     | ``cluster_number``                       | int64     | *currently not used*                     | *n/a*                                    |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 35     | kWh_household_sfh                        | float64   | If the building is a single family house | See                                      |
+| 35     | ``kWh_household_sfh``                    | float64   | If the building is a single family house | See                                      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (SFH): annual electricity demand in kWh. | :ref:`electricity_demand_residential`    |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Otherwise 0.                             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 36     | kWh_household_mfh                        | float64   | If the building is a multi family house  | See                                      |
+| 36     | ``kWh_household_mfh``                    | float64   | If the building is a multi family house  | See                                      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (MFH): annual electricity demand in kWh. | :ref:`electricity_demand_residential`    |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Otherwise 0.                             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 37     | Heating_System                           | object    | Heat flow in DEM nomenclature            | See: :ref:`nomenclature`                 |
+| 37     | ``Heating_System``                       | object    | Heat flow in DEM nomenclature            | See: :ref:`nomenclature`                 |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (:ref:`nomenclature`) for specified      |                                          |
 |        |                                          |           |                                          |                                          |
@@ -321,7 +323,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | heat pump (hp) heat flow.                |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 38     | Hot_Water_System                         | object    | Heat flow in DEM nomenclature            | See: :ref:`nomenclature`                 |
+| 38     | ``Hot_Water_System``                     | object    | Heat flow in DEM nomenclature            | See: :ref:`nomenclature`                 |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (:ref:`nomenclature`) for specified hot  |                                          |
 |        |                                          |           |                                          |                                          |
@@ -329,19 +331,19 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | pump (hp) hot water flow.                |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 39     | Electricity_Industry                     | float64   | Annual electricity demand for industry   | See :ref:`electricity_demand_industry`   |
+| 39     | ``Electricity_Industry``                 | float64   | Annual electricity demand for industry   | See :ref:`electricity_demand_industry`   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (if applicable) in kWh.                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 40     | Electricity_Service                      | float64   | Annual electricity demand for services   | See :ref:`electricity_demand_industry`   |
+| 40     | ``Electricity_Service``                  | float64   | Annual electricity demand for services   | See :ref:`electricity_demand_industry`   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (if applicable) in kWh.                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 41     | s_wd_bm                                  | float64   | Share of total woody biomass potential   | Value of total woody biomass potential   |
+| 41     | ``s_wd_bm``                              | float64   | Share of total woody biomass potential   | Value of total woody biomass potential   |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | in kWh allocated to individual           | obtained from Data provided by the Swiss |
+|        |                                          |           | in kWh allocated to individual building. | obtained from Data provided by the Swiss |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | building.                                | Federal Institute for Forest, Snow and   |
+|        |                                          |           |                                          | Federal Institute for Forest, Snow and   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | Landscape Research (WSL). Values are     |
 |        |                                          |           |                                          |                                          |
@@ -359,7 +361,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | content is used.                         |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 42     | s_wet_bm                                 | float64   | Share of total wet biomass potential in  | Data provided by the Swiss Federal       |
+| 42     | ``s_wet_bm``                             | float64   | Share of total wet biomass potential in  | Data provided by the Swiss Federal       |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh allocated to individual building.    | Institute for Forest, Snow and Landscape |
 |        |                                          |           |                                          |                                          |
@@ -375,27 +377,29 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 43     | LocalHydroPotential_Laufkraftwerk        | float64   | Share of local annual run-of-river hydro | See :ref:`hydro_power`                   |
+| 43     | ``LocalHydroPotential_Laufkraftwerk``    | float64   | Share of local annual run-of-river hydro | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | power potential in kWh allocated to      |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | individual building.                     |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 44     | LocalHydroPotential_Speicherkraftwerk    | float64   | Share of local annual storage hydro      | See :ref:`hydro_power`                   |
+| 44     | ``LocalHydroPotential_Speicherkraftwerk` | float64   | Share of local annual storage hydro      | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | power potential in kWh allocated to      |                                          |
+|        | `                                        |           | power potential in kWh allocated to      |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | individual building.                     |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 45     | LocalHydroPotential_Pumpspeicherkraftwer | float64   | Share of local annual pumped storage     | See :ref:`hydro_power`                   |
+| 45     | ``LocalHydroPotential_Pumpspeicherkraftw | float64   | Share of local annual pumped storage     | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
-|        | k                                        |           | hydro power potential in kWh allocated   |                                          |
+|        | erk``                                    |           | hydro power potential in kWh allocated   |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | to individual building.                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 46     | avg_dh_connection_distance               | float64   |                                          |                                          |
+| 46     | ``avg_dh_connection_distance``           | float64   |                                          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 47     | dh_distance_cat                          | int64     |                                          |                                          |
+| 47     | ``dh_distance_cat``                      | int64     |                                          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 48     | heat_energy_demand_renov_estimate_kWh    | float64   |                                          |                                          |
+| 48     | ``heat_energy_demand_renov_estimate_kWh` | float64   |                                          |                                          |
+|        |                                          |           |                                          |                                          |
+|        | `                                        |           |                                          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
