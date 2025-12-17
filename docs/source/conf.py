@@ -63,6 +63,14 @@ html_static_path = ['_static']
 # Set the favicon
 html_favicon = '_static/favicon.png'
 
+html_meta = {
+    "google-site-verification": "uPS4GuakMcpNFosZdasaheIiHnIU3YC0kMz8BSsLjJQ"
+}
+
+html_extra_path = ["google77c95f225ee9816c.html"]
+
+html_title = "District Energy Model Documentation"
+
 
 # Inject custom CSS to increase page width
 def setup(app):

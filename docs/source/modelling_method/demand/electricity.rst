@@ -1,6 +1,8 @@
 Electricity Demand
 ========================
 
+.. _electricity_demand_residential:
+
 Residential Buildings
 ------------------
 
@@ -9,6 +11,8 @@ For residential buildings, annual demand is estimated based on the number of inh
 Annual electricity demand per inhabitant is taken from a report by the Swiss Federal Office of Energy (SFOE) on typical household electricity consumption in Switzerland (Nipkow, 2013). This annual demand per building is then distributed according to standard hourly load profiles (Rinaldi et al., 2022), with separate profiles applied for single-family and multi-family homes. Finally, the hourly demand of a district or municipality is obtained by aggregating the individual building demands.
 
 The total annual electricity demand for each municipality is derived from an electricity demand model that distributes the measured national consumption across all Swiss municipalities (geoimpact AG, 2025).
+
+.. _electricity_demand_industry:
 
 Industry and Services
 ------------------

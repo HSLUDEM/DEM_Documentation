@@ -58,8 +58,9 @@ All input files must be located within the ``data`` directory following the pred
     ├── LICENSE.txt
     └── README.md
 
+.. _master_file:
 
-Master File
+Master file
 -----------
 
 This file contains information about each individual building, with one row per building. District-level information is derived from this file through aggregation. The file may include data for multiple districts; during a simulation, only the buildings belonging to the specified district are selected.  
@@ -90,6 +91,8 @@ The district identification number (column 1: ``GGDENR``) must match the corresp
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_columns.rst
 
+
+.. _simulation_profiles:
 
 Simulation profiles
 -------------------
@@ -176,6 +179,12 @@ Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. |Apach
 .. |Apache_link| raw:: html
 
    <a href="https://arrow.apache.org/docs/python/feather.html" target="_blank">https://arrow.apache.org/docs/python/feather.html</a>
+   
+Burg, V., Bowman, G., Erni, M., Lemm, R., & Thees, O. (2018). *Analyzing the potential of domestic biomass resources for the energy transition in Switzerland*. Biomass and bioenergy, 111, 60-69. |Burg2018_link|
+
+.. |Burg2018_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.biombioe.2018.02.007" target="_blank">https://doi.org/10.1016/j.biombioe.2018.02.007</a>
 
 Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. |Dujardin2022a_link|
 
@@ -212,6 +221,54 @@ Federal Office of Topography Swisstopo. (2024). *Official directory of building 
 .. |swisstopo2024_link| raw:: html
 
    <a href="https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses" target="_blank">https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses</a>
+   
+Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Solarenergie: Solarenergie – Eignung Dächer (Sonnendach.ch) und Solarenergie – Eignung Fassaden (Sonnenfassade.ch)* (Version 1.5). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation (UVEK). |sonnendach2023_link|
+
+.. |sonnendach2023_link| raw:: html
+
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html</a>
+
+Swiss Federal Office of Energy (SFOE). (2022). *Dokumentation «minimales Geodatenmodell»: Elektrizitätsproduktionsanlagen* (Version 1.0rev, Geobasisdatensatz Nr. 221.1). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation. |e_prod_plants_link|
+
+.. |e_prod_plants_link| raw:: html
+
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html</a>
+
+Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. |Streicher2021_DOI_link|
+
+.. |Streicher2021_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">https://doi.org/10.1016/j.enpol.2021.112220</a>
+   
+Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. Energy and Buildings, 116371. |Schneeberger2025_DOI_link|
+
+.. |Schneeberger2025_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
+   
+Thees, O., Burg, V., Erni, M., Bowman, G., & Lemm, R. (2017). *Biomassenpotenziale der Schweiz für die energetische Nutzung*. Eidg. Forschungsanstalt für Wald, Schnee und Landschaft WSL. |Thees2017_link|
+
+.. |Thees2017_link| raw:: html
+
+   <a href="https://www.wsl.ch/de/publikationen/biomassepotenziale-der-schweiz-fuer-die-energetische-nutzung-ergebnisse-des-schweizerischen-energiekompetenzzentrums-sccer-biosweet/" target="_blank">https://www.wsl.ch/de/publikationen/biomassepotenziale-der-schweiz-fuer-die-energetische-nutzung-ergebnisse-des-schweizerischen-energiekompetenzzentrums-sccer-biosweet/</a>
+
+
+
+
+
+
+.. other Links:
+
+.. |Swiss_data_Zenodo_link|
+
+   <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Swiss dataset</a>
+
+
+
+
+
+
+
 
 
 

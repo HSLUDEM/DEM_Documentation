@@ -1,2 +1,2 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-potential_integration_factor,Share of remaining rooftop PV potential that is used in the pv_integration scenario,0,--,float,
+``potential_integration_factor``,Share of remaining rooftop PV potential that is used in the pv_integration scenario,0,--,float,

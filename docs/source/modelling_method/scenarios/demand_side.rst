@@ -47,6 +47,8 @@ The relevant parameters for the climate adjustment are
 
 The climate data is based on the CH2018 scenarios (CH2018 Project Team, 2018).
 
+.. _renovation-scenario:
+
 Renovation and heat generator replacement
 ---------------------------------------
 
@@ -71,7 +73,7 @@ There are two different ways to define which buildings undergo total renovation.
 If ``use_constant_total_renovation_rate`` is False, the buildings 
 that are marked as up for renovation up to that year according 
 to the corresponding entry in the master file are renovated.
-The rates for this are based on the publication by Streicher et al.
+The rates for this are based on the publication by Streicher et al. (2021)
 There are three different scenarios to choose from: 'renovation_low',
 'renovation_high' and 'renovation_base'. Given that already 'renovation_low'
 implements are rather high renovation rate, this is the recommended scenario.
@@ -146,7 +148,21 @@ generators.
 References
 ^^^^^^^^^^^
 
-CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. doi: https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0
+CH2018 Project Team (2018): *CH2018 – Climate Scenarios for Switzerland*. National Centre for Climate Services. DOI: |CH2018_link|
 
-Parajeles Herrera, M., & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. arXiv e-prints, arXiv-2504.
+.. |CH2018_link| raw:: html
+
+   <a href="https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0" target="_blank">https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0</a>
+
+Parajeles Herrera, M & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
+
+.. |Herrera2025b_link| raw:: html
+
+   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">https://doi.org/10.1109/PowerTech59965.2025.11180551</a>
+
+Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. |Streicher2021_DOI_link|
+
+.. |Streicher2021_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">https://doi.org/10.1016/j.enpol.2021.112220</a>
 

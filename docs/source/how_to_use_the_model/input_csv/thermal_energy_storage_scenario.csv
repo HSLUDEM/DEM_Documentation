@@ -1,2 +1,2 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-capacity_kWh,Aggregated capacity of all the TESDC devices deployed in the thermal_energy_storage scenario.,0,kWh,float,
+``capacity_kWh``,Aggregated capacity of all the TESDC devices deployed in the thermal_energy_storage scenario.,0,kWh,float,
