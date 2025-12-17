@@ -67,6 +67,7 @@ html_meta = {
     "google-site-verification": "uPS4GuakMcpNFosZdasaheIiHnIU3YC0kMz8BSsLjJQ"
 }
 
+html_extra_path = ["google77c95f225ee9816c.html"]
 
 
 # Inject custom CSS to increase page width

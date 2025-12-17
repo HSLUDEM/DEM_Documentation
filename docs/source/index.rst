@@ -1,3 +1,6 @@
+.. meta::
+   :google-site-verification: uPS4GuakMcpNFosZdasaheIiHnIU3YC0kMz8BSsLjJQ
+
 **District Energy Model (DEM)**
 =========================================================
 
