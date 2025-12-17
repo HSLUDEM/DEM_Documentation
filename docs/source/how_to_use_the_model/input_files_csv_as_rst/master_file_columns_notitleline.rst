@@ -163,7 +163,9 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | applicable). Described as numeric code   |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | of 4 digits in the same way as GENH1.    |                                          |
+|        |                                          |           | of 4 digits in the same way as           |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | ``GENH1``.                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 14     | ``GENW1``                                | float64   | Energy / heat source for hot water 1     | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
@@ -181,13 +183,15 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | applicable). Described as numeric code   |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | of 4 digits in the same way as GENW1.    |                                          |
+|        |                                          |           | of 4 digits in the same way as           |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | ``GENW1``.                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 16     | ``Coord_lat``                            | float64   | Latitude coordinate of the building in   | Converted from 'GKODN'.                  |
+| 16     | ``Coord_lat``                            | float64   | Latitude coordinate of the building in   | Converted from ``GKODN``.                |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | decimal format (e.g., 47.269056)         |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 17     | ``Coord_long``                           | float64   | Longitude coordinate the building in     | Converted from 'GKODE'.                  |
+| 17     | ``Coord_long``                           | float64   | Longitude coordinate the building in     | Converted from ``GKODE``.                |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | decimal format (e.g., 8.449859)          |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
@@ -197,11 +201,13 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh).                                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 19     | ``PV_Pot_reco``                          | float64   | Recommended annual rooftop solar         | Subset calculated from PV_tot.           |
+| 19     | ``PV_Pot_reco``                          | float64   | Recommended annual rooftop solar         | Subset calculated from ``PV_tot``.       |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | photovoltaic generation potential based  |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | on roof suitability. Subset of PV_Pot.   |                                          |
+|        |                                          |           | on roof suitability. Subset of           |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | ``PV_Pot``.                              |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 20     | ``FPV_Pot``                              | float64   | Annual fassade solar photovoltaic        | Swiss Federal Office of Energy, 2023     |
 |        |                                          |           |                                          |                                          |
@@ -209,13 +215,13 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh).                                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 21     | ``FPV_Pot_reco``                         | float64   | Recommended annual fassade solar         | Subset calculated from FPV_tot.          |
+| 21     | ``FPV_Pot_reco``                         | float64   | Recommended annual fassade solar         | Subset calculated from ``FPV_tot``.      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | photovoltaic generation potential based  |                                          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | on fassade suitability. Subset of        |                                          |
 |        |                                          |           |                                          |                                          |
-|        |                                          |           | FPV_Pot.                                 |                                          |
+|        |                                          |           | ``FPV_Pot``.                             |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 22     | ``BeginningOfOperation``                 | object    | Commissioning date of the installed      | Swiss Federal Office of Energy, 2022     |
 |        |                                          |           |                                          |                                          |
@@ -247,7 +253,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | attached; "plantcat_9" = integrated).    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 26     | ``TotalEnergy``                          | float64   | Total annual generated energy in kWh     | Calculated based on 'TotalPower' using   |
+| 26     | ``TotalEnergy``                          | float64   | Total annual generated energy in kWh     | Calculated based on ``TotalPower`` using |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | from solar PV installation.              | an assumed value of full load hours      |
 |        |                                          |           |                                          |                                          |

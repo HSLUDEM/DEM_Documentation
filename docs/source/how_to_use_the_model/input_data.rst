@@ -92,6 +92,8 @@ The district identification number (column 1: ``GGDENR``) must match the corresp
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/meta_file_2_columns.rst
 
 
+.. _simulation_profiles:
+
 Simulation profiles
 -------------------
 This file contains hourly profiles for an entire year (i.e., 8760 hours) representing various generation and demand metrics at national and regional levels.  

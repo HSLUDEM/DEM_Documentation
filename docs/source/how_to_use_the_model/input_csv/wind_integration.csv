@@ -1,2 +1,2 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-potential integration factor,Share of remaining wind energy potential that is used in the wind integration scenario,0,--,float,
+``potential integration factor``,Share of remaining wind energy potential that is used in the wind integration scenario,0,--,float,
