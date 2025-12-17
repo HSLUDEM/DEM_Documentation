@@ -13,11 +13,6 @@ The model is developed at |CCTES_link| in the framework of the |EDGE_link| proje
    This documentation is newly launched and remains under active development. Many sections are still incomplete. If you cannot find the information you are looking for, please refer to the :doc:`publications` page or reach out via the :doc:`contact` page.
 
 ..
-
-   Multi-energy system model for mixed-use districts and communities developed at |CCTES_link| in the framework of the |EDGE_link| project.
-
-
-..
    .. image:: images/geo_plot_renewable_s0.svg
 
 .. image:: images/bar_chart.png
