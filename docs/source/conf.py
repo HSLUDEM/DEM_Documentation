@@ -69,6 +69,8 @@ html_meta = {
 
 html_extra_path = ["google77c95f225ee9816c.html"]
 
+html_title = "District Energy Model Documentation"
+
 
 # Inject custom CSS to increase page width
 def setup(app):
