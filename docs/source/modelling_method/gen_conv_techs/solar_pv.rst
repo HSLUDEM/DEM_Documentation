@@ -6,7 +6,7 @@ Solar PV
 
 The solar PV technology represents solar PV installations on rooftops and soon fassades. It is adjusted to the available roof potential in a given municipality.
 
-For Switzerland, building-level estimates of annual rooftop photovoltaic potential are derived from a geospatial assessment published by the Swiss Federal Office of Energy (2023). Temporal PV production is represented by hourly generation profiles, which were simulated with the PV*SOL software (Valentin Software GmbH, 2025) for a set of representative locations across Switzerland and provided to DEM as time-series inputs.
+For Switzerland, building-level estimates of annual rooftop photovoltaic potential are derived from a geospatial assessment published by the Swiss Federal Office of Energy (2023). Temporal PV production is represented by hourly generation profiles, which were simulated with the PV*SOL software (Valentin Software GmbH, 2025) for a set of representative locations across Switzerland and provided to DEM as time-series inputs. The irradiation data applied in PVSOL is based on a Typical Meterological Year.
 
 .. include:: ../../how_to_use_the_model/input_csv_as_rst/solar_pv.rst
 
