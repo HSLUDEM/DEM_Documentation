@@ -8,7 +8,7 @@ The heat pump technology models a small to medium size heat pump located in a bu
 
 The power available to the heating system is given by the electric input power multiplied
 with the coefficient of performance (COP).
-..math:: P_\\text{out} = \\text{COP} \\cdot P_\\text{elec}
+.. math:: P_\\text{out} = \\text{COP} \\cdot P_\\text{elec}
 
 Our model contains a module for the detailed modeling of the COP based on properties 
 of the building and the heat pumps. For this, there are plenty of parameters in the input 
