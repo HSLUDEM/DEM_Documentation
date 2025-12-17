@@ -63,6 +63,11 @@ html_static_path = ['_static']
 # Set the favicon
 html_favicon = '_static/favicon.png'
 
+html_meta = {
+    "google-site-verification": "uPS4GuakMcpNFosZdasaheIiHnIU3YC0kMz8BSsLjJQ"
+}
+
+
 
 # Inject custom CSS to increase page width
 def setup(app):

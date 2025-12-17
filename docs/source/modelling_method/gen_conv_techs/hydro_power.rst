@@ -22,6 +22,10 @@ The symbols and names of the flows are
 
 .. include:: ../../how_to_use_the_model/flows_tables/hydro.rst
 
+
+References
+^^^^^^^^^^^
+
 Wild, M., Stocker, N., & Rohrer, J. (2024, May). *Techno-economic realization of energy balancing with batteries, power-to-X, and demand-side management* (SWEET Call 1-2020: EDGE, Deliverable Report 2.4). Zurich University of Applied Sciences (ZHAW). |zhaw_hydro_link|.
 
 .. |zhaw_hydro_link| raw:: html
