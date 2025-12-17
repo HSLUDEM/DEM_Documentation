@@ -58,6 +58,7 @@ All input files must be located within the ``data`` directory following the pred
     ├── LICENSE.txt
     └── README.md
 
+.. _master_file:
 
 Master file
 -----------

@@ -1,5 +1,5 @@
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| Number | Column                                   | Data type | Description                              | Source for Swiss_dataset                 |
+| Number | Column                                   | Data type | Description                              | Source for Swiss dataset                 |
 +========+==========================================+===========+==========================================+==========================================+
 | 0      | EGID                                     | int64     | Unique identifier assigned to each       | Federal Statistical Office, 2025         |
 |        |                                          |           |                                          |                                          |
