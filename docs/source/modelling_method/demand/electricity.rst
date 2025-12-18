@@ -39,7 +39,7 @@ The symbols and names of the flows are
 References
 ^^^^^^^^^^^
 
-Arthur Rinaldi, Héctor Ramirez, Benjamin Schroeteler, & Marco Meier. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. |Rinaldi2022_link|
+Rinaldi, A., Ramirez, H., Schroeteler, B., & Meier, M. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. |Rinaldi2022_link|
 
 .. |Rinaldi2022_link| raw:: html
 

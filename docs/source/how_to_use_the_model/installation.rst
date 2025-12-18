@@ -18,12 +18,12 @@ If not already done, download and install |Conda_link| on your operating system.
 *Screenshot 1:*
 
 .. image:: images/github_conda_file.png
-   :width: 100%
+   :width: 90%
   
 *Screenshot 2:*
 
 .. image:: images/github_download_file.png
-   :width: 100%
+   :width: 90%
 
 
 Open the terminal window and navigate to the directory where the .yml file is located. Create a new ``Conda`` environment from this file:

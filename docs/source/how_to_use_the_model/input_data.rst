@@ -221,7 +221,13 @@ Federal Office of Topography Swisstopo. (2024). *Official directory of building 
 .. |swisstopo2024_link| raw:: html
 
    <a href="https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses" target="_blank">https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses</a>
-   
+
+Rinaldi, A., Ramirez, H., Schroeteler, B., & Meier, M. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. |Rinaldi2022_link|
+
+.. |Rinaldi2022_link| raw:: html
+
+   <a href="https://doi.org/10.5281/zenodo.6782179" target="_blank">https://doi.org/10.5281/zenodo.6782179</a>
+
 Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Solarenergie: Solarenergie – Eignung Dächer (Sonnendach.ch) und Solarenergie – Eignung Fassaden (Sonnenfassade.ch)* (Version 1.5). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation (UVEK). |sonnendach2023_link|
 
 .. |sonnendach2023_link| raw:: html

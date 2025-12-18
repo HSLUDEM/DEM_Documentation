@@ -16,6 +16,7 @@ The model is developed at |CCTES_link| in the framework of the |EDGE_link| proje
    .. image:: images/geo_plot_renewable_s0.svg
 
 .. image:: images/bar_chart.png
+   :width: 90%
 
 Check out the :doc:`introduction` section for further information.
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
