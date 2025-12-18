@@ -45,9 +45,9 @@
 |                                     |                                          |                |              |           |        |
 |                                     | The additional wind power potential is   |                |              |           |        |
 |                                     |                                          |                |              |           |        |
-|                                     | based on a a simulation done by Wind-    |                |              |           |        |
+|                                     | based on a a simulation done by          |                |              |           |        |
 |                                     |                                          |                |              |           |        |
-|                                     | Topo.                                    |                |              |           |        |
+|                                     | Wind-Topo.                               |                |              |           |        |
 +-------------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
 | ``virtual_export_tariff``           | virtual export tarriff to prefer         | 0              | CHF/kWh      | float     |        |
 |                                     |                                          |                |              |           |        |

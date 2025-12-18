@@ -7,11 +7,11 @@
 |        |                        |           |                                          |                                       |
 |        |                        |           |                                          | Office of Energy, 2022b)              |
 +--------+------------------------+-----------+------------------------------------------+---------------------------------------+
-| 1      | ``Hydro Laufwasser``   | float     | Hourly supply profile in GWh for run-of- | Modelled based on data from Swiss     |
+| 1      | ``Hydro Laufwasser``   | float     | Hourly supply profile in GWh for         | Modelled based on data from Swiss     |
 |        |                        |           |                                          |                                       |
-|        |                        |           | river hydro power on national scale.     | electricity statistics (Swiss Federal |
+|        |                        |           | run-of-river hydro power on national     | electricity statistics (Swiss Federal |
 |        |                        |           |                                          |                                       |
-|        |                        |           |                                          | Office of Energy, 2022b)              |
+|        |                        |           | scale.                                   | Office of Energy, 2022b)              |
 +--------+------------------------+-----------+------------------------------------------+---------------------------------------+
 | 2      | ``Hydro Speicher``     | float     | Hourly supply profile in GWh for storage | Modelled based on data from Swiss     |
 |        |                        |           |                                          |                                       |

@@ -129,9 +129,9 @@
 |        |                                      |           |                                          |                                          |
 |        |                                      |           | Normalised electricity load profile for  | Ltd, 2025). See                          |
 |        |                                      |           |                                          |                                          |
-|        |                                      |           | industry for the canton of Basel-        | :ref:`electricity_demand_industry`.      |
+|        |                                      |           | industry for the canton of               | :ref:`electricity_demand_industry`.      |
 |        |                                      |           |                                          |                                          |
-|        |                                      |           | Landschaft (BL).                         |                                          |
+|        |                                      |           | Basel-Landschaft (BL).                   |                                          |
 +--------+--------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | 18     | ``Electricity_Profile_Industry_BS``  | float     | Only relevant for region Switzerland.    | Modelled based on grid data (Swissgrid   |
 |        |                                      |           |                                          |                                          |
