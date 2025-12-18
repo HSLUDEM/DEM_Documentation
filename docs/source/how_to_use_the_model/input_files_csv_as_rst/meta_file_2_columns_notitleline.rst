@@ -1,7 +1,7 @@
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
 | Number | Column                                   | Data type | Description                              | Source for Swiss dataset                 |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 0      | ``Municipality``                         | object    | Name of the district or municipality     | Grouped value from :ref:`master_file`    |
+| 0      | ``Municipality``                         | string    | Name of the district or municipality     | Grouped value from :ref:`master_file`    |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | according to ``GGDENAME`` in             |                                          |
 |        |                                          |           |                                          |                                          |
@@ -13,11 +13,11 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (Swisstopo, 2024).                       |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 1      | ``GGDENR``                               | int64     | According to ``GGDENR`` in               | Grouped value from :ref:`master_file`    |
+| 1      | ``GGDENR``                               | int       | According to ``GGDENR`` in               | Grouped value from :ref:`master_file`    |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`e.                     |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 2      | ``Canton``                               | object    | Same as ``GDEKT`` in :ref:`master_file`. | From :ref:`master_file`.                 |
+| 2      | ``Canton``                               | string    | Same as ``GDEKT`` in :ref:`master_file`. | From :ref:`master_file`.                 |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Canton, in which the district is         |                                          |
 |        |                                          |           |                                          |                                          |
@@ -33,21 +33,21 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | form is used (e.g., ZH, FR, … ).         |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 3      | ``Coord_lat_median``                     | float64   | Latitude coordinate of the district.     | Calculated as median from ``Coord_lat``  |
+| 3      | ``Coord_lat_median``                     | float     | Latitude coordinate of the district.     | Calculated as median from ``Coord_lat``  |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Given in decimal format (e.g.,           | values given in :ref:`master_file`.      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | 47.269056).                              |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 4      | ``Coord_long_median``                    | float64   | Longitude coordinate of the district.    | Calculated as median from ``Coord_long`` |
+| 4      | ``Coord_long_median``                    | float     | Longitude coordinate of the district.    | Calculated as median from ``Coord_long`` |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | Given in decimal format (e.g., 8.449859) | values given in :ref:`master_file`.      |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 5      | ``altitude_median``                      | float64   | Elevation above sea level of the         | Calculated as median from ``altitude``   |
+| 5      | ``altitude_median``                      | float     | Elevation above sea level of the         | Calculated as median from ``altitude``   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                | values given in :ref:`master_file`.      |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 6      | ``Filename``                             | object    | Name of the file that will be            | Based on values in ``Municipality``      |
+| 6      | ``Filename``                             | string    | Name of the file that will be            | Based on values in ``Municipality``      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | automatically generated as a subset from |                                          |
 |        |                                          |           |                                          |                                          |
@@ -63,23 +63,23 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | "Affoltern_am_Albis".                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 7      | ``LocalHydroPotential``                  | float64   | Local total annual hydro power potential | See :ref:`hydro_power`                   |
+| 7      | ``LocalHydroPotential``                  | float     | Local total annual hydro power potential | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | in kWh.                                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 8      | ``LocalHydroPotential_Laufkraftwerk``    | float64   | Local annual run-of-river hydro power    | See :ref:`hydro_power`                   |
+| 8      | ``LocalHydroPotential_Laufkraftwerk``    | float     | Local annual run-of-river hydro power    | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | potential in kWh.                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 9      | ``LocalHydroPotential_Speicherkraftwerk` | float64   | Local annual storage hydro power         | See :ref:`hydro_power`                   |
+| 9      | ``LocalHydroPotential_Speicherkraftwerk` | float     | Local annual storage hydro power         | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        | `                                        |           | potential in kWh.                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 10     | ``LocalHydroPotential_Pumpspeicherkraftw | float64   | Local annual pumped storage hydro power  | See :ref:`hydro_power`                   |
+| 10     | ``LocalHydroPotential_Pumpspeicherkraftw | float     | Local annual pumped storage hydro power  | See :ref:`hydro_power`                   |
 |        |                                          |           |                                          |                                          |
 |        | erk``                                    |           | potential in kWh.                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 11     | ``v_h_eh``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 11     | ``v_h_eh``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from electric heaters     | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -91,7 +91,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 12     | ``v_h_hp``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 12     | ``v_h_hp``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from heat pumps (hp) in   | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -103,7 +103,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 13     | ``v_h_dh``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 13     | ``v_h_dh``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from district heating     | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -115,7 +115,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 14     | ``v_h_gb``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 14     | ``v_h_gb``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from gas boilers (gb) in  | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -127,7 +127,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 15     | ``v_h_ob``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 15     | ``v_h_ob``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from oil boilers (ob) in  | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -139,7 +139,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 16     | ``v_h_wb``                               | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 16     | ``v_h_wb``                               | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from wood boilers (wb) in | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -151,7 +151,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 17     | ``v_h_solar``                            | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 17     | ``v_h_solar``                            | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from solar thermal in     | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -163,7 +163,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 18     | ``v_h_other``                            | float64   | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
+| 18     | ``v_h_other``                            | float     | Required annual heat supply (i.e., heat  | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | demand) in kWh from other technologies   | Aggregated value of ``heat_energy_demand |
 |        |                                          |           |                                          |                                          |
@@ -175,7 +175,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 19     | ``Total_Heating``                        | float64   | Total required annual heat supply (i.e., | Calculated as the sum of the values from |
+| 19     | ``Total_Heating``                        | float     | Total required annual heat supply (i.e., | Calculated as the sum of the values from |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | heat demand) in kWh as the sum from all  | individual technologies (columns 11-18)  |
 |        |                                          |           |                                          |                                          |
@@ -185,7 +185,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 20     | ``v_hw_eh``                              | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 20     | ``v_hw_eh``                              | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -197,7 +197,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 21     | ``v_hw_hp``                              | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 21     | ``v_hw_hp``                              | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -209,7 +209,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 22     | ``v_hw_dh``                              | float64   | Required annual domestic hot watert      | Calculated from :ref:`master_file`:      |
+| 22     | ``v_hw_dh``                              | float     | Required annual domestic hot watert      | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -221,7 +221,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 23     | ``v_hw_gb``                              | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 23     | ``v_hw_gb``                              | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -233,7 +233,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 24     | ``v_hw_ob``                              | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 24     | ``v_hw_ob``                              | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -245,7 +245,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 25     | ``v_hw_wb``                              | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 25     | ``v_hw_wb``                              | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -257,7 +257,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 26     | ``v_hw_solar``                           | float64   | Required annual domestic hot watert      | Calculated from :ref:`master_file`:      |
+| 26     | ``v_hw_solar``                           | float     | Required annual domestic hot watert      | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -269,7 +269,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | contained in :ref:`master_file`.         | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 27     | ``v_hw_other``                           | float64   | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
+| 27     | ``v_hw_other``                           | float     | Required annual domestic hot water       | Calculated from :ref:`master_file`:      |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh from   | Aggregated value of                      |
 |        |                                          |           |                                          |                                          |
@@ -283,7 +283,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | :ref:`master_file`.                      |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 28     | ``Total_Hot_Water``                      | float64   | Total required annual domestic hot water | Calculated as the sum of the values from |
+| 28     | ``Total_Hot_Water``                      | float     | Total required annual domestic hot water | Calculated as the sum of the values from |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | supply (i.e., heat demand) in kWh as the | individual technologies (columns 20-27)  |
 |        |                                          |           |                                          |                                          |
@@ -293,43 +293,43 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | selected district.                       |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 29     | ``PV_Pot``                               | float64   | Annual rooftop solar photovoltaic        | ``PV_Pot`` values in :ref:`master_file`  |
+| 29     | ``PV_Pot``                               | float     | Annual rooftop solar photovoltaic        | ``PV_Pot`` values in :ref:`master_file`  |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | generation potential of the building (in | aggregated across municipality.          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | kWh).                                    |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 30     | ``TotalEnergy``                          | float64   | Total annual generated energy in kWh     | ``TotalEnergy`` values in                |
+| 30     | ``TotalEnergy``                          | float     | Total annual generated energy in kWh     | ``TotalEnergy`` values in                |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | from solar PV installation.              | :ref:`master_file` aggregated across     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 31     | ``kWh_household_sfh``                    | float64   | Total annual electricity demand in kWh   | ``kWh_household_sfh`` values in          |
+| 31     | ``kWh_household_sfh``                    | float     | Total annual electricity demand in kWh   | ``kWh_household_sfh`` values in          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | for single family houses (SFH) in the    | :ref:`master_file` aggregated across     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 32     | ``kWh_household_mfh``                    | float64   | Total annual electricity demand in kWh   | ``kWh_household_mfh`` values in          |
+| 32     | ``kWh_household_mfh``                    | float     | Total annual electricity demand in kWh   | ``kWh_household_mfh`` values in          |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | for multi family houses (MFH) in the     | :ref:`master_file` aggregated across     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 33     | ``Electricity_Industry``                 | float64   | Annual electricity demand for industry   | ``Electricity_Industry`` values in       |
+| 33     | ``Electricity_Industry``                 | float     | Annual electricity demand for industry   | ``Electricity_Industry`` values in       |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (if applicable) in kWh for the selected  | :ref:`master_file` aggregated across     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 34     | ``Electricity_Service``                  | float64   | Annual electricity demand for services   | ``Electricity_Service`` values in        |
+| 34     | ``Electricity_Service``                  | float     | Annual electricity demand for services   | ``Electricity_Service`` values in        |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | (if applicable) in kWh for the selected  | :ref:`master_file` aggregated across     |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | district.                                | municipality.                            |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 35     | ``s_wd_bm``                              | float64   | Total woody biomass potential in kWh for | Value of total woody biomass potential   |
+| 35     | ``s_wd_bm``                              | float     | Total woody biomass potential in kWh for | Value of total woody biomass potential   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | the selected district.                   | obtained from Data provided by the Swiss |
 |        |                                          |           |                                          |                                          |
@@ -343,7 +343,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | water content is used.                   |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 36     | ``s_wet_bm``                             | float64   | Total wet biomass potential in kWh for   | Data provided by the Swiss Federal       |
+| 36     | ``s_wet_bm``                             | float     | Total wet biomass potential in kWh for   | Data provided by the Swiss Federal       |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | the selected district.                   | Institute for Forest, Snow and Landscape |
 |        |                                          |           |                                          |                                          |
@@ -351,7 +351,7 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           |                                          | (2018) and Thees et al. (2017).          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 37     | ``PV_Filename``                          | int64     | Identification number of the hourly      | Profile which was simulated closest to   |
+| 37     | ``PV_Filename``                          | int       | Identification number of the hourly      | Profile which was simulated closest to   |
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | solar photovoltaic profile applicable to | the selected municipality is used. See   |
 |        |                                          |           |                                          |                                          |
@@ -361,33 +361,105 @@
 |        |                                          |           |                                          |                                          |
 |        |                                          |           | 33-43. E.g., "9" for ``PV_Profile_9``.   |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 38     | ``dh_cap_class_1``                       | float64   |                                          |                                          |
+| 38     | ``dh_cap_class_1``                       | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 1, pre   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 39     | ``dh_cap_class_2``                       | float64   |                                          |                                          |
+| 39     | ``dh_cap_class_2``                       | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 2, pre   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 40     | ``dh_cap_class_3``                       | float64   |                                          |                                          |
+| 40     | ``dh_cap_class_3``                       | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 3, pre   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 41     | ``dh_cap_renov_class_1``                 | float64   |                                          |                                          |
+| 41     | ``dh_cap_renov_class_1``                 | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 1, post  |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 42     | ``dh_cap_renov_class_2``                 | float64   |                                          |                                          |
+| 42     | ``dh_cap_renov_class_2``                 | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 2, post  |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 43     | ``dh_cap_renov_class_3``                 | float64   |                                          |                                          |
+| 43     | ``dh_cap_renov_class_3``                 | float     | Thermal power need of the buildings in   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | district energy expansion class 3, post  |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | renovation                               |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 44     | ``dh_avg_dist_class_1``                  | float64   |                                          |                                          |
+| 44     | ``dh_avg_dist_class_1``                  | float     | Average distance to neighbouring egids   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | of buildings in district energy          |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | expansion class 1                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 45     | ``dh_avg_dist_class_2``                  | float64   |                                          |                                          |
+| 45     | ``dh_avg_dist_class_2``                  | float     | Average distance to neighbouring egids   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | of buildings in district energy          |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | expansion class 2                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 46     | ``dh_avg_dist_class_3``                  | float64   |                                          |                                          |
+| 46     | ``dh_avg_dist_class_3``                  | float     | Average distance to neighbouring egids   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | of buildings in district energy          |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | expansion class 3                        |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 47     | ``m_per_kWh_class_1_renov``              | float64   |                                          |                                          |
+| 47     | ``m_per_kWh_class_1_renov``              | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 1, post renovation                 |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 48     | ``m_per_kWh_class_2_renov``              | float64   |                                          |                                          |
+| 48     | ``m_per_kWh_class_2_renov``              | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 2, post renovation                 |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 49     | ``m_per_kWh_class_3_renov``              | float64   |                                          |                                          |
+| 49     | ``m_per_kWh_class_3_renov``              | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 3, post renovation                 |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 50     | ``m_per_kWh_class_1``                    | float64   |                                          |                                          |
+| 50     | ``m_per_kWh_class_1``                    | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 1, pre renovation                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 51     | ``m_per_kWh_class_2``                    | float64   |                                          |                                          |
+| 51     | ``m_per_kWh_class_2``                    | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 2, pre renovation                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+
-| 52     | ``m_per_kWh_class_3``                    | float64   |                                          |                                          |
+| 52     | ``m_per_kWh_class_3``                    | float     | Meters of distance to neighbouring       |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings per kWh heat demand for        |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | buildings in district energy expansion   |                                          |
+|        |                                          |           |                                          |                                          |
+|        |                                          |           | class 3, pre renovation                  |                                          |
 +--------+------------------------------------------+-----------+------------------------------------------+------------------------------------------+

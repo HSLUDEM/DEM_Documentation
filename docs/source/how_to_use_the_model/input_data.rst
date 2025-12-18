@@ -138,15 +138,18 @@ This file contains the currently installed wind power capacity (in kW) for each 
 
 Wind power profiles
 -------------------
-These files contain normalised hourly wind power generation profiles aggregated at the municipal level. For each municipality, two files are provided: one representing profiles optimised for maximum annual generation, and another optimised for maximum winter generation.
+These files contain hourly wind power generation profiles aggregated at the municipal level. For each municipality, two files are provided: one representing profiles optimised for maximum annual generation (named according to muncipality name), and another optimised for maximum winter generation (named according to muncipality name with extension ``_winter``). This is based on the location of the wind turbines within the municipality. The two profile types (annual- and winter-optimised) are disjoint subsets of the total capacity, meaning that turbines counted in ‘winter’ are not counted in ‘annual’ and they add up to the total generation potential.
 
-For Switzerland, the Wind-Topo dataset is used (Dujardin and Lehning, 2022a and 2022b).
+For Switzerland, the Wind-Topo dataset is used (Dujardin and Lehning, 2022a, 2022b). Each file contains five time series, grouped into bins according to the share of district-level wind turbine capacity installed (e.g. 0–20%, 20–40%, etc.). The binning reflects an ordering of site quality: locations with the highest expected yields are assumed to be developed first, while additional capacity is deployed at progressively less favourable sites. As a result, total electricity generation increases with installed capacity, but the average capacity factor declines. This effect is represented by separate capacity-factor time series for each installation bin.
 
-*in progress*
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_profiles_file_info_notitleline.rst
+
+
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/wind_power_profiles_file_columns.rst
 
 National electricity mix
 ------------------------
-This file contains hourly profiles of the national electricity mix. The data include the hourly contribution of each generation technology and are used to create normalised profiles of national electricity generation technologies.
+This file contains hourly profiles of the national electricity mix. The data include the hourly contribution of each generation technology and are used to create normalised profiles of national electricity generation technologies, as well as to calculate the shares of each large generator type (e.g., large hydro) on national scale.
 
 .. include:: ../how_to_use_the_model/input_files_csv_as_rst/electricity_mix_file_info_notitleline.rst
 
@@ -180,31 +183,31 @@ Apache Software Foundation. (2025). *Feather file format (Apache Arrow)*. |Apach
 
    <a href="https://arrow.apache.org/docs/python/feather.html" target="_blank">https://arrow.apache.org/docs/python/feather.html</a>
    
-Burg, V., Bowman, G., Erni, M., Lemm, R., & Thees, O. (2018). *Analyzing the potential of domestic biomass resources for the energy transition in Switzerland*. Biomass and bioenergy, 111, 60-69. |Burg2018_link|
+Burg, V., Bowman, G., Erni, M., Lemm, R., & Thees, O. (2018). *Analyzing the potential of domestic biomass resources for the energy transition in Switzerland*. Biomass and bioenergy, 111, 60-69. DOI: |Burg2018_link|
 
 .. |Burg2018_link| raw:: html
 
    <a href="https://doi.org/10.1016/j.biombioe.2018.02.007" target="_blank">10.1016/j.biombioe.2018.02.007</a>
    
-CH2018 Project Team (2018): CH2018 - Climate Scenarios for Switzerland. National Centre for Climate Services. doi: |CH2018_link|
+CH2018 Project Team (2018). *CH2018 - Climate Scenarios for Switzerland*. National Centre for Climate Services. doi: |CH2018_link|
 
 .. |CH2018_link| raw:: html
 
    <a href="https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0" target="_blank">10.18751/Climate/Scenarios/CH2018/1.0</a>
 
-Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. |Dujardin2022a_link|
+Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. DOI: |Dujardin2022a_link|
 
 .. |Dujardin2022a_link| raw:: html
 
    <a href="https://www.doi.org/10.16904/envidat.301" target="_blank">10.16904/envidat.301</a>
 
-Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. |Dujardin2022b_link|
+Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. DOI: |Dujardin2022b_link|
 
 .. |Dujardin2022b_link| raw:: html
 
    <a href="https://doi.org/10.1002/qj.4265" target="_blank">10.1002/qj.4265</a>
 
-Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. |Herrera2025a_link|
+Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. DOI: |Herrera2025a_link|
 
 .. |Herrera2025a_link| raw:: html
 
@@ -214,7 +217,7 @@ Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifyin
 
 .. |Herrera2025b_link| raw:: html
 
-   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">https://doi.org/10.1109/PowerTech59965.2025.11180551</a>
+   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">10.1109/PowerTech59965.2025.11180551</a>
 
 Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. |FSO2025_link|
 
@@ -227,12 +230,21 @@ Federal Office of Topography Swisstopo. (2024). *Official directory of building 
 .. |swisstopo2024_link| raw:: html
 
    <a href="https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses" target="_blank">https://www.swisstopo.admin.ch/en/official-directory-of-building-addresses</a>
+   
+Lamprecht, C. S. (2025). *Meteostat Python* [Software]. |MeteostatPython_link|
 
-Rinaldi, A., Ramirez, H., Schroeteler, B., & Meier, M. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. |Rinaldi2022_link|
+.. |MeteostatPython_link| raw:: html
+
+   <a href="https://meteostat.net/en/" target="_blank">https://meteostat.net/en/</a>
+
+
+Rinaldi, A., Ramirez, H., Schroeteler, B., & Meier, M. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. DOI: |Rinaldi2022_link|
 
 .. |Rinaldi2022_link| raw:: html
 
-   <a href="https://doi.org/10.5281/zenodo.6782179" target="_blank">https://doi.org/10.5281/zenodo.6782179</a>
+   <a href="https://doi.org/10.5281/zenodo.6782179" target="_blank">10.5281/zenodo.6782179</a>
+   
+Schweizerischer Ingenieur- und Architektenverein (SIA). (2025). *SIA 385/2:2025 – Anlagen für Trinkwarmwasser in Gebäuden: Warmwasserbedarf, Gesamtanforderungen und Auslegung* [Standard].
 
 Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Solarenergie: Solarenergie – Eignung Dächer (Sonnendach.ch) und Solarenergie – Eignung Fassaden (Sonnenfassade.ch)* (Version 1.5). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation (UVEK). |sonnendach2023_link|
 
@@ -252,23 +264,23 @@ Swiss Federal Office of Energy (SFOE). (2022b). *Schweizerische Elektrizitätsst
 
    <a href="https://www.bfe.admin.ch/bfe/en/home/supply/statistics-and-geodata/energy-statistics/electricity-statistics.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/statistics-and-geodata/energy-statistics/electricity-statistics.html</a>
    
-Swissgrid Ltd, Grid data, production and consumption, 2025. [Online]. Available: |Swissgrid_link|
+Swissgrid Ltd, *Grid data, production and consumption*, 2025. [Online]. Available: |Swissgrid_link|
 
 .. |Swissgrid_link| raw:: html
 
    <a href="https://www.swissgrid.ch/en/home/operation/grid-data/generation.html" target="_blank">https://www.swissgrid.ch/en/home/operation/grid-data/generation.html</a>
 
-Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. |Streicher2021_DOI_link|
+Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. DOI: |Streicher2021_DOI_link|
 
 .. |Streicher2021_DOI_link| raw:: html
 
-   <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">https://doi.org/10.1016/j.enpol.2021.112220</a>
+   <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">10.1016/j.enpol.2021.112220</a>
    
-Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating energy demand of residential buildings in Switzerland using only public data. Energy and Buildings, 116371. |Schneeberger2025_DOI_link|
+Schneeberger, S., Meister, C., & Schuetz, P. (2025). *Estimating the heating energy demand of residential buildings in Switzerland using only public data*. Energy and Buildings, 116371. DOI: |Schneeberger2025_DOI_link|
 
 .. |Schneeberger2025_DOI_link| raw:: html
 
-   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
+   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">10.1016/j.enbuild.2025.116371</a>
    
 Thees, O., Burg, V., Erni, M., Bowman, G., & Lemm, R. (2017). *Biomassenpotenziale der Schweiz für die energetische Nutzung*. Eidg. Forschungsanstalt für Wald, Schnee und Landschaft WSL. |Thees2017_link|
 
