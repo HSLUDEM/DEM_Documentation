@@ -184,25 +184,31 @@ Burg, V., Bowman, G., Erni, M., Lemm, R., & Thees, O. (2018). *Analyzing the pot
 
 .. |Burg2018_link| raw:: html
 
-   <a href="https://doi.org/10.1016/j.biombioe.2018.02.007" target="_blank">https://doi.org/10.1016/j.biombioe.2018.02.007</a>
+   <a href="https://doi.org/10.1016/j.biombioe.2018.02.007" target="_blank">10.1016/j.biombioe.2018.02.007</a>
+   
+CH2018 Project Team (2018): CH2018 - Climate Scenarios for Switzerland. National Centre for Climate Services. doi: |CH2018_link|
+
+.. |CH2018_link| raw:: html
+
+   <a href="https://doi.org/10.18751/Climate/Scenarios/CH2018/1.0" target="_blank">10.18751/Climate/Scenarios/CH2018/1.0</a>
 
 Dujardin, J., Lehning, M. (2022a). *Wind-Topo_model*. EnviDat. |Dujardin2022a_link|
 
 .. |Dujardin2022a_link| raw:: html
 
-   <a href="https://www.doi.org/10.16904/envidat.301" target="_blank">https://www.doi.org/10.16904/envidat.301</a>
+   <a href="https://www.doi.org/10.16904/envidat.301" target="_blank">10.16904/envidat.301</a>
 
 Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wind fields to high‐resolution topography in highly complex terrain with deep learning*. Quarterly Journal of the Royal Meteorological Society, 148(744), 1368-1388. |Dujardin2022b_link|
 
 .. |Dujardin2022b_link| raw:: html
 
-   <a href="https://doi.org/10.1002/qj.4265" target="_blank">https://doi.org/10.1002/qj.4265</a>
+   <a href="https://doi.org/10.1002/qj.4265" target="_blank">10.1002/qj.4265</a>
 
 Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. |Herrera2025a_link|
 
 .. |Herrera2025a_link| raw:: html
 
-   <a href="https://doi.org/10.5281/zenodo.16597426" target="_blank">https://doi.org/10.5281/zenodo.16597426</a>
+   <a href="https://doi.org/10.5281/zenodo.16597426" target="_blank">10.5281/zenodo.16597426</a>
 
 Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
 
@@ -234,11 +240,23 @@ Swiss Federal Office of Energy (SFOE). (2023). *Dokumentation Geodatenmodell Sol
 
    <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/solar-energy/suitability-of-roofs-for-use-of-solar-energy.html</a>
 
-Swiss Federal Office of Energy (SFOE). (2022). *Dokumentation «minimales Geodatenmodell»: Elektrizitätsproduktionsanlagen* (Version 1.0rev, Geobasisdatensatz Nr. 221.1). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation. |e_prod_plants_link|
+Swiss Federal Office of Energy (SFOE). (2022a). *Dokumentation «minimales Geodatenmodell»: Elektrizitätsproduktionsanlagen* (Version 1.0rev, Geobasisdatensatz Nr. 221.1). Eidgenössisches Departement für Umwelt, Verkehr, Energie und Kommunikation. |e_prod_plants_link|
 
 .. |e_prod_plants_link| raw:: html
 
    <a href="https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/digitalization-and-geoinformation/geoinformation/geodata/production-plants/electricity-production-plants.html</a>
+   
+Swiss Federal Office of Energy (SFOE). (2022b). *Schweizerische Elektrizitätsstatistik 2022* (Technical report). |SFOE2022_link|
+
+.. |SFOE2022b_link| raw:: html
+
+   <a href="https://www.bfe.admin.ch/bfe/en/home/supply/statistics-and-geodata/energy-statistics/electricity-statistics.html" target="_blank">https://www.bfe.admin.ch/bfe/en/home/supply/statistics-and-geodata/energy-statistics/electricity-statistics.html</a>
+   
+Swissgrid Ltd, Grid data, production and consumption, 2025. [Online]. Available: |Swissgrid_link|
+
+.. |Swissgrid_link| raw:: html
+
+   <a href="https://www.swissgrid.ch/en/home/operation/grid-data/generation.html" target="_blank">https://www.swissgrid.ch/en/home/operation/grid-data/generation.html</a>
 
 Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K. (2021). *Optimal building retrofit pathways considering stock dynamics and climate change impacts.* Energy Policy, 152, 112220. |Streicher2021_DOI_link|
 
