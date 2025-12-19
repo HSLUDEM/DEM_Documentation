@@ -1,7 +1,7 @@
 +----------------------+------------------------------------------+----------------+--------------+-----------+--------+
 | Attribute            | Description                              | Standard value | Unit         | Data type | Source |
 +----------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| ``deployment``       | If set to 'true', the technology will be | True           | —            | bool      |        |
+| ``deployment``       | If set to 'true', the technology will be | False          | —            | bool      |        |
 |                      |                                          |                |              |           |        |
 |                      | considered in the energy system model    |                |              |           |        |
 |                      |                                          |                |              |           |        |

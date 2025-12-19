@@ -1,7 +1,7 @@
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
 | Attribute            | Description                              | Standard value | Unit        | Data type | Source |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
-| ``deployment``       | If set to 'true', the technology will be | True           | —           | bool      |        |
+| ``deployment``       | If set to 'true', the technology will be | False          | —           | bool      |        |
 |                      |                                          |                |             |           |        |
 |                      | considered in the energy system model    |                |             |           |        |
 |                      |                                          |                |             |           |        |
@@ -17,7 +17,7 @@
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
 | ``eta``              | Efficiency of the wood boiler            | 0.85           | —           | float     |        |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
-| ``co2_intensity``    | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh  | float     |        |
+| ``co2_intensity``    | Carbon-dioxide intensity of technology   | 0.027          | kg CO2/kWh  | float     |        |
 |                      |                                          |                |             |           |        |
 |                      | output (annual average value).           |                |             |           |        |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+

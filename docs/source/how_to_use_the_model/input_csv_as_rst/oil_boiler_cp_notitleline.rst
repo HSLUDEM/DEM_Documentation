@@ -1,7 +1,7 @@
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
 | Attribute            | Description                              | Standard value | Unit        | Data type | Source |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
-| ``deployment``       | If set to 'true', the technology will be | True           | —           | bool      |        |
+| ``deployment``       | If set to 'true', the technology will be | False          | —           | bool      |        |
 |                      |                                          |                |             |           |        |
 |                      | considered in the energy system model    |                |             |           |        |
 |                      |                                          |                |             |           |        |
@@ -21,7 +21,7 @@
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
 | ``oil_price_CHFpl``  | Oil price                                | 1              | CHF/l       | float     |        |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+
-| ``co2_intensity``    | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh  | float     |        |
+| ``co2_intensity``    | Carbon-dioxide intensity of technology   | 0.301          | kg CO2/kWh  | float     |        |
 |                      |                                          |                |             |           |        |
 |                      | output (annual average value).           |                |             |           |        |
 +----------------------+------------------------------------------+----------------+-------------+-----------+--------+

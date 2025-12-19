@@ -4,7 +4,7 @@ Attribute,Description,Standard value,Unit,Data type,Source
 ``hv_oil_MJpkg``,Lower heating value of oil.,42.9,MJ/kg,float,
 ``eta``,Conversion efficiency from fuel to heat.,0.85,--,float,
 ``oil_price_CHFpl``,Oil price (annual fixed value).,1,CHF/l,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.301,kg CO2/kWh,float,
 ``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
 ``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float,
 ``replacement_factor``,Used for scenario 'fossil_heater_retrofit'. Fraction of heating capacity to be replaced by heat pumps.,1,--,float,

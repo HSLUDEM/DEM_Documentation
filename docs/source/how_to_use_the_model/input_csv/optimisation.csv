@@ -1,6 +1,6 @@
 Attribute,Description,Standard value,Unit,Data type,Source
 ``enabled``,"MILP optimisation is enabled if set to ""True"".",False,--,bool,
-``clustering``,Deprecated: This option is not available.,False,--,bool,
+``clustering``,*Deprecated: This option is not available.*,False,--,bool,
 ``pareto_monetary_co2``,Set to True to calculate a pareto front,False,--,bool,
 ``N_pareto``,Number of pareto points,6,--,int,
 ``objective_monetary``,Weight of monetary objective for objective function in optimisation.,1,--,float,

@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
 ``color``,Color for plot,#FF00FF,hex,str,
 ``efficiancy``,Conversion efficiency,0.3,--,float,
 ``capacity_kW``,maximum power,inf,kWh,float,

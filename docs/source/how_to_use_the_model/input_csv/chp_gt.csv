@@ -7,7 +7,7 @@ Attribute,Description,Standard value,Unit,Data type,Source
 ``eta_el``,Electrical conversion effiency.,0.35,-,float,
 ``htp_ratio``,Heat-to-power (htp) ratio (kW_th/kW_el),1.5,kW_th/kW_el,float,
 ``gas_price_CHFpkWh``,Price of gas.,0.13,CHF/kWh,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.645,kg CO2/kWh,float,
 ``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
 ``capital_cost``,CAPEX cost of technology per unit of capacity.,5000,CHF/kWp,float,
 ``maintenance_cost``,OPEX cost of technology per unit of capacity.,10,CHF/kWp/year,float,

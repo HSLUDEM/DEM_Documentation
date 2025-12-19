@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
 ``custom_district``,Properties for a district with custom boundaries.,,--,dict,
 ``custom_district: implemented``,"If set to 'true', the simulation will be carried out for a district of selected buildings.",False,--,bool,
-``custom_district: EGID_List``,List of EGIDs of buildings contained in custom district.,0,--,list / df,
+``custom_district: EGID_List``,List of EGIDs of buildings contained in custom district.,[],--,list / df,
 ``custom_district: custom_district_name``,unique name for specified custom district,'Test_Scenario',--,str,

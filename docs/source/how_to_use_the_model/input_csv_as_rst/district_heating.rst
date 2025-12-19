@@ -51,7 +51,7 @@
 |                                      |                                          |                |             |           |                              |
 |                                      | (based on 'import_kW_th_max')            |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: chp_gt``             | If set to 'true', CHP gas turbine plant  | True           | —           | bool      |                              |
+| ``heat_sources: chp_gt``             | If set to 'true', CHP gas turbine plant  | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | is connected to district heating network |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |
@@ -59,7 +59,7 @@
 |                                      |                                          |                |             |           |                              |
 |                                      | accordingly.                             |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: steam_turbine``      | If set to 'true', steam turbine is       | True           | —           | bool      |                              |
+| ``heat_sources: steam_turbine``      | If set to 'true', steam turbine is       | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | connected to the DHN. Technology must be |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |
@@ -71,7 +71,7 @@
 |                                      |                                          |                |             |           |                              |
 |                                      | Technology must be deployed accordingly. |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: heat_pump_cp``       | If set to 'true', a central heat pump is | True           | —           | bool      |                              |
+| ``heat_sources: heat_pump_cp``       | If set to 'true', a central heat pump is | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | connected to the DHN. Technology must be |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |
@@ -101,13 +101,13 @@
 |                                      |                                          |                |             |           |                              |
 |                                      | accordingly.                             |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: wood_boiler_cp``     | If set to 'true', a central wood boiler  | True           | —           | bool      |                              |
+| ``heat_sources: wood_boiler_cp``     | If set to 'true', a central wood boiler  | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | is connected to the DHN. Technology must |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | be deployed accordingly.                 |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: gas_boiler_cp``      | If set to 'true', a central gas boiler   | True           | —           | bool      |                              |
+| ``heat_sources: gas_boiler_cp``      | If set to 'true', a central gas boiler   | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | is connected to the DHN. Technology must |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |
@@ -119,7 +119,7 @@
 |                                      |                                          |                |             |           |                              |
 |                                      | Technology must be deployed accordingly. |                |             |           |                              |
 +--------------------------------------+------------------------------------------+----------------+-------------+-----------+------------------------------+
-| ``heat_sources: biomass``            | If set to 'true', biomass technologies   | True           | —           | bool      |                              |
+| ``heat_sources: biomass``            | If set to 'true', biomass technologies   | False          | —           | bool      |                              |
 |                                      |                                          |                |             |           |                              |
 |                                      | are connected to the DHN. Technology     |                |             |           |                              |
 |                                      |                                          |                |             |           |                              |

@@ -2,7 +2,7 @@ Attribute,Description,Standard value,Unit,Data type,Source
 ``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
 ``kWp_max``,Kilowatt Peak: Maximum power output of PV system under standard test conditions (STC).,inf,kW,float,
 ``eta_overall``,Overall conversion efficiency from solar radiation to electricity output at AC side.,0.15,--,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.0157,kg CO2/kWh,float,
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
 ``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
 ``capex``,CAPEX cost of technology per unit of capacity.,3000,CHF/kWp,float,
 ``maintenance_cost``,OPEX cost of the technology.,6.45,CHF/kWp/year,float,

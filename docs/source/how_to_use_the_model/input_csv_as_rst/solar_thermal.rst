@@ -19,7 +19,7 @@
 |                                  |                                          |                |              |           |        |
 |                                  | radiation to heat output.                |                |              |           |        |
 +----------------------------------+------------------------------------------+----------------+--------------+-----------+--------+
-| ``co2_intensity``                | Carbon-dioxide intensity of technology   | 0.025          | kg CO2/kWh   | float     |        |
+| ``co2_intensity``                | Carbon-dioxide intensity of technology   | 0              | kg CO2/kWh   | float     |        |
 |                                  |                                          |                |              |           |        |
 |                                  | output (annual average value).           |                |              |           |        |
 +----------------------------------+------------------------------------------+----------------+--------------+-----------+--------+

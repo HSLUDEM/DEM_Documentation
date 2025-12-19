@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
 ``force_asynchronous_prod_con``,"If set to 'true', the tes cannot be charged and discharged simultaneously",True,--,bool,
 ``eta_chg_dchg``,Charging and discharging efficiency (fixed). Roundtrip-efficiency is calculated as eta_chg_dchg*eta_chg_dchg.,0.95,--,float,
 ``tes_gamma``,Loss rate: fraction of heat lost to the environment during one timestep (e.g. 1 hour),0.001,1/timestep,float,

@@ -1,5 +1,5 @@
 Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
 ``capex``,CAPEX cost of technology per unit of capacity.,0,CHF/kW,float,
 ``maintenance_cost``,OPEX cost of technology per unit of capacity.,0,CHF/kW/year,float,
 ``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
