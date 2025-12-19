@@ -87,11 +87,15 @@ Configuration file: ``meta_data.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/meta_data.rst
 
+.. _scenarios:
+
 Scenarios
 ---------
 Configuration file: ``scenarios.yaml``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/scenarios.rst
+
+.. _optimisation:
 
 Optimisation
 ---------

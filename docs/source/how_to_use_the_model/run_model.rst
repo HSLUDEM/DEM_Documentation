@@ -1,3 +1,5 @@
+.. _running_a_simulation:
+
 Running a Simulation
 ====================
 

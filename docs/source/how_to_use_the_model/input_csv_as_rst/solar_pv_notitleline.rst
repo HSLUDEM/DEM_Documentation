@@ -63,5 +63,13 @@
 |                                  |                                          |                |              |           |
 |                                  | energy)                                  |                |              |           |
 +----------------------------------+------------------------------------------+----------------+--------------+-----------+
-| ``only_use_installed``           |                                          | False          | —            | bool      |
+| ``only_use_installed``           | If set to 'true', only the currently     | False          | —            | bool      |
+|                                  |                                          |                |              |           |
+|                                  | installed PV capacity can be used. No    |                |              |           |
+|                                  |                                          |                |              |           |
+|                                  | additional capacity will be built. Only  |                |              |           |
+|                                  |                                          |                |              |           |
+|                                  | relevant if :ref:`optimisation` is       |                |              |           |
+|                                  |                                          |                |              |           |
+|                                  | activated                                |                |              |           |
 +----------------------------------+------------------------------------------+----------------+--------------+-----------+

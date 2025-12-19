@@ -7,9 +7,9 @@ Attribute,Description,Standard value,Unit,Data type
 ``capex``,CAPEX cost of technology per unit of capacity (new installations).,6000,CHF/kWp,float
 ``capex_one_to_one_replacement``,CAPEX cost of technology per unit of capacity (when device has reached the end of life).,2000,CHF/kWp,float
 ``maintenance_cost``,OPEX cost of technology.,10,CHF/kWp/year,float
-``fixed_demand_share``,,False,,bool
-``fixed_demand_share_val``,,0,,float
-``only_allow_existing``,"If True, only existing heat pumps are allowed to continue to operate.",False,--,bool
+``fixed_demand_share``,"If set to 'True', a fixed share (per timestep) of the total heat demand will be served by this tech. Only relevant if :ref:`optimisation` is activated.",False,--,bool
+``fixed_demand_share_val``,The share (per timestep) of the total heat demand served by this technology. Only relevant if ``fixed_demand_share`` == True and if :ref:`optimisation` is activated.,0,--,float
+``only_allow_existing``,"If set to 'True', only the existing (allready installed) capacity can be used. Only relevant if :ref:`optimisation` is activated. CAREFUL: Avoid conflict with ``fixed_demand_share``.",False,--,bool
 ``cop_mode``,"Method for estimating the COP timeseries. Options are: “from_file”, “constant”, “from_file_adjusted_to_spf”, “location_based”. “location_based” is an intricate algorithm taking into account building and heat pump properties as well as the local weather (detailed description below). “constant” means that a constant COP is used. “from_file” means means that a timeseries loaded from a given file is used. “from_file_adjusted_to_spf” means that a timeseries loaded form a file is is scaled s.t. a given value for the seasonal performance factor (SPF) is reached",location_based,--,str
 ``cop_timeseries_file_path``,Path to COP timeseries file for mode “form_file” and “from_file_adjusted_to_spf”,<path>,<path>,str
 ``cop_constant_value``,Constant COP value to use if cop_mode=constant,3.5,--,float

@@ -8,5 +8,5 @@ Attribute,Description,Standard value,Unit,Data type
 ``capex``,CAPEX cost of technology per unit of capacity.,0,CHF/kWp,float
 ``capex_one_to_one_replacement``,CAPEX cost of technology per unit of capacity (when device has reached the end of life),500,CHF/kWp,float
 ``maintenance_cost``,OPEX cost of technology.,0,CHF/kWp/year,float
-``fixed_demand_share``,,False,--,bool
-``fixed_demand_share_val``,,0,--,float
+``fixed_demand_share``,"If set to 'True', a fixed share (per timestep) of the total heat demand will be served by this tech. Only relevant if :ref:`optimisation` is activated.",False,--,bool
+``fixed_demand_share_val``,The share (per timestep) of the total heat demand served by this technology. Only relevant if ``fixed_demand_share`` == True and if :ref:`optimisation` is activated.,0,--,float

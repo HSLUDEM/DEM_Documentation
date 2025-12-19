@@ -10,4 +10,4 @@ Attribute,Description,Standard value,Unit,Data type
 ``potential_integration_factor``,Used for scenario 'pv_integration'. This factor specifies the fraction of additional solar VP potential to be implemented. The additional PV potential is based on suitable roof-space that is not yet covered with PV.,0.3,--,float
 ``virtual_export_tariff``,virtual export tarriff to prefer internal usage of the electricity,0,CHF/kWh,float
 ``export_subsidy``,subsidy to make export more likely (and prevent cycling of storages to curtail energy),0,CHF/kWh,float
-``only_use_installed``,,False,--,bool
+``only_use_installed``,"If set to 'true', only the currently installed PV capacity can be used. No additional capacity will be built. Only relevant if :ref:`optimisation` is activated",False,--,bool
