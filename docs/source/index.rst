@@ -37,9 +37,13 @@ Documentation
    introduction
    
    how_to_use_the_model/index
+   
+   tutorials/index
+   
    modelling_method/index
    
    publications
+   
    contact
 
 
