@@ -30,7 +30,7 @@ Open the Anaconda prompt and navigate to the ``project_dir``. Activate the envir
 
     conda activate dem_0_1_0_rc0
 	
-Start the simulation:
+Start the simulation from the Anaconda prompt:
 
 .. code-block:: shell
 
@@ -38,6 +38,13 @@ Start the simulation:
 
 Once the simulation is completed, you can find the new directory ``dem_output`` which was created by DEM in ``project_dir`` containing plots and results files.
 
+.. raw:: html
+
+   <iframe src="_static/electricity_balance_hourly.html"
+           width="100%"
+           height="600px"
+           style="border:none;">
+   </iframe>
 
 
 
