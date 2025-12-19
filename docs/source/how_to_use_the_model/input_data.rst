@@ -298,7 +298,7 @@ Thees, O., Burg, V., Erni, M., Bowman, G., & Lemm, R. (2017). *Biomassenpotenzia
 
 .. other Links:
 
-.. |Swiss_data_Zenodo_link|
+.. |Swiss_data_Zenodo_link| raw:: html
 
    <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Swiss dataset</a>
 

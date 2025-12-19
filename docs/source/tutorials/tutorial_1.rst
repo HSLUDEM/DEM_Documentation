@@ -10,6 +10,6 @@ This example creates a simulation for the Swiss municipality of |Allschwil_Wikip
 
 .. Links:
 
-.. |Allschwil_Wikipedia_link|
+.. |Allschwil_Wikipedia_link| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Allschwil" target="_blank">Allschwil</a>
