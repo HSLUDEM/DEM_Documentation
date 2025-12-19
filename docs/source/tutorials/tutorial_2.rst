@@ -1,4 +1,4 @@
-.. tutorial_2:
+.. _tutorial_2:
 
 Tutorial 2: Customised District
 ===================

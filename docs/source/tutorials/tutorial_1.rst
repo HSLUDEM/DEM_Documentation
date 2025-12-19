@@ -1,4 +1,4 @@
-.. tutorial_1:
+.. _tutorial_1:
 
 Tutorial 1: Swiss Municipality
 ===================
