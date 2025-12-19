@@ -1,5 +1,5 @@
 +--------+------------------------+-----------+------------------------------------------+---------------------------------------+
-| Number | Column                 | Data type | Description                              | Source for Swiss dataset              |
+| Number | Column                 | Data type | Description                              | Source for |Swiss_data_Zenodo_link|   |
 +--------+------------------------+-----------+------------------------------------------+---------------------------------------+
 | 0      | ``Hydro Pumpspeicher`` | float     | Hourly supply profile in GWh for pumped  | Modelled based on data from Swiss     |
 |        |                        |           |                                          |                                       |

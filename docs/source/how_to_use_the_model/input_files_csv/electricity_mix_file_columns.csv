@@ -1,4 +1,4 @@
-"Number","Column","Data type","Description","Source for Swiss dataset"
+"Number","Column","Data type","Description","Source for |Swiss_data_Zenodo_link|"
 "0","``Hydro Pumpspeicher``","float","Hourly supply profile in GWh for pumped storage hydro power on national scale.","Modelled based on data from Swiss electricity statistics (Swiss Federal Office of Energy, 2022b)"
 "1","``Hydro Laufwasser``","float","Hourly supply profile in GWh for run-of-river hydro power on national scale.","Modelled based on data from Swiss electricity statistics (Swiss Federal Office of Energy, 2022b)"
 "2","``Hydro Speicher``","float","Hourly supply profile in GWh for storage hydro power on national scale.","Modelled based on data from Swiss electricity statistics (Swiss Federal Office of Energy, 2022b)"

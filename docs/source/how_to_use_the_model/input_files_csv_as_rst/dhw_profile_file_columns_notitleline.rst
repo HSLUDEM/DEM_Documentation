@@ -1,5 +1,5 @@
 +--------+-----------------+-----------+------------------------------------+----------------------------------------+
-| Number | Column          | Data type | Description                        | Source for Swiss dataset               |
+| Number | Column          | Data type | Description                        | Source for |Swiss_data_Zenodo_link|    |
 +--------+-----------------+-----------+------------------------------------+----------------------------------------+
 | 0      | ``DHW_Profile`` | float     | Normalised hourly load profile for | Generated based on standard SIA        |
 |        |                 |           |                                    |                                        |

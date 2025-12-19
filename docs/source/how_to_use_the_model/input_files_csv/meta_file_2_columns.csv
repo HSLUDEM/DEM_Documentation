@@ -1,4 +1,4 @@
-"Number","Column","Data type","Description","Source for Swiss dataset"
+"Number","Column","Data type","Description","Source for |Swiss_data_Zenodo_link|"
 "0","``Municipality``","string","Name of the district or municipality according to ``GGDENAME`` in :ref:`master_file`. For municipalities in Switzerland, it is taken from the Official directory fo building addresses (Swisstopo, 2024).","Grouped value from :ref:`master_file`"
 "1","``GGDENR``","int","According to ``GGDENR`` in :ref:`master_file`e.","Grouped value from :ref:`master_file`"
 "2","``Canton``","string","Same as ``GDEKT`` in :ref:`master_file`. Canton, in which the district is located. For regions outside of Switzerland, this is not relevant or can be assigned according to similar regional entities such as e.g. provinces. For Switzerland, the short form is used (e.g., ZH, FR, … ).","From :ref:`master_file`."

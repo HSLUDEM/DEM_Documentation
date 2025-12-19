@@ -1,4 +1,4 @@
-"Number","Column","Data type","Description","Source for Swiss dataset"
+"Number","Column","Data type","Description","Source for |Swiss_data_Zenodo_link|"
 "0","``Woody_Biomass_Profile``","float","Normalised hourly profile of woody biomass availability. This accounts for the fact that not the entire resource is available at once due to limitations such as harvesting, transport, storage, etc...","Constant hourly profile across the whole year."
 "1","``Wet_Biomass_Profile``","float","Normalised hourly profile of wet biomass availability. This accounts for the fact that not the entire resource is available at once due to limitations such as harvesting, transport, storage, etc...","Constant hourly profile across the whole year."
 "2","``Electricity_Profile_MFH``","float","Normalised hourly electricity load profile for multi family houses (MFH).","Rinaldi et al. (2022)"

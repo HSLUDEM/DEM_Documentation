@@ -1,5 +1,5 @@
 +--------+----------+-----------+------------------------------------------+---------------------------------------+
-| Number | Column   | Data type | Description                              | Source for Swiss dataset              |
+| Number | Column   | Data type | Description                              | Source for |Swiss_data_Zenodo_link|   |
 +--------+----------+-----------+------------------------------------------+---------------------------------------+
 | 0      | ``2016`` | float     | Hourly ambient air temperature data for  | Temperatures based on the combined    |
 |        |          |           |                                          |                                       |

@@ -1,4 +1,4 @@
-"Number","Column","Data type","Description","Source for Swiss dataset"
+"Number","Column","Data type","Description","Source for |Swiss_data_Zenodo_link|"
 "0","``2016``","float","Hourly ambient air temperature data for the district location for the year 2016.","Temperatures based on the combined Meteostat (Lamprecht, 2025) and MeteoSwiss station temperature measurement series for 2016.  "
 "1","``2023``","float","Hourly ambient air temperature data for the district location for the year 2023.","Temperatures for 2016, adjusted using the CH2018 climate scenarios to the climate of 2023 (CH2018 Project Team, 2018)."
 "2","``2024``","float","Hourly ambient air temperature data for the district location for the year 2024.","Temperatures for 2016, adjusted using the CH2018 climate scenarios to the climate of 2024 (CH2018 Project Team, 2018)."

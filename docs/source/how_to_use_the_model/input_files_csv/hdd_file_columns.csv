@@ -1,4 +1,4 @@
-"Number","Column","Data type","Description","Source for Swiss dataset"
+"Number","Column","Data type","Description","Source for |Swiss_data_Zenodo_link|"
 "0","``Municipality``","string","Name of district according to ``GGDENAME`` in :ref:`master_file` and ``Municipality`` in :ref:`meta_file`.","Swisstopo, 2024"
 "1","``HDD_12_2023``","float","Heating degree days for the district based on a reference temperature (start temperature for heating) of 12°C.","Computed based on temperature data of 2023 using the methods of Schneeberger et al. (2025)"
 "2","``HDD_15_2023``","float","Heating degree days for the district based on a reference temperature (start temperature for heating) of 15°C.","Computed based on temperature data of 2023 using the methods of Schneeberger et al. (2025)"
