@@ -19,6 +19,8 @@ The typical workflow consists of:
 
 In addition to simulation, DEM also supports MILP optimization of design and operation.
 
+To get started with DEM, it is recommended to consult the :ref:`how_to_use_the_model` section and work through the :ref:`Tutorials <tutorials>`.
+
 
 .. image:: images/dem_schematic_part_1.png
 

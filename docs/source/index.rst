@@ -18,7 +18,8 @@ The model is developed at |CCTES_link| in the framework of the |EDGE_link| proje
 .. image:: images/bar_chart.png
    :width: 90%
 
-Check out the :doc:`introduction` section for further information.
+Check out the :doc:`introduction` section for further information. To get started with DEM, it is recommended to consult the :ref:`how_to_use_the_model` section and work through the :ref:`Tutorials <tutorials>`.
+
 The District Energy Model has been applied and mentioned in various publications (see :doc:`publications`).
 
 The source code is published on |GitHub_link| and can be used under the |License_link|.
