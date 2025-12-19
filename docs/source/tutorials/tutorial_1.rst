@@ -41,7 +41,7 @@ Once the simulation is completed, you can find the new directory ``dem_output`` 
 
 
 .. raw:: html
-   :file: electricity_balance_daily.html
+   :file: tutorial_1_plots/electricity_balance_daily.html
 
 
 
