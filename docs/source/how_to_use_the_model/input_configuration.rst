@@ -1,7 +1,7 @@
 Model Input - Configuration Files
 =================================
 
-Configuration files are provided to the model in YAML format and must be located in the ``config/input_files`` directory. The only file required is ``simluation.yaml``. For the other files, only parameters that deviate from the default values need to be specified. If no configuration files are provided other than ``simluation.yaml``, the model will run entirely using its built-in standard values.
+Configuration files are provided to the model in YAML format and must be located in the ``config/input_files`` directory. The only file required is ``simluation.yaml``. For the other files, only parameters that deviate from the default values need to be specified. If no configuration files are provided other than ``simluation.yaml``, the model will run entirely using its built-in standard values (see tables below).
 
 Required configuration file:
 
@@ -22,22 +22,46 @@ Optional configuration files:
 
 - ``technologies.yaml``
 
+By default, all scenarios and optimisation are deactivated. The following technologies are activated (according to currently deployed technologies in Switzerland):
+- Heat Pump
+- Electric Heater
+- Oil Boiler
+- Gas Boiler
+- Wood Boiler
+- Disctrict Heating
+- Solar Thermal
+- Solar PV
+- Wind Power
+- Hydro Power
+- Grid Supply
+
+
 All files define parameter names as top-level keys. The exception is technologies.yaml, where technologies appear as the top-level keys and their respective parameters are listed as sub-keys.
 
 Below are example excerpts from some configuration files:
 
 .. image:: images/simulation_yaml.png
-   :scale: 50%
+   :width: 50%
 
 ----
 
+.. image:: images/meta_data_yaml.png
+   :width: 50%
+   
+----
+
 .. image:: images/scenarios_yaml.png
-   :scale: 50%
+   :width: 50%
+
+----
+
+.. image:: images/optimisation_yaml.png
+   :width: 50%
 
 ----
 
 .. image:: images/technologies_yaml.png
-   :scale: 50%
+   :width: 50%
 
 
 Simulation
