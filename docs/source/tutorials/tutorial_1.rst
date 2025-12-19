@@ -41,12 +41,7 @@ Once the simulation is completed, you can find the new directory ``dem_output`` 
 
 
 .. raw:: html
-
-   <iframe src="../_static/electricity_balance_hourly.html"
-           width="100%"
-           height="600px"
-           style="border:none;">
-   </iframe>
+   :file: electricity_balance_daily.html
 
 
 
