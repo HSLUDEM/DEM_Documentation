@@ -1,4 +1,4 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``electric_boiler_replacement_factor``,Share of electric_heaters that are replaced by heat pumps. Values between 0 and 1.,0,--,float,
-``gas_boiler_replacement_factor``,Share of gas_boiler that are replaced by heat pumps. Values between 0 and 1.,0,--,float,
-``oil_boiler_replacement_factor``,Share of oil_boiler that are replaced by heat pumps. Values between 0 and 1.,0,--,float,
+Attribute,Description,Standard value,Unit,Data type
+``electric_boiler_replacement_factor``,Share of electric_heaters that are replaced by heat pumps. Values between 0 and 1.,0,--,float
+``gas_boiler_replacement_factor``,Share of gas_boiler that are replaced by heat pumps. Values between 0 and 1.,0,--,float
+``oil_boiler_replacement_factor``,Share of oil_boiler that are replaced by heat pumps. Values between 0 and 1.,0,--,float

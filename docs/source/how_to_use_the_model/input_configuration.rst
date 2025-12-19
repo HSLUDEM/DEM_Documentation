@@ -1,7 +1,7 @@
 Model Input - Configuration Files
 =================================
 
-Configuration files are provided to the model in YAML format and must be located in the ``config/input_files`` directory. The only file required is ``simluation.yaml``. For the other files, only parameters that deviate from the default values need to be specified. If no configuration files are provided other than ``simluation.yaml``, the model will run entirely using its built-in standard values (see tables below).
+Configuration files specify the simulation settings (e.g., included buildings, temporal scope, output variables) and define the energy system configuration (e.g., scenarios, technologies, selected year). They are provided to the model in YAML format and must be located in the ``config/input_files`` directory. The only file required is ``simluation.yaml``. For the other files, only parameters that deviate from the default values need to be specified. If no configuration files are provided other than ``simluation.yaml``, the model will run entirely using its built-in standard values (see tables below).
 
 Required configuration file:
 
@@ -22,17 +22,28 @@ Optional configuration files:
 
 - ``technologies.yaml``
 
-By default, all scenarios and optimisation are deactivated. The following technologies are activated (according to currently deployed technologies in Switzerland):
+By default, all scenarios and optimisation are deactivated. The following technologies are activated, reflecting technologies currently deployed in Switzerland:
+
 - Heat Pump
+
 - Electric Heater
+
 - Oil Boiler
+
 - Gas Boiler
+
 - Wood Boiler
+
 - Disctrict Heating
+
 - Solar Thermal
+
 - Solar PV
+
 - Wind Power
+
 - Hydro Power
+
 - Grid Supply
 
 

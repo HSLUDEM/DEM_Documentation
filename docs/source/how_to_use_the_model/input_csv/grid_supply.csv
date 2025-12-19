@@ -1,7 +1,7 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
-``kW_max``,Maximum supply capacity of grid connection.,inf,kW,float,
-``tariff_CHFpkWh``,Electricity tariff (annual fixed value).,0.29,CHF/kWh,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.128,kg CO2/kWh,float,
-``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
-``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float,
+Attribute,Description,Standard value,Unit,Data type
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool
+``kW_max``,Maximum supply capacity of grid connection.,inf,kW,float
+``tariff_CHFpkWh``,Electricity tariff (annual fixed value).,0.29,CHF/kWh,float
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.128,kg CO2/kWh,float
+``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int
+``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float

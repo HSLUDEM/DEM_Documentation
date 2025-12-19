@@ -1,11 +1,11 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
-``kW_th_max``,Maximum thermal power output,inf,kW,str,
-``hv_oil_MJpkg``,heating value of heating oil,42.9,MJ/kg,float,
-``eta``,Efficiency of the oil boiler in converting oil to heat,0.85,--,float,
-``oil_price_CHFpl``,Oil price,1,CHF/l,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.301,kg CO2/kWh,float,
-``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
-``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float,
-``capex``,CAPEX cost of technology per unit of capacity.,2000,CHF/kW,float,
-``maintenance_cost``,OPEX cost of technology per unit of capacity.,1.26,CHF/kW/year,float,
+Attribute,Description,Standard value,Unit,Data type
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool
+``kW_th_max``,Maximum thermal power output,inf,kW,str
+``hv_oil_MJpkg``,heating value of heating oil,42.9,MJ/kg,float
+``eta``,Efficiency of the oil boiler in converting oil to heat,0.85,--,float
+``oil_price_CHFpl``,Oil price,1,CHF/l,float
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0.301,kg CO2/kWh,float
+``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int
+``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float
+``capex``,CAPEX cost of technology per unit of capacity.,2000,CHF/kW,float
+``maintenance_cost``,OPEX cost of technology per unit of capacity.,1.26,CHF/kW/year,float

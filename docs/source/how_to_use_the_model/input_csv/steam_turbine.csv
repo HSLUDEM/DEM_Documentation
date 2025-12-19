@@ -1,15 +1,15 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool,
-``kW_el_max``,Maximum electrical power output.,inf,kW,float,
-``force_cap_max``,Force implementation of maximum capacity specified in kW_h_max. Only relevant for optimisation.,False,kW,bool,
-``grid_charges``,Grid charges (additional cost of electricity),0,CHF/kWh,float,
-``cap_min_use``,Minimum capacity to deploy.,0,kW,float,
-``eta_el``,Electrical conversion effiency.,0.35,--,float,
-``htp_ratio``,Heat-to-power (htp) ratio (kW_th/kW_el),1.5,kW_th/kW_el,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float,
-``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
-``capital_cost``,CAPEX cost of technology per unit of capacity.,5000,CHF/kWp,float,
-``maintenance_cost``,,10,CHF/kWp/year,int,
-``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float,
-``allow_heat_export``,,True,--,bool,
-``heat_export_subsidy``,,1e-05,CHF/kWh,float,
+Attribute,Description,Standard value,Unit,Data type
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",False,--,bool
+``kW_el_max``,Maximum electrical power output.,inf,kW,float
+``force_cap_max``,Force implementation of maximum capacity specified in kW_h_max. Only relevant for optimisation.,False,kW,bool
+``grid_charges``,Grid charges (additional cost of electricity),0,CHF/kWh,float
+``cap_min_use``,Minimum capacity to deploy.,0,kW,float
+``eta_el``,Electrical conversion effiency.,0.35,--,float
+``htp_ratio``,Heat-to-power (htp) ratio (kW_th/kW_el),1.5,kW_th/kW_el,float
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0,kg CO2/kWh,float
+``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int
+``capital_cost``,CAPEX cost of technology per unit of capacity.,5000,CHF/kWp,float
+``maintenance_cost``,,10,CHF/kWp/year,int
+``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float
+``allow_heat_export``,,True,--,bool
+``heat_export_subsidy``,,1e-05,CHF/kWh,float

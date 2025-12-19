@@ -1,2 +1,2 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``capacity_kWh``,Aggregated capacity of all the BES devices deployed in the battery_energy_storage scenario.,0,kWh,float,
+Attribute,Description,Standard value,Unit,Data type
+``capacity_kWh``,Aggregated capacity of all the BES devices deployed in the battery_energy_storage scenario.,0,kWh,float

@@ -1,20 +1,20 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``enabled``,"MILP optimisation is enabled if set to ""True"".",False,--,bool,
-``clustering``,*Deprecated: This option is not available.*,False,--,bool,
-``pareto_monetary_co2``,Set to True to calculate a pareto front,False,--,bool,
-``N_pareto``,Number of pareto points,6,--,int,
-``objective_monetary``,Weight of monetary objective for objective function in optimisation.,1,--,float,
-``objective_co2``,Weight of emissions objective for objective function in optimisation.,0,--,float,
-``objective_ess``,Not yet implemented.,0,--,float,
-``objective_tss``,Not yet implemented.,0,--,float,
-``bigM_value``,Default: 1e9; cost of unmet demand; large value makes model convergence slow; https://calliope.readthedocs.io/en/stable/user/building.html#allowing-for-unmet-demand,100000,CHF/kWh,float,
-``solver``,"Solver for optimisation, e.g. 'cbc', 'gurobi', etc. Must be compatible with Calliope.",'gurobi',--,string,
-``solver_option_NumericFocus``,Default: 0; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#parameternumericfocus,1,--,int,
-``solver_option_TimeLimit``,Default: 'Infinity'; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#timelimit,36000,s,int,
-``solver_option_Presolve``,Default: -1; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#presolve,-1,--,int,
-``solver_option_Aggregate``,Default: 1; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#aggregate,1,--,int,
-``solver_option_FeasibilityTol``,Default: 1e-6; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#feasibilitytol,0.01,var,float,
-``solver_option_MIPGap``,Default: 1e-4; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#mipgap,0.0001,--,float,
-``MIPGap_increase``,"If set to True, MIPGap will be increased to 0.01 if a storage technology is activated in order to avoid numerical problems.",False,--,bool,
-``save_math_model``,"If set to 'true', the math. model formulations are written to an .lp file; can take long to produce and result in large file;",False,--,bool,
-``save_calliope_files``,"If set to 'True', the calliope files (input and results) will be saved.",False,--,bool,
+Attribute,Description,Standard value,Unit,Data type
+``enabled``,"MILP optimisation is enabled if set to ""True"".",False,--,bool
+``clustering``,*Deprecated: This option is not available.*,False,--,bool
+``pareto_monetary_co2``,Set to True to calculate a pareto front,False,--,bool
+``N_pareto``,Number of pareto points,6,--,int
+``objective_monetary``,Weight of monetary objective for objective function in optimisation.,1,--,float
+``objective_co2``,Weight of emissions objective for objective function in optimisation.,0,--,float
+``objective_ess``,Not yet implemented.,0,--,float
+``objective_tss``,Not yet implemented.,0,--,float
+``bigM_value``,Default: 1e9; cost of unmet demand; large value makes model convergence slow; https://calliope.readthedocs.io/en/stable/user/building.html#allowing-for-unmet-demand,100000,CHF/kWh,float
+``solver``,"Solver for optimisation, e.g. 'cbc', 'gurobi', etc. Must be compatible with Calliope.",'gurobi',--,string
+``solver_option_NumericFocus``,Default: 0; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#parameternumericfocus,1,--,int
+``solver_option_TimeLimit``,Default: 'Infinity'; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#timelimit,36000,s,int
+``solver_option_Presolve``,Default: -1; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#presolve,-1,--,int
+``solver_option_Aggregate``,Default: 1; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#aggregate,1,--,int
+``solver_option_FeasibilityTol``,Default: 1e-6; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#feasibilitytol,0.01,var,float
+``solver_option_MIPGap``,Default: 1e-4; https://docs.gurobi.com/projects/optimizer/en/current/reference/parameters.html#mipgap,0.0001,--,float
+``MIPGap_increase``,"If set to True, MIPGap will be increased to 0.01 if a storage technology is activated in order to avoid numerical problems.",False,--,bool
+``save_math_model``,"If set to 'true', the math. model formulations are written to an .lp file; can take long to produce and result in large file;",False,--,bool
+``save_calliope_files``,"If set to 'True', the calliope files (input and results) will be saved.",False,--,bool

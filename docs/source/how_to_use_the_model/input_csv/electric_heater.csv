@@ -1,12 +1,12 @@
-Attribute,Description,Standard value,Unit,Data type,Source
-``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool,
-``kW_max``,Maximum thermal capacity (i.e. heat output).,inf',kW,float,
-``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0 *(emissons allocated to electricity tech)*,kg CO2/kWh,float,
-``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int,
-``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float,
-``replacement_factor``,share of electric heaters replaced in fossil_heater_retrofit scenario,1,--,float,
-``capex``,CAPEX cost of technology per unit of capacity.,0,CHF/kWp,float,
-``capex_one_to_one_replacement``,CAPEX cost of technology per unit of capacity (when device has reached the end of life),500,CHF/kWp,float,
-``maintenance_cost``,OPEX cost of technology.,0,CHF/kWp/year,float,
-``fixed_demand_share``,,False,--,bool,
-``fixed_demand_share_val``,,0,--,float,
+Attribute,Description,Standard value,Unit,Data type
+``deployment``,"If set to 'true', the technology will be considered in the energy system model (this does not necessarily mean it will be used). Only relevant for optimisation.",True,--,bool
+``kW_max``,Maximum thermal capacity (i.e. heat output).,inf',kW,float
+``co2_intensity``,Carbon-dioxide intensity of technology output (annual average value).,0 *(emissons allocated to electricity tech)*,kg CO2/kWh,float
+``lifetime``,Expected lifetime of technology before replacement is required.,25,years,int
+``interest_rate``,Interest rate for computing levelised costs (if required).,0.025,--,float
+``replacement_factor``,share of electric heaters replaced in fossil_heater_retrofit scenario,1,--,float
+``capex``,CAPEX cost of technology per unit of capacity.,0,CHF/kWp,float
+``capex_one_to_one_replacement``,CAPEX cost of technology per unit of capacity (when device has reached the end of life),500,CHF/kWp,float
+``maintenance_cost``,OPEX cost of technology.,0,CHF/kWp/year,float
+``fixed_demand_share``,,False,--,bool
+``fixed_demand_share_val``,,0,--,float
