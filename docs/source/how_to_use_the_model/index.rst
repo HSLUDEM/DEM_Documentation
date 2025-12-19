@@ -1,3 +1,5 @@
+.. _how_to_use_the_model:
+
 How to Use the Model
 ===================
 
