@@ -41,27 +41,27 @@ All files define parameter names as top-level keys. The exception is technologie
 Below are example excerpts from some configuration files:
 
 .. image:: images/simulation_yaml.png
-   :width: 50%
+   :width: 25%
 
 ----
 
 .. image:: images/meta_data_yaml.png
-   :width: 50%
+   :width: 25%
    
 ----
 
 .. image:: images/scenarios_yaml.png
-   :width: 50%
+   :width: 25%
 
 ----
 
 .. image:: images/optimisation_yaml.png
-   :width: 50%
+   :width: 25%
 
 ----
 
 .. image:: images/technologies_yaml.png
-   :width: 50%
+   :width: 25%
 
 
 Simulation
