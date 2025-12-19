@@ -38,9 +38,11 @@ Start the simulation from the Anaconda prompt:
 
 Once the simulation is completed, you can find the new directory ``dem_output`` which was created by DEM in ``project_dir`` containing plots and results files.
 
+
+
 .. raw:: html
 
-   <iframe src="/en/latest/_static/electricity_balance_hourly.html"
+   <iframe src="../_static/electricity_balance_hourly.html"
            width="100%"
            height="600px"
            style="border:none;">
