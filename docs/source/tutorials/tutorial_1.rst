@@ -10,7 +10,7 @@ This example creates a simulation for the Swiss municipality of |Allschwil_Wikip
 
 First, install DEM as described in the :ref:`installation instructions <installation>`. Create a directory structure as described in :ref:`running_a_simulation`: Your project directory ``project_dir`` (can have any name) must contain the subdirectories ``data`` and ``config/config_files``.
 
-Next you need data files and configuration files. Download the data files package for Switzerland from |Swiss_data_Zenodo_link|. Unzip the archive and place the files in the ``config_files`` directory, keeping the folder structure as downloaded from Zenodo.
+Next you need data files and configuration files. Download the data files package for Switzerland from |Swiss_data_Zenodo_link|. Unzip the archive and place the files in the ``data`` directory, keeping the folder structure as downloaded from Zenodo.
 
 Next, we prepare the configuration files. For the first simulation ("as-is") we use all the standard parameters. Therefore, only the ``simulation.yml`` file must be provided to DEM:
 
