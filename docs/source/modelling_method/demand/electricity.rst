@@ -19,6 +19,7 @@ Industry and Services
 The electricity for industry and services is computed in a top-down approach as the difference between total demand in the municipality
 and Household Demand. Load profiles are generated using measured consumption data on cantonal level from the grid operator SwissGrid (Swissgrid Ltd, 2025).
 
+.. _electricity_demand_ev:
 
 Electric Vehicles
 --------------------
@@ -63,7 +64,7 @@ Nipkow, J. (2013). *Typischer Haushalt-Stromverbrauch* [Schlussbericht]. Zürich
 
    <a href="https://www.aramis.admin.ch/?DocumentID=61764" target="_blank">https://www.aramis.admin.ch/?DocumentID=61764</a>
 
-Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
+Parajeles Herrera, M & Hug, G. (2025). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
 
 .. |Herrera2025b_link| raw:: html
 

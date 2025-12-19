@@ -1,0 +1,6 @@
+"File name","profile_FE_y4"
+"Format","``.feather``"
+"Directory","``./data/electricity_demand/ev_profiles/``"
+"Index","Numeric (integer), 0 to 364, day of the year"
+"Number of rows","365"
+"Number of columns","According to number of districts."

@@ -169,9 +169,13 @@ These files contain the number of heating degree days (HDD) per year for each mu
 
 EV demand profiles
 ------------------
-For Switzerland, the dataset by Herrera and Hug (2025a; 2025b) is used to model hourly EV charging demand and daily flexibility.
+For Switzerland, the dataset by Herrera and Hug (2025a; 2025b) is used to model hourly EV charging demand and daily flexibility. The dataset provides hourly time series of municipal charging load (CP), corresponding upper (PU) and lower (PD) bounds on charging power, and a time series of daily flexible energy (FE). See also :ref:electricity_demand_ev.
 
-*in progress*
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/ev_1_file_info_notitleline.rst
+
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/ev_2_file_info_notitleline.rst
+
+.. include:: ../how_to_use_the_model/input_files_csv_as_rst/ev_file_columns.rst
 
 
 References
@@ -207,18 +211,6 @@ Dujardin, J., & Lehning, M. (2022b). *Wind‐Topo: Downscaling near‐surface wi
 
    <a href="https://doi.org/10.1002/qj.4265" target="_blank">10.1002/qj.4265</a>
 
-Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. DOI: |Herrera2025a_link|
-
-.. |Herrera2025a_link| raw:: html
-
-   <a href="https://doi.org/10.5281/zenodo.16597426" target="_blank">10.5281/zenodo.16597426</a>
-
-Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
-
-.. |Herrera2025b_link| raw:: html
-
-   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">10.1109/PowerTech59965.2025.11180551</a>
-
 Federal Statistical Office (FSO). (2025). *Federal register of buildings and dwellings (RBD)*. |FSO2025_link|
 
 .. |FSO2025_link| raw:: html
@@ -236,13 +228,30 @@ Lamprecht, C. S. (2025). *Meteostat Python* [Software]. |MeteostatPython_link|
 .. |MeteostatPython_link| raw:: html
 
    <a href="https://meteostat.net/en/" target="_blank">https://meteostat.net/en/</a>
+   
+Parajeles Herrera, M., & Hug, G. (2025a). *Charging Demand and Flexibility Bounds for Large-Scale BEV Fleets - The Case Study of Switzerland* [Data set]. Zenodo. DOI: |Herrera2025a_link|
 
+.. |Herrera2025a_link| raw:: html
+
+   <a href="https://doi.org/10.5281/zenodo.16597426" target="_blank">10.5281/zenodo.16597426</a>
+
+Parajeles Herrera, M & Hug, G. (2025b). *Modeling Charging Demand and Quantifying Flexibility Bounds for Large-Scale BEV Fleets*. 2025 IEEE Kiel PowerTech, Kiel, Germany, 2025, pp. 1-6. DOI: |Herrera2025b_link|
+
+.. |Herrera2025b_link| raw:: html
+
+   <a href="https://doi.org/10.1109/PowerTech59965.2025.11180551" target="_blank">10.1109/PowerTech59965.2025.11180551</a>
 
 Rinaldi, A., Ramirez, H., Schroeteler, B., & Meier, M. (2022). *The role of energy storage technologies in the context of the Swiss energy transition (SwissStore)* [Data set]. Zenodo. DOI: |Rinaldi2022_link|
 
 .. |Rinaldi2022_link| raw:: html
 
    <a href="https://doi.org/10.5281/zenodo.6782179" target="_blank">10.5281/zenodo.6782179</a>
+   
+Schneeberger, S., Meister, C., & Schuetz, P. (2025). *Estimating the heating energy demand of residential buildings in Switzerland using only public data*. Energy and Buildings, 116371. DOI: |Schneeberger2025_DOI_link|
+
+.. |Schneeberger2025_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">10.1016/j.enbuild.2025.116371</a>
    
 Schweizerischer Ingenieur- und Architektenverein (SIA). (2025). *SIA 385/2:2025 – Anlagen für Trinkwarmwasser in Gebäuden: Warmwasserbedarf, Gesamtanforderungen und Auslegung* [Standard].
 
@@ -275,12 +284,6 @@ Streicher, K. N., Berger, M., Panos, E., Narula, K., Soini, M. C., & Patel, M. K
 .. |Streicher2021_DOI_link| raw:: html
 
    <a href="https://doi.org/10.1016/j.enpol.2021.112220" target="_blank">10.1016/j.enpol.2021.112220</a>
-   
-Schneeberger, S., Meister, C., & Schuetz, P. (2025). *Estimating the heating energy demand of residential buildings in Switzerland using only public data*. Energy and Buildings, 116371. DOI: |Schneeberger2025_DOI_link|
-
-.. |Schneeberger2025_DOI_link| raw:: html
-
-   <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">10.1016/j.enbuild.2025.116371</a>
    
 Thees, O., Burg, V., Erni, M., Bowman, G., & Lemm, R. (2017). *Biomassenpotenziale der Schweiz für die energetische Nutzung*. Eidg. Forschungsanstalt für Wald, Schnee und Landschaft WSL. |Thees2017_link|
 

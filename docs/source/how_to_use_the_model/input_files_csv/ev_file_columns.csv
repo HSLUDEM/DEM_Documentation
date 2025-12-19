@@ -1,5 +1,10 @@
 "Number","Column","Data type","Description","Source for Swiss dataset"
-"0","","","",""
-"1","","","",""
-"2","","","",""
-"3","","","",""
+"0","*name of district 0*","float","CP file: hourly charging load in kW.
+PD file: hourly lower power bound in kW.
+PU file: hourly upper power bound in kW.
+FE file: daily flexible energy in kWh.","Herrera and Hug, 2025a, 2025b"
+"1","*name of district 1*","float","*see above*","*see above*"
+"2","*name of district 2*","float","*see above*","*see above*"
+"3","*name of district 3*","float","*see above*","*see above*"
+"…","…","float","*see above*","*see above*"
+"N","*name of district N*","float","*see above*","*see above*"
