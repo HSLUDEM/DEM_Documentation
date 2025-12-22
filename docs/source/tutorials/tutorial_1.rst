@@ -8,9 +8,10 @@ This tutorial builds a district energy simulation for the Swiss municipality of 
 1. **Baseline scenario**: Current energy demand and supply configuration.
 
 2. **Electrification scenario**:
-- Heating electrification: Replacing 80% of current fossil heaters (oil and gas boilers) with heat pumps.
-- Solar PV integration: Deploying 80% of the remaining rooftop solar photovoltaic potential.
-- Thermal energy storage: Implementing thermal energy storage systems with a total storage capacity of 20Gwh supplied by decentralised heat pumps.
+
+   - Heating electrification: Replacing 80% of current fossil heaters (oil and gas boilers) with heat pumps.
+   - Solar PV integration: Deploying 80% of the remaining rooftop solar photovoltaic potential.
+   - Thermal energy storage: Implementing thermal energy storage systems with a total storage capacity of 20Gwh supplied by decentralised heat pumps.
 
 No optimisation is performed.
 
