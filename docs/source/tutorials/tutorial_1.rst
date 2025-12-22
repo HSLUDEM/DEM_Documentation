@@ -4,7 +4,7 @@ Tutorial 1: Swiss Municipality
 ===================
 
 .. note::
-*UNDER CONSTRUCTION*
+  *UNDER CONSTRUCTION*
 
 This tutorial builds a district energy simulation for the Swiss municipality of |Allschwil_Wikipedia_link|, located in the canton of Basel-Landschaft. Two scenarios are defined:
 
