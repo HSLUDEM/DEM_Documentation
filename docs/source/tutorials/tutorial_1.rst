@@ -80,7 +80,7 @@ Outputs: baseline scenario
 After completion, DEM creates a ``dem_output`` directory inside ``project_dir``.
 This directory contains result files and generated plots.
 
-Selected outputs are shown below as interactive plots:
+Selected outputs for the *baseline scenario* are shown below as interactive plots:
 
 .. raw:: html
     :file: tutorial_1_baseline_plots/electricity_balance_daily.html
@@ -104,7 +104,7 @@ For the electrification scenario, several default parameters are modified. The f
     generate_plots: true
     save_results: true
 
-In order to activate the three measures *heating electrification*, *solar PV integration*, and *thermal energy storage*, create the :ref:`scenario configuration file <scenarios>` ``scenarios.yml`` with the following content:
+In order to activate the three measures *heating electrification*, *solar PV integration*, and *thermal energy storage*, create the :ref:`scenario configuration file <scenarios>` ``scenarios.yml`` with the following content and place it in ``project_dir/config/config_files``:
 
 .. code-block:: yaml
 
@@ -120,7 +120,7 @@ Activating these measures requires corresponding adjustments to technology param
 
 - *Thermal energy storage* (TES) introduces decentralised storage systems operated in conjunction with individual heat pumps.
 
-Only technology parameters that deviate from default values must be specified. Create the :ref:`technologies configuration file <technologies_config_file>` as follows:
+Only technology parameters that deviate from default values must be specified. Create the :ref:`technologies configuration file <technologies_config_file>` with the following content and place it in ``project_dir/config/config_files``:
 
 .. code-block:: yaml
 
@@ -147,12 +147,12 @@ The following technologies are modified:
 
 - ``solar_pv``: The :ref:`solar PV technology <tech_solar_pv>` is deployed by default. The ``potential_integration_factor`` is increased from the default value of 0.3 to 0.8.
 
-- ``tes_decentralised``: The :ref:`decentralised thermal energy storage technology <tech_tes_decentralised>` is disabled by defaults. It is activated by setting ``deployment`` to ``true``. The total storage capacity is defined using ``capacity_kWh`` and is set to 20 GWh (20'000'000 kWh).
+- ``tes_decentralised``: The :ref:`decentralised thermal energy storage technology <tech_tes_decentralised>` is disabled by default. It is activated by setting ``deployment`` to ``true``. The total storage capacity is defined using ``capacity_kWh`` and is set to 20 GWh (20'000'000 kWh).
 
 Running the simulation: electrification scenario
 ---------
 
-The simulation simulation procedure is identical to the baseline scenario.
+The simulation procedure is identical to the baseline scenario.
 
 Open an Anaconda prompt and navigate to ``project_dir``.
 Activate the DEM environment (name depends on the installed version):
@@ -173,7 +173,7 @@ Outputs: electrification scenario
 After completion, DEM creates a ``dem_output`` directory inside ``project_dir``.
 This directory contains result files and generated plots.
 
-Selected outputs are shown below as interactive plots:
+Selected outputs for the *electrification scenario* are shown below as interactive plots:
 
 .. raw:: html
     :file: tutorial_1_electrification_plots/electricity_balance_daily.html
