@@ -183,6 +183,9 @@ Selected outputs for the *electrification scenario* are shown below as interacti
 	
 .. raw:: html
     :file: tutorial_1_electrification_plots/sankey.html
+	
+.. raw:: html
+    :file: tutorial_1_electrification_plots/tesdc_sos_hourly.html
 
 
 
