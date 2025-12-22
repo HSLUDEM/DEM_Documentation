@@ -18,7 +18,7 @@ No optimisation is performed.
 Prerequisites
 ---------
 
-*(skip if already completed)*
+*(skip if already completed previously)*
 
 Install DEM following the :ref:`installation instructions <installation>`.
 Create a project directory (arbitrary name, referred to as ``project_dir``) with the structure described in :ref:`running_a_simulation`, containing the following sub-directories:
@@ -30,7 +30,7 @@ Create a project directory (arbitrary name, referred to as ``project_dir``) with
 Data setup
 ---------
 
-*(skip if already completed)*
+*(skip if already completed previously)*
 
 Download the Swiss input data package from |Swiss_data_Zenodo_link|.
 Extract the archive and copy its contents into the ``data`` directory, preserving the original folder hierarchy as downloaded from Zenodo.
