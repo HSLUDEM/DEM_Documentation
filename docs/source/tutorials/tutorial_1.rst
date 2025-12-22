@@ -203,6 +203,7 @@ Selected outputs for the *electrification scenario* are shown below as interacti
 
    <a href="https://doi.org/10.5281/zenodo.17603138" target="_blank">Zenodo</a>
    
+   
 .. |bfs_number_link| raw:: html
 
    <a href="https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html" target="_blank">BFS municipality identifier</a>

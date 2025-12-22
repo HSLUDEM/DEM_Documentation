@@ -1,0 +1,5 @@
+,parameter,value,description
+0,com_name,Allschwil,Name of community/district/municipality
+1,com_lat,47.55161004805528,latitude
+2,com_lon,7.546315320501117,longitude
+3,com_alt,280.0,altitude
