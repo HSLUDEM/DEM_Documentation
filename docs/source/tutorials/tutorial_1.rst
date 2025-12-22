@@ -112,7 +112,7 @@ In order to activate the three measures *heating electrification*, *solar PV int
     pv_integration: true
     thermal_energy_storage: true
 
-For these measures to be implemented, the respective technologies must be adapted as well. Only the values deviating from the default values must be provided. *Heating electrification* means the replacement of 80% of currently installed oil boilers and gas boilers with heat pumps. *Solar PV integration* means the use of 80% of the remaining rooftop solar photovoltaic potential. *Thermal energy storage* (TES) refers to the implementation of decentralised TES systems that are charged and discharged via the individual heat pumps.
+For these measures to be implemented, the respective technologies must be adapted as well. *Heating electrification* means the replacement of 80% of currently installed oil boilers and gas boilers with heat pumps. *Solar PV integration* means the use of 80% of the remaining rooftop solar photovoltaic potential. *Thermal energy storage* (TES) refers to the implementation of decentralised TES systems that are charged and discharged via the individual heat pumps.
 
 Only technology parameter values deviating from the default values must be provided. Create the :ref:`technologies configuration file <technologies_config_file>` as follows:
 
@@ -137,7 +137,7 @@ The :ref:`heat pump technology <tech_heat_pump>` is already deployed in the base
 
 - ``gas_boiler``: The :ref:`gas boiler technology <tech_gas_boiler>` is also deployed by default, so the ``deployment`` parameter is not required. However, by default the ``replacement_factor`` is set to 1. Here it is changed to 0.8.
 
-- ``solar_pv: The :ref:`solar PV technology <tech_solar_pv>` is also deployed by default, so the ``deployment`` parameter is not required. However, by default the ``potential_integration_factor`` is set to 0.3. Here it is changed to 0.8.
+- ``solar_pv``: The :ref:`solar PV technology <tech_solar_pv>` is also deployed by default, so the ``deployment`` parameter is not required. However, by default the ``potential_integration_factor`` is set to 0.3. Here it is changed to 0.8.
 
 - ``tes_decentralised``: The :ref:`decentralised thermal energy storage (tes) technology <tech_tes_decentralised>` is deactivated by defaults. Therefore, the ``deployment`` parameter is set to ``true``. The storage capacity value is defined with the ``capacity_kWh`` parameter. Here it is set to 20 GWh (i.e., 20'000'000 kWh).
 
