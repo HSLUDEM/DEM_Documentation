@@ -117,10 +117,14 @@ Configuration file: ``supply.yaml``
 .. include:: ../how_to_use_the_model/input_csv_as_rst/supply.rst
 		  
 
+.. _technologies_config_file:
+
 Technologies
 ---------
 
 Configuration file: ``technologies.yaml``
+
+.. _tech_heat_pump:
 
 Heat Pump
 ^^^^^^^^^^
@@ -134,6 +138,7 @@ Top key: ``electric_heater``
 			
 .. include:: ../how_to_use_the_model/input_csv_as_rst/electric_heater.rst
 
+.. _tech_oil_boiler:
 			
 Oil Boiler
 ^^^^^^^^^^
@@ -141,6 +146,7 @@ Top key: ``oil_boiler``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/oil_boiler.rst
 			
+.. _tech_gas_boiler:
 
 Gas Boiler
 ^^^^^^^^^^
@@ -169,6 +175,7 @@ Top key: ``solar_thermal``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/solar_thermal.rst
 
+.. _tech_solar_pv
 
 Solar Photovoltaic (PV)
 ^^^^^^^^^^
@@ -197,6 +204,7 @@ Top key: ``grid_supply``
 
 .. include:: ../how_to_use_the_model/input_csv_as_rst/grid_supply.rst
 
+.. _tech_tes_decentralised:
 
 Thermal Energy Storage (TES) - centralised
 ^^^^^^^^^^
