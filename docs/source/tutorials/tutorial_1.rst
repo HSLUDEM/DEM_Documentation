@@ -9,9 +9,9 @@ This tutorial builds a district energy simulation for the Swiss municipality of 
 
 2. **Electrification scenario**:
 
-   - Heating electrification: Replacing 80% of current fossil heaters (oil and gas boilers) with heat pumps.
-   - Solar PV integration: Deploying 80% of the remaining rooftop solar photovoltaic potential.
-   - Thermal energy storage: Implementing thermal energy storage systems with a total storage capacity of 20Gwh supplied by decentralised heat pumps.
+   - Heating electrification: Replacement of 80% of existing fossil-based heating systems (oil and gas boilers) with heat pumps.
+   - Solar PV integration: Deployment of 80% of the remaining rooftop solar photovoltaic potential.
+   - Thermal energy storage: Implementation of decentralised thermal energy storage systems with a total storage capacity of 20 GWh, charged and discharged by heat pumps.
 
 No optimisation is performed.
 
@@ -80,7 +80,7 @@ Outputs: baseline scenario
 After completion, DEM creates a ``dem_output`` directory inside ``project_dir``.
 This directory contains result files and generated plots.
 
-Below you find some of the outputs provided as interactive plots:
+Selected outputs are shown below as interactive plots:
 
 .. raw:: html
     :file: tutorial_1_baseline_plots/electricity_balance_daily.html
@@ -95,7 +95,7 @@ Below you find some of the outputs provided as interactive plots:
 Configuration: electrification scenario
 ---------
 
-For the electrification simulation, some of the default parameters must be customised. The content of the file ``simulation.yml`` remains the same as in the baseline scenario:
+For the electrification scenario, several default parameters are modified. The file ``simulation.yml`` remains identical to the baseline configuration:
 
 .. code-block:: yaml
 
@@ -104,17 +104,23 @@ For the electrification simulation, some of the default parameters must be custo
     generate_plots: true
     save_results: true
 
-In order to activate the three measures *heating electrification*, *solar PV integration*, and *thermal energy storage*, create the :ref:`scenario configuration file <scenarios>` ``scenarios.yml`` as follows:
+In order to activate the three measures *heating electrification*, *solar PV integration*, and *thermal energy storage*, create the :ref:`scenario configuration file <scenarios>` ``scenarios.yml`` with the following content:
 
 .. code-block:: yaml
 
     fossil_heater_retrofit: true
     pv_integration: true
     thermal_energy_storage: true
+	
+Activating these measures requires corresponding adjustments to technology parameters:
 
-For these measures to be implemented, the respective technologies must be adapted as well. *Heating electrification* means the replacement of 80% of currently installed oil boilers and gas boilers with heat pumps. *Solar PV integration* means the use of 80% of the remaining rooftop solar photovoltaic potential. *Thermal energy storage* (TES) refers to the implementation of decentralised TES systems that are charged and discharged via the individual heat pumps.
+- *Heating electrification* replaces 80% of installed oil and gas boilers with heat pumps.
 
-Only technology parameter values deviating from the default values must be provided. Create the :ref:`technologies configuration file <technologies_config_file>` as follows:
+- *Solar PV integration* activates the use of 80% of the remaining available rooftop PV potential.
+
+- *Thermal energy storage* (TES) introduces decentralised storage systems operated in conjunction with individual heat pumps.
+
+Only technology parameters that deviate from default values must be specified. Create the :ref:`technologies configuration file <technologies_config_file>` as follows:
 
 .. code-block:: yaml
 
@@ -131,20 +137,24 @@ Only technology parameter values deviating from the default values must be provi
         deployment: true
         capacity_kWh: 20000000
 
-The :ref:`heat pump technology <tech_heat_pump>` is already deployed in the baseline scenario by default. Therefore, no changes are required and it doesn't have to appear in the technologies configuration file. The following technologies are adapted:
+The :ref:`heat pump technology <tech_heat_pump>` is already deployed by default in the baseline scenario. Therefore, no changes are required and it does not need to be included in the technologies configuration file.
 
-- ``oil_boiler``: The :ref:`oil boiler technology <tech_oil_boiler>` is deployed by default, so the ``deployment`` parameter is not required. However, by default the ``replacement_factor`` is set to 1. Here it is changed to 0.8.
+The following technologies are modified:
 
-- ``gas_boiler``: The :ref:`gas boiler technology <tech_gas_boiler>` is also deployed by default, so the ``deployment`` parameter is not required. However, by default the ``replacement_factor`` is set to 1. Here it is changed to 0.8.
+- ``oil_boiler``: The :ref:`oil boiler technology <tech_oil_boiler>` is deployed by default, so the ``deployment`` parameter is omitted. The default ``replacement_factor`` of 1.0 is reduced to 0.8.
 
-- ``solar_pv``: The :ref:`solar PV technology <tech_solar_pv>` is also deployed by default, so the ``deployment`` parameter is not required. However, by default the ``potential_integration_factor`` is set to 0.3. Here it is changed to 0.8.
+- ``gas_boiler``: The :ref:`gas boiler technology <tech_gas_boiler>` is deployed by default. As with oil boilers, the ``replacement_factor`` is reduced from 1.0 to 0.8.
 
-- ``tes_decentralised``: The :ref:`decentralised thermal energy storage (tes) technology <tech_tes_decentralised>` is deactivated by defaults. Therefore, the ``deployment`` parameter is set to ``true``. The storage capacity value is defined with the ``capacity_kWh`` parameter. Here it is set to 20 GWh (i.e., 20'000'000 kWh).
+- ``solar_pv``: The :ref:`solar PV technology <tech_solar_pv>` is deployed by default. The ``potential_integration_factor`` is increased from the default value of 0.3 to 0.8.
+
+- ``tes_decentralised``: The :ref:`decentralised thermal energy storage technology <tech_tes_decentralised>` is disabled by defaults. It is activated by setting ``deployment`` to ``true``. The total storage capacity is defined using ``capacity_kWh`` and is set to 20 GWh (20'000'000 kWh).
 
 Running the simulation: electrification scenario
 ---------
 
-The simulation is run the same way as in the baseline scenario. Open an Anaconda prompt and navigate to ``project_dir``.
+The simulation simulation procedure is identical to the baseline scenario.
+
+Open an Anaconda prompt and navigate to ``project_dir``.
 Activate the DEM environment (name depends on the installed version):
 
 .. code-block:: shell
@@ -163,7 +173,7 @@ Outputs: electrification scenario
 After completion, DEM creates a ``dem_output`` directory inside ``project_dir``.
 This directory contains result files and generated plots.
 
-Below you find some of the outputs provided as interactive plots:
+Selected outputs are shown below as interactive plots:
 
 .. raw:: html
     :file: tutorial_1_electrification_plots/electricity_balance_daily.html
