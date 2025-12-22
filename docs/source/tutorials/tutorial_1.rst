@@ -4,16 +4,39 @@ Tutorial 1: Swiss Municipality
 ===================
 
 .. note::
-  *UNDER CONSTRUCTION*
+*UNDER CONSTRUCTION*
 
-This example creates a simulation for the Swiss municipality of |Allschwil_Wikipedia_link|, which is a village in the canton of Basel-Landschaft in Switzerland. We simulate the current demand and energy system (i.e., "as-is"), as well as a scenario consisting of heating electrification, solar PV integration, and thermal energy storage. No optimisation is applied.
+This tutorial builds a district energy simulation for the Swiss municipality of |Allschwil_Wikipedia_link|, located in the canton of Basel-Landschaft. Two scenarios are defined:
 
-First, install DEM as described in the :ref:`installation instructions <installation>`. Create a directory structure as described in :ref:`running_a_simulation`: Your project directory ``project_dir`` (can have any name) must contain the subdirectories ``data`` and ``config/config_files``.
+1. **Baseline (“as-is”)**: current energy demand and supply configuration.
 
-Next you need data files and configuration files. Download the data files package for Switzerland from |Swiss_data_Zenodo_link|. Unzip the archive and place the files in the ``data`` directory, keeping the folder structure as downloaded from Zenodo.
+2. **Electrification scenario**: heating electrification, solar PV deployment, and thermal energy storage.
 
-Next, we prepare the configuration files. For the first simulation ("as-is") we use all the standard parameters. Therefore, only the ``simulation.yml`` file must be provided to DEM:
+No optimisation is performed.
 
+Prerequisites
+---------
+
+Install DEM following the :ref:`installation instructions <installation>`.
+Create a project directory (arbitrary name, referred to as ``project_dir``) with the structure described in :ref:`running_a_simulation`, containing the following sub-directories:
+
+- ``project_dir/data``
+
+- ``project_dir/config/config_files``
+
+Data setup
+---------
+
+Download the Swiss input data package from |Swiss_data_Zenodo_link|.
+Extract the archive and copy its contents into the ``data`` directory, preserving the original folder hierarchy as downloaded from Zenodo.
+
+
+Configuration: baseline scenario
+---------
+
+For the baseline simulation, all default model parameters are used. Only the file ``simulation.yml`` is required.
+
+Create ``simulation.yml`` with the following content:
 
 .. code-block:: yaml
 
@@ -21,30 +44,49 @@ Next, we prepare the configuration files. For the first simulation ("as-is") we 
     district_number: 2762
     generate_plots: true
     save_results: true
+	
+Parameter definitions:
 
-We simulate 365 days for the municipality with ``district_number`` 2762, which refers to the |bfs_number_link| for Allschwil. We want the model to generate plots at the end of the simulation (``generate_plots: true``) and also save the resulting values (``save_results: true``). Place this file (``simulation.yml``) in the ``config_files`` directory.
+- ``number_of_days``: full-year simulation horizon.
 
-Open the Anaconda prompt and navigate to the ``project_dir``. Activate the environment you installed for DEM (environment name might vary based on the installed DEM version):
+- ``district_number``: |bfs_number_link| (2762 corresponds to Allschwil).
+
+- ``generate_plots``: activates automatic plot generation.
+
+- ``save_results``: writes numrical outputs to file.
+
+Place ``simulation.yml`` in ``config/config_files``.
+
+Running the simulation
+---------
+
+Open an Anaconda prompt and navigate to ``project_dir``.
+Activate the DEM environment (name depends on the installed version):
 
 .. code-block:: shell
 
     conda activate dem_0_1_0_rc0
-	
-Start the simulation from the Anaconda prompt:
+
+Start the simulation:
 
 .. code-block:: shell
 
     district_energy_model
 
-Once the simulation is completed, you can find the new directory ``dem_output`` which was created by DEM in ``project_dir`` containing plots and results files.
+Outputs
+---------
 
+After completion, DEM creates a dem_output directory inside project_dir.
+This directory contains result files and generated plots.
 
+Embedded examples:
 
 .. raw:: html
-   :file: tutorial_1_plots/electricity_balance_daily.html
-   
+    :file: tutorial_1_plots/electricity_balance_daily.html
+
 .. raw:: html
-   :file: tutorial_1_plots/heat_balance_daily.html
+    :file: tutorial_1_plots/heat_balance_daily.html
+
 
 
 
@@ -61,5 +103,37 @@ Once the simulation is completed, you can find the new directory ``dem_output`` 
    
 .. |bfs_number_link| raw:: html
 
-   <a href="https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html" target="_blank">BFS number</a>
+   <a href="https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html" target="_blank">BFS municipality identifier</a>
    
+   
+.. code-block:: bash
+
+     district_energy_model bash
+	 
+.. code-block:: sh
+
+     district_energy_model sh
+	 
+.. code-block:: console
+
+     district_energy_model console
+	 
+.. code-block:: powershell
+
+     district_energy_model powershell
+	 
+.. code-block:: cmd
+
+     district_energy_model cmd
+	 
+.. code-block:: zsh
+
+     district_energy_model zsh
+	 
+.. code-block:: fish
+
+     district_energy_model fish
+	 
+.. code-block:: shell
+
+     district_energy_model shell
