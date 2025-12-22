@@ -55,6 +55,18 @@ Configuration: baseline scenario
 
 The EDIG numbers for each building are obtained from https://map.geo.admin.ch/.
 
+
+Running the simulation: baseline scenario
+---------
+
+
+Outputs: baseline scenario
+---------
+
+
+Configuration: electrification scenario
+---------
+
 .. code-block:: yaml
 
     oil_boiler:
@@ -70,7 +82,12 @@ The EDIG numbers for each building are obtained from https://map.geo.admin.ch/.
         deployment: true
         capacity_kWh: 30000
 		
-		
+
+Running the simulation: electrification scenario
+---------
+
+Outputs: electrification scenario
+---------
 		
 .. Links:
 
