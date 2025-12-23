@@ -28,7 +28,7 @@ If not already done, download and install |Conda_link| on your operating system.
    :width: 90%
 
 
-Open Anaconda Prompt window and navigate to the directory where the .yml file is located. The ``dir`` command will show you the content of the current directory. The ``cd`` command lets you navigate to these directories (e.g., ``cd path/to/folder``).
+Open the Anaconda Prompt window and navigate to the directory where the .yml file is located. The ``dir`` command will show you the content of the current directory. The ``cd`` command lets you navigate to these directories (e.g., ``cd path/to/folder``).
 Create a new ``Conda`` environment from the .yml file (exact name depends on version):
 
 .. code-block:: shell

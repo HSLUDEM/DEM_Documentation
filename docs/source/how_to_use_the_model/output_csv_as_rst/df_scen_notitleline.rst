@@ -125,13 +125,13 @@
 +--------------------------+-------+--------+------------------------------------------+
 | s_wet_bm_rem             | float | kWh    | wet biomass supply remaining             |
 +--------------------------+-------+--------+------------------------------------------+
-| sos_bes                  | float | —      | Battery energy storage: state of charge  |
+| sos_bes                  | float | —      | Battery energy storage: state of storage |
 +--------------------------+-------+--------+------------------------------------------+
-| sos_tes                  | float | —      | Thermal Energy storage: state of charge  |
+| sos_tes                  | float | —      | Thermal Energy storage: state of storage |
 +--------------------------+-------+--------+------------------------------------------+
 | sos_tesdc                | float | —      | Thermal Energy storage (decentralised):  |
 |                          |       |        |                                          |
-|                          |       |        | state of charge                          |
+|                          |       |        | state of storage                         |
 +--------------------------+-------+--------+------------------------------------------+
 | u_e_aguh                 | float | kWh    | electricity demand anaerobic digestion   |
 |                          |       |        |                                          |

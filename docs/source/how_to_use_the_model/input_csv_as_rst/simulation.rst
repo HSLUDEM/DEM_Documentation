@@ -15,11 +15,13 @@
 |                     |                                          |                       |      |           |
 |                     | Meta File. For Swiss municipalities,     |                       |      |           |
 |                     |                                          |                       |      |           |
-|                     | this is the BFS number and can be found  |                       |      |           |
+|                     | this is the BFS commune number. A list   |                       |      |           |
 |                     |                                          |                       |      |           |
-|                     | online (www.bfs.admin.ch/bfs/de/home/gru |                       |      |           |
+|                     | of all municipalities and the respective |                       |      |           |
 |                     |                                          |                       |      |           |
-|                     | ndlagen/agvch.html).                     |                       |      |           |
+|                     | commune numbers can be found :ref:`here  |                       |      |           |
+|                     |                                          |                       |      |           |
+|                     | <swiss_municipalities>`.                 |                       |      |           |
 +---------------------+------------------------------------------+-----------------------+------+-----------+
 | ``generate_plots``  | The generation of plots can be switched  | *required user input* | —    | bool      |
 |                     |                                          |                       |      |           |
