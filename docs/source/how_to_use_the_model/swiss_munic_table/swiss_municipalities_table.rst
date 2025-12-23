@@ -2,7 +2,7 @@
    :header-rows: 1
 
    * - **Municipality**
-     - **Commune number**
+     - **Commune number (GGDENR)**
      - **Canton**
    * - Aeugst am Albis
      - 1

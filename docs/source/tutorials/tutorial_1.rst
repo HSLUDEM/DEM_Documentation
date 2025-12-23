@@ -54,7 +54,7 @@ Parameter definitions:
 
 - ``number_of_days``: full-year simulation horizon (i.e., 365 days).
 
-- ``district_number``: |bfs_number_link| (2762 corresponds to Allschwil).
+- ``district_number``: |bfs_number_link| (2762 corresponds to Allschwil). A list of all commune numbers for Swiss municipalities can be found :ref:`here <swiss_municipalities>`.
 
 - ``generate_plots``: activates automatic plot generation.
 
@@ -206,6 +206,6 @@ Selected outputs for the *electrification scenario* are shown below as interacti
    
 .. |bfs_number_link| raw:: html
 
-   <a href="https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html" target="_blank">BFS municipality identifier</a>
+   <a href="https://www.bfs.admin.ch/bfs/en/home/basics/swiss-official-commune-register.html" target="_blank">BFS municipality identifier</a>
    
    
