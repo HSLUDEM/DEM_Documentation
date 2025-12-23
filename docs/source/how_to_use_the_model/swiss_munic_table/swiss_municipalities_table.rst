@@ -1,8 +1,8 @@
 .. list-table::
    :header-rows: 1
 
-   * - **Municipality**
-     - **Commune number (GGDENR)**
+   * - **Municipality (``GGDENAME``)**
+     - **Commune number (``GGDENR``)**
      - **Canton**
    * - Aeugst am Albis
      - 1

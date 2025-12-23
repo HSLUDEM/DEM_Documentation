@@ -22,8 +22,8 @@ output_path = r"how_to_use_the_model/swiss_munic_table/"
 
 # Keys = df columns, values = headers in rst table
 column_allocation: Dict[str, str] = {
-    "Municipality": "Municipality",
-    "GGDENR": "Commune number (GGDENR)",
+    "Municipality": "Municipality (``GGDENAME``)",
+    "GGDENR": "Commune number (``GGDENR``)",
     "Canton": "Canton",
 }
 
