@@ -2,9 +2,6 @@
 
 Tutorial 2: Customised District
 ===================
-
-.. note::
-  *UNDER CONSTRUCTION*
   
 This tutorial builds a district energy simulation for a small district consisting of 30 buildings, predominantly residential. While :ref:`Tutorial 1 <tutorial_1>` models the entire municipality of |Allschwil_Wikipedia_link|, this tutorial focuses on a selected subset of buildings within the same municipality (see figure below).
 
@@ -109,7 +106,7 @@ Selected outputs for the *baseline scenario* of the custom district are shown be
 Configuration: electrification scenario
 ---------
 
-For the electrification scenario, several default parameters are modified, similar` to :ref:`Tutorial 1 <tutorial_1>`. The file ``simulation.yml`` remains identical to the baseline configuration:
+For the electrification scenario, several default parameters are modified, following the same approach as in :ref:`Tutorial 1 <tutorial_1>`. The file ``simulation.yml`` remains identical to the baseline configuration:
 
 .. code-block:: yaml
 
