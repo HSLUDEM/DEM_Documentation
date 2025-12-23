@@ -1822,7 +1822,7 @@ optimisation:
   save_calliope_files: false
 simulation:
   number_of_days: 365
-  district_number: 2762
+  district_number: 0
   generate_plots: true
   save_results: true
 demand_side:
