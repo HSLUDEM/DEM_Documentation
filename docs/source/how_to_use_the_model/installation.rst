@@ -28,17 +28,20 @@ If not already done, download and install |Conda_link| on your operating system.
    :width: 90%
 
 
-Open the terminal window and navigate to the directory where the .yml file is located. Create a new ``Conda`` environment from this file:
+Open Anaconda Prompt window and navigate to the directory where the .yml file is located. The ``dir`` command will show you the content of the current directory. The ``cd`` command lets you navigate to these directories (e.g., ``cd path/to/folder``).
+Create a new ``Conda`` environment from the .yml file (exact name depends on version):
 
 .. code-block:: shell
 
-    conda env create -f dem_conda_environment_vX_Y_Z.yml
+    conda env create -f dem_conda_environment_v0_1_0_rc0.yml
 	
-Activate the environment:
+This process might take a while, depending on the performance of the computer.
+	
+Activate the environment (exact name depends on installed version):
 	
 .. code-block:: shell
 
-    conda activate dem_X_Y_Z
+    conda activate dem_0_1_0_rc0
 
 Refer to the |Conda_doc_link| for instructions. If you are unfamiliar with Conda, consult the |Conda_userguide_link|.
 

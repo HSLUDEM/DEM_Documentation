@@ -12,7 +12,7 @@ DEM can be used for any region, but is tailored to the Swiss context. It allows 
 
 .. note::
 
-   This documentation is newly launched and remains under active development. Many sections are still incomplete. If you cannot find the information you are looking for, please refer to the :doc:`publications` page or reach out via the :doc:`contact` page.
+   This documentation is newly launched and remains under active development. Some sections are still incomplete. If you cannot find the information you are looking for, please refer to the :doc:`publications` page or reach out via the :doc:`contact` page.
 
 ..
    .. image:: images/geo_plot_renewable_s0.svg

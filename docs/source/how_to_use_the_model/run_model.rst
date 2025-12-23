@@ -42,11 +42,11 @@ Run from command-line tool
 
 **Step 1: Activate the Conda Environment**
 
-Open the command-line tool and activate the DEM Conda environment:
-
+Open the command-line tool and activate the DEM Conda environment (exact name depends on installed version):
+	
 .. code-block:: shell
 
-    conda activate dem_X_Y_Z
+    conda activate dem_0_1_0_rc0
 
 **Step 2: Configure the Simulation**
 
