@@ -10,7 +10,7 @@ It is recommended to install DEM in a dedicated ``Conda`` environment to ensure 
 To run optimisation studies, a solver must be installed before installing DEM. If only simulations are required, no solver installation is necessary. Optimisation in DEM is implemented using the |Calliope_link| framework, and any solver listed on the |Calliope_documentation_link| can be used.
 
 .. note::
-  DEM has been tested on Windows with |Calliope_version_link| in combination with the |Gurobi_link| solver.
+  DEM has been tested on Windows with |Calliope_version_link| in combination with the |CBC_link| and |Gurobi_link| solvers.
 
 
 **Step 1: Create the Conda Environment**
@@ -66,7 +66,7 @@ Now you can run the model (see :doc:`run_model`).
 
 .. |Calliope_documentation_link| raw:: html
 
-   <a href="https://calliope.readthedocs.io/en/stable/user/installation.html" target="_blank">Calliope documentation page</a>
+   <a href="https://calliope.readthedocs.io/en/stable/user/installation.html#solvers" target="_blank">Calliope documentation page</a>
 
 .. |Calliope_version_link| raw:: html
 
@@ -75,7 +75,11 @@ Now you can run the model (see :doc:`run_model`).
 .. |Gurobi_link| raw:: html
 
    <a href="https://www.gurobi.com/" target="_blank">Gurobi</a>
+   
+.. |CBC_link| raw:: html
 
+   <a href="https://github.com/coin-or/Cbc" target="_blank">CBC</a>
+   
 .. |Conda_link| raw:: html
 
    <a href="https://www.anaconda.com/docs/getting-started/miniconda/main" target="_blank">Conda</a>
