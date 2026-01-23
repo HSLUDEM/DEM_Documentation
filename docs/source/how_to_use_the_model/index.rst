@@ -16,3 +16,4 @@ This section describes the model architecture of DEM and how to run a simulation
    directory_structure
    nomenclature
    swiss_municipalities
+   version_history
