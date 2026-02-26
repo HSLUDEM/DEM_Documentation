@@ -53,6 +53,10 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 # html_theme = 'classic'
+html_theme_options = {
+    "logo_only": True,      # show only logo (no project name next to it)
+    "display_version": True,
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
