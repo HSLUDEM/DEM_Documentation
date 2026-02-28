@@ -63,7 +63,8 @@ epub_show_urls = 'footnote'
 
 # Path:
 html_static_path = ['_static']
-html_logo = "_static/DEM_logo_2_notext.svg"
+# html_logo = "_static/DEM_logo_2_notext.svg"
+html_logo = "_static/DEM_logo_2_cropped.svg"
 
 # Set the favicon
 html_favicon = '_static/favicon.png'
