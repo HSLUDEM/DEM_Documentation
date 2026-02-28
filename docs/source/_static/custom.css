@@ -37,3 +37,27 @@
 .wrap-text th:nth-child(4) {
     width: 30em;
 }
+
+
+/* ------------------------------------------------------------------ */
+/* Logo block (top-left) background colour                            */
+/* ------------------------------------------------------------------ */
+
+.wy-side-nav-search {
+    background-color: #ffffff;   /* white */
+}
+
+/* Logo link text */
+.wy-side-nav-search a {
+    color: #1771E8;
+}
+
+/* Version text */
+.wy-side-nav-search .version {
+    color: #1771E8;
+}
+
+/* Optional: remove default border below logo area */
+/* .wy-side-nav-search { */
+/*     border-bottom: none; */
+/* } */
