@@ -43,8 +43,12 @@
 /* Logo block (top-left) background colour                            */
 /* ------------------------------------------------------------------ */
 
+
+/* Logo block styling */
 .wy-side-nav-search {
-    background-color: #ffffff;   /* white */
+    background-color: #ffffff;
+    border: 1px solid #cfd8e3;   /* subtle blue-grey */
+    border-radius: 4px;          /* optional soft rounding */
 }
 
 /* Logo link text */
@@ -52,9 +56,9 @@
     color: #1771E8;
 }
 
-/* Version text */
+/* Version text (force override theme rule) */
 .wy-side-nav-search .version {
-    color: #1771E8;
+    color: #1771E8 !important;
 }
 
 /* Optional: remove default border below logo area */
