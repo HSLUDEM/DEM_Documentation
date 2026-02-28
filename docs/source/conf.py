@@ -52,18 +52,18 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-# html_theme = 'classic'
-# html_theme_options = {
-    # "logo_only": True,      # show only logo (no project name next to it)
-    # "display_version": True,
-# }
+html_theme = 'classic'
+html_theme_options = {
+    "logo_only": True,      # show only logo (no project name next to it)
+    "display_version": True,
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
 # Path:
 html_static_path = ['_static']
-#html_logo = "_static/DEM_logo_2_notext.svg"
+html_logo = "_static/DEM_logo_2_notext.svg"
 
 # Set the favicon
 html_favicon = '_static/favicon.png'
