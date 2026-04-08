@@ -3,6 +3,14 @@ Publications
 
 .. sorted by year and alphabetically
 
+2026:
+
+Schilt, U., Vijayananda, S., Schneeberger, S., Iyyakkunnel, S., Vecsei, P. M., & Schuetz, P. (2026). Make every kilowatt count: Modeling solar power integration with thermal storage and heating electrification. Solar Energy Advances, 100135. |Schilt2026_DOI_link|
+
+.. |Schilt2026_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1016/j.seja.2026.100135" target="_blank">https://doi.org/10.1016/j.seja.2026.100135</a>
+
 2025:
 
 Gökgöl, E. K., Linder, E., & Schuetz, P. (2025). A community-based decision support map for building retrofit towards a more sustainable future. Energy and Buildings, 335, 115554. |Gökgöl2025_DOI_link|
