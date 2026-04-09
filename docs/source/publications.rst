@@ -3,7 +3,7 @@ Publications
 
 .. sorted by year and alphabetically
 
-2026:
+**2026:**
 
 Schilt, U., Vijayananda, S., Schneeberger, S., Iyyakkunnel, S., Vecsei, P. M., & Schuetz, P. (2026). Make every kilowatt count: Modeling solar power integration with thermal storage and heating electrification. Solar Energy Advances, 100135. |Schilt2026_DOI_link|
 
@@ -11,7 +11,7 @@ Schilt, U., Vijayananda, S., Schneeberger, S., Iyyakkunnel, S., Vecsei, P. M., &
 
    <a href="https://doi.org/10.1016/j.seja.2026.100135" target="_blank">https://doi.org/10.1016/j.seja.2026.100135</a>
 
-2025:
+**2025:**
 
 Gökgöl, E. K., Linder, E., & Schuetz, P. (2025). A community-based decision support map for building retrofit towards a more sustainable future. Energy and Buildings, 335, 115554. |Gökgöl2025_DOI_link|
 
@@ -37,7 +37,7 @@ Schneeberger, S., Meister, C., & Schuetz, P. (2025). Estimating the heating ener
 
    <a href="https://doi.org/10.1016/j.enbuild.2025.116371" target="_blank">https://doi.org/10.1016/j.enbuild.2025.116371</a>
 
-2024:
+**2024:**
 
 Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024, February). Wärmebedarfsschätzung für Wohngebäude. In Proceedings of the 18th Symposium Energieinnovation. TU Graz, Austria. |Schneeberger2024_link|
 
@@ -45,7 +45,7 @@ Schneeberger, S., Lucas, E., Meister, C., & Schuetz, P. (2024, February). Wärme
 
    <a href="https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf" target="_blank">https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/f560810f-089d-42d8-ae6d-8e82a8454ca9/files/lf/Session_F3/631_LF_Schneeberger.pdf</a>
 
-2023:
+**2023:**
 
 Meyer, M., Schilt, U., Schneeberger, S., Gökgöl, E. K., Linder, E., & Schuetz, P. (2023). Tool for evaluation of energy system options for municipalities. Journal of Physics: Conference Series, 2600(2), 022010. |Meyer2023_DOI_link|
 
