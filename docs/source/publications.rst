@@ -1,9 +1,15 @@
 Publications
 ============
 
-.. sorted by year and alphabetically
+.. sorted by year and alphabetically; APA style
 
 **2026:**
+
+Meyer, M., Iyyakkunnel, S., Schilt, U., Schneeberger, S., Linder, E., Vijayananda, S., & Schuetz, P. (2023). Supporting the integration of renewable energy in communities and districts by automated, online impact assessment.  In: Zilio, C., Busato, F., Mazzarella, L., Noro, M. (eds) Proceedings of the 15th REHVA HVAC World Congress - CLIMA 2025. CLIMA 2025. Lecture Notes in Civil Engineering, vol 788. Springer, Cham. |Meyer2026_DOI_link|
+
+.. |Meyer2026_DOI_link| raw:: html
+
+   <a href="https://doi.org/10.1007/978-3-032-10546-2_88" target="_blank">https://doi.org/10.1007/978-3-032-10546-2_88</a>
 
 Schilt, U., Vijayananda, S., Schneeberger, S., Iyyakkunnel, S., Vecsei, P. M., & Schuetz, P. (2026). Make every kilowatt count: Modeling solar power integration with thermal storage and heating electrification. Solar Energy Advances, 100135. |Schilt2026_DOI_link|
 
