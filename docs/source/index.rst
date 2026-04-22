@@ -16,7 +16,11 @@ DEM can be used for any region, but is tailored to the Swiss context. It allows 
 ..
    .. image:: images/geo_plot_renewable_s0.svg
 
-.. image:: images/bar_chart.png
+..
+	.. image:: images/bar_chart.png
+	   :width: 90%
+   
+.. image:: images/bar_chart_sketch.png
    :width: 90%
 
 Check out the :doc:`introduction` section for further information. To get started with DEM, it is recommended to consult the :ref:`how_to_use_the_model` section and work through the :ref:`Tutorials <tutorials>`.
